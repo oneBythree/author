@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <script src="../static/scripts/jslib/angular.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../static/font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/test.css">
+    <script type="text/javascript" src="http://www.sucaihuo.com/Public/js/other/jquery.js"></script>
+    <script src="../static/ui-bootstrap/ui-bootstrap-tpls-2.0.1.min.js"></script>
+    <script src="../static/scripts/jslib/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../static/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/bootstrap/css/sweetalert.css">
+    <script type="text/javascript" src="../static/bootstrap/js/sweetalert-dev.js"></script>
+    </style>
+</head>
+
+<body>
+    <div class="examples">
+        <button class="btn btn-lg btn-primary showcase sweet-10">Primary</button>
+        <!--      <button class="btn btn-lg btn-info sweet-11" onclick="_gaq.push(['_trackEvent', 'example, 'try', 'Info']);">Info</button>
+        <button class="btn btn-lg btn-success sweet-12" onclick="_gaq.push(['_trackEvent', 'example, 'try', 'Success']);">Success</button>
+        <button class="btn btn-lg btn-warning sweet-13" onclick="_gaq.push(['_trackEvent', 'example, 'try', 'Warning']);">Warning</button>
+        <button class="btn btn-lg btn-danger sweet-14" onclick="_gaq.push(['_trackEvent', 'example, 'try', 'Danger']);">Danger</button> -->
+        <p>{{1471412349 | date:'yyyy-mm-dd'}}</p>
+    </div>
+    <script type="text/javascript">
+    
+        $('.showcase').click(function(event) {
+            swal({
+                title: "您是否确认删除？",
+                // text: "You will not be able to recover this imaginary file!",
+                type: "table",
+                showCancelButton: true,
+                size: 'lg',
+                table:'1111这是个table'
+            }, function() {
+                swal("已删除!", "Your imaginary file has been deleted.", "success");
+            })
+        });
+    </script>
+</body>
+
+</html>

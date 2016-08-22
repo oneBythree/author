@@ -1,0 +1,359 @@
+//修改boostrap样式
+@import 'variable';
+//分页
+nav.m-page {
+    text-align: right;
+    ul {
+        margin: 0 0 20px 0;
+        a {
+            color: $main-color;
+        }
+    }
+}
+
+//时间选择
+div.m-icon-date {
+    display: inline-block;
+    @include funcHeight(36px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    overflow: hidden;
+    vertical-align: middle;
+    span {
+        display: inline-block;
+        width: 28px;
+        text-align: center;
+        i.icnonfont {
+            color: $color-999;
+            font-size: $num14;
+        }
+    }
+}
+
+//按钮
+.btn-group {
+    margin-bottom: 20px;
+    .btn {
+        margin-right: 10px;
+    }
+}
+
+.btn.m-btn,
+.btn.m-btn:active {
+    color: $color-white;
+    background: $link-color;
+    border: none;
+    overflow: hidden;
+    &:active {
+        background: $rgba-link;
+        border: none;
+    }
+}
+
+//表格
+.m-form-horizontal {
+    width: 640px;
+    margin: 20px auto 0;
+    .col-sm-2 {
+        text-align: right;
+        vertical-align: middle;
+        font-weight: normal;
+        @include funcHeight(34px);
+    }
+    .col-sm-10 {
+        position: relative;
+        margin-bottom: 15px;
+        i.red {
+            position: absolute;
+            display: inline-block;
+            @include funcHeight($num34);
+            right: -15px;
+            top: 0;
+            color: red;
+            vertical-align: middle;
+        }
+    }
+}
+
+div.m-inputfile {
+    position: relative;
+    @include funcHeight(34px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    &:after {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: '选择';
+        width: 62px;
+        text-align: center;
+        background: $link-color;
+        color: $color-white;
+    }
+    input[type="file"] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 120%;
+        height: 100%;
+        z-index: 5;
+        margin-left: -60px;
+        text-indent: -10px;
+        font-size: 14px;
+        margin-top: 2px;
+        @include funcHeight(34px);
+    }
+}
+
+.m-btn-cancel,
+.m-btn-right,
+.m-btn-right:hover,
+.m-btn-cancel:hover,
+.m-btn-cancel:active,
+.m-btn-right:active {
+    width: 48%;
+    background: $link-color!important;
+    color: $color-white!important;
+}
+
+input[type="text"],
+.m-inputfile,
+input[type="file"],
+.m-icon-date {
+    @include funcHeight(34px!important);
+}
+
+div.add-search a.search-btn {
+    @include funcHeight(34px!important);
+}
+
+select.m-select {
+    @include border-radius2all($border-color, 4px);
+}
+
+//单选框抬头样式
+.m-tilte-checked {
+    background: #fbfbfb;
+    padding: 20px 0;
+    label.checkbox-inline {
+        em {
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    }
+}
+
+//选择组
+.btn-group.m-group-btn {
+    margin: $num10 0;
+    padding-right: $num20;
+    background: #fff;
+    text-align: right;
+    .btn {
+        margin-right: 0;
+    }
+}
+
+.mid-box {
+    input[type="checkbox"] {
+        vertical-align: middle;
+    }
+    label {
+        vertical-align: middle;
+        font-weight: normal;
+        margin-bottom: 0;
+    }
+}
+
+.icon-list {
+    i.iconfont {
+        color: #999;
+        &:hover {
+            color: $link-color;
+        }
+    }
+}
+
+div.text-right {
+    background: #fff;
+}
+
+div.modal-dialog.m-confirm {
+    div.modal-content {
+        overflow: hidden;
+    }
+    div.modal-header {
+        padding: 10px 15px;
+    }
+}
+
+.sweet-alert {
+    &.lg {
+        width: 800px!important;
+        margin-left: -400px!important;
+        div.sa-table {
+            width: 100%;
+            max-height: 600px;
+            em.sa-close {
+                position: absolute;
+                display: inline-block;
+                right: -10px;
+                top: -10px;
+                width: 24px;
+                height: 24px;
+                font-size: 16px;
+                background: #cfcfcf;
+                text-align: center;
+                line-height: 24px;
+                border-radius: 50%;
+                color: #f0f0f0;
+                cursor: pointer;
+                &:hover {
+                    background: #c8c8c8;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    form.form-horizontal {
+        width: 600px;
+        margin: 0 auto;
+        &.look {
+            div.form-group {
+                cursor: pointer;
+                margin: 0 0 15px 0;
+                div.col-sm-10 {
+                    padding: 7px;
+                }
+                &:hover {
+                    background: #8CD4F5;
+                }
+            }
+        }
+        &.edit {
+            div.form-group {
+                text-align: left;
+                margin-bottom: 0;
+                font-size: 14px;
+                input[type="text"] {
+                    display: inline-block;
+                    font-size: 14px;
+                }
+                label.col-sm-2 {
+                    margin-top: 10px;
+                    margin-bottom: 17px;
+                }
+                .m-select-search {
+                    margin: 10px 0 17px;
+                    p {
+                        font-size: 14px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .select-droplist {
+            font-size: 14px;
+            input[type="text"] {
+                margin: 0;
+            }
+        }
+        li.create {
+            text-align: left;
+        }
+    }
+}
+
+//响应式1440以下的屏幕
+@media screen and (max-width: 1440px) {
+    .m-form-horizontal {
+        font-size: 12px;
+        .col-sm-2 {
+            @include funcHeight(28px);
+        }
+    }
+    input[type="text"],
+    .m-inputfile,
+    input[type="file"],
+    .m-icon-date,
+    .btn {
+        @include funcHeight(28px!important);
+        &.form-control {
+            font-size: $num12;
+        }
+    }
+    input[type="file"],
+    .btn {
+        font-size: 12px!important;
+    }
+    .btn {
+        padding: 0 12px;
+    }
+    select {
+        @include funcHeight(28px!important);
+        padding: 0 12px!important;
+        &.form-control {
+            font-size: $num12;
+        }
+    }
+    textarea.form-control {
+        font-size: $num12;
+    }
+    .m-tilte-checked {
+        background: #fbfbfb;
+        padding: 16px 0;
+    }
+    .sweet-alert {
+        &:not(.lg) {
+            width: 480px*.8!important;
+            padding: 15px!important;
+            margin-left: -480px*.4!important;
+            border-radius: 4px!important;
+            .sa-icon {
+                width: 80px*.8!important;
+                height: 80px*.8!important;
+                &.sa-warning {
+                    .sa-body {
+                        height: 47px*.8!important;
+                    }
+                    .sa-dot {
+                        bottom: 10px*.8!important;
+                    }
+                }
+                &.sa-success {
+                    .sa-tip {
+                        width: 25px*.8!important;
+                        left: 14px*.8!important;
+                        top: 46px*.8!important;
+                    }
+                    .sa-long {
+                        width: 47px*.8!important;
+                        right: 8px*.8!important;
+                        top: 38px*.8!important;
+                    }
+                    .sa-placeholder {
+                        width: 80px*.8!important;
+                        height: 80px*.8!important;
+                    }
+                }
+            }
+            h2 {
+                font-size: 24px!important;
+            }
+        }
+        &.edit {
+            .form-group {
+                font-size: 12px;
+                input[type="text"]{
+                    font-size: 12px;
+                }
+            }
+            .select-droplist {
+                font-size: 12px;
+            }
+        }
+    }
+}

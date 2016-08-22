@@ -1,0 +1,30 @@
+<div class="m-crumbs ">您当前的位置：
+ <ol class="breadcrumb">
+   <li><a href="#/goods">物品管理</a></li>
+   <li><a href="#">批量添加</a></li>
+</ol>
+</div>
+<form class="m-form-horizontal " role="form">
+  <label for="firstname" class="col-sm-2 control-label" ng-init="companyDropList=['家乐福','中百','物美','华联']">选择企业</label>
+  <div class="col-sm-10">
+   <div drop-search create-swtich=false drop-list="companyDropList" for-value=""></div>  
+   <i class="red">*</i>
+</div>
+
+<label for="lastname" class="col-sm-2 control-label" ng-init="tagDropList=['鱼','肉','白菜','鸭','鸡']">物品标签</label>
+<div class="col-sm-10 ">
+    <div drop-search create-swtich=true drop-list="tagDropList" for-value=""></div> 
+</div>
+<label for="lastname" class="col-sm-2 control-label">选择文件</label>
+<div class="col-sm-10">
+    <div class="m-file">
+        <p>{{fileName}}</p>
+        <input class="form-control"  type="file" ng-model="fileName">
+    </div>
+</div> 
+<label  class="col-sm-2 control-label"></label>
+<div class="col-sm-10 clearfix ">
+    <button class="btn m-btn-right">确认添加</button>
+    <button class="btn m-btn-cancel fr">返回</button>
+</div>
+</form>

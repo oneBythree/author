@@ -1,0 +1,43 @@
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+  aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+     <div class="modal-header">
+      <button type="button" class="close" 
+      data-dismiss="modal" aria-hidden="true">
+      &times;
+    </button>
+    <h4 class="modal-title" id="myModalLabel">
+      批量添加
+    </h4>
+  </div>
+  <div class="modal-body" ng-init="inputSwitch=false">
+    <p>当前标签：{{name}}</p>
+    <a href="javascript:;" class="m-link edit" ng-click="inputSwitch=true" ng-show="!inputSwitch" >创建标签</a>
+    <div ng-show="inputSwitch" class="marg-tb10 edit-warpper">
+      <input type="text" class="input-small" placeholder="输入新标签" ng-model="createTag">
+      <a class="btn-edit" href="javascript:;" ng-click="save(createTag)">保存</a>
+      <a class="btn-edit" href="javascript:;" ng-click="inputSwitch=false">取消</a>   
+    </div>
+    <div class="add-search marg-bm40">
+      <div class="warpper-search">
+        <input type="text" class="add-search-input" ng-model="query" ng-init="selectSwitch=false" ng-change="print()">
+        <a href="javascript:;" class="search-btn"><i class="iconfont icon-search"></i></a>
+      </div>
+      <ul ng-show="selectSwitch">
+        <li ng-repeat="item in list | filter:query">
+          <a href="javascript:;" class="item" ng-click="addFunc(item)">{{item}}</a></li>
+        </ul>
+      </div>     
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" 
+      data-dismiss="modal">取消
+    </button>
+    <button type="button" class="btn m-btn" ng-click="addForm(name)">
+     保存
+   </button>
+ </div>
+</div>
+</div>
+</div>

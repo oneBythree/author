@@ -1,0 +1,25 @@
+<div >
+    <div class="m-crumbs">您当前的位置：<a class="m-link" href="javascript:;">用户日志查询 </a></div>
+    <form class="form-inline m-line-form">
+        <div class="form-group">
+          <label >起止日期</label>
+          <div class="m-icon-date">
+            <span for="date1"><i class="iconfont icon-riqi"></i></span>
+            <input id="date1" bs-Datepicker type="text" class="w180 date-time-defalut" placeholder="请选择时间段"  readonly>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputId">查询结果</label>
+        <select class="form-control m-input" ng-model="goodsTag" ng-init="goodsTag='0'">
+            <option value="0">全部</option>
+            <option>2哈哈哈哈</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <button type="submit" class="btn m-btn-icon" ng-click="search()"><i class="iconfont icon-search"></i> </button>
+    <button type="submit" class="btn m-btn-icon" ng-click="reset()"><i class="iconfont icon-cancel"></i> </button>
+</form>
+
+</div>

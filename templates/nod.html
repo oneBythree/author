@@ -1,0 +1,143 @@
+<div >
+  <div class="m-crumbs">您当前的位置：<a class="m-link" href="javascript:;">节点主体备案</a></div>
+  <form class="form-inline m-line-form ">
+    <div class="form-group">
+      <label for="inputId" ng-init="tagDropList=['测试节点1','测试节点2','测试节点3','测试节点4']">节点名称</label>
+      <div class="inblock small" drop-search create-swtich=false drop-list="tagDropList" for-value=""></div> 
+    </div>
+    <div class="form-group">
+      <label for="inputId">节点编码</label>
+      <input type="text" class="form-control m-input w100" id="inputId" ng-model="goodsId">
+    </div>
+    <div class="form-group">
+      <label >备案时间</label>
+      <div class="m-icon-date">
+        <span for="date1"><i class="iconfont icon-riqi"></i></span>
+        <input id="date1"  bs-Datepicker type="text" class="w100 date-defalut" placeholder="请选择时间"  readonly>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputId" >父节点</label>
+      <select class="form-control" name="fatherNode" id="">
+        <option value="-1">全部</option>
+        <option value="1">测试父节点1</option>
+        <option value="2">测试父节点2</option>
+      </select>
+    </div>
+    <button type="submit" class="btn m-btn-icon" ng-click="search()"><i class="iconfont icon-search"></i> </button>
+    <button type="submit" class="btn m-btn-icon" ng-click="reset()"><i class="iconfont icon-cancel"></i> </button>
+    <div style="height:10px;"></div>
+    <div class="form-group">
+      <label for="firstname" ng-init="companyDropList=['家乐福','中百','物美','华联']">归属区县</label>
+      <div class="inblock small" drop-search create-swtich=false drop-list="companyDropList" for-value="value"></div> 
+    </div> 
+    <div class="form-group">
+      <label for="inputId" >节点类型</label>
+      <select class="form-control" name="fatherNode" id="">
+        <option value="-1">全部</option>
+        <option value="1">测试父节点1</option>
+        <option value="2">测试父节点2</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="inputId" >节点性质</label>
+      <select class="form-control" name="fatherNode" id="">
+        <option value="-1">全部</option>
+        <option value="1">测试父节点1</option>
+        <option value="2">测试父节点2</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="inputId">工商注册登记号</label>
+      <input type="text" class="form-control m-input w100" id="inputId" ng-model="goodsId">
+    </div>
+  </form>
+
+  <div class="btn-group">
+    <a href="#/nod/add" class="btn m-btn">新增节点</a>
+    <a href="#/record/giveic" class="btn m-btn">编辑</a>
+    <a href="#/record/icinfo" class="btn m-btn">删除</a>
+  </div>
+
+  <table class="table table-bordered m-table">
+    <thead>
+      <tr>
+        <th><input type="checkbox" ng-model="selectAll" name="sort">序号</th>
+        <th>节点编码</th>
+        <th>节点名称</th>
+        <th>父节点</th>
+        <th>节点类型</th>
+        <th>归属区县</th>
+        <th>备案时间</th>
+        <th>经营地址</th>
+        <th>工商注册登记号</th>
+        <th>法人代表</th>
+        <th>联系电话</th>
+        <th>状态</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="checkbox" ng-checked="selectAll" name="sort">11</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>  
+      </tr>
+      <tr>
+        <td><input type="checkbox" ng-checked="selectAll" name="sort">22</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>  
+      </tr>
+      <tr>
+        <td><input type="checkbox" ng-checked="selectAll" name="sort">33</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>  
+      </tr>
+    </tbody>
+  </table>
+  <nav class="m-page">
+    <ul class="pagination fr ">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

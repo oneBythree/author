@@ -1,0 +1,84 @@
+<div ng-controller="ruleCtrl">
+    <div class="m-crumbs">您当前的位置：<a class="m-link" href="javascript:;">解码规则</a></div>
+    <form class="form-inline m-line-form">
+        <div class="form-group">
+            <label>起止日期</label>
+            <div class="m-icon-date">
+                <span for="date1"><i class="iconfont icon-riqi"></i></span>
+                <input id="date1" bs-Datepicker type="text" class="w180 date-time-defalut" placeholder="请选择时间段" readonly>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">规则类型</label>
+            <select class="form-control">
+                <option value="1">物品ID截取</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="inputId" ng-init="cDropList=['测试a','bbb','ccc','ddd']">企业查询</label>
+            <div class="inblock defalut" drop-search create-swtich=false drop-list="cDropList" for-value=""></div>
+        </div>
+        <div class="form-group">
+            <label for="">码类型</label>
+            <select class="form-control">
+                <option value="1">全部</option>
+            </select>
+        </div>
+        <button type="submit" class="btn m-btn-icon" ng-click="search()"><i class="iconfont icon-search"></i> </button>
+        <button type="submit" class="btn m-btn-icon" ng-click="reset()"><i class="iconfont icon-cancel"></i> </button>
+    </form>
+    <div class="btn-group">
+        <a href="#/rule/add" class="btn m-btn">添加</a>
+        <a href="javascript:;" class="btn m-btn">批量删除</a>
+    </div>
+    <table class="table table-bordered m-table">
+        <thead>
+            <tr>
+                <th>
+                    <div class="mid-box">
+                        <input type="checkbox" ng-model="selectAll" name="sort">
+                        <label>序号</label>
+                    </div>
+                </th>
+                <th>企业名称</th>
+                <th>企业编码</th>
+                <th>物品ID</th>
+                <th>物品名称</th>
+                <th>物品标签</th>
+                <th>备注</th>
+                <th>日期</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="goods in goodsList">
+                <td class="col-xs-1">
+                    <div class="mid-box">
+                        <input type="checkbox" ng-checked="selectAll" name="sort">
+                        <label>{{goods.index}}</label>
+                    </div>
+                </td>
+                <td class="col-xs-1">{{goods.company}}</td>
+                <td class="col-xs-1">{{goods.coded}}</td>
+                <td class="col-xs-1">{{goods._id}}</td>
+                <td class="col-xs-1">{{goods.name}}</td>
+                <td class="col-xs-1">{{goods.tags}}</td>
+                <td class="col-xs-1">{{goods.note}}</td>
+                <td class="col-xs-2">{{goods.datetimer | date:'yyyy-mm-dd' }}</td>
+                <td class="col-xs-2 row icon-list">
+                    <div class="col-xs-6">
+                        <a href="javascript:;" class="m-link">
+                            <i class="iconfont icon-edit"></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="javascript:;" class="m-link">
+                            <i class="iconfont icon-del"></i>
+                        </a>
+                    </div>
+                </td>
+        </tbody>
+    </table>
+</div>
+
+

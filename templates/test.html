@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>北京E追溯管理平台</title>
+  <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../static/styles/index.css">
+  <link rel="stylesheet" type="text/css" href="../static/font/iconfont.css">
+  <link rel="stylesheet" type="text/css" href="../static/styles/test.css">
+  <script   type="text/javascript" src="../static/scripts/jslib/angular.js"></script>
+  <script type="text/javascript" src="../static/scripts/jsplug/common-function.js"></script>
+  <script type="text/javascript" src="../static/scripts/jslib/angular-route.min.js"></script>
+</head>
+<body ng-app="MyApp">
+  <div class="container-index clearfix">
+   <!-- 侧边栏 -->
+   <div class="sideBar">
+    <div class="logo-info">
+      <h2>E追溯logo</h2>
+      <p>北京E追溯管理平台</p>
+    </div>
+    
+    <ul class="side-menu">
+      <li>
+        <a href="javascript:;" class="tag-menu active">追溯管理后台 <i class="iconfont icon-submenu"></i></a>
+        <ol>
+         <li>
+           <a  class="item-tag m-link" href="#/goods">
+            <i class="iconfont icon-nav"></i>
+            物品管理
+            <i class="iconfont icon-right-arrow fr"></i>
+          </a>
+        </li>
+        <li>
+         <a class="item-tag" href="#/rule">
+          <i class="iconfont icon-rule"></i>
+          解码规则
+          <i class="iconfont icon-right-arrow fr"></i>
+        </a>
+      </li>
+      <li>
+        <a class="item-tag" href="#/msg">
+          <i class="iconfont icon-tracking"></i>
+          追溯信息
+          <i class="iconfont icon-right-arrow fr"></i>
+        </a>
+      </li>
+      <li>
+       <a class="item-tag" href="#/log"> 
+        <i class="iconfont icon-logsearch"></i>
+        用户日志查询 
+        <i class="iconfont icon-right-arrow fr"></i>
+      </a>
+    </li>
+    <li>
+      <a class="item-tag" href="javascript:;">
+        <i class="iconfont icon-user"></i>
+        账号管理 
+        <i class="iconfont icon-right-arrow fr"></i>
+      </a>
+    </li>
+          <li>
+       <a class="item-tag" href="#/log"> 
+        <i class="iconfont icon-logsearch"></i>
+        用户日志查询 
+        <i class="iconfont icon-right-arrow fr"></i>
+      </a>
+    </li>
+    <li>
+      <a class="item-tag" href="javascript:;">
+        <i class="iconfont icon-user"></i>
+        账号管理 
+        <i class="iconfont icon-right-arrow fr"></i>
+      </a>
+    </li>
+     <li>
+       <a class="item-tag" href="#/log"> 
+        <i class="iconfont icon-logsearch"></i>
+        用户日志查询 
+        <i class="iconfont icon-right-arrow fr"></i>
+      </a>
+    </li>
+    <li>
+      <a class="item-tag" href="javascript:;">
+        <i class="iconfont icon-user"></i>
+        账号管理 
+        <i class="iconfont icon-right-arrow fr"></i>
+      </a>
+    </li>
+  </ol>
+  <li>
+    <a href="javascript:;" class="tag-menu">运营分析 <i class="iconfont icon-submenu"></i></a>
+    <a href="javascript:;" class="tag-menu">运行企业 <i class="iconfont icon-submenu"></i></a>
+  </li>
+  <li>
+    <a href="javascript:;" class="tag-menu">运行企业 <i class="iconfont icon-submenu"></i></a>
+    <ol>
+      <li>
+        <a class="item-tag" href="javascript:;">
+          <i class="iconfont icon-map1"></i>
+          企业分布 
+          <i class="iconfont icon-right-arrow fr"></i>
+        </a>
+      </li>
+      <li>
+        <a class="item-tag" href="javascript:;">
+          <i class="iconfont icon-report"></i>
+          企业上报 
+          <i class="iconfont icon-right-arrow fr"></i>
+        </a>
+      </li>
+    </ol>
+  </li>
+  <li> 
+    <a  href="javascript:;" class="tag-menu">运行商户 <i class="iconfont icon-submenu"></i></a>
+    <ol>
+     <li>
+      <a class="item-tag" href="javascript:;">
+        <i class="iconfont icon-map1"></i>
+        企业分布 
+        <i class="iconfont icon-right-arrow fr"></i>
+      </a>
+    </li>
+    <li>
+      <a class="item-tag" href="javascript:;">
+        <i class="iconfont icon-report"></i>
+        企业上报 
+        <i class="iconfont icon-right-arrow fr"></i>
+      </a>
+    </li>
+  </ol>
+</li>
+<li> 
+  <a href="javascript:;" class="tag-menu">备案信息管理 <i class="iconfont icon-submenu"></i></a>
+  <ol>
+   <li>
+     <a  class="item-tag" href="#/goods">
+      <i class="iconfont icon-tracking"></i>商户备案
+       <i class="iconfont icon-right-arrow fr"></i>
+    </a>
+  </li>
+  <li>
+   <a  class="item-tag" href="#/goods">
+    <i class="iconfont icon-tracking"></i>节点主体备案
+     <i class="iconfont icon-right-arrow fr"></i>
+  </a>
+</li>
+</ol>
+</li>
+</ul>
+</div>
+
+<!-- 表格内容 -->
+<div class="container-main ">
+  <div class="userinfo-bar">
+    <ol>
+      <li class="msg">
+       <a href="javascript:;" class="remind-warp">
+         <i class="iconfont icon-remind"></i>
+         <sup>10</sup>
+       </a>
+     </li>
+     <li class="msg">
+      <a href="javascript:;" class="msg-warp" >
+        <i class="iconfont icon-msg"></i>
+        <sup>8</sup>
+      </a>
+    </li>
+    <li class="info clearfix">
+      <em class="test-user fl"></em>
+      <span class="fr">zddd</span>
+    </li>
+    <li class="power">
+      <a href="javascript:;" >
+        <i class="iconfont icon-power"></i>
+      </a>
+    </li>
+  </ol>
+</div>
+<div class="tab-main">
+  <div ng-view></div>
+</div>
+</div>
+</div>
+<script type="text/javascript" src="../static/scripts/jslib/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<link href="../static/styles/base/daterangepicker-bs3.css" rel="stylesheet" />
+<script type="text/javascript" src="http://img.pccoo.cn/website/js/daterangepicker/moment.js"></script>
+<script type="text/javascript" src="../static/scripts/jsplug/daterangepicker.js"></script>
+<script type="text/javascript" src="../static/scripts/app.js"></script>
+<script type="text/javascript" src="../static/scripts/directives.js"></script>
+<script type="text/javascript" src="../static/scripts/controllers/goods.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  //菜单收缩
+  $('.tag-menu').on('click', function(event) {
+   var isActive =  $(this).hasClass('active');
+   var nextOl = $(this).next();
+   var allOl = $('.sideBar ol');
+   if (!isActive) {
+    $('.tag-menu').removeClass('active');
+    $(this).addClass('active');
+    allOl.slideUp();
+    nextOl.slideDown();
+  }
+});
+  $('.item-tag').on('click',  function() {
+   $('.item-tag').not($(this)).removeClass('m-link');
+   $(this).addClass('m-link');
+ });
+
+});
+
+</script>
+
+</body>
+</html>

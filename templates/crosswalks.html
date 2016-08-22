@@ -1,0 +1,81 @@
+<div >
+  <div class="m-crumbs">您当前的位置：<a class="m-link" href="javascript:;">节点对照表管理</a></div>
+  <form class="form-inline m-line-form ">
+
+    <div class="form-group">
+      <label for="inputId" >节点类型</label>
+      <select class="form-control" name="fatherNode" id="">
+        <option value="-1">全部</option>
+        <option value="1">测试父节点1</option>
+        <option value="2">测试父节点2</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="inputId">节点名称</label>
+      <input type="text" class="form-control m-input w100" id="inputId" ng-model="goodsId">
+    </div>
+    <button type="submit" class="btn m-btn-icon" ng-click="search()"><i class="iconfont icon-search"></i> </button>
+  </form>
+
+  <div class="btn-group">
+    <a href="#/nod/add" class="btn m-btn">新增节点</a>
+    <a href="#/record/giveic" class="btn m-btn">编辑</a>
+    <a href="#/record/icinfo" class="btn m-btn">删除</a>
+  </div>
+
+  <table class="table table-bordered m-table center">
+    <thead>
+      <tr>
+        <th class="col-xs-2"><input type="checkbox" ng-model="selectAll" name="sort">序号</th>
+        <th class="col-xs-2">节点编号</th>
+        <th class="col-xs-2">节点名称</th>
+        <th class="col-xs-6">操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="checkbox" ng-checked="selectAll" name="sort">11</td>
+        <td></td>
+        <td></td>
+        <td class="row ">
+          <div class="col-xs-4"><a href="javascript:;" class="m-link"><i class="iconfont icon-business"></i>商户（4）</a></div>
+          <div class="col-xs-4"><a href="javascript:;" class="m-link"><i class="iconfont icon-order"></i>供货单位（6）</a></div>
+          <div class="col-xs-4"><a href="javascript:;" class="m-link"><i class="iconfont icon-goods"></i>商品（6）</a</div>
+        </td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" ng-checked="selectAll" name="sort">22</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+       
+      </tr>
+      <tr>
+        <td><input type="checkbox" ng-checked="selectAll" name="sort">33</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        
+      </tr>
+    </tbody>
+  </table>
+  <nav class="m-page">
+    <ul class="pagination fr ">
+      <li>
+        <a href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li>
+        <a href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

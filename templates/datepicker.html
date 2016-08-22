@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>北京E追溯管理平台</title>
+    <link rel="shortcut icon" href="../static/images/icon.ico">
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../static/font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/test.css">
+    <link href="../static/styles/base/daterangepicker-bs3.css" rel="stylesheet" />
+    <script type="text/javascript" src="../static/scripts/jslib/angular.js"></script>
+    <script type="text/javascript" src="../static/scripts/jslib/angular-route.min.js"></script>
+    <script type="text/javascript" src="../static/scripts/jslib/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/scripts/jsplug/common-function.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap/css/sweetalert.css">
+    <script type="text/javascript" src="../static/bootstrap/js/sweetalert-dev.js" ></script>
+</head>
+
+<body ng-app="MyApp">
+    <div class="container-index ">
+        <!-- 侧边栏 -->
+        <div id="" class="sideBar">
+            <div class="logo-info">
+                <h2>E追溯logo</h2>
+                <p>北京E追溯管理平台</p>
+            </div>
+            <!--折叠菜单-->
+            <div id="listshow" class="sidemenu">
+                <!--一级菜单-->
+                <ul id="list">
+                    <li>
+                        <a href="#/goods" class="item list1 active"><span>追溯管理后台</span> <i class="iconfont icon-submenu"></i></a>
+                        <ul class="sub1" style="display:block">
+                            <li>
+                                <a href="#" class="item list2">
+                                    <i class="iconfont icon-nav"></i><span>物品管理 </span>
+                                    <i class="iconfont icon-right-arrow fr"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/rule" class="item list2"> <i class="iconfont icon-rule"></i><span>解码规则</span><i class="iconfont icon-right-arrow fr"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="item list2">
+                                    <i class="iconfont icon-tracking"></i>
+                                    <span>追溯信息</span>
+                                    <i class="iconfont icon-right-arrow fr"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="item list2">
+                                    <i class="iconfont icon-logsearch"></i>
+                                    <span>用户日志查询</span>
+                                    <i class="iconfont icon-right-arrow fr"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="item list2">
+                                    <i class="iconfont icon-user"></i>
+                                    <span>账号管理</span>
+                                    <i class="iconfont icon-right-arrow fr"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <li>
+                            <a href="#" class="list1 item">
+                                <span>运营分析</span>
+                                <i class="iconfont icon-submenu"></i>
+                            </a>
+                            <ul class="sub1">
+                                <li>
+                                    <a href="#" class="list2 item">
+                                        <span>运行企业</span>
+                                        <i class="iconfont icon-submenu"></i>
+                                    </a>
+                                    <ul class="sub2">
+                                        <li>
+                                            <a href="javascript:;" class="item list3">
+                                                <i class="iconfont icon-map1"></i>
+                                                <span>企业日上报</span>
+                                                <i class="iconfont icon-right-arrow fr"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="item list3">
+                                                <span>企业月上报</span>
+                                                <i class="iconfont icon-right-arrow fr"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="list2 item"><span>运行商户</span> <i class="iconfont icon-submenu"></i></a>
+                                    <ul class="sub2">
+                                        <li><a href="javascript:;" class="item list3"><span>商户分布</span><i class="iconfont icon-right-arrow fr"></i></a></li>
+                                        <li><a href="javascript:;" class="item list3"><span>商户上报</span> <i class="iconfont icon-right-arrow fr"></i></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="list1 item">备案信息管理 <i class="iconfont icon-submenu"></i></a>
+                            <ul class="sub1">
+                                <li><a href="#/record" class="item list2">商户备案<i class="iconfont icon-right-arrow fr"></i></a></li>
+                                <li><a href="#/nod" class="item list2">节点主体备案<i class="iconfont icon-right-arrow fr"></i></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="list1 item">代码表管理 <i class="iconfont icon-submenu"></i></a>
+                            <ul class="sub1">
+                                <li><a href="#/crosswalks" class="item list2">节点对照表管理<i class="iconfont icon-right-arrow fr"></i></a></li>
+                                <li><a href="#/codetable" class="item list2">商品编码表<i class="iconfont icon-right-arrow fr"></i></a></li>
+                                <li><a href="#/areatable" class="item list2">行政区划编码表<i class="iconfont icon-right-arrow fr"></i></a></li>
+                            </ul>
+                        </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 表格内容 -->
+        <div class="container-main ">
+            <div class="userinfo-bar">
+                <ol>
+                    <li class="msg">
+                        <a href="javascript:;" class="remind-warp">
+                            <i class="iconfont icon-remind"></i>
+                            <sup>10</sup>
+                        </a>
+                    </li>
+                    <li class="msg">
+                        <a href="javascript:;" class="msg-warp">
+                            <i class="iconfont icon-msg"></i>
+                            <sup>8</sup>
+                        </a>
+                    </li>
+                    <li class="info clearfix">
+                        <em class="test-user fl"></em>
+                        <span class="fr">zddd</span>
+                    </li>
+                    <li class="power">
+                        <a href="javascript:;">
+                            <i class="iconfont icon-power"></i>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+            <div class="tab-main">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://img.pccoo.cn/website/js/daterangepicker/moment.js"></script>
+    <script type="text/javascript" src="../static/scripts/jsplug/daterangepicker.js"></script>
+    <script type="text/javascript" src="../static/scripts/app.js"></script>
+    <script type="text/javascript" src="../static/scripts/services.js"></script>
+    <script type="text/javascript" src="../static/scripts/directives.js"></script>
+    <script type="text/javascript" src="../static/scripts/controllers/goods.js"></script>
+    <script type="text/javascript" src="../static/scripts/controllers/rule.js"></script>
+    <script type="text/javascript">
+    $('#listshow a.item').on('click', function(event) {
+        $('#listshow a.item').removeClass('active');
+        $(this).addClass('active');
+        var curele = $(this).nextAll('ul');
+        var thisList1 = $(this).parents('.sub1');
+        $('.sub1').not(thisList1).slideUp();
+        if (curele !== null) {
+            if (curele.is(':hidden')) {
+                curele.slideDown();
+            } else {
+                curele.slideUp();
+            };
+        };
+
+    });
+    </script>
+</body>
+
+</html>

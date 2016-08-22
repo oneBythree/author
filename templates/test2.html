@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <!-- <script type="text/javascript" src="../static/scripts/jslib/angular.js"></script> -->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <script type="text/javascript" src="../static/scripts/jslib/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="../static/bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+    <p>{{1416181834480 | date:'yyyy-mm-dd'}}</p>
+    <button class="btn btn-success" ng-click="openDialog=true">open Dialog</button>
+    <button class="btn btn-success" ng-click="openDialog=true">1111</button>
+    <script type="text/javascript">
+    var app = angular.module('myApp', []);
+
+    app.controller('myCtrl', function($scope) {
+        $scope.openDialog = false;
+        $scope.deleteit1 = function() {
+            alert('clicked on Delete button')
+            $scope.openDialog = false;
+        };
+        $scope.deleteit2 = function() {
+            alert('ccc')
+            $scope.openDialog = false;
+        };
+    });
+
+    app.directive('dialog', ["$parse", "$timeout", function($parse, $timeout) {
+        return {
+            // priority: 1,
+            restrict: 'E',
+            replace: true,
+            scope: {
+                modalid: '@id',
+                title: '@',
+                message: '@',
+                callmethod: "&",
+                showDialog: '=',
+                // ngClick: '&'
+            },
+            link: function(scope, element, attrs) {
+                scope.showModal = function(visible, elem) {
+                    if (!elem)
+                        elem = element;
+
+                    if (visible)
+                        $(elem).modal("show");
+                    else
+                        $(elem).modal("hide");
+                }
+
+
+                scope.$watch('showDialog', function(value) {
+                    scope.showModal(value, attrs.$$element);
+                });
+                $(element).bind("hide.bs.modal", function() {
+                    $parse('showDialog').assign(scope, false);
+                    $timeout(function() {
+                        scope.$apply();
+                    });
+                });
+            },
+            template: '<div id="{{modalid}}" class="modal fade">' +
+                '<div class="modal-dialog">' +
+                '<div class="modal-content">' +
+                '<div class="modal-header">' +
+                '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>' +
+                '<h4 class="modal-title">{{title}}</h4>' +
+                '</div>' +
+                '<div class="modal-body">' +
+                '<p>{{message}}</p>' +
+                '</div>' +
+                '<div class="modal-footer">' +
+                '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' +
+                '<button type="button" class="btn btn-danger" ng-click="callmethod()">delete</button>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>',
+
+        }
+    }]);
+
+    // app.factory('confirmServer',function() {
+    //     return function(data, settings) {
+    //         var defaults = {
+    //             title:'',
+    //             message:'是否确定删除'
+    //         }
+    //         var settings = angular.extend(defaults, (settings || {}));
+
+    //         data = angular.extend({}, settings.defaultLabels, data || {});
+
+    //         return {
+
+    //         }
+
+    //     };
+    // })
+    </script>
+</body>
+
+</html>

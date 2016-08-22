@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../static/font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/test.css">
+    <title>测试自定义组件</title>
+    <script type="text/javascript" src="../static/scripts/jslib/angular.js"></script>
+    <script type="text/javascript" src="../static/scripts/jslib/angular-route.min.js"></script>
+    <script type="text/javascript" src="../static/scripts/jsplug/common-function.js"></script>
+    <script type="text/javascript" src="../static/scripts/jslib/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <link href="../static/styles/base/daterangepicker-bs3.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://img.pccoo.cn/website/js/daterangepicker/moment.js"></script>
+    <script type="text/javascript" src="../static/scripts/jsplug/daterangepicker.js"></script>
+    <link rel="stylesheet" href="../static/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css">
+    <script type="text/javascript" src="../static/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="../static/bootstrap-datepicker/dist/js/bootstrap-datepicker.zh-CN.min.js"></script>
+</head>
+
+<body ng-app="datepickerApp">
+
+    <div style="width:800px;margin:20px auto;">
+        <ul></ul>
+        <div class="m-icon-date">
+            <span for="date1"><i class="iconfont icon-riqi"></i></span>
+            <input id="date1" bs-Datepicker type="text" class="w180 date-time-defalut" placeholder="请选择时间段" readonly>
+        </div>
+        <div class="m-icon-date">
+            <span for="date2"><i class="iconfont icon-riqi"></i></span>
+            <input id="date2" bs-Datepicker type="text" class="w240 date-time-long" placeholder="请选择时间段" readonly>
+        </div>
+        <div class="m-icon-date">
+            <span for="date3"><i class="iconfont icon-riqi"></i></span>
+            <input id="date3" bs-Datepicker type="text" class="w100 date-defalut" placeholder="请选择时间" readonly>
+        </div>
+        <button type="submit" class="btn m-btn-icon" ng-click="search()" data-toggle="modal" data-target="#myModal"><i class="iconfont icon-search"></i> </button>
+        <div drop-search dropSwtich="false" create-swtich=true drop-list="data" for-value=""></div>
+        <div class="input-group date">
+            <input type="text" class="form-control">
+            <span class="input-group-addon"><i class="iconfont icon-riqi"></i></span>
+        </div>
+      <br>
+
+      <div my-Diective action="say()"></div>
+       
+    </div>
+
+    <script type="text/javascript">
+
+    datepickerApp.directive('dropSearch', [function() {
+        return {
+            templateUrl: '../static/scripts/views/select-drop-search.html',
+            replace: true,
+            transclude: true,
+            restrict: 'EA',
+            scope: {
+                dropSwtich: '@dropListSwtich',
+                createSwtich: '@createSwtich',
+                dropList: '=dropList',
+                forValue: '@value'
+            },
+            link: function postLink(scope, iElement, iAttrs, isArrayRepeat) {
+                scope.touchOptFuc = function(opt) {
+                    scope.value = opt;
+                    scope.dropListSwtich = false;
+                }
+                $(document.body).on('click', function(event) {
+                    //点击本身
+                    var isClickWapper = $(event.target).parents('.m-select-search').hasClass('m-select-search');
+                    //ul是否隐藏
+                    var isUlHidden = scope.dropListSwtich;
+                    if (!isClickWapper && isUlHidden) {
+                        scope.$apply(function() {
+                            scope.dropListSwtich = false;
+                        })
+                    }
+                })
+                scope.save = function(dropList, newTag) {
+                    var flag = Tool.isArrayRepeat(dropList, newTag);
+                    if (newTag != undefined) {
+                        if (flag) {
+                            alert('标签不能重复');
+                        } else {
+                            scope.value = newTag;
+                            scope.dropListSwtich = false;
+                            dropList.push(newTag);
+                            scope.inputSwitch = false;
+                            scope.createDivSwitch = false;
+                            scope.newTag = '';
+                        }
+                    } else {
+                        alert('标签不能为空')
+                    }
+                }
+            }
+        };
+    }])
+    datepickerApp.directive('myConfirm', function() {
+        // Runs during compile
+        return {
+            scope: {
+                action: '&'
+            }, // {} = isolate, true = child, false/undefined = no change
+            // controller: function($scope, $element, $attrs, $transclude) {},
+            // require: 'ngModel', // Array = multiple requires, ? = optional, ^ = check parent elements
+            restrict: 'A', // E = Element, A = Attribute, C = Class, M = Comment
+            templateUrl: '../static/scripts/views/confirm.html',
+            replace: true,
+            transclude: true,
+            // compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
+            link: function($scope, iElm, iAttrs, controller) {
+                // $scope.ok = function(open) {
+                //     $(iElm).modal('toggle');
+                //     var cc = $scope.action;
+                //     cc();
+                //     console.log($scope.action);
+                //     // $scope.$apply(function(){
+                //     //   $scope.open();
+                //     // });
+                // }
+            }
+        };
+    });
+    </script>
+</body>
+
+</html>

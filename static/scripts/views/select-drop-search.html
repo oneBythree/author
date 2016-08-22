@@ -1,0 +1,24 @@
+
+<div class="m-select-search"  ng-class="{active: dropListSwtich == true}">
+  <p class="select-text" ng-click="dropListSwtich =! dropListSwtich">{{forValue}}</p>
+  <ul class="select-droplist" ng-show="dropListSwtich">
+    <li><p class="select-text" ng-click="dropListSwtich =! dropListSwtich">{{forValue}}</p></li>
+    <li class="search">
+      <input type="text" ng-model="query" ng-keypress="($event.which === 13)?addTask(dropList,query):0">
+      <a href="javascript:;"><i class="iconfont icon-search"></i></a>
+    </li>
+    <li class="create" ng-init="createDivSwitch=false" ng-show="createSwtich" >
+      <a href="javascript:;" class="m-link" ng-click="createDivSwitch=true" ng-show="!createDivSwitch">新建标签</a>
+      <div class="create-input" ng-show="createDivSwitch">
+        <input type="text" ng-model="newTag">
+        <a href="javascript:;" class="btn-edit" ng-click="save(dropList,newTag)">添加</a>
+        <a href="javascript:;" ng-click="createDivSwitch=false"  class="btn-edit">取消</a>
+      </div>  
+    </li>
+    <ol>
+      <li class="item" ng-repeat="opt in dropList | filter:query">
+        <a href="javascript:;" ng-click="touchOptFuc(opt[forItem])">{{opt[forItem]}}</a>
+      </li>
+    </ol>   
+  </ul>
+</div>
