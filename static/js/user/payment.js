@@ -1,0 +1,1 @@
+"use strict";Vue.config.delimiters=["@{","}"];var app=new Vue({el:"#entry-body",data:{info:{weixin_payurl:""}},created:function(){this.getUserInfo()},methods:{getUserInfo:function(){var e="/api/currentUser?page=be_driver",i=this;postJson(e,function(e){var n=e.data;i.user=n,i.info.weixin_payurl=n.weixin_payurl})}}});
