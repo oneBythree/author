@@ -1,0 +1,19 @@
+@import '../_mixs';
+@import url(/static/css/admin/common.css);
+@import url(/static/css/admin/font/iconfont.css);
+
+html, body {
+  height: 100%;
+}
+.ht-warp {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  width: 100%;
+}
+.htm-driver {
+  color: $color3e9;
+}
+.htm-passenger {
+  color: $colorf05;
+}

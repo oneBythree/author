@@ -1,0 +1,831 @@
+@import url(/static/css/reset.css);
+@import url(/static/css/iconfont.css);
+@import '_mixs';
+
+// 图标
+
+.iconfont.icon-jiantou {
+    font-size: .28rem;
+}
+
+em.icon-jt {
+    display: inline-block;
+    width: .10rem;
+    height: .22rem;
+    margin: .1rem .15rem 0 0;
+    background: url(/static/images/jt_right.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+em.icon-jt-left {
+    display: inline-block;
+    width: .10rem;
+    height: .22rem;
+    background: url(/static/images/jt_left.png) center center no-repeat;
+    background-size: 100% 100%;
+}
+
+em.icon-share {
+    background: url(/static/images/share.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+em.icon-phone {
+    background: url(/static/images/phone.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+em.icon-ht-logo {
+    background: url("http://q.haitago.com/wx/route/haita_holder.png") no-repeat;
+    background-size: .69rem .55rem;
+}
+
+em.icon-collect-on {
+    background: url(/static/images/heart_on.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+em.icon-collect-off {
+    background: url(/static/images/heart_off.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+em.icon-rz {
+    background: url(/static/images/rz.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.flex {
+    display: -webkit-box;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex
+}
+
+.flex1 {
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+}
+
+header{
+    font-size: $font26;
+    .iconfont.icon-jiantou{
+        font-size: $font22;
+    }
+    span.left {
+        display: table-cell;
+        padding-left: $font32;
+        width: 1.50rem;
+        a {
+            color: $colorfff;
+            padding:0;
+            display: inline-block;
+        }
+        .ht-icon {
+            display: inline-block;
+            margin: 0 0 -.08rem -.03rem;
+            vertical-align: middle;
+            width: .23rem;
+            height: .13rem;
+        }
+        .cp-header-left {
+            width: 1.6rem;
+        }
+        .ht-header-logo {
+            width: .47rem;
+            height: .38rem;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        section.ht-brand{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: .24rem;
+        }
+    }
+    span.right {
+        padding-right: $font32;
+        width: 1.50rem;
+    }
+    .center {
+        .routes {
+            font-size: $font26;
+            border-radius: .3rem;
+            padding: .11rem .25rem;
+            background-color: $color2b7;
+            .icon-wangfan {
+                font-size: $font28;
+                padding: 0 .05rem;
+            }
+        }
+    }
+}
+header#routeHeader{
+    margin-bottom: $font24;
+}
+div.m-date {
+    height: .88rem;
+    margin-bottom: .2rem;
+    line-height: .88rem;
+    background: #fff;
+    font-size: $font28;
+    text-align: center;
+    @extend .flex;
+    span.flex1 {
+        color: $color3e9;
+    }
+}
+
+a.m-date-span {
+    display: inline-block;
+    position: relative;
+    width: 1.76rem;
+    color: #333;
+    &:active {
+        background-color: rgba(216, 216, 216, .5);
+    }
+}
+
+a.m-date-span.s-left:after,
+a.m-date-span.s-right:after {
+    content: '';
+    position: absolute;
+    height: 60%;
+    top: 20%;
+    border-left: 1px solid #dcdcdc;
+}
+
+a.m-date-span.s-left:after {
+    right: 0;
+}
+
+a.m-date-span.s-right:after {
+    left: 0;
+}
+
+a.m-date-span em.icon-jt {
+    margin: 0 0 0 .22rem;
+    vertical-align: middle;
+}
+
+a.m-date-span em.icon-jt-left {
+    margin: 0 .22rem 0 0;
+    vertical-align: middle;
+}
+
+p.no-line {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: $font28;
+    color: $color777;
+}
+
+//心跳动画
+@keyframes pound {
+    from {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    50% {
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
+    }
+    to {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+}
+
+//线路列表
+div.line-item {
+    padding: 0 .15rem;
+    margin-bottom: .15rem;
+    div.ht-time-mark {
+        font-size: .24rem;
+        color: $colorfff;
+        position: relative;
+        text-align: center;
+        div.mark {
+            vertical-align: middle;
+            display: inline-block;
+            padding: .02rem 0.08rem;
+            box-sizing: border-box;
+            background-color: $colord8d;
+            border-radius: .08rem;
+            margin: 0 auto;
+            margin-bottom: .10rem;
+        }
+        div.day-mark {
+            display: inline-block;
+            position: absolute;
+            left: .1rem;
+            color: $colorc5c;
+        }
+    }
+    div.line-with-sign{
+        min-height: 1.46rem;
+    }
+    div.line-warp {
+        position: relative;
+        background: $colorfff;
+        padding: 0 .34rem;
+        border: 1px solid #dcdcdc;
+        box-sizing: border-box;
+        border-radius: .06rem;
+        div.line-header {
+            height: .68rem;
+            width: 100%;
+            line-height: .68rem;
+            border-bottom: 1px solid $colore6e;
+            box-sizing: border-box;
+            font-size: $font28;
+            .title.cell {
+                letter-spacing: .02rem;
+                em.date {
+                    font-weight: bold;
+                    color: $color3e9;
+                }
+                i {
+                    letter-spacing: 0;
+                    font-weight: bold;
+                }
+                strong {
+                    font-weight: bold;
+                }
+            }
+            .share {
+                text-align: right;
+                padding-right: .2rem;
+                color: $color333;
+                em.icon-share {
+                    display: inline-block;
+                    width: .14rem;
+                    height: .22rem;
+                    vertical-align: middle;
+                }
+                span.v-mid {
+                    font-size: $font24;
+                }
+            }
+        }
+        div.line-text {
+            padding: .25rem 0 .25rem;
+            font-size: 0;
+            width: 100%;
+            div.cell.details {
+                font-size: $font24;
+                color: $color333;
+                strong {
+                    font-weight: bold;
+                    color: #333;
+                }
+                button.ht-r-tag-btn{
+                    width: .63rem;
+                    height: .3rem;
+                    font-size: .2rem;
+                    border-radius: .3rem;
+                    border-color: $color3e9;
+                    color: $color3e9;
+                    padding: 0;
+                    line-height: .3rem;
+                    vertical-align: middle;
+                    margin: -.1rem .1rem 0 0;
+                    &.ht-passenger{
+                        border-color: $colorf05;
+                        color: $colorf05;
+                    }
+                }
+            }
+            div.phone.cell {
+                width: .4rem;
+                padding: 0 .36rem 0 .32rem;
+                text-align: center;
+                vertical-align: middle;
+                em.icon-phone {
+                    display: inline-block;
+                    width: .4rem;
+                    height: .43rem;
+                    vertical-align: middle;
+                }
+            }
+            div.ht-logo.cell {
+                width: 1.1rem;
+                text-align: center;
+                vertical-align: middle;
+                em.icon-ht-logo {
+                    display: inline-block;
+                    width: .69rem;
+                    height: .55rem;
+                    vertical-align: middle;
+                }
+            }
+        }
+        div.line-bottom {
+            height: .68rem;
+            width: 100%;
+            border-top: 1px solid $colore6e;
+            box-sizing: border-box;
+            font-size: $font24;
+            div.cell {
+                vertical-align: middle;
+                position: relative;
+                width: 100%;
+                img {
+                    height: .27rem;
+                    width: auto;
+                    vertical-align: middle;
+                }
+                div.pay {
+                    position: absolute;
+                    top: .1rem;
+                    height: .27rem;
+                    width: auto;
+                    right: 0;
+                }
+                img.car {
+                    height: .46rem;
+                    width: auto;
+                }
+                span.cartxt {
+                    font-size: $font24;
+                    margin: 0 .1rem 0 0rem;
+                }
+                span.carbrand {
+                    color: $color999;
+                    font-size: $font24;
+                }
+                span.paytxt {
+                    margin-left: .25rem;
+                    font-size: .24rem;
+                    letter-spacing: .02rem;
+                    a {
+                        color: $color3e9;
+                    }
+                }
+            }
+            div.collect {
+                text-align: right;
+                padding-right: .2rem;
+                @extend .highlight;
+                em.icon-collect-off,
+                em.icon-collect-on {
+                    display: inline-block;
+                    width: .2rem;
+                    height: .18rem;
+                    &.active {
+                        -webkit-animation: pound .5s;
+                        -o-animation: pound .5s;
+                        animation: pound .5s;
+                    }
+                }
+            }
+        }
+        em.icon-rz {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: inline-block;
+            width: .6rem;
+            height: .6rem;
+        }
+        em.icon-signet,
+        em.icon-have-seat,
+        em.icon-only,
+        em.icon-full {
+            position: absolute;
+            right: 2rem;
+            top: .15rem;
+            display: inline-block;
+            width: 1.28rem;
+            height: 1.08rem;
+        }
+        em.icon-full {
+            width: 1.12rem!important;
+            height: 1.14rem!important;
+        }
+    }
+
+}
+
+div.line-item.ht-engine {
+    color: $colorccc;
+    font-size: .24rem;
+    margin: .36rem auto;
+    padding-bottom: .24rem;
+    width: 100%;
+    text-align: center;
+    .ht-logo {
+        color: $color777;
+    }
+}
+
+.mui-table-view:before, .mui-table-view:after {
+    background-color: transparent;
+}
+
+//付款二维码
+div.wechat {
+    padding: .28rem .35rem;
+    div.warp {
+        background: $colorfff;
+        border: 1px solid #dcdcdc;
+        @extend .border-box;
+        font-size: 0;
+        border-radius: .06rem;
+        text-align: center;
+        padding: 0 .3rem;
+        h2 {
+            margin: .4rem 0 .5rem 0;
+            font-size: .32rem;
+            font-weight: bold;
+            em {
+                color: $color3e9;
+                font-weight: bold;
+            }
+        }
+        img.ew {
+            width: 3.4rem;
+            height: auto;
+        }
+        div.pay-ew {
+            border-bottom: 1px solid $colore6e;
+            padding-bottom: .34rem;
+            &:last-of-type {
+                border: none;
+                padding: .5rem 0;
+            }
+            div.ew-litte-img {
+                margin-top: .2rem;
+                img {
+                    height: .28rem;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@mixin border-style {
+    border: 1px solid $color7d7;
+    border-radius: .04rem;
+    @extend .border-box;
+}
+
+.message-info {
+    padding: .24rem 0 .2rem;
+    font-size: $font24;
+    strong {
+        font-weight: bold;
+    }
+}
+
+//我的信息
+div.message-blank {
+    padding: .2rem .15rem .2rem .15rem;
+    ul.days-line,
+    ol.one-line {
+        @include boder-style-radius(#dcdcdc, .04rem);
+        padding: 0 .4rem;
+        li {
+            border-bottom: 1px solid #dcdcdc;
+            @extend .border-box;
+            &:last-of-type {
+                border-bottom: none;
+            }
+            &.item {
+                height: .88rem;
+                line-height: .88rem;
+                font-size: 0;
+                span {
+                    display: inline-block;
+                    font-size: $font28;
+                    vertical-align: middle;
+                    &.time {
+                        width: 1.4rem;
+                        margin-right: .2rem;
+                    }
+                    &.tag-status {
+                        padding: .1rem .12rem;
+                        background: $colord8d;
+                        line-height: normal;
+                        margin-right: .32rem;
+                        border-radius: .04rem;
+                        @extend .highlight;
+                        &:last-of-type {
+                            margin-right: 0;
+                        }
+                        &.active {
+                            background: $color3e9;
+                            color: $colorfff;
+                        }
+                    }
+                }
+            }
+            &.info {
+                @extend .message-info;
+            }
+        }
+    }
+    ol.one-line {
+        margin-top: .2rem;
+    }
+    ul.days-line {
+        margin-bottom: .2rem;
+    }
+}
+
+.icon-noshare {
+    background: url(/static/images/noshare.png) center center no-repeat;
+    background-size: 1.61rem 2.04rem;
+}
+
+.icon-oninfo {
+    background: url(/static/images/noinfo.png) center center no-repeat;
+    background-size: 2.28rem 3.1rem;
+}
+
+//无数据状态
+div.nodata {
+    font-size: 0;
+    div.noshare {
+        height: 2.4rem;
+        margin-top: 1.12rem;
+        @extend .icon-noshare;
+    }
+    p.notext {
+        font-size: $font32;
+        margin-top: .68rem;
+        text-align: center;
+        letter-spacing: .05rem;
+        line-height: 150%;
+        a {
+            color: $color3e9;
+        }
+    }
+    div.noinfo {
+        height: 3.1rem;
+        margin-top: .26rem;
+        @extend .icon-oninfo;
+    }
+}
+
+//对话框
+div.m-confirm {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 110;
+    div.confirm-style {
+        position: absolute;
+        width: 70%;
+        max-width: 5.5rem;
+        background: #fff;
+        left: 50%;
+        top: 50%;
+        margin: -.7rem 0 0 -3.2rem;
+        border-radius: .14rem;
+        div.confirm-content-h1 {
+            text-align: center;
+            padding: .6rem 0 .4rem;
+            font-size: .32rem;
+            line-height: .48rem;
+            color: #333;
+        }
+        div.confirm-footer {
+            display: table;
+            width: 100%;
+            text-align: center;
+            height: 1rem;
+            line-height: 1rem;
+            border-top: 1px solid #e6e6e6;
+            font-size: .32rem;
+            table-layout: fixed;
+            a.confirm-btn-ok {
+                display: table-cell;
+                font-size: .32rem;
+                color: $color3e9;
+            }
+            a.confirm-btn-cancel {
+                display: table-cell;
+                position: relative;
+                font-size: .32rem;
+                color: #333;
+                &:after {
+                    position: absolute;
+                    content: '';
+                    height: 60%;
+                    border-left: 1px solid #e6e6e6;
+                    top: 20%;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+div.m-loading {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    z-index: 100;
+    div.loading-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: .24rem;
+        margin: -.9rem -.9rem;
+        text-align: center;
+        color: #fff;
+        border-radius: .1rem;
+        background: rgba(0, 0, 0, .4);
+        img {
+            margin: .2rem 0 .1rem;
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+}
+
+// 过渡动画
+.fade-transition {
+    transition: opacity .3s ease;
+}
+
+.fade-enter,
+.fade-leave {
+    opacity: 0;
+}
+
+span.center {
+  em:first-child{
+    border-radius: .12rem;
+    padding: 0 .1rem;
+    background-color: #fff;
+    color: $color3e9
+  }
+  em.route-line {
+    font-size: .18rem;
+    vertical-align: top;
+    width: 3rem;
+    padding: .02rem 0;
+    border-bottom: 1px solid #fff;
+    line-height: 0.8rem;
+    span{
+      padding: 0 .2rem 0 .3rem;
+      vertical-align: top;
+    }
+  }
+  em:last-child {
+    padding: 0 .1rem;
+  }
+}
+.mui-picker {
+    .iconfont {
+        padding: 0 .3rem;
+    }
+}
+
+p.no-line {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: $font28;
+    color: $color777;
+}
+
+img.holder-logo {
+    width: 30%;
+    margin: 30px 0 0 35%;
+}
+
+img.holder-array {
+    width: 20%;
+}
+.ht-content.mui-h5.mui-content-padded {
+    font-size: $font26;
+    color: $colorc5c;
+    margin: .16rem .3rem;
+}
+.ht-footer {
+    height: .88rem;
+    background-color: $color3e9;
+    .mui-title{
+        color: $colorfff;
+        font-size:.28rem;
+        font-weight: normal;
+    }
+    .mui-icon {
+        font-size: .4rem;
+    }
+}
+section.ht-with-footer {
+    padding-bottom: 1rem;
+}
+
+#htRoutes {
+    top: 1.1rem;
+    margin-top: .1rem;
+    .mui-table-view {
+        background-color: transparent;
+    }
+}
+.mui-backdrop {
+    .ht-login-form {
+        position: relative;
+        text-align: center;
+        width: 5.7rem;
+        height: 6.79rem;
+        background-color: white;
+        opacity: 1;
+        margin: 3.08rem auto;
+        border-radius: .02rem;
+        $inputWidth: 4.5rem;
+        $addonWidth: 1.44rem;
+        .ht-login-header {
+            width: 2.84rem;
+            height: 2.41rem;
+            margin: -1rem auto;
+        }
+        .form-entry {
+            position: absolute;
+            top: 2.22rem;
+            margin: 0 0 1.01rem 0;
+            height: 3.41rem;
+            .ht-login-text {
+                margin: 0 .6rem 0 .6rem;
+                border: 1px solid #cccccc;
+                -webkit-border-radius: .04rem;
+                -moz-border-radius: .04rem;
+                border-radius: .04rem;
+                width: $inputWidth;
+                padding: .22rem 0 .22rem .23rem;
+            }
+            .ht-input-group {
+                border: 1px solid #cccccc;
+                -webkit-border-radius: .04rem;
+                -moz-border-radius: .04rem;
+                border-radius: .04rem;
+                width: $inputWidth;
+                margin: .42rem .6rem .68rem .6rem;
+                display: block;
+            }
+            .ht-input-with-holder {
+                width: $inputWidth - $addonWidth - .1rem;
+                padding: .22rem 0 .22rem .23rem;
+                margin: 0;
+                display: inline-block;
+                height: .8rem;
+            }
+            .ht-add-on {
+                width: $addonWidth;
+                background-color: $colorf4f;
+                height: .8rem;
+                line-height: .8rem;
+                display: inline-block;
+                text-align: center;
+                font-size: .22rem;
+                color: $color686;
+            }
+            .ht-form-btn {
+                width: 4.5rem;
+                height: .82rem;
+                font-size: .36rem;
+                background-color: $color3e9;
+            }
+        }
+        .prompt-close {
+            position: absolute;
+            bottom: -.88rem;
+            text-align: center;
+            width: 100%;
+            .img-close {
+                width: .6rem;
+                height: .6rem;
+            }
+        }
+    }
+}

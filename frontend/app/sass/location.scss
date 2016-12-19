@@ -1,0 +1,222 @@
+@import url("/static/css/iconfont.css");
+@import '_mixs';
+
+$colorCityName: #5f646e;
+
+$font14px: .7rem;
+$font18px: .9rem;
+
+.page, .page-group, .content, .content-padded {
+  background-color: #f8f8f8;
+}
+.content-padded {
+  margin: .5rem 1rem;
+  .searchbar {
+    margin: 0;
+    .icon-search {
+      background-color: transparent;
+    }
+  }
+}
+.list-block.search-active{
+  background-color: $colorfff;
+}
+.search-result {
+  margin-top: .8rem;
+  height: 100%;
+  .ht-qs-item.list-button.item-link{
+    font-size: .7rem;
+    color: $color333;
+    text-align: left;
+    padding: 0 1.325rem;
+    &.no-result{
+      color: $colore6e;
+    }
+    &:after{
+      height: .1rem;
+    }
+  }
+  ul:after, ul:before {
+    height: .1rem;
+  }
+}
+*[v-cloak] {
+  display: none;
+}
+#section-history, #section-hot, #section-nearby, #section-all {
+  p, .miss-map-loc{
+    font-size: $font14px;
+  }
+  p {
+    margin: .7rem 0 .01rem 0;
+  }
+  .miss-map-loc  {
+    color: gray;
+    line-height: 2.5rem;
+    vertical-align: middle;
+  }
+  .hr {
+    border-bottom: 1px solid $colord8d;
+  }
+  .city-row.col-100 {
+    padding: 0 .5rem 0;
+    .char {
+      padding: .3rem 0 .3rem 0;
+      display: inline-block;
+      text-align: center;
+      margin: 0;
+      width: 19%;
+      &.active {
+        color: $color3e9;
+      }
+    }
+    .char:first-child {
+      text-align: left;
+      width: 12%;
+    }
+    .char:last-child {
+      text-align: right;
+      width: 12%;
+    }
+  }
+  .col-10 span.des-char {
+      font-size: $font18px;
+      display: inline-block;
+      padding: .8rem 0 0;
+  }
+  div#city-pool{
+    border-color: gray;
+    margin-top: .5rem;
+    margin-bottom: .35rem;
+    border-top: 1px solid $colord8d;
+    border-bottom: 1px solid $colord8d;
+    &:last-child{
+      border-bottom: 0;
+    }
+    .des-group {
+      .col90 > div.row {
+        margin: 0 .7rem 0 .1rem;
+      }
+      .des-item {
+        display: inline-block;
+        line-height: 1.1rem;
+        text-align: center;
+        color: $color333;
+        font-size: $font14px;
+        padding: 0 .85rem 0;
+        &:first-child {
+          padding-top: 1.05rem;
+        }
+        &:last-child {
+          padding-bottom: .9rem;
+        }
+      }
+    }
+  }
+  .button-city {
+    font-size: .7rem;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    background-color: $colorfff;
+    border: 1px solid $colord8d;
+    border-radius: .1rem;
+    color: $color333;
+    span.iconfont.ht-icon-location {
+      &.active{
+        color: $color3e9;
+      }
+      color: $colord8d;
+      font-size: .9rem;
+    }
+  }
+  .ht-loc-btn-list {
+    .button {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+.ht-search {
+  height: 1.7rem;
+  line-height: 1.7rem;
+  top: 7px;
+  position: relative;
+  overflow: hidden;
+  clear: left;
+  border: none;
+  font-size: .7rem;
+  margin: 0 -.25rem 0;
+
+  &:before {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    display: none;
+    color: $colord8d;
+    margin-top: -.8rem;
+    margin-right: 31px;
+    font-family: iconfont, sans-serif;
+    font-weight: normal;
+    content: '\e604';
+  }
+
+  &.ht-active {
+    &:before{
+      right: auto;
+      left: .25rem;
+      display: block;
+      margin-right: 0;
+      font-size: .85rem;
+      padding: 0 0 0 .25rem;
+    }
+    input[type=search] {
+      text-align: left;
+    }
+    .ht-placeholder {
+      display: none;
+    }
+  }
+  input#ht-ipt-search[type=search] {
+    background-color: $colorfff;
+    background-clip: padding-box;
+    padding:0 1.5rem;
+    height: 1.7rem - .1rem;
+    line-height: 1rem;
+    box-sizing: border-box;
+    border-radius: 1.5rem;
+    font-size: .7rem;
+    border: 1px solid $colord8d;
+    width: 100%;
+  }
+
+  .ht-placeholder {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: inline-block;
+    height: 1.7rem;
+    font-size: .8rem;
+    line-height: 1.7rem;
+    color: $colord8d;
+    text-align: center;
+    background: none;
+    border: 0;
+  }
+  .iconfont.ht-icon-close {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    right: 0;
+    padding-right: .85rem;
+    font-size: 1rem;
+    display: block;
+    color: $color999;
+    margin:-.8rem 0 0 0;
+  }
+}
+.ht-hide {
+  display: none;
+}

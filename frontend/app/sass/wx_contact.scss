@@ -1,0 +1,76 @@
+@import url(/static/css/reset.css);
+@import url(/static/css/iconfont.css);
+@import '_mixs';
+
+.ht-form {
+  margin-top: .41rem;
+  input#city,
+  input#brand,
+  input#name,
+  input#phone,
+  input#contact {
+    font-size: .24rem !important;
+  }
+}
+
+.ht-form .label {
+  margin-right: .22rem;
+  margin-top: .15rem;
+}
+
+.ht-mask {
+  font-size: .24rem;
+  color: $color777;
+  margin-top: .42rem;
+}
+
+div.submit-warp a.btn-submit {
+  display: block;
+  height: .88rem;
+  line-height: .88rem;
+  text-align: center;
+  border-radius: .06rem;
+  font-size: .32rem;
+  width: 110%;
+  margin-left: -.17rem;
+  color: $colorfff;
+  background-color: $colorc5c;
+  &.active {
+    background-color: $color3e9;
+  }
+}
+
+.prompt {
+  margin-top: 3.09rem;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  .prompt-window {
+    margin: 0 auto;
+    width: 5.7rem;
+    height: 4.9rem;
+  }
+  .prompt-content {
+    position: absolute;
+    width: 100%;
+    bottom: .82rem;
+    font-size: .24rem;
+    text-align: center;
+    .title {
+      font-size: .32rem;
+      color: $color3e9;
+      font-weight: bold;
+      line-height: 2.2;
+    }
+  }
+  .prompt-close {
+    position: absolute;
+    bottom: -.88rem;
+    text-align: center;
+    width: 100%;
+    .img-close {
+      width: .6rem;
+      height: .6rem;
+    }
+  }
+}

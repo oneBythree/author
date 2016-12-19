@@ -1,0 +1,686 @@
+//成为出行
+@import url(/static/css/reset.css);
+@import url(/static/css/iconfont.css);
+@import '_mixs';
+
+section[v-cloak]{
+    display: none;
+}
+.ht-icon-arrow-down:before {
+    color: $colord8d;
+}
+.icon-rz {
+    background: url(/static/images/rz.png) no-repeat;
+    background-size: 100% 100%;
+}
+.icon-change2 {
+    background: url(/static/images/change2.png) no-repeat;
+    background-size: 100% 100%;
+}
+.icon-days {
+    background: url(/static/images/days.png) no-repeat;
+    background-size: 100% 100%;
+}
+.icon-days-active {
+    background: url(/static/images/days_active.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+header{
+    font-size: $font26;
+    .iconfont.icon-jiantou{
+        font-size: $font22;
+    }
+    span.left {
+        display: table-cell;
+        padding-left:.42rem;
+        width: 2.17rem;
+        a {
+            color: $colorfff;
+        }
+        a.ht-city {
+            color: $colorfff;
+            padding:0;
+            display: inline-block;
+        }
+        .ht-icon {
+            display: inline-block;
+            margin: 0 0 -.08rem -.03rem;
+            vertical-align: middle;
+            width: .23rem;
+            height: .13rem;
+        }
+    }
+    .right {
+        width: 2.17rem;
+    }
+    .center {
+        .routes {
+            font-size: $font26;
+            border-radius: .3rem;
+            padding: .11rem .25rem;
+            background-color: $color2b7;
+            .icon-wangfan {
+                font-size: $font28;
+                padding: 0 .05rem;
+            }
+        }
+    }
+}
+
+//成为车主
+div.tobedriver {
+    h2 {
+        text-align: center;
+        padding: .28rem 0;
+        width: 6.2rem;
+        margin: 0 auto;
+        font-size: .32rem;
+        color: $color3e9;
+        font-weight: bold;
+        border-bottom: 1px solid $colore6e;
+        @extend .border-box;
+    }
+    div.driver-base {
+        padding: 0 .72rem 0 .4rem;
+        p {
+            padding: .3rem 0;
+            color: $color999;
+            font-size: $font28;
+        }
+        div.driver-item {
+            display: table;
+            width: 100%;
+            height: .7rem;
+            line-height: .7rem;
+            margin-bottom: .48rem;
+            font-size: 0;
+            span.left-span {
+                display: inline-block;
+                color: $color777;
+                width: 1.36rem;
+                font-size: $font24;
+                letter-spacing: .04rem;
+                white-space: nowrap;
+            }
+            span.printin,
+            div.printin {
+                position: relative;
+                display: table-cell;
+                width: 100%;
+                height: .7rem;
+                line-height: .7rem;
+                vertical-align: top;
+                label {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    border: 1px solid $colord8d;
+                    border-radius: .04rem;
+                    @extend .border-box;
+                    em.rmb {
+                        position: absolute;
+                        font-size: $font28;
+                        left: 1.4rem;
+                        line-height: normal;
+                        margin-top: .18rem;
+                    }
+                }
+                input[type="text"] {
+                    text-indent: .4rem;
+                    width: 100%;
+                    height: 100%;
+                    font-size: $font28;
+                }
+                div.tablefix {
+                    text-align: center;
+                    font-size: .28rem;
+                    border: 1px solid $colord8d;
+                    @extend .border-box;
+                    span.cell {
+                        text-align: center;
+                    }
+                    span.left {
+                        text-align: left;
+                        padding-left: .4rem;
+                    }
+                    &#route-selector {
+                        text-align: left;
+                    }
+                }
+                a.car-brand {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    opacity: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+                button.ht-publish-tag-btn{
+                    width: .88rem;
+                    height: .42rem;
+                    border-radius: .4rem;
+                    font-size: .24rem;
+                    margin: 0 .2rem;
+                    padding: .03rem 0;
+                    vertical-align: middle;
+                    &.ht-active:first-child {
+                        color: $color3e9;
+                        border-color: $color3e9;
+                    }
+                    &.ht-active:last-child {
+                        color: $colorf05;
+                        border-color: $colorf05;
+                    }
+                }
+            }
+            span.cell.clearfix {
+                font-size: 0;
+                width: 100%;
+                height: 100%;
+                input[type="text"] {
+                    font-size: $font28;
+                    border-radius: .04rem;
+                    border: 1px solid $colord8d;
+                    height: 100%;
+                    @extend .border-box;
+                    &.code {
+                        float: left;
+                        text-indent: .4rem;
+                        width: 2rem;
+                    }
+                    &.brand {
+                        float: right;
+                        text-indent: .36rem;
+                        width: 3.6rem;
+                        height: .7rem;
+                    }
+                }
+                input[type="button"].u-btn-plates {
+                    display: inline-block;
+                    text-align: center;
+                    width: .7rem;
+                    height: .7rem;
+                    border-radius: .04rem;
+                    font-size: $font28;
+                    color: $color3e9;
+                    background: $colorfff;
+                    border: 1px solid $colord8d;
+                    @extend .border-box;
+                    &:active {
+                        background-color: $colord8d;
+                    }
+                }
+                button {
+                    font-size: $font28;
+                    height: 100%;
+                    width: 2.2rem;
+                    text-align: center;
+                    color: $colorfff;
+                    background: $color3e9;
+                    border-radius: .04rem;
+                    border: 1px solid $color3e9;
+                    @extend .border-box;
+                    &.disabled {
+                        background: #ccc;
+                        border-color: #ccc;
+                    }
+                }
+            }
+            div.cell {
+                width: 100%;
+                span.line-return,
+                div.line-return {
+                    display: inline-block;
+                    width: 3rem;
+                    border-radius: .04rem;
+                    font-size: $font28;
+                    text-align: center;
+                    background: $colorfff;
+                    border: 1px solid $colord8d;
+                    @extend .border-box;
+                    em {
+                        vertical-align: middle;
+                        &.icon-change2 {
+                            display: inline-block;
+                            width: .5rem;
+                            height: .5rem;
+                            margin: 0 .1rem;
+                            @extend .highlight;
+                        }
+                    }
+                }
+                a.link-strong {
+                    color: $color3e9;
+                    font-weight: bold;
+                    font-size: $font28;
+                    margin-left: .2rem;
+                    white-space: nowrap;
+                }
+            }
+            ul.cell {
+                width: 100%;
+                li {
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                    &.moredays {
+                        display: none;
+                        font-size: 0;
+                        p {
+                            padding: .2rem .12rem;
+                            line-height: normal;
+                        }
+                        div.printin {
+                            margin-bottom: .4rem;
+                        }
+                        .js-today {
+                            color: $color333;
+                        }
+                    }
+                    &.clearfix,
+                    &.oneday {
+                        height: .7rem;
+                        line-height: .7rem;
+                    }
+                    &.oneday {
+                        margin-top: .4rem;
+                    }
+                    div.radio-div {
+                        position: relative;
+                        font-size: 0;
+                        span {
+                            display: inline-block;
+                            width: 2.2rem;
+                            height: .7rem;
+                            line-height: .7rem;
+                            text-align: center;
+                            border: 1px solid $colord8d;
+                            background: #fff;
+                            color: $color999;
+                            border-radius: .04rem;
+                            @extend .highlight;
+                            @extend .border-box;
+                            &.active {
+                                color: $color3e9;
+                                em.icon-days {
+                                    @extend .icon-days-active;
+                                }
+                            }
+                            em {
+                                display: inline-block;
+                                vertical-align: middle;
+                                font-size: $font28;
+                                line-height: normal;
+                                &.icon-days, &.icon-select {
+                                    display: inline-block;
+                                    width: .3rem;
+                                    height: .3rem;
+                                    vertical-align: middle;
+                                    margin-right: .2rem;
+                                    border-radius: .04rem;
+                                }
+                                &.icon-select {
+                                    display: inline-block;
+                                }
+                                &#txtPeriod, &#txtTime {
+                                    color: $color333;
+                                }
+                            }
+                            &.circle {
+                                border-radius: 10rem;
+                            }
+                        }
+                        input[type="radio"] {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            opacity: 0;
+                            border: none;
+                        }
+                    }
+                    input[type="text"][readonly] {
+                        height: 100%;
+                        width: 100%;
+                        border: 1px solid $colord8d;
+                        border-radius: .04rem;
+                        color: $color3e9;
+                        font-size: $font28;
+                        text-align: center;
+                        @extend .border-box;
+                    }
+                    input[type="text"] {
+                        height: 100%;
+                        width: 100%;
+                        border: 1px solid $colord8d;
+                        border-radius: .04rem;
+                        color: $color3e9;
+                        font-size: $font28;
+                        text-align: center;
+                        @extend .border-box;
+                    }
+                }
+            }
+            textarea {
+                width: 100%;
+                height: 3rem;
+                padding: .24rem .36rem .4rem .2rem;
+                border: 1px solid $colord8d;
+                color: #333;
+                font-size: $font28;
+                line-height: 150%;
+                resize: none;
+                @extend .border-box;
+            }
+            div.tablefix {
+                text-align: center;
+                font-size: 0;
+                background: $colorfff;
+                border: 1px solid $colord8d;
+                border-radius: .04rem;
+                @extend .border-box;
+                span.cell {
+                    text-align: center;
+                    font-size: $font28;
+                }
+            }
+            &.ht-grp-tag{
+                margin-bottom: 0;
+            }
+        }
+    }
+    & {
+        position: relative;
+        div.ht-content {
+          box-sizing: border-box;
+          border: solid .35rem transparent;
+          border-top:solid 1.65rem transparent;
+          background-color: rgba(0, 0, 0, 0.6);
+          position: fixed;
+          top: 0;
+          height: 100%;
+          width: 100%;
+        }
+        .ht-mask-container{
+          border-radius: .08rem;
+          background-color: white;
+          width: 85%;
+          line-height: 1.4;
+          text-align: center;
+          box-sizing: border-box;
+          font-size: .36rem;
+          margin: 0 auto;
+          padding: .73rem 0;
+          color: $color3e9;
+        }
+        .ht-mask-qr {
+            width: 100%;
+        }
+        .ht-img-row {
+            margin: .16rem auto;
+            width: 4.03rem;
+            height: 4.03rem;
+        }
+        .ht-btn-close {
+          margin-top: .3rem;
+          color: white;
+          .mui-icon.mui-icon-close-filled {
+            font-size: .74rem;
+          }
+        }
+    }
+}
+
+//提交按钮
+div.submit-warp {
+    padding: 0 .2rem;
+    &.no-ad {
+        padding-bottom: .5rem;
+    }
+    a.btn-submit {
+        display: block;
+        height: .88rem;
+        line-height: .88rem;
+        text-align: center;
+        border-radius: .06rem;
+        color: $colorfff;
+        font-size: .32rem;
+        background: $color3e9;
+        &:active {
+            background: rgba(62, 153, 249, .4);
+        }
+    }
+}
+
+//uploadimg上传图片
+div.uploadimg {
+    padding: 0 .35rem 1rem .35rem;
+    text-align: center;
+    font-size: 0;
+    h2 {
+        font-size: .32rem;
+        padding: .6rem 0 .4rem 0;
+        font-weight: bold;
+    }
+    div.uploadew {
+        position: relative;
+        padding: .5rem 0 .4rem;
+        margin-bottom: .2rem;
+        background: $colorfff;
+        border-radius: .04rem;
+        border: 1px solid #dcdcdc;
+        @extend .border-box;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        div.up-img {
+            position: relative;
+            width: 3.4rem;
+            height: 3.4rem;
+            border-radius: .04rem;
+            margin: 0 auto;
+            background: #d8d8d8 url(/static/images/no-img.png) center no-repeat;
+            background-size: .75rem .53rem;
+            img {
+                width: 100%;
+                height: 100%;
+                vertical-align: top;
+                background: #fff;
+            }
+            p {
+                position: absolute;
+                width: 100%;
+                bottom: .4rem;
+                text-align: center;
+                font-size: $font28;
+                color: #979797;
+            }
+        }
+        div.litte-img {
+            padding: .16rem 0;
+            img {
+                height: .28rem;
+                width: auto;
+            }
+        }
+        a.btn-uploadimg {
+            display: inline-block;
+            padding: .12rem .22rem;
+            background: $color3e9;
+            color: $colorfff;
+            font-size: .32rem;
+            border-radius: .04rem;
+        }
+        a.link-what {
+            position: absolute;
+            right: .1rem;
+            bottom: .6rem;
+            font-size: $font24;
+            color: $color3e9;
+        }
+    }
+}
+
+
+/*注册车主*/
+
+div.updialog-warp {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+div.updialog-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /*display: block;*/
+    width: 100%;
+    background: #fff;
+    max-height: 75%;
+    overflow-y: scroll;
+    display: none;
+}
+
+div.updialog-blank {
+    padding: .28rem;
+}
+
+div.updialog-rows-4 {
+    float: left;
+    width: 25%;
+}
+
+a.btn-plates {
+    display: block;
+    margin: .14rem;
+    color: #3C3C3C;
+    font-size: .32rem;
+    text-align: center;
+    line-height: .8rem;
+    height: .8rem;
+    border: 1px solid #e6e6e6;
+    @extend .border-box;
+    border-radius: .04rem;
+    margin-bottom: .14rem;
+}
+
+a.btn-plates:active,
+a.btn-plates.active {
+    color: #fff;
+    border: 1px solid $color3e9;
+    background: $color3e9;
+}
+
+//车主信息
+div.driver-info {
+    padding: .6rem .35rem 0 .35rem;
+    ul {
+        position: relative;
+        background: $colorfff;
+        padding: 0 .3rem;
+        border-radius: .04rem;
+        overflow: hidden;
+        border: 1px solid #dcdcdc;
+        @extend .border-box;
+        li {
+            height: 1rem;
+            line-height: 1rem;
+            font-size: $font28;
+            border-bottom: 1px solid $colore6e;
+            @extend .border-box;
+            &:last-of-type {
+                border-bottom: none;
+            }
+            em.icon-rz {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: .64rem;
+                height: .64rem;
+            }
+            img.car_brand {
+                height: .46rem;
+                width: auto;
+                margin-right: .14rem;
+                vertical-align: middle;
+            }
+            em.icon-phone {
+                display: inline-block;
+                width: .39rem;
+                height: .42rem;
+                vertical-align: middle;
+                margin-right: .14rem;
+                @include background-image('/static/images/phone.png');
+            }
+            strong {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+//车主前往
+p.right-text {
+    margin: .2rem 0 .12rem;
+    text-align: center;
+    font-size: $font28;
+    color: $color777;
+    font-weight: bold;
+    em,
+    a {
+        color: $color3e9;
+        font-weight: bold;
+    }
+}
+
+div.bottom-img {
+    padding-bottom: .75rem;
+    img {
+        display: block;
+        width: 5.8rem;
+        height: auto;
+        margin: 0 auto;
+        background: #ccc;
+    }
+}
+
+.ht-ipt-group {
+    position: relative;
+    border-collapse: separate;
+}
+
+.ht-ipt-group:after {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.ht-ipt-add-on {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .21rem;
+    display: inline-block;
+    font-size: 0.28rem;
+    opacity: .24;
+    &.mui-pull-left {
+      left: .34rem;
+      top: .42rem;
+      padding: 0;
+      opacity: 1;
+      img {
+        width: 1rem;
+        height: .268rem;
+      }
+    }
+}
+.mui-picker, .tablefix {
+    .iconfont {
+        padding: 0 .24rem;
+    }
+}
