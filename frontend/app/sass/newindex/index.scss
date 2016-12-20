@@ -14,6 +14,16 @@
         @include boder-style-radius($colord9, .04rem);
         padding: .32rem .3rem .32rem .3rem;
     }
+    .recommend-title {
+        margin-top: .46rem;
+        font-size: $font28;
+        color: $color666;
+    }
+    .nothing {
+        text-align: center;
+        font-size: $font28;
+        color:$color999;
+    }
 }
 
 //搜索框
@@ -60,9 +70,4 @@
             vertical-align: middle;
         }
     }
-}
-
-p.new-title {
-    font-size: .28rem;
-    color: #666;
 }
