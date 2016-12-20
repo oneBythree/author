@@ -1,6 +1,68 @@
+/**
+ * 新版本首页
+ * ypf
+ * 2016-12-20
+ */
+
 @import url(../reset.css);
 @import '../_mixs';
-.new-header{
-    color:#333;
-    text-align: center;
+//新panel 
+.newindex-panel {
+    padding: .16rem .2rem;
+    .body {
+        background: $colorfff;
+        @include boder-style-radius($colord9, .04rem);
+        padding: .32rem .3rem .32rem .3rem;
+    }
+}
+
+//搜索框
+.new-search {
+    background: $colorf4f;
+    display: flex;
+    @include boder-style-radius($colord9, .44rem);
+    line-height: .44rem;
+    padding: .2rem 0 .2rem .38rem;
+    font-size: 0;
+    .map {
+        padding-right: .2rem;
+        border-right: 1px solid $colorbd;
+        .icont-map {
+            display: inline-block;
+            width: .24rem;
+            height: .32rem;
+            background: url('../../images/addroute_location.png') center no-repeat;
+            background-size: cover;
+            vertical-align: middle;
+        }
+        .map-tip {
+            vertical-align: middle;
+            margin-left: .12rem;
+            font-size: $font28;
+            color: $color4ed;
+        }
+    }
+    .search {
+        @extend .n-flex-1;
+        padding-left: .3rem;
+        font-size: $font28;
+        color: $colorbd;
+        .icont-search {
+            display: inline-block;
+            width: .38rem;
+            height: .38rem;
+            background: url('../../images/addroute_search.png') center no-repeat;
+            background-size: cover;
+            vertical-align: middle;
+        }
+        .search-tip {
+            margin-left: .2rem;
+            vertical-align: middle;
+        }
+    }
+}
+
+p.new-title {
+    font-size: .28rem;
+    color: #666;
 }
