@@ -18,15 +18,28 @@ $font22: .22rem;
 $font24: .24rem;
 $font26: .26rem;
 $font28: .28rem;
+$font30:.3rem;
 $font32: .32rem;
 // 新首页变量
 $colord9:#d9d9d9;
 $colorbd:#bdbdbd;
 $color4ed:#4e4d5d;
+$color3e9:#3e99f9;
 .border-box {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 @mixin border-style {
@@ -52,6 +65,7 @@ $color4ed:#4e4d5d;
 
 .n-flex {
     display: flex;
+    
 }
 
 .n-flex-1 {
