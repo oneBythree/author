@@ -8,19 +8,19 @@
     <link rel="stylesheet" type="text/css" href="css/newindex/index.css">
 </head>
 
-<body>
+<body id="newIndex">
     <section class="newindex-panel">
         <div class="body">
-            <div class="new-search">
+            <a  href="javascript:;" class="new-search">
                 <span class="map">
-                	<em class="icont-map"></em>
-                	<em class="map-tip">北京</em>
+                    <em class="icont-map"></em>
+                    <em class="map-tip">北京</em>
                 </span>
                 <span class="search">
-                	<em class="icont-search"></em>
-                	<em class="search-tip">输入出发城市或目的地</em>
+                    <em class="icont-search"></em>
+                    <em class="search-tip">输入出发城市或目的地</em>
                 </span>
-            </div>
+            </a>
             <p class="recommend-title">推荐路线(往返)</p>
             <!-- 正常 -->
             <div class="get-recommend">
@@ -31,27 +31,27 @@
                     <li><a href="javscript:;">乌鲁木齐<em>120条</em></a></li>
                     <li><a href="javscript:;">长沙<em>120条</em></a></li>
                     <!-- <li><a href="javscript:;">济南<em>120条</em></a></li>
-                	<li><a href="javscript:;">济南<em>120条</em></a></li>
-                	<li><a href="javscript:;">济南<em>120条</em></a></li>
-                	<li><a href="javscript:;">济南<em>120条</em></a></li> -->
+                    <li><a href="javscript:;">济南<em>120条</em></a></li>
+                    <li><a href="javscript:;">济南<em>120条</em></a></li>
+                    -->
                 </ul>
-                <a href="javascript:;" class="add">没有推荐线路？点击添加</a>
+                <a href="javascript:;" class="add" @click="showAdd">没有推荐线路？点击添加</a>
             </div>
             <!-- 定位，无法获取推荐 -->
             <!-- <div class="get-recommend-nothing">
                 <p>无法获取推荐路线</p>
-                <a href="javascript:;" class="add">没有推荐线路？点击添加</a>
+                <a href="javascript:;" class="add" @click="showAdd">没有推荐线路？点击添加</a>
             </div> -->
             <!-- 无法定位 -->
             <!--      <p class="nothing">
-            	无法定位当前城市，请输入出发或目的城市<br>
-            	<a href="javascript:;">查看推荐线路</a>
+                无法定位当前城市，请输入出发或目的城市<br>
+                <a href="javascript:;">查看推荐线路</a>
             </p> -->
         </div>
     </section>
     <h4 class="new-routers">常用路线往返</h4>
     <ul class="newroutes-list">
-        <li>
+        <li @click="linkRouters">
             <button class="btn-tag">常用</button>
             <div class="n-flex-1">
                 <div class="n-flex">
@@ -85,6 +85,36 @@
             <em class="icont-right"></em>
         </li>
     </ul>
+
+
+    <div class="new-covers animated" v-if="isAdd" @click="closeAdd" transition="fadeIn"></div>
+    <div class="new-add-panel animated" v-if="isAdd" transition="fadeDown">
+        <div class="body">
+            <em class="close" @click="closeAdd"></em>
+            <p class="add-title">添加新路线（往返）</p>
+            <div class="add-print">
+                <div class="print-city">
+                    <input type="text" name="" placeholder="输入出发城市" v-model="startCity" @input="input(startCity,'start')" @blur="blurInput('start')">
+                    <ul  v-if="showListStart">
+                        <li v-for="type in addressData | filterBy startCity" @click="selectedClick(type.split('|')[1],'start')">{{type.split('|')[1]}}</li>
+                    </ul>
+                </div>
+                <span class="icont-line">
+                    <em></em>
+                </span>
+                <div class="print-city">
+                    <input type="text" name="" placeholder="输入到达城市" v-model="endCity" @input="input(endCity,'end')" @blur="blurInput('end')">
+                    <ul   v-if="showListEnd" >
+                        <li v-for="type in  addressData | filterBy endCity" @click="selectedClick(type.split('|')[1],'end')">{{type.split('|')[1]}}</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="javascript:;" class="add-button">添加</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://cdn.bootcss.com/vue/1.0.28/vue.min.js"></script>
+    <script type="text/javascript" src="../js/city/new-index.js">
+    </script>
 </body>
 
 </html>

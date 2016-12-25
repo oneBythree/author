@@ -74,6 +74,7 @@
  gulp.task("server", function() {
      server.run("app.js");
      gulp.watch('frontend/app/sass/**/*.scss', ['scss']);
-     gulp.watch('frontend/app/script/**/*.js', ['js']); 
-     gulp.watch('frontend/app/**/*.html', ['html']); 
+     gulp.watch('frontend/app/script/city/**/*.js', ['js']);
+     gulp.watch('frontend/app/**/*.html', ['html']);
+     gulp.watch("frontend/app/images/**/*.{png,jpg,gif,ico}",['image']);
  })
