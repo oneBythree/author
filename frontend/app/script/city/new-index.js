@@ -1,6 +1,53 @@
 "use strict";
 
 var address = [
+    "Beijing|北京市-北京市|bj|110000",
+    "dongchengqu|北京市-东城区|dcq|110101",
+    "xichengqu|北京市-西城区|xcq|110102",
+    "chaoyangqu|北京市-朝阳区|cyq|110105",
+    "fengtaiqu|北京市-丰台区|ftq|110106",
+    "shijingshanqu|北京市-石景山区|sjsq|110107",
+    "haidianqu|北京市-海淀区|hdq|110108",
+    "mentougouqu|北京市-门头沟区|mtgq|110109",
+    "fangshanqu|北京市-房山区|fsq|110111",
+    "tongzhouqu|北京市-通州区|tzq|110112",
+    "shunyiqu|北京市-顺义区|syq|110113",
+    "changpingqu|北京市-昌平区|cpq|110114",
+    "daxingqu|北京市-大兴区|dxq|110115",
+    "huairouqu|北京市-怀柔区|hrq|110116",
+    "pingguqu|北京市-平谷区|pgq|110117",
+    "miyunqu|北京市-密云县|myq|110118",
+    "yanqingqu|北京市-延庆县|yqq|110119",
+    "Tianjin|天津市-天津|tj|120000",
+    "hepingqu|天津市-和平区|hpq|120101",
+    "hedongqu|天津市-河东区|hdq|120102",
+    "hexiqu|天津市-河西区|hxq|120103",
+    "nankaiqu|天津市-南开区|nkq|120104",
+    "hebeiqu|天津市-河北区|hbq|120105",
+    "hongqiaoqu|天津市-红桥区|hqq|120106",
+    "dongliqu|天津市-东丽区|dlq|120110",
+    "xiqingqu|天津市-西青区|xjq|120111",
+    "jinnanqu|天津市-津南区|jnq|120112",
+    "beichenqu|天津市-北辰区|bcq|120113",
+    "wuqingqu|天津市-武清区|wqq|120114",
+    "baodiqu|天津市-宝坻区|bdq|120115",
+    "binhaixinqu|天津市-滨海新区|bhxq|120116",
+    "ninghexian|天津市-宁河县|nh|120117",
+    "jinghaixian|天津市-静海县|jhx|120118",
+    "jixian|天津市-蓟县|jx|120119",
+    "Shijiazhuang|河北省-石家庄|sjz|130100",
+     "Shijiazhuang|河北省-石家庄|sjz|130100",
+    "Baoding|河北省-保定|bd",
+    "Baoding|河北省-保定|bd",
+    "Cangzhou|河北省-沧州|cz",
+    "Chengde|河北省-承德|cd",
+    "Handan|河北省-邯郸|hd",
+    "Hengshui|河北省-衡水|hs",
+    "Langfang|河北省-廊坊|lf",
+    "Qinhuangdao|河北省-秦皇岛|qhd",
+    "Tangshan|河北省-唐山|ts",
+    "Xingtai|河北省-邢台|xt",
+    "Zhangjiakou|河北省-张家口|zjk",
     "Binzhou|山东省-滨州|bz",
     "Dezhou|山东省-德州|dz",
     "Dongying|山东省-东营|dy",
@@ -39,17 +86,6 @@ var address = [
     "Xianyang|陕西省-咸阳|xy",
     "Yanan|陕西省-延安|ya",
     "Yulin|陕西省-榆林|yl",
-    "Baoding|河北省-保定|bd",
-    "Cangzhou|河北省-沧州|cz",
-    "Chengde|河北省-承德|cd",
-    "Handan|河北省-邯郸|hd",
-    "Hengshui|河北省-衡水|hs",
-    "Langfang|河北省-廊坊|lf",
-    "Qinhuangdao|河北省-秦皇岛|qhd",
-    "Shijiazhuang|河北省-石家庄|sjz",
-    "Tangshan|河北省-唐山|ts",
-    "Xingtai|河北省-邢台|xt",
-    "Zhangjiakou|河北省-张家口|zjk",
     "Anyang|河南省-安阳|ay",
     "Hebi|河南省-鹤壁|hb",
     "Jiyuan|河南省-济源|jy",
@@ -86,7 +122,7 @@ var address = [
     "Wuhu|安徽-芜湖|wh",
     "Xuancheng|安徽-宣城|xc",
     "BoZhou|安徽-亳州|bz",
-    "Beijing|北京市-北京|bj",
+
     "Fuzhou|福建省-福州|fz",
     "Longyan|福建省-龙岩|ly",
     "Nanping|福建省-南平|np",
@@ -201,6 +237,7 @@ var address = [
     "Xiangfan|湖北省-襄樊|xf",
     "Xiaogan|湖北省-孝感|xg",
     "Yichang|湖北省-宜昌|yc",
+    "Chibishi|湖北省-赤壁|cbs",
     "Changde|湖南省-常德|cd",
     "Changsha|湖南省-长沙|cs",
     "Chenzhou|湖南省-郴州|cz",
@@ -308,7 +345,7 @@ var address = [
     "Ziyang|四川省-资阳|zy",
     "Zigong|四川省-自贡|zg",
     "LuZhou|四川省-泸州|lz",
-    "Tianjin|天津市-天津|tj",
+
     "Ali|西藏-阿里|al",
     "Changdu|西藏-昌都|cd",
     "Lasa|西藏-拉萨|ls",
@@ -332,6 +369,7 @@ var address = [
     "Wulumuqi| 新疆-乌鲁木齐|wlmq",
     "Wujiaqu| 新疆-五家渠|wjq",
     "Yili| 新疆-伊犁|yl",
+    "Aletai|新疆-阿勒泰|alt",
     "Baoshan|云南省-保山|bs",
     "Chuxiongyizuzizhizhou|云南省-楚雄|cx",
     "Dali|云南省-大理|dl",
@@ -372,9 +410,8 @@ var address = [
     // "Taizhong|台中|tz",
     // "Zhongwei|中卫5|zw",
     // "Tacheng|塔城|tc",
-    "Aletai|新疆-阿勒泰|alt",
+
     // "Wusulijiang|乌苏里江3|wslj ",
-    "Chibishi|湖北省-赤壁|cbs",
     "Shunde|广东省-顺德|sd "
 ];
 
@@ -393,6 +430,8 @@ var app = new Vue({
     el: '#newIndex',
     data() {
         return {
+            isSearchInLine: false,
+            query: '', // 搜索关键字 （出发城市或目的城市）
             isAdd: false,
             startCity: "",
             endCity: "",
@@ -403,12 +442,35 @@ var app = new Vue({
             addressData: address,
             showListStart: false,
             showListEnd: false,
+            commRouters: [{ 'startCity': '北京', 'endCity': '武汉' }, { 'startCity': '北京', 'endCity': '汉口' }, { 'startCity': '北京', 'endCity': '内蒙古' }],
         }
     },
     ready: function() {
 
     },
     methods: {
+        showSearchInLine: function() { //展示搜索inline
+            // location.href = location.href+'?search';
+            this.isSearchInLine = true;
+            setTimeout(function() { // 延迟获取焦点jq vue 不同步（bug）
+                $('#searchInput').focus();
+            }, 200)
+        },
+        searchBlur: function() { //输入框失去焦点&输入文字为空
+            // console.log(query)
+            if (this.query == '' || this.query == undefined) {
+                this.isSearchInLine = false;
+            }
+        },
+        backIndex: function() {
+            this.isSearchInLine = false;
+        },
+        cleanKey: function() {
+            this.query = '';
+        },
+        searchQueryRouter: function(key) {
+            console.log(key);
+        },
         showAdd: function() { //展示添加
             this.isAdd = true;
         },
@@ -426,10 +488,13 @@ var app = new Vue({
             }
         },
         input: function(val, type) { // 城市输入
+            // console.log(type)
             if (type == 'start') {
                 this.showListStart = val != '' ? true : false;
-            } else {
+            } else if (type = "end") {
                 this.showListEnd = val != '' ? true : false;
+            } else if (type = "key") {
+
             }
         },
         blurInput: function(type) {
@@ -444,6 +509,20 @@ var app = new Vue({
         },
         linkRouters: function() {
             // window.location.href = '';
+        },
+        addCommon: function() {
+            if (this.startCity == '') {
+                $.ModuleTip({ 'txt': '出发城市不能为空!' });
+                return false;
+            }
+            if (this.endCity == '') {
+                $.ModuleTip({ 'txt': '到达城市不能为空!' });
+                return false;
+            }
+            this.commRouters.push({ 'startCity': this.startCity, 'endCity': this.endCity })
+                // console.log(this.commRouters);
+            this.closeAdd();
+            //或者请求借口添加数据
         }
     },
     computed: {

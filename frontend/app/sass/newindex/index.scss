@@ -7,10 +7,10 @@
 @import url(../reset.css);
 @import '../_mixs';
 @import url(../animate.css);
+
 body {
     position: relative;
 }
-
 //新panel 
 .newindex-panel {
     padding: .16rem .2rem 0 .2rem;
@@ -44,7 +44,7 @@ body {
                     border-radius: .04rem;
                     color: $color333;
                     padding: 0 .24rem;
-                    &:active{
+                    &:active {
                         background: #ebebeb;
                     }
                     em {
@@ -125,6 +125,51 @@ body {
         .search-tip {
             margin-left: .2rem;
             vertical-align: middle;
+        }
+    }
+}
+
+.search-inline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background: $colorf4f;
+    width: 100%;
+    z-index: 2;
+    .blank {
+        padding: .48rem .5rem 0 .5rem;
+        .content {
+            display: flex;
+            @include boder-style-radius($colord9,
+            .44rem);
+            line-height: .44rem;
+            padding: .22rem 0 .22rem .38rem;
+            font-size: 0;
+            .icont-search {
+                display: inline-block;
+                width: .38rem;
+                height: .38rem;
+                background: url('../../images/addroute_search.png') center no-repeat;
+                background-size: cover;
+                vertical-align: middle;
+                margin-right: .2rem;
+            }
+            input[type="text"] {
+                border-left: 1px solid #d8d8d8;
+                background-color: transparent;
+                @extend .n-flex-1;
+                font-size: $font28;
+                color: #333;
+                padding-left: .2rem;
+            }
+            .iconfont{
+                font-size: .32rem;
+                width: .5rem;
+                text-align: center;
+                margin-right: .2rem;
+                color: $color999;
+            }
         }
     }
 }
@@ -321,6 +366,128 @@ ul.newroutes-list {
             &:active {
                 background: #2f91f9!important;
             }
+        }
+    }
+}
+
+.new-search-list {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f8f8f8;
+    overflow-y: auto;
+    div.body {
+        // padding: .48rem .5rem 0 .5rem;
+        // 
+        overflow-y: auto;
+        ul {
+            font-size: $font28;
+            margin-top: 1.5rem;
+            li {
+                position: relative;
+                border-bottom: 1px solid #ececec;
+                height: .9rem;
+                line-height: .9rem;
+                padding-left: .28rem;
+                &:last-of-type {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+.new-login {
+    position: absolute;
+    top: 1.54rem;
+    left: 50%;
+    width: 5.7rem;
+    height: 6.78rem;
+    margin-left: -2.85rem;
+    background: #fff;
+    z-index: 1001;
+    border-radius: .08rem;
+    .content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .logo {
+            position: relative;
+            left: 50%;
+            width: 2.81rem;
+            height: 2.48rem;
+            margin-left: -1.405rem;
+            margin-top: -1.24rem;
+        }
+        form {
+            font-size: 0;
+            margin-top: .68rem;
+            padding: 0 .6rem;
+            input[type="tel"] {
+                font-size: .28rem;
+                color: #686868;
+                text-indent: .23rem;
+                height: .82rem;
+                line-height: .82rem;
+                &.tel {
+                    width: 100%;
+                    @include boder-style-radius(#1d7be3,
+                    .04rem);
+                    margin-bottom: .4rem;
+                }
+                &.code {
+                    @extend .n-flex-1;
+                    border: none;
+                }
+            }
+            .group-from {
+                @include boder-style-radius(#1d7be3,
+                .04rem);
+                margin-bottom: .68rem;
+                a {
+                    text-align: center;
+                    font-size: .22rem;
+                    white-space: nowrap;
+                    background: #3e99f9;
+                    color: #fff;
+                    width: 2.4rem;
+                    color: #fff;
+                    height: .82rem;
+                    line-height: .82rem;
+                    &.disable {
+                        background: #f5f5f5;
+                        color: #686868;
+                    }
+                    &:active {
+                        background: #2a8ef8;
+                    }
+                }
+            }
+            .submit {
+                display: block;
+                width: 100%;
+                font-size: .32rem;
+                color: #fff;
+                line-height: .82rem;
+                height: .82rem;
+                background: #3e99f9;
+                text-align: center;
+                border-radius: .04rem;
+                &:active {
+                    background: #2a8ef8;
+                }
+            }
+        }
+        .close{
+            position: absolute;
+            left: 50%;
+            bottom: -1.03rem;
+            width: .6rem;
+            height: .6rem;
+            background:  url(../../images/login_icon_cancle.png) no-repeat;
+            background-size: cover;
         }
     }
 }
