@@ -3,8 +3,8 @@
 var address = [
     "Beijing|北京市-北京市|bj|110000",
     "dongchengqu|北京市-东城区|dcq|110101",
-    "xichengqu|北京市-西城区|xcq|110102",
-    "chaoyangqu|北京市-朝阳区|cyq|110105",
+    // "xichengqu|北京市-西城区|xcq|110102",
+    // "chaoyangqu|北京市-朝阳区|cyq|110105",
     "fengtaiqu|北京市-丰台区|ftq|110106",
     "shijingshanqu|北京市-石景山区|sjsq|110107",
     "haidianqu|北京市-海淀区|hdq|110108",
@@ -36,7 +36,7 @@ var address = [
     "jinghaixian|天津市-静海县|jhx|120118",
     "jixian|天津市-蓟县|jx|120119",
     "Shijiazhuang|河北省-石家庄|sjz|130100",
-     "Shijiazhuang|河北省-石家庄|sjz|130100",
+    "Shijiazhuang|河北省-石家庄|sjz|130100",
     "Baoding|河北省-保定|bd",
     "Baoding|河北省-保定|bd",
     "Cangzhou|河北省-沧州|cz",
@@ -393,13 +393,13 @@ var address = [
     "Lishui|浙江省-丽水|ls",
     "Ningbo|浙江省-宁波|nb",
     "Shaoxing|浙江省-绍兴|sx",
-    "Taizhou|浙江省-台州|tz",
-    "Wenzhou|浙江省-温州|wz",
-    "Zhoushan|浙江省-舟山|zs",
-    "QuZhou|浙江省-衢州|qz",
-    "Chongqing|重庆市-重庆|cq",
-    "Xianggang|香港-香港|xg",
-    "Aomen|澳门-澳门|am",
+    // "Taizhou|浙江省-台州|tz",
+    // "Wenzhou|浙江省-温州|wz",
+    // "Zhoushan|浙江省-舟山|zs",
+    // "QuZhou|浙江省-衢州|qz",
+    // "Chongqing|重庆市-重庆|cq",
+    // "Xianggang|香港-香港|xg",
+    // "Aomen|澳门-澳门|am",
     // "Gaoxiong|高雄|gx",
     // "Hualian|花莲|hl",
     // "Jilong|基隆|jl",
@@ -431,6 +431,8 @@ var app = new Vue({
     data() {
         return {
             isSearchInLine: false,
+            city: '',
+            recommendCitys: [],
             query: '', // 搜索关键字 （出发城市或目的城市）
             isAdd: false,
             startCity: "",
@@ -442,15 +444,27 @@ var app = new Vue({
             addressData: address,
             showListStart: false,
             showListEnd: false,
-            commRouters: [{ 'startCity': '北京', 'endCity': '武汉' }, { 'startCity': '北京', 'endCity': '汉口' }, { 'startCity': '北京', 'endCity': '内蒙古' }],
+            commRouters: [],
         }
     },
     ready: function() {
-
+        this.initData();
     },
     methods: {
+        initData: function() {
+            var that = this;
+            var url = 'http://test.haitat.com/api/user/route/main?user=1';
+            $.get(url, {}, function(r) {
+                if (r.code == "1") {
+                    that.city = r.data.user.location.hasOwnProperty('city') ? r.data.user.location.city : '未定位';
+                    that.recommendCitys = r.data.recommend_city;
+                    that.commRouters = r.data.top_lines;
+                } else if (r.code == "50010") {
+                    $.ModuleTip({ 'txt': r.message });
+                }
+            });
+        },
         showSearchInLine: function() { //展示搜索inline
-            // location.href = location.href+'?search';
             this.isSearchInLine = true;
             setTimeout(function() { // 延迟获取焦点jq vue 不同步（bug）
                 $('#searchInput').focus();
@@ -488,7 +502,6 @@ var app = new Vue({
             }
         },
         input: function(val, type) { // 城市输入
-            // console.log(type)
             if (type == 'start') {
                 this.showListStart = val != '' ? true : false;
             } else if (type = "end") {
@@ -507,8 +520,10 @@ var app = new Vue({
                 }
             }, 250)
         },
-        linkRouters: function() {
-            // window.location.href = '';
+        linkRouters: function(id) {
+            // console.log(id);
+            if(!id) return
+            location.href = 'http://test.haitat.com/user/routes/'+id;
         },
         addCommon: function() {
             if (this.startCity == '') {

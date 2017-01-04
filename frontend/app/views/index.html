@@ -15,7 +15,7 @@
             <a href="javascript:;" class="new-search" @click="showSearchInLine" v-if="!isSearchInLine">
                 <span class="map">
                     <em class="icont-map"></em>
-                    <em class="map-tip">北京</em>
+                    <em class="map-tip" v-text="city"></em>
                 </span>
                 <span class="search">
                     <em class="icont-search"></em>
@@ -25,40 +25,35 @@
             <p class="recommend-title">推荐路线(往返)</p>
             <!-- 正常 -->
             <div class="get-recommend">
-                <ul class="recommend-route">
-                    <li><a href="javscript:;">济南<em>120条</em></a></li>
-                    <li><a href="javscript:;">石家庄<em>120条</em></a></li>
-                    <li><a href="javscript:;">青岛<em>120条</em></a></li>
-                    <li><a href="javscript:;">乌鲁木齐<em>120条</em></a></li>
-                    <li><a href="javscript:;">长沙<em>120条</em></a></li>
-                    <!-- <li><a href="javscript:;">济南<em>120条</em></a></li>
-                    <li><a href="javscript:;">济南<em>120条</em></a></li>
-                    <li><a href="javscript:;">济南<em>120条</em></a></li>
-                    -->
+                <ul class="recommend-route" v-if="recommendCitys.length>0">
+                    <li v-for="recommendCity in recommendCitys">
+                        <a href="javscript:;">{{recommendCity.name}}<em>{{recommendCity.account}}条</em></a>
+                    </li>
                 </ul>
-                <a href="javascript:;" class="add" @click="showAdd">没有推荐线路？点击添加</a>
+                <a href="javascript:;" v-if="recommendCitys.length>0" class="add" @click="showAdd">没有推荐线路？点击添加</a>
             </div>
             <!-- 定位，无法获取推荐 -->
-            <!-- <div class="get-recommend-nothing">
+            <div class="get-recommend-nothing" v-if="recommendCitys.length==0&&city!='未定位'">
                 <p>无法获取推荐路线</p>
                 <a href="javascript:;" class="add" @click="showAdd">没有推荐线路？点击添加</a>
-            </div> -->
+            </div>
             <!-- 无法定位 -->
-            <!--      <p class="nothing">
-                无法定位当前城市，请输入出发或目的城市<br>
+            <p class="nothing" v-if="recommendCitys.length==0&&city=='未定位'">
+                无法定位当前城市，请输入出发或目的城市
+                <br>
                 <a href="javascript:;">查看推荐线路</a>
-            </p> -->
+            </p>
         </div>
     </section>
-    <h4 class="new-routers">常用路线往返</h4>
+    <h4 class="new-routers" v-if="commRouters.length>0">常用路线往返</h4>
     <ul class="newroutes-list">
-        <li @click="linkRouters" v-for="commRouter in commRouters">
+        <li @click="linkRouters(commRouter.id)" v-for="commRouter in commRouters">
             <button class="btn-tag">常用</button>
             <div class="n-flex-1">
                 <div class="n-flex">
-                    <span class="route right">{{commRouter.startCity}}</span>
+                    <span class="route right">{{commRouter.start}}</span>
                     <em class="icont-round"></em>
-                    <span class="route left">{{commRouter.endCity}}</span>
+                    <span class="route left">{{commRouter.end}}</span>
                 </div>
             </div>
             <em class="icont-right"></em>
@@ -90,7 +85,7 @@
         </div>
     </div>
     <div class="new-search-list animated" v-if="isSearchInLine" @click.self="backIndex">
-        <div class="body" >
+        <div class="body">
             <div class="search-inline">
                 <div class=" blank">
                     <div class="content">
@@ -106,7 +101,7 @@
             </ul>
         </div>
     </div>
-    <dialog-login :is-login="true"></dialog-login>
+    <dialog-login ></dialog-login>
     <script type="text/javascript" src="http://cdn.bootcss.com/vue/1.0.28/vue.min.js"></script>
     <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://weixin.haitago.com/static/scripts/jsplug/common.js"></script>

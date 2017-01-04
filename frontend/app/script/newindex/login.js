@@ -14,7 +14,7 @@ Vue.directive('numberOnly', {
 })
 
 Vue.component('dialog-login', {
-    template: '<div class="new-covers animated" transition="fadeIn" v-if="isLogin" @click="closeLogin"></div>' +
+    template: '<div class="new-covers animated" transition="fadeIn" v-if="isLogin" ></div>' +
         '<div class="new-login animated" transition="fadeIn" v-if="isLogin">' +
         '<div class="content">' +
         '<img src="../images/login_pic.png" alt="" class="logo">' +
@@ -27,7 +27,7 @@ Vue.component('dialog-login', {
         '</div>' +
         '<a href="javascript:;" class="submit" @click="loginAjax">登录</a>' +
         '</form>' +
-        '<a href="javascript:;" class="close" @click="closeLogin"></a>' +
+        // '<a href="javascript:;" class="close" @click="closeLogin"></a>' +
         '</div>' +
         '</div>',
     props: {
@@ -65,31 +65,68 @@ Vue.component('dialog-login', {
     },
     methods: {
         vaildateIsLogin: function() { //验证是否登录
-
+            console.log(!!sessionStorage.getItem('user'))
+            if (!!sessionStorage.getItem('user')) {
+                this.isLogin = false;
+            } else {
+                this.isLogin = true;
+            }
         },
         closeLogin: function() { //关闭登录
             this.isLogin = false;
         },
         getCode: function() { //获取验证码
             var that = this;
-            var countdown = 60;
-            settime();
-            function settime() {
+            if (that.isSend) {
+                return false;
+            }
+            const regPhone = /^0?1[3|4|5|7|8][0-9]\d{8}$/;
+            if (that.tel == '') {
+                $.ModuleTip({ 'txt': '手机号不能为空' });
+                return false;
+            } else if (!regPhone.test(that.tel)) {
+                $.ModuleTip({ 'txt': '请填写11位手机号' });
+                return false;
+            }
+            const url = "http://test.haitat.com/api/user/mobile/captcha"; // 请求验证码url
+            $.get(url, { mobile: that.tel }, function(r) {
+                if (r.code == "1") {
+                    setTime(60);
+                } else if (r.code == "50020") {
+                    $.ModuleTip({ 'txt': '手机号码错误' });
+                }
+            });
+
+            function setTime(countdown) {
                 if (countdown == 0) {
                     that.isSend = false;
                     that.sendButtonText = "获取验证码";
+                    return;
                 } else {
                     that.isSend = true;
                     that.sendButtonText = "已发送(" + countdown + ")";
-                    countdown--;
                 }
                 setTimeout(function() {
-                    settime()
-                }, 1000)
+                    setTime(--countdown)
+                }, 1000);
             }
         },
         loginAjax: function() { //登录
+            const url = "http://test.haitat.com/api/user/captcha/check";
+            const self = this;
 
+            $.get(url, { code: self.code, mobile: self.tel }, function(resp, statusCode) {
+                if (resp.code == "1") {
+                    self.isLogin = false;
+                    sessionStorage.setItem('user', 'aaa'); // 测试用生产需要填充  resp.data
+                } else if (resp.code == "7") {
+                    $.ModuleTip({ 'txt': '验证码不存在或者超时，请重试' });
+                } else {
+                    self.isLogin = false;
+                    sessionStorage.setItem('user', 'aaa'); // 测试用生产需要填充  resp.data
+                    $.ModuleTip({ 'txt': resp.message });
+                }
+            });
         },
     },
     computed: {
