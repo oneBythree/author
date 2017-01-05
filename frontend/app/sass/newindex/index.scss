@@ -7,10 +7,10 @@
 @import url(../reset.css);
 @import '../_mixs';
 @import url(../animate.css);
-
 body {
     position: relative;
 }
+
 //新panel 
 .newindex-panel {
     padding: .16rem .2rem 0 .2rem;
@@ -163,7 +163,7 @@ body {
                 color: #333;
                 padding-left: .2rem;
             }
-            .iconfont{
+            .iconfont {
                 font-size: .32rem;
                 width: .5rem;
                 text-align: center;
@@ -313,10 +313,10 @@ ul.newroutes-list {
                     max-height: 3rem;
                     overflow-y: auto;
                     li {
-                        padding-left: .2rem;
-                        height: .6rem;
-                        line-height: .6rem;
-                        font-size: $font26;
+                        // padding-left: .2rem;
+                        padding: .12rem .2rem;
+                        line-height: 150%;
+                        font-size: .24rem;
                         &.active,
                         &:active {
                             background: #2f91f9;
@@ -480,13 +480,13 @@ ul.newroutes-list {
                 }
             }
         }
-        .close{
+        .close {
             position: absolute;
             left: 50%;
             bottom: -1.03rem;
             width: .6rem;
             height: .6rem;
-            background:  url(../../images/login_icon_cancle.png) no-repeat;
+            background: url(../../images/login_icon_cancle.png) no-repeat;
             background-size: cover;
         }
     }

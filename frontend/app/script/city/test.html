@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="../newindex/@address.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var itemJson = [];
+    address.map(function(item) {
+        var splitItem = item.split('|');
+        var namef_full_py = splitItem[0];
+        var fullname = splitItem[1];
+        var name = fullname.split('-')[fullname.split('-').length - 1];
+        var name_smart_py = splitItem[2];
+        var name_code = splitItem[3]
+        itemJson.push({
+            name: name,
+            fullname:fullname,
+            namef_full_py: namef_full_py,
+            name_smart_py: name_smart_py,
+            name_code: name_code
+        });
+    })
+    console.log(JSON.stringify(itemJson));
+    </script>
+</body>
+
+</html>
