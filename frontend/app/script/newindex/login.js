@@ -61,7 +61,7 @@ Vue.component('dialog-login', {
         }
     },
     ready: function() {
-        this.vaildateIsLogin()
+        this.vaildateIsLogin();
     },
     methods: {
         vaildateIsLogin: function() { //验证是否登录

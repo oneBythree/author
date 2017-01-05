@@ -3,7 +3,7 @@
  let gulp = require('gulp');
 
  let babel = require('gulp-babel');
- let sass = require('gulp-sass');
+ // let sass = require('gulp-sass');
 
  let minifyCSS = require('gulp-minify-css'); //压缩样式
  let cssVer = require('gulp-make-css-url-version');
@@ -21,19 +21,19 @@
  //最新路径
  let newStylesDir = "static/css/";
 
- gulp.task("scss", function() {
-     return gulp.src(oldStylesDir + ".scss")
-         .pipe(sass().on("error", sass.logError))
-         .pipe(minifyCSS({ compatibility: 'ie8' }))
-         .pipe(gulp.dest(newStylesDir));
- });
+ // gulp.task("scss", function() {
+ //     return gulp.src(oldStylesDir + ".scss")
+ //         .pipe(sass().on("error", sass.logError))
+ //         .pipe(minifyCSS({ compatibility: 'ie8' }))
+ //         .pipe(gulp.dest(newStylesDir));
+ // });
 
- gulp.task("css", function() {
-     return gulp.src(oldStylesDir + ".css")
-         .pipe(cssVer())
-         .pipe(minifyCSS({ compatibility: 'ie8' }))
-         .pipe(gulp.dest(newStylesDir));
- })
+ // gulp.task("css", function() {
+ //     return gulp.src(oldStylesDir + ".css")
+ //         .pipe(cssVer())
+ //         .pipe(minifyCSS({ compatibility: 'ie8' }))
+ //         .pipe(gulp.dest(newStylesDir));
+ // })
 
  gulp.task("image", function() {
      return gulp.src("frontend/app/images/**/*.{png,jpg,gif,ico}")
@@ -75,7 +75,7 @@
 
  gulp.task("server", function() {
      server.run("app.js");
-     gulp.watch('frontend/app/sass/**/*.scss', ['scss']);
+     // gulp.watch('frontend/app/sass/**/*.scss', ['scss']);
      gulp.watch('frontend/app/script/city/**/*.js', ['js']);
      gulp.watch('frontend/app/**/*.html', ['html']);
      gulp.watch("frontend/app/images/**/*.{png,jpg,gif,ico}", ['image']);
