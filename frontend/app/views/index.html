@@ -68,7 +68,8 @@
                 <div class="print-city">
                     <input type="text" name="" placeholder="输入出发城市" v-model="startCity" @input="input(startCity,'start')" @blur="blurInput('start')">
                     <ul v-if="showListStart">
-                        <li v-for="type in addressData | filterBy startCity" @click="selectedClick(type.split('|')[1],'start')">{{type.split('|')[1]}}</li>
+                        <li v-for="address in addressData | filterBy startCity" @click="selectedClick(type.split('|')[1],'start')">{{address.split('|')[1]}}
+                        </li>
                     </ul>
                 </div>
                 <span class="icont-line">
@@ -101,10 +102,11 @@
             </ul>
         </div>
     </div>
-    <dialog-login ></dialog-login>
+    <dialog-login></dialog-login>
     <script type="text/javascript" src="http://cdn.bootcss.com/vue/1.0.28/vue.min.js"></script>
     <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://weixin.haitago.com/static/scripts/jsplug/common.js"></script>
+    <script type="text/javascript" src="../js/newindex/address.js"></script>
     <script type="text/javascript" src="../js/newindex/login.js"></script>
     <script type="text/javascript" src="../js/city/new-index.js">
     </script>
