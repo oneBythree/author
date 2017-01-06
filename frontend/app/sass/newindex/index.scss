@@ -11,6 +11,10 @@ body {
     position: relative;
 }
 
+[v-cloak] {
+    display: none;
+}
+
 //新panel 
 .newindex-panel {
     padding: .16rem .2rem 0 .2rem;
@@ -143,19 +147,22 @@ body {
             display: flex;
             @include boder-style-radius($colord9,
             .44rem);
-            line-height: .44rem;
             padding: .22rem 0 .22rem .38rem;
             font-size: 0;
+            overflow: hidden;
             .icont-search {
                 display: inline-block;
                 width: .38rem;
                 height: .38rem;
-                background: url('../../images/addroute_search.png') center no-repeat;
+                background: url('../../images/addroute_search.png') center center no-repeat;
                 background-size: cover;
                 vertical-align: middle;
                 margin-right: .2rem;
+                line-height: .44rem;
             }
             input[type="text"] {
+                height: .44rem;
+                line-height: .44rem;
                 border-left: 1px solid #d8d8d8;
                 background-color: transparent;
                 @extend .n-flex-1;
@@ -295,6 +302,8 @@ ul.newroutes-list {
                 input[type="text"] {
                     position: relative;
                     width: 100%;
+                    font-size: .28rem;
+                    // text-wrap: normal;
                     text-align: center;
                     padding: .19rem 0;
                     background-color: transparent;
@@ -429,13 +438,12 @@ ul.newroutes-list {
                 font-size: .28rem;
                 color: #686868;
                 text-indent: .23rem;
-                height: .82rem;
-                line-height: .82rem;
+                height: .44rem;
+                line-height: .44rem;
+                padding: .16rem 0;
                 &.tel {
                     width: 100%;
-                    @include boder-style-radius(#1d7be3,
-                    .04rem);
-                    margin-bottom: .4rem;
+                    border: none;
                 }
                 &.code {
                     @extend .n-flex-1;
@@ -445,33 +453,41 @@ ul.newroutes-list {
             .group-from {
                 @include boder-style-radius(#1d7be3,
                 .04rem);
-                margin-bottom: .68rem;
-                a {
+                margin-bottom: .4rem;
+                overflow: hidden;
+                a.sendcode {
+                    display: inline-block;
                     text-align: center;
                     font-size: .22rem;
                     white-space: nowrap;
                     background: #3e99f9;
                     color: #fff;
-                    width: 2.4rem;
+                    // width: 2.4rem;
                     color: #fff;
-                    height: .82rem;
-                    line-height: .82rem;
+                    height: .44rem;
+                    line-height: .44rem;
+                    padding: .16rem .12rem;
                     &.disable {
                         background: #f5f5f5;
                         color: #686868;
+                        &:active {
+                            background: #f5f5f5;
+                            color: #686868;
+                        }
                     }
-                    &:active {
+                    &:not(.disable):active {
                         background: #2a8ef8;
                     }
                 }
             }
             .submit {
+                margin-top: .68rem;
                 display: block;
                 width: 100%;
+                height: .82rem;
+                line-height: .82rem;
                 font-size: .32rem;
                 color: #fff;
-                line-height: .82rem;
-                height: .82rem;
                 background: #3e99f9;
                 text-align: center;
                 border-radius: .04rem;

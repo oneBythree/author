@@ -3449,9 +3449,10 @@ var address = [{
     "name_smart_py": "lss",
     "name_code": "331100"
 }, {
-    "name": "莲都区ldq2",
-    "fullname": "浙江省-丽水市-莲都区ldq2",
+    "name": "莲都区",
+    "fullname": "浙江省-丽水市-莲都区",
     "namef_full_py": "LianduQu",
+    "name_smart_py": "ldq",
     "name_smart_py": "331102"
 }, {
     "name": "青田县",

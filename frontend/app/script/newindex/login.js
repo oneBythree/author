@@ -19,11 +19,12 @@ Vue.component('dialog-login', {
         '<div class="content">' +
         '<img src="../images/login_pic.png" alt="" class="logo">' +
         '<form>' +
-        '<input class="tel" type="tel" v-model="tel" maxlength="11" placeholder="请输入手机号" " style="ime-mode:Disabled" v-number-only>' +
-        '<div class="group-from table">' +
-        '<input class="code cell" type="tel"   v-model="code" maxlength="4" placeholder="请输入验证码" " style="ime-mode:Disabled" v-number-only>' +
-        '<a href="javascript:;" class="cell" :class="diableClass" @click="getCode()">{{sendButtonText}}</a>' +
-        '<!-- <a href="javascript:;">已发送（59）</a> -->' +
+        '<div class="group-from">' +
+        '<input class="tel" type="tel" v-model="tel" maxlength="11" placeholder="请输入手机号" style="ime-mode:Disabled" v-number-only>' +
+        '</div>'+
+        '<div class="group-from n-flex">' +
+        '<input class="code flex-1" type="tel" v-model="code" maxlength="4" placeholder="请输入验证码" style="ime-mode:Disabled" v-number-only>' +
+        '<a href="javascript:;" class="cell sendcode" :class="diableClass" @click="getCode()">{{sendButtonText}}</a>' +
         '</div>' +
         '<a href="javascript:;" class="submit" @click="loginAjax">登录</a>' +
         '</form>' +
@@ -65,7 +66,6 @@ Vue.component('dialog-login', {
     },
     methods: {
         vaildateIsLogin: function() { //验证是否登录
-            console.log(!!sessionStorage.getItem('user'))
             if (!!sessionStorage.getItem('user')) {
                 this.isLogin = false;
             } else {

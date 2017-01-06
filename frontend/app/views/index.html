@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset=UTF-8 http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>海獭Go</title>
     <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_zoenks8rmmyousor.css">
     <link rel="stylesheet" type="text/css" href="css/newindex/index.css">
 </head>
 
-<body id="newIndex">
+<body id="newIndex" v-cloak>
     <section class="newindex-panel">
         <div class="body">
             <a href="javascript:;" class="new-search" @click="showSearchInLine" v-if="!isSearchInLine">
@@ -27,7 +27,7 @@
             <div class="get-recommend">
                 <ul class="recommend-route" v-if="recommendCitys.length>0">
                     <li v-for="recommendCity in recommendCitys">
-                        <a href="javscript:;">{{recommendCity.name}}<em>{{recommendCity.account}}条</em></a>
+                        <a href="javascript:;">{{recommendCity.name}}<em>{{recommendCity.account}}条</em></a>
                     </li>
                 </ul>
                 <a href="javascript:;" v-if="recommendCitys.length>0" class="add" @click="showAdd">没有推荐线路？点击添加</a>
@@ -51,9 +51,9 @@
             <button class="btn-tag">常用</button>
             <div class="n-flex-1">
                 <div class="n-flex">
-                    <span class="route right">{{commRouter.start}}</span>
+                    <span class="route right overflow">{{commRouter.start}}</span>
                     <em class="icont-round"></em>
-                    <span class="route left">{{commRouter.end}}</span>
+                    <span class="route left overflow">{{commRouter.end}}</span>
                 </div>
             </div>
             <em class="icont-right"></em>
@@ -66,8 +66,10 @@
             <p class="add-title">添加新路线（往返）</p>
             <div class="add-print">
                 <div class="print-city">
-                    <input type="text" v-model="startCity" placeholder="输入出发城市">{{showListStart}}{{!!startCity}}
-                    <ul v-if="!!startCity">
+                    <input class="overflow" type="text" v-model="startCity" placeholder="输入出发城市" 
+                    @blur="blurInput('start')" @input="input(startCity,'start')" @keyup.enter="enter">
+                    <!-- <input type="hidden" v-model="ajaxStart"> -->
+                    <ul v-if="showListStart&&!!startCity">
                         <li v-for="address in  addressData | filterBy  startCity in 'name'  'namef_full_py' 'name_smart_py' " @click="selectedClick(address,'start')">{{address.fullname}}</li>
                     </ul>
                 </div>
@@ -75,9 +77,11 @@
                     <em></em>
                 </span>
                 <div class="print-city">
-                    <input type="text" v-model="endCity" placeholder="输入到达城市" @input="input(endCity,'end')" @blur="blurInput('end')">
+                    <input  class="overflow"  type="text" v-model="endCity" placeholder="输入到达城市" 
+                    @blur="blurInput('end')" @input="input(endCity,'end')" @keyup.enter="enter">
+                    <!-- <input type="hidden" v-model="ajaxEnd"> -->
                     <ul v-if="showListEnd&&!!endCity">
-                        <li v-for="address in  addressData | filterBy endCity" @click="selectedClick(address,'end')">{{address.fullname}}</li>
+                        <li v-for="address in  addressData | filterBy endCity in 'name'  'namef_full_py' 'name_smart_py'" @click="selectedClick(address,'end')">{{address.fullname}}</li>
                     </ul>
                 </div>
             </div>
@@ -90,15 +94,15 @@
                 <div class=" blank">
                     <div class="content">
                         <span class="icont-search"></span>
-                        <input id="searchInput" v-model="query" type="text" maxlength="10" @blur="searchBlur()" @input="input(query,'key')">
+                        <input id="searchInput" v-model="query" type="text" maxlength="10" @blur="searchBlur()" @input="searchQuery(query)" @keyup.enter="enter" >
                         <em v-if="query!='' " class="iconfont icon-clean" @click="cleanKey"> </em>
                     </div>
                 </div>
             </div>
             <ul>
-                <li v-for="address in  addressData | filterBy query" @click="searchQueryRouter()">{{address.fullname}}</li>
-                <li v-if="!addressData| filterBy query.length>0">没有线路</li>
-            </ul>
+                <li v-for="search in searchData" @click="selectedCity(search.name)">{{search.title}}</li>
+                <li v-if="!searchData.length>0&&query!=''">没有线路{{query}}</li>
+            </ul> 
         </div>
     </div>
     <dialog-login></dialog-login>
