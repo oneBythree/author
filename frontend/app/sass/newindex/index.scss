@@ -147,7 +147,7 @@ body {
             display: flex;
             @include boder-style-radius($colord9,
             .44rem);
-            padding: .22rem 0 .22rem .38rem;
+            padding: .2rem 0 .2rem .38rem;
             font-size: 0;
             overflow: hidden;
             .icont-search {
@@ -400,8 +400,8 @@ ul.newroutes-list {
                 height: .9rem;
                 line-height: .9rem;
                 padding-left: .28rem;
-                &:last-of-type {
-                    border-bottom: none;
+                &:active {
+                    background: #ededed;
                 }
             }
         }

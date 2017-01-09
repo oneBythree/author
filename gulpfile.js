@@ -12,9 +12,15 @@
 
  let uglify = require('gulp-uglify'); //压缩js
 
+ let concat = require('gulp-concat'); //文件合并
+
+ let rename = require('gulp-rename'); //文件更名
+
  let htmlmin = require('gulp-htmlmin'); //压缩html
 
  let server = require('gulp-express');
+
+ var gutil = require('gulp-util')
 
  //样式原始路径
  let oldStylesDir = "frontend/app/sass/**/*";
@@ -44,17 +50,27 @@
  gulp.task("copy", function() {
      gulp.src("frontend/app/sass/*{eot,woff,svg,ttf}")
          .pipe(gulp.dest('static/css/'));
-    gulp.src("frontend/app/font/*{eot,woff,svg,ttf}")
-        .pipe(gulp.dest('static/font'));
+     gulp.src("frontend/app/font/*{eot,woff,svg,ttf}")
+         .pipe(gulp.dest('static/font'));
  })
 
- gulp.task("js", function() {
-     return gulp.src("frontend/app/script/**/*.js")
-         .pipe(babel({ presets: ['es2015'] }))
-         .pipe(uglify())
-         .pipe(gulp.dest("static/js/"));
- });
+ // gulp.task("js", function() {
+ //     // return gulp.src("frontend/app/script/**/*.js")
+ //     //     .pipe(babel({ presets: ['es2015'] }))
+ //     //     .pipe(uglify())
+ //     //     .pipe(gulp.dest("static/js/"));
+ // });
 
+ gulp.task('concat', function() {
+     gulp.src(["frontend/app/script/newindex/address.js", "frontend/app/script/newindex/login.js", "frontend/app/script/newindex/new-index.js"])
+         .pipe(babel({ presets: ['es2015'] }))
+         .pipe(concat('main.js'))
+         .pipe(uglify().on('error', function(err) {
+             gutil.log(err);
+             this.emit('end');
+         }))
+         .pipe(gulp.dest('static/js/newindex/'));
+ })
 
  gulp.task("html", function() {
      var options = {
@@ -76,7 +92,8 @@
  gulp.task("server", function() {
      server.run("app.js");
      gulp.watch('frontend/app/sass/**/*.scss', ['scss']);
-     gulp.watch('frontend/app/script/city/**/*.js', ['js']);
+     // gulp.watch('frontend/app/script/newindex/*.js', ['js']);
+     gulp.watch('frontend/app/script/newindex/**/*.js', ['concat']);
      gulp.watch('frontend/app/**/*.html', ['html']);
      gulp.watch("frontend/app/images/**/*.{png,jpg,gif,ico}", ['image']);
  })

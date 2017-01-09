@@ -89,9 +89,6 @@ var app = new Vue({
             this.query = '';
             $('#searchInput').focus();
         },
-        searchQueryRouter: function(key) {
-            console.log(key);
-        },
         showAdd: function() { //展示添加
             this.isAdd = true;
         },
@@ -170,7 +167,6 @@ var app = new Vue({
                 return false;
             }
 
-
             var dataJson = { //添加数据
                 'start': that.ajaxStart.name,
                 'end': that.ajaxEnd.name,
@@ -229,7 +225,7 @@ var app = new Vue({
             var url = 'http://test.haitat.com/api/user/route/add';
             $.get(url, dataJson, function(r) {
                 if (r.code == "1") {
-                    that.commRouters.push({ 'start': dataJson.start, 'end': dataJson.end, 'id': r.data.id }) // 添加路线
+                    that.commRouters.unshift({ 'start': dataJson.start, 'end': dataJson.end, 'id': r.data.id }) // 添加路线
                 } else if (r.code == "50010") {
                     $.ModuleTip({ 'txt': r.message });
                 }

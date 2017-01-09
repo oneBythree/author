@@ -8,14 +8,13 @@
     <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_zoenks8rmmyousor.css">
     <link rel="stylesheet" type="text/css" href="css/newindex/index.css">
 </head>
-
 <body id="newIndex" v-cloak>
     <section class="newindex-panel">
         <div class="body">
             <a href="javascript:;" class="new-search" @click="showSearchInLine" v-if="!isSearchInLine">
                 <span class="map">
                     <em class="icont-map"></em>
-                    <em class="map-tip" v-text="city"></em>
+                    <em class="map-tip" v-text="cityData.name"></em>
                 </span>
                 <span class="search">
                     <em class="icont-search"></em>
@@ -27,18 +26,18 @@
             <div class="get-recommend">
                 <ul class="recommend-route" v-if="recommendCitys.length>0">
                     <li v-for="recommendCity in recommendCitys">
-                        <a href="javascript:;">{{recommendCity.name}}<em>{{recommendCity.account}}条</em></a>
+                        <a href="javascript:;" @click="recommendRoute(recommendCity)">{{recommendCity.name}}<em>{{recommendCity.account}}条</em></a>
                     </li>
                 </ul>
                 <a href="javascript:;" v-if="recommendCitys.length>0" class="add" @click="showAdd">没有推荐线路？点击添加</a>
             </div>
             <!-- 定位，无法获取推荐 -->
-            <div class="get-recommend-nothing" v-if="recommendCitys.length==0&&city!='未定位'">
+            <div class="get-recommend-nothing" v-if="recommendCitys.length==0&&cityData.name!='未定位'">
                 <p>无法获取推荐路线</p>
                 <a href="javascript:;" class="add" @click="showAdd">没有推荐线路？点击添加</a>
             </div>
             <!-- 无法定位 -->
-            <p class="nothing" v-if="recommendCitys.length==0&&city=='未定位'">
+            <p class="nothing" v-if="recommendCitys.length==0&&cityData.name=='未定位'">
                 无法定位当前城市，请输入出发或目的城市
                 <br>
                 <a href="javascript:;">查看推荐线路</a>
@@ -100,7 +99,7 @@
                 </div>
             </div>
             <ul>
-                <li v-for="search in searchData" @click="selectedCity(search.name)">{{search.title}}</li>
+                <li v-for="search in searchData" @click="selectedCity(search)">{{search.title}}</li>
                 <li v-if="!searchData.length>0&&query!=''">没有线路{{query}}</li>
             </ul> 
         </div>
@@ -109,10 +108,7 @@
     <script type="text/javascript" src="http://cdn.bootcss.com/vue/1.0.28/vue.min.js"></script>
     <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://weixin.haitago.com/static/scripts/jsplug/common.js"></script>
-    <script type="text/javascript" src="../js/newindex/address.js"></script>
-    <script type="text/javascript" src="../js/newindex/login.js"></script>
-    <script type="text/javascript" src="../js/city/new-index.js">
-    </script>
+    <script type="text/javascript" src="../js/newindex/main.js"></script>
 </body>
 
 </html>
