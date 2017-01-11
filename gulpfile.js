@@ -54,12 +54,6 @@
          .pipe(gulp.dest('static/font'));
  })
 
- // gulp.task("js", function() {
- //     // return gulp.src("frontend/app/script/**/*.js")
- //     //     .pipe(babel({ presets: ['es2015'] }))
- //     //     .pipe(uglify())
- //     //     .pipe(gulp.dest("static/js/"));
- // });
 
  gulp.task('concat', function() {
      gulp.src(["frontend/app/script/newindex/address.js", "frontend/app/script/newindex/login.js", "frontend/app/script/newindex/new-index.js"])
@@ -92,7 +86,6 @@
  gulp.task("server", function() {
      server.run("app.js");
      gulp.watch('frontend/app/sass/**/*.scss', ['scss']);
-     // gulp.watch('frontend/app/script/newindex/*.js', ['js']);
      gulp.watch('frontend/app/script/newindex/**/*.js', ['concat']);
      gulp.watch('frontend/app/**/*.html', ['html']);
      gulp.watch("frontend/app/images/**/*.{png,jpg,gif,ico}", ['image']);

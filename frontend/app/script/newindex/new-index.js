@@ -10,6 +10,11 @@ Vue.transition('fadeDown', {
     leaveClass: 'fadeOutUp'
 })
 
+Vue.filter('hundred', function(value) {
+    return value > 100 ? '99+' : value;
+})
+
+
 var app = new Vue({
     el: '#newIndex',
     data() {
@@ -32,11 +37,15 @@ var app = new Vue({
             ajaxStart: '',
             ajaxEnd: '',
             commRouters: [],
-            searchData: []
+            searchData: [],
+            ulHeight: 'auto',
+            panelHeight: 'auto',
+            seachComputed: '',
         }
     },
     ready: function() {
         this.initData();
+        this.resizeHeight();
     },
     methods: {
         initData: function() { // 初始化数据
@@ -70,8 +79,26 @@ var app = new Vue({
                 }
             });
         },
+        resizeHeight: function() {
+            var that = this;
+            $(window).resize(function(event) {
+                if (that.seachComputed) {
+                    var wHeight = $('body').height();
+                    var panelTop = $('#panel').offset().top * 2;
+                    var inputTop = $('a#seachWarp').offset().top;
+                    var inputSearch = $('a#seachWarp').outerHeight();
+                    var searchHeight = wHeight - inputSearch - inputTop - panelTop;
+                    var panelHeight = wHeight - panelTop;
+                    that.ulHeight = searchHeight + 'px';
+                    that.panelHeight = panelHeight + 'px';
+                } else {
+                    that.panelHeight = 'auto';
+                }
+            });
+        },
         showSearchInLine: function() { //展示搜索inline
             this.isSearchInLine = true;
+            var that = this;
             setTimeout(function() { // 延迟获取焦点jq vue 不同步（bug）
                 $('#searchInput').focus();
             }, 200)
@@ -79,15 +106,19 @@ var app = new Vue({
         searchBlur: function() { //输入框失去焦点&输入文字为空
             if (this.query == '' || this.query == undefined) {
                 this.isSearchInLine = false;
+                this.searchData = [];
             }
         },
         backIndex: function() {
             this.isSearchInLine = false;
             this.query = '';
+            // this.panelHeight = 'auto';
         },
         cleanKey: function() { // 清除关键字
             this.query = '';
+            this.searchData = [];
             $('#searchInput').focus();
+            // this.panelHeight = 'auto';
         },
         showAdd: function() { //展示添加
             this.isAdd = true;
@@ -109,7 +140,9 @@ var app = new Vue({
         },
         input: function(val, type) { // 城市输入
             if (type == 'start') {
-                this.showListStart = !!val ? true : false;
+                console.log(val)
+                this.showListStart = !!this.startCity ? true : false;
+                console.log(this.showListStart);
                 this.ajaxStart = '';
             } else if (type = "end") {
                 this.showListEnd = !!val ? true : false;
@@ -120,7 +153,6 @@ var app = new Vue({
             var that = this;
             setTimeout(function() {
                 if (type == 'start') {
-
                     that.startCity = that.ajaxStart == '' ? '' : that.startCity; //隐藏为空 startCity制空
                     that.showListStart = false;
                 } else {
@@ -174,26 +206,7 @@ var app = new Vue({
                 'end_py': that.ajaxEnd.namef_full_py,
                 'user': 1 // 测试用户 生产环境不用
             }
-
             that.ajaxAdd(dataJson);
-        },
-        searchQuery: function(key) { //模糊搜索
-            var that = this;
-            var url = 'http://test.haitat.com/api/user/city/suggest';
-            var _t = new Date().getTime();
-
-            var dataJson = {
-                q: key,
-                t: _t
-            }
-
-            $.get(url, dataJson, function(r) {
-                if (r.code == "1") {
-                    that.searchData = r.data.items;
-                } else if (r.code == "50010") {
-                    $.ModuleTip({ 'txt': r.message });
-                }
-            });
         },
         selectedCity: function(val) { //切换出发城市或目的城市
             if (!val) return
@@ -223,14 +236,58 @@ var app = new Vue({
         ajaxAdd: function(dataJson) { // 添加常用路线ajax
             var that = this;
             var url = 'http://test.haitat.com/api/user/route/add';
+            var falg = false;
             $.get(url, dataJson, function(r) {
                 if (r.code == "1") {
-                    that.commRouters.unshift({ 'start': dataJson.start, 'end': dataJson.end, 'id': r.data.id }) // 添加路线
+
+                    var _id = r.data.id; //添加的路线的id
+                    that.commRouters.map(function(item, index) {
+                        if (item.id == _id) {
+                            falg = true;
+                            that.commRouters.splice(index, 1);
+                        }
+                    })
+                    if (!flag) {
+                        $.ModuleTip({ 'txt': '添加路线成功' });
+                    } else {
+                        $.ModuleTip({ 'txt': '路线已存在' });
+                    }
+                    that.commRouters.unshift({
+                        'start': dataJson.start,
+                        'end': dataJson.end,
+                        'id': _id
+                    }); // 添加路线
                 } else if (r.code == "50010") {
                     $.ModuleTip({ 'txt': r.message });
                 }
                 that.closeAdd(); //关闭添加弹窗
             });
+        }
+
+    },
+    computed: {
+        filterList: function() {
+            var filter = Vue.filter('filterBy');
+            return filter(address, this.query, 'name', 'namef_full_py', 'name_smart_py');
+        },
+        seachComputed: function() {
+            return this.query != '' && this.isSearchInLine;
+        }
+    },
+    watch: {
+        seachComputed: function(cur, old) {
+            if (cur) {
+                var wHeight = $('body').height();
+                var panelTop = $('#panel').offset().top * 2;
+                var inputTop = $('a#seachWarp').offset().top;
+                var inputSearch = $('a#seachWarp').outerHeight();
+                var searchHeight = wHeight - inputSearch - inputTop - panelTop;
+                var panelHeight = wHeight - panelTop;
+                this.ulHeight = searchHeight + 'px';
+                this.panelHeight = panelHeight + 'px';
+            } else {
+                this.panelHeight = 'auto';
+            }
         }
     }
 });

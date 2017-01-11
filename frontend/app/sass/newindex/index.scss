@@ -19,6 +19,7 @@ body {
 .newindex-panel {
     padding: .16rem .2rem 0 .2rem;
     .body {
+        position: relative;
         background: $colorfff;
         @include boder-style-radius($colord9, .04rem);
         padding: .32rem .3rem .32rem .3rem;
@@ -130,6 +131,29 @@ body {
             margin-left: .2rem;
             vertical-align: middle;
         }
+    }
+    .l-search {
+        display: inline-block;
+        width: .38rem;
+        height: .38rem;
+        margin-right: .2rem;
+        background: url('../../images/addroute_search.png') center no-repeat;
+        background-size: cover;
+        vertical-align: middle;
+    }
+    input.l-input {
+        @extend .n-flex-1;
+        font-size: $font28;
+        color: #666;
+        background-color: transparent;
+        border-left: 1px solid #d8d8d8;
+        padding-left: .12rem;
+    }
+    em.icon-clean {
+        display: inline-block;
+        color: #999;
+        font-size: .28rem;
+        margin-right: .2rem;
     }
 }
 
@@ -403,6 +427,33 @@ ul.newroutes-list {
                 &:active {
                     background: #ededed;
                 }
+            }
+        }
+    }
+}
+
+div.search-query {
+    position: absolute;
+    top: 1.2rem;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    overflow-y: auto;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    font-size: $font28;
+    ul.blank {
+        padding: 0 .2rem;
+        li {
+            position: relative;
+            border-bottom: 1px solid #ececec;
+            height: .9rem;
+            line-height: .9rem;
+            padding-left: .28rem;
+            &:active {
+                background: #ededed;
             }
         }
     }
