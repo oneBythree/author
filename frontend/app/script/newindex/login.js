@@ -21,7 +21,7 @@ Vue.component('dialog-login', {
         '<form>' +
         '<div class="group-from">' +
         '<input class="tel" type="tel" v-model="tel" maxlength="11" placeholder="请输入手机号" style="ime-mode:Disabled" v-number-only>' +
-        '</div>'+
+        '</div>' +
         '<div class="group-from n-flex">' +
         '<input class="code flex-1" type="tel" v-model="code" maxlength="4" placeholder="请输入验证码" style="ime-mode:Disabled" v-number-only>' +
         '<a href="javascript:;" class="cell sendcode" :class="diableClass" @click="getCode()">{{sendButtonText}}</a>' +
@@ -118,12 +118,11 @@ Vue.component('dialog-login', {
             $.get(url, { code: self.code, mobile: self.tel }, function(resp, statusCode) {
                 if (resp.code == "1") {
                     self.isLogin = false;
-                    sessionStorage.setItem('user', 'aaa'); // 测试用生产需要填充  resp.data
+                    sessionStorage.setItem('user', 'aaa'); //成功时候要加sessionStorage
                 } else if (resp.code == "7") {
                     $.ModuleTip({ 'txt': '验证码不存在或者超时，请重试' });
                 } else {
                     self.isLogin = false;
-                    sessionStorage.setItem('user', 'aaa'); // 测试用生产需要填充  resp.data
                     $.ModuleTip({ 'txt': resp.message });
                 }
             });
