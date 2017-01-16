@@ -62,7 +62,11 @@ Vue.component('dialog-login', {
         }
     },
     ready: function() {
+        var self = this;
         this.vaildateIsLogin();
+        // self.$parent.$on("user-loaded", function(user) {
+        //     self.vaildateIsLogin();
+        // });
     },
     methods: {
         vaildateIsLogin: function() { //验证是否登录
@@ -118,6 +122,7 @@ Vue.component('dialog-login', {
             $.get(url, { code: self.code, mobile: self.tel }, function(resp, statusCode) {
                 if (resp.code == "1") {
                     self.isLogin = false;
+                    // location.reload();
                     sessionStorage.setItem('user', 'aaa'); //成功时候要加sessionStorage
                 } else if (resp.code == "7") {
                     $.ModuleTip({ 'txt': '验证码不存在或者超时，请重试' });

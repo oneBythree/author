@@ -22,12 +22,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.0.0",
     "gulp-uglify": "^2.0.0",
-<<<<<<< HEAD
     "gulp-util": "^3.0.8",
     "node-sass": "^4.2.0"
-=======
-    "gulp-util": "^3.0.8"
->>>>>>> a02624f6c8688fa00861d689d53c060bd1726699
   },
   "dependencies": {
     "body-parser": "^1.15.2",

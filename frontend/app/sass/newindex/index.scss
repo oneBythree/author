@@ -93,9 +93,6 @@ body {
     line-height: .44rem;
     padding: .2rem 0 .2rem .3rem;
     font-size: 0;
-    &:active {
-        background: #ebebeb;
-    }
     .map {
         padding-right: .1rem;
         border-right: 1px solid #d8d8d8;
@@ -152,7 +149,6 @@ body {
         font-size: $font28;
         color: #666;
         background-color: transparent;
-        border-left: 1px solid #d8d8d8;
         padding-left: .12rem;
     }
     em.icon-clean {
@@ -387,7 +383,6 @@ ul.newroutes-list {
                     background: #3e99f9;
                     vertical-align: middle;
                     border-radius: 1px;
-                    // margin-bottom: -1px;
                 }
             }
         }
@@ -419,7 +414,6 @@ ul.newroutes-list {
     overflow-y: auto;
     div.body {
         // padding: .48rem .5rem 0 .5rem;
-        // 
         overflow-y: auto;
         ul {
             font-size: $font28;

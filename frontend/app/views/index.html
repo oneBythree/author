@@ -12,30 +12,22 @@
 <body id="newIndex" v-cloak>
     <section class="newindex-panel">
         <div class="body" id="panel" :style="{height:panelHeight}">
-            <a href="javascript:;" class="new-search" @click="showSearchInLine" v-if="!isSearchInLine">
+            <a id="seachWarp" href="javascript:;" class="new-search" @click="showSearchInLine">
                 <span class="map">
                     <em class="icont-map"></em>
                     <em class="map-tip" v-text="cityData.name"></em>
                 </span>
-                <span class="search">
+                <span class="search" v-if="!isSearchInLine">
                     <em class="icont-search"></em>
                     <em class="search-tip">输入出发城市或目的地</em>
                 </span>
-            </a>
-            <a id="seachWarp" href="javascript:;" class="new-search" v-if="isSearchInLine">
-                <span class="l-search">
-                 </span>
-                <input id="searchInput" class="l-input" type="text" v-model="query" type="text" maxlength="10" @blur="searchBlur()" @keyup.enter="enter">
+                <input id="searchInput" class="l-input" type="text" v-model="query" type="text" maxlength="10" @blur="searchBlur()" @keyup.enter="enter" v-if="isSearchInLine" v-auto-focus="isSearchInLine">
                 <em v-if="query!='' " class="iconfont icon-clean" @click="cleanKey"> </em>
             </a>
             <div class="search-query" id="ulSearchList" v-if="seachComputed" :style="{height:ulHeight}">
                 <ul class="blank">
                     <li v-for="search in filterList" @click="selectedCity(search)">{{search.fullname}}</li>
-<<<<<<< HEAD
                     <li v-if="!filterList.length>0 && query!=''" @click="backIndex">没有线路</li>
-=======
-                    <li v-if="!filterList.length>0 && query!=''" @click="">没有线路</li>
->>>>>>> a02624f6c8688fa00861d689d53c060bd1726699
                 </ul>
             </div>
             <p class="recommend-title" v-if="!filterList>0">推荐路线(往返)</p>
@@ -82,58 +74,24 @@
             <p class="add-title">添加新路线（往返）</p>
             <div class="add-print">
                 <div class="print-city">
-<<<<<<< HEAD
                     <input class="overflow" type="text" v-model="startCity" placeholder="输入出发城市" @blur="blurInput('start')" @keyup="input(startCity,'start')" @keyup.enter="enter">
                     <ul v-if="showListStart">
                         <li v-for="address in  startAddress | filterBy  startCity.trim() in 'name'  'namef_full_py' 'name_smart_py' " @click="selectedClick(address,'start')">{{address.fullname}}</li>
-=======
-                    <input class="overflow" type="text" v-model="startCity" placeholder="输入出发城市" @blur="blurInput('start')" @change="input(startCity,'start')" @keyup.enter="enter">
-                    <!-- <input type="hidden" v-model="ajaxStart"> -->
-                    <ul v-if="!!startCity&&showListStart">
-                        <li v-for="address in  addressData | filterBy  startCity.trim() in 'name'  'namef_full_py' 'name_smart_py' " @click="selectedClick(address,'start')">{{address.fullname}}</li>
->>>>>>> a02624f6c8688fa00861d689d53c060bd1726699
                     </ul>
                 </div>
                 <span class="icont-line">
                     <em></em>
                 </span>
                 <div class="print-city">
-<<<<<<< HEAD
                     <input class="overflow" type="text" v-model="endCity" placeholder="输入到达城市" @blur="blurInput('end')" @keyup="input(endCity,'end')" @keyup.enter="enter">
                     <ul v-if="showListEnd">
                         <li v-for="address in  endAddress | filterBy endCity.trim() in 'name'  'namef_full_py' 'name_smart_py'" @click="selectedClick(address,'end')">{{address.fullname}}</li>
-=======
-                    <input class="overflow" type="text" v-model="endCity" placeholder="输入到达城市" @blur="blurInput('end')" @change="input(endCity,'end')" @keyup.enter="enter">
-                    <!-- <input type="hidden" v-model="ajaxEnd"> -->
-                    <ul v-if="showListEnd&&!!endCity">
-                        <li v-for="address in  addressData | filterBy endCity in 'name'  'namef_full_py' 'name_smart_py'" @click="selectedClick(address,'end')">{{address.fullname}}</li>
->>>>>>> a02624f6c8688fa00861d689d53c060bd1726699
                     </ul>
                 </div>
             </div>
             <a href="javascript:;" class="add-button" @click="addCommon">添加</a>
         </div>
     </div>
-<<<<<<< HEAD
-=======
-    <!--     <div class="new-search-list animated" v-if="isSearchInLine" @click.self="backIndex">
-        <div class="body">
-            <div class="search-inline">
-                <div class=" blank">
-                    <div class="content">
-                        <span class="icont-search"></span>
-                        <input id="searchInput" v-model="query" type="text" maxlength="10" @blur="searchBlur()" @input="searchQuery(query)" @keyup.enter="enter">
-                        <em v-if="query!='' " class="iconfont icon-clean" @click="cleanKey"> </em>
-                    </div>
-                </div>
-            </div>
-            <ul v-if="query!=''">
-                <li v-for="search in filterList" @click="selectedCity(search)">{{search.fullname}}</li>
-                <li v-if="!filterList>0 && query!=''">没有线路</li>
-            </ul>
-        </div>
-    </div> -->
->>>>>>> a02624f6c8688fa00861d689d53c060bd1726699
     <dialog-login></dialog-login>
     <script type="text/javascript" src="http://cdn.bootcss.com/vue/1.0.28/vue.min.js"></script>
     <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
