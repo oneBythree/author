@@ -9542,10 +9542,10 @@ var app = new Vue({
                 this.showListEnd = false;
             }
         },
-        input: function(val, type) {
+        input: function(type) {
             // 城市输入            
             var self = this;
-            if (type == 'start') {
+            if (type == "start") {
                 this.showListStart = true;
                 this.ajaxStart = '';
             } else if (type = "end") {
@@ -9553,18 +9553,19 @@ var app = new Vue({
                 this.ajaxEnd = '';
             }
         },
-        blurInput: function blurInput(type) {
+        blurInput: function(type) {
             // 添加线路输入框失去焦点
             var that = this;
-            // setTimeout(function () {
-            //     if (type == 'start') {
-            //         that.startCity = that.ajaxStart == '' ? '' : that.startCity; //隐藏为空 startCity制空
-            //         that.showListStart = false;
-            //     } else {
-            //         that.endCity = that.ajaxEnd == '' ? '' : that.endCity; //隐藏为空 startCity制空
-            //         that.showListEnd = false;
-            //     }
-            // }, 250);
+            setTimeout(function() {
+                if (type == 'start') {
+                    that.startCity = that.ajaxStart == '' ? '' : that.startCity; //隐藏为空 startCity制空
+                    console.log(that.ajaxStart)
+                    that.showListStart = false;
+                } else {
+                    that.endCity = that.ajaxEnd == '' ? '' : that.endCity; //隐藏为空 startCity制空
+                    that.showListEnd = false;
+                }
+            }, 250);
         },
         enter: function() {
             // 输入框按回车不做操作，防止刷新
@@ -9602,7 +9603,7 @@ var app = new Vue({
                 return false;
             }
 
-            if (that.ajaxStart.code == that.ajaxEnd.name) {
+            if (that.ajaxStart.name == that.ajaxEnd.name) {
                 $.ModuleTip({ 'txt': '出发城市不能为到达城市' });
                 return false;
             }
@@ -9714,10 +9715,10 @@ var app = new Vue({
             return this.query != '' && this.isSearchInLine;
         },
         startAddress: function() {
-            return !!this.startCity ? address : [];
+            return this.addressFilter(this.startCity);
         },
         endAddress: function() {
-            return !!this.endCity ? address : [];
+            return this.addressFilter(this.endCity);
         }
     },
     watch: {

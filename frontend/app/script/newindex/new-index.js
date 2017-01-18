@@ -234,7 +234,7 @@ var app = new Vue({
                 return false;
             }
 
-            if (that.ajaxStart.code == that.ajaxEnd.name) {
+            if (that.ajaxStart.name_code == that.ajaxEnd.name_code) {
                 $.ModuleTip({ 'txt': '出发城市不能为到达城市' });
                 return false;
             }
