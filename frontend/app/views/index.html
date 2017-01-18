@@ -30,7 +30,7 @@
                     <li v-if="!filterList.length>0 && query!=''" @click="backIndex">没有线路</li>
                 </ul>
             </div>
-            <p class="recommend-title" v-if="!filterList>0">推荐路线(往返)</p>
+            <p class="recommend-title" v-if="recommendCitys.length>0">推荐路线(往返)</p>
             <!-- 正常 -->
             <div class="get-recommend">
                 <ul class="recommend-route" v-if="recommendCitys.length>0">
@@ -74,16 +74,16 @@
             <p class="add-title">添加新路线（往返）</p>
             <div class="add-print">
                 <div class="print-city">
-                    <input class="overflow" type="text" v-model="startCity" placeholder="输入出发城市" @blur="blurInput('start')" @keyup="input(startCity,'start')" @keyup.enter="enter">
+                    <input class="overflow" type="text" v-model="startCity" placeholder="输入出发城市" @blur="blurInput('start')" @focus="input('start')" @keyup.enter="enter">
                     <ul v-if="showListStart">
-                        <li v-for="address in  startAddress | filterBy  startCity.trim() in 'name'  'namef_full_py' 'name_smart_py' " @click="selectedClick(address,'start')">{{address.fullname}}</li>
+                        <li v-for="address in  startAddress | filterBy startCity.trim() in 'name'  'namef_full_py' 'name_smart_py' " @click="selectedClick(address,'start')">{{address.fullname}}</li>
                     </ul>
                 </div>
                 <span class="icont-line">
                     <em></em>
                 </span>
                 <div class="print-city">
-                    <input class="overflow" type="text" v-model="endCity" placeholder="输入到达城市" @blur="blurInput('end')" @keyup="input(endCity,'end')" @keyup.enter="enter">
+                    <input class="overflow" type="text" v-model="endCity" placeholder="输入到达城市" @blur="blurInput('end')" @focus="input('end')" @keyup.enter="enter">
                     <ul v-if="showListEnd">
                         <li v-for="address in  endAddress | filterBy endCity.trim() in 'name'  'namef_full_py' 'name_smart_py'" @click="selectedClick(address,'end')">{{address.fullname}}</li>
                     </ul>
@@ -96,7 +96,7 @@
     <script type="text/javascript" src="http://cdn.bootcss.com/vue/1.0.28/vue.min.js"></script>
     <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://weixin.haitago.com/static/scripts/jsplug/common.js"></script>
-    <script type="text/javascript" src="../js/newindex/main.js"></script>
+    <script type="text/javascript" src="../js/newindex/test.js"></script>
 </body>
 
 </html>

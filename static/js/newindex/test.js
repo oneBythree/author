@@ -1,0 +1,9739 @@
+"use strict";
+
+var address = [{
+    "fullname": "安徽-安庆-安庆市",
+    "name": "安庆",
+    "namef_full_py": "anqing"
+}, {
+    "fullname": "安徽-安庆-怀宁县",
+    "name": "怀宁",
+    "namef_full_py": "huaining"
+}, {
+    "fullname": "安徽-安庆-潜山县",
+    "name": "潜山",
+    "namef_full_py": "qianshan"
+}, {
+    "fullname": "安徽-安庆-宿松县",
+    "name": "宿松",
+    "namef_full_py": "susong"
+}, {
+    "fullname": "安徽-安庆-太湖县",
+    "name": "太湖",
+    "namef_full_py": "taihu"
+}, {
+    "fullname": "安徽-安庆-桐城市",
+    "name": "桐城",
+    "namef_full_py": "tongcheng"
+}, {
+    "fullname": "安徽-安庆-望江县",
+    "name": "望江",
+    "namef_full_py": "wangjiang"
+}, {
+    "fullname": "安徽-安庆-岳西县",
+    "name": "岳西",
+    "namef_full_py": "yuexi"
+}, {
+    "fullname": "安徽-安庆-枞阳县",
+    "name": "枞阳",
+    "namef_full_py": "congyang"
+}, {
+    "fullname": "安徽-蚌埠-蚌埠市",
+    "name": "蚌埠",
+    "namef_full_py": "bangbu"
+}, {
+    "fullname": "安徽-蚌埠-固镇县",
+    "name": "固镇",
+    "namef_full_py": "guzhen"
+}, {
+    "fullname": "安徽-蚌埠-怀远县",
+    "name": "怀远",
+    "namef_full_py": "huaiyuan"
+}, {
+    "fullname": "安徽-蚌埠-五河县",
+    "name": "五河",
+    "namef_full_py": "wuhe"
+}, {
+    "fullname": "安徽-巢湖-巢湖市",
+    "name": "巢湖",
+    "namef_full_py": "chaohu"
+}, {
+    "fullname": "安徽-巢湖-含山县",
+    "name": "含山",
+    "namef_full_py": "hanshan"
+}, {
+    "fullname": "安徽-巢湖-和县",
+    "name": "和县",
+    "namef_full_py": "hexian"
+}, {
+    "fullname": "安徽-巢湖-庐江县",
+    "name": "庐江",
+    "namef_full_py": "lujiang"
+}, {
+    "fullname": "安徽-巢湖-无为县",
+    "name": "无为",
+    "namef_full_py": "wuwei"
+}, {
+    "fullname": "安徽-池州-池州市",
+    "name": "池州",
+    "namef_full_py": "chizhou"
+}, {
+    "fullname": "安徽-池州-东至县",
+    "name": "东至",
+    "namef_full_py": "dongzhi"
+}, {
+    "fullname": "安徽-池州-青阳县",
+    "name": "青阳",
+    "namef_full_py": "qingyang"
+}, {
+    "fullname": "安徽-池州-石台县",
+    "name": "石台",
+    "namef_full_py": "shitai"
+}, {
+    "fullname": "安徽-滁州-滁州市",
+    "name": "滁州",
+    "namef_full_py": "chuzhou"
+}, {
+    "fullname": "安徽-滁州-定远县",
+    "name": "定远",
+    "namef_full_py": "dingyuan"
+}, {
+    "fullname": "安徽-滁州-凤阳县",
+    "name": "凤阳",
+    "namef_full_py": "fengyang"
+}, {
+    "fullname": "安徽-滁州-来安县",
+    "name": "来安",
+    "namef_full_py": "laian"
+}, {
+    "fullname": "安徽-滁州-明光市",
+    "name": "明光",
+    "namef_full_py": "mingguang"
+}, {
+    "fullname": "安徽-滁州-全椒县",
+    "name": "全椒",
+    "namef_full_py": "quanjiao"
+}, {
+    "fullname": "安徽-滁州-天长市",
+    "name": "天长",
+    "namef_full_py": "tianchang"
+}, {
+    "fullname": "安徽-阜阳-阜南县",
+    "name": "阜南",
+    "namef_full_py": "funan"
+}, {
+    "fullname": "安徽-阜阳-阜阳市",
+    "name": "阜阳",
+    "namef_full_py": "fuyang"
+}, {
+    "fullname": "安徽-阜阳-界首市",
+    "name": "界首",
+    "namef_full_py": "jieshou"
+}, {
+    "fullname": "安徽-阜阳-临泉县",
+    "name": "临泉",
+    "namef_full_py": "linquan"
+}, {
+    "fullname": "安徽-阜阳-太和县",
+    "name": "太和",
+    "namef_full_py": "taihe"
+}, {
+    "fullname": "安徽-阜阳-颖上县",
+    "name": "颖上",
+    "namef_full_py": "yingshang"
+}, {
+    "fullname": "安徽-合肥-长丰县",
+    "name": "长丰",
+    "namef_full_py": "changfeng"
+}, {
+    "fullname": "安徽-合肥-肥东县",
+    "name": "肥东",
+    "namef_full_py": "feidong"
+}, {
+    "fullname": "安徽-合肥-肥西县",
+    "name": "肥西",
+    "namef_full_py": "feixi"
+}, {
+    "fullname": "安徽-淮北-淮北市",
+    "name": "淮北",
+    "namef_full_py": "huaibei"
+}, {
+    "fullname": "安徽-淮北-濉溪县",
+    "name": "濉溪",
+    "namef_full_py": "suixi"
+}, {
+    "fullname": "安徽-淮南-凤台县",
+    "name": "凤台",
+    "namef_full_py": "fengtai"
+}, {
+    "fullname": "安徽-淮南-淮南市",
+    "name": "淮南",
+    "namef_full_py": "huainan"
+}, {
+    "fullname": "安徽-黄山-黄山市",
+    "name": "黄山",
+    "namef_full_py": "huangshan"
+}, {
+    "fullname": "安徽-黄山-祁门县",
+    "name": "祁门",
+    "namef_full_py": "qimen"
+}, {
+    "fullname": "安徽-黄山-休宁县",
+    "name": "休宁",
+    "namef_full_py": "xiuning"
+}, {
+    "fullname": "安徽-黄山-歙县",
+    "name": "歙县",
+    "namef_full_py": "xixian"
+}, {
+    "fullname": "安徽-黄山-黟县",
+    "name": "黟县",
+    "namef_full_py": "yixian"
+}, {
+    "fullname": "安徽-六安-霍邱县",
+    "name": "霍邱",
+    "namef_full_py": "huoqiu"
+}, {
+    "fullname": "安徽-六安-霍山县",
+    "name": "霍山",
+    "namef_full_py": "huoshan"
+}, {
+    "fullname": "安徽-六安-金寨县",
+    "name": "金寨",
+    "namef_full_py": "jinzhai"
+}, {
+    "fullname": "安徽-六安-六安市",
+    "name": "六安",
+    "namef_full_py": "liuan"
+}, {
+    "fullname": "安徽-六安-寿县",
+    "name": "寿县",
+    "namef_full_py": "shouxian"
+}, {
+    "fullname": "安徽-六安-舒城县",
+    "name": "舒城",
+    "namef_full_py": "shucheng"
+}, {
+    "fullname": "安徽-马鞍山-当涂县",
+    "name": "当涂",
+    "namef_full_py": "dangtu"
+}, {
+    "fullname": "安徽-马鞍山-马鞍山市",
+    "name": "马鞍山市",
+    "namef_full_py": "maanshanshi"
+}, {
+    "fullname": "安徽-宿州-灵璧县",
+    "name": "灵璧",
+    "namef_full_py": "lingbi"
+}, {
+    "fullname": "安徽-宿州-宿州市",
+    "name": "宿州",
+    "namef_full_py": "suzhou"
+}, {
+    "fullname": "安徽-宿州-萧县",
+    "name": "萧县",
+    "namef_full_py": "xiaoxian"
+}, {
+    "fullname": "安徽-宿州-泗县",
+    "name": "泗县",
+    "namef_full_py": "sixian"
+}, {
+    "fullname": "安徽-宿州-砀山县",
+    "name": "砀山",
+    "namef_full_py": "dangshan"
+}, {
+    "fullname": "安徽-铜陵-铜陵市",
+    "name": "铜陵",
+    "namef_full_py": "tongling"
+}, {
+    "fullname": "安徽-铜陵-铜陵县",
+    "name": "铜陵",
+    "namef_full_py": "tongling"
+}, {
+    "fullname": "安徽-芜湖-繁昌县",
+    "name": "繁昌",
+    "namef_full_py": "fanchang"
+}, {
+    "fullname": "安徽-芜湖-南陵县",
+    "name": "南陵",
+    "namef_full_py": "nanling"
+}, {
+    "fullname": "安徽-芜湖-芜湖市",
+    "name": "芜湖",
+    "namef_full_py": "wuhu"
+}, {
+    "fullname": "安徽-芜湖-芜湖县",
+    "name": "芜湖",
+    "namef_full_py": "wuhu"
+}, {
+    "fullname": "安徽-宣城-广德县",
+    "name": "广德",
+    "namef_full_py": "guangde"
+}, {
+    "fullname": "安徽-宣城-绩溪县",
+    "name": "绩溪",
+    "namef_full_py": "jixi"
+}, {
+    "fullname": "安徽-宣城-郎溪县",
+    "name": "郎溪",
+    "namef_full_py": "langxi"
+}, {
+    "fullname": "安徽-宣城-宁国市",
+    "name": "宁国",
+    "namef_full_py": "ningguo"
+}, {
+    "fullname": "安徽-宣城-宣城市",
+    "name": "宣城",
+    "namef_full_py": "xuancheng"
+}, {
+    "fullname": "安徽-宣城-泾县",
+    "name": "泾县",
+    "namef_full_py": "jingxian"
+}, {
+    "fullname": "安徽-宣城-旌德县",
+    "name": "旌德",
+    "namef_full_py": "jingde"
+}, {
+    "fullname": "安徽-亳州-利辛县",
+    "name": "利辛",
+    "namef_full_py": "lixin"
+}, {
+    "fullname": "安徽-亳州-蒙城县",
+    "name": "蒙城",
+    "namef_full_py": "mengcheng"
+}, {
+    "fullname": "安徽-亳州-涡阳县",
+    "name": "涡阳",
+    "namef_full_py": "woyang"
+}, {
+    "fullname": "安徽-亳州-亳州市",
+    "name": "亳州",
+    "namef_full_py": "bozhou"
+}, {
+    "fullname": "北京-北京市",
+    "name": "北京",
+    "namef_full_py": "beijing"
+}, {
+    "fullname": "北京-密云县",
+    "name": "密云",
+    "namef_full_py": "miyun"
+}, {
+    "fullname": "北京-延庆县",
+    "name": "延庆",
+    "namef_full_py": "yanqing"
+}, {
+    "fullname": "福建-福州-长乐市",
+    "name": "长乐",
+    "namef_full_py": "changle"
+}, {
+    "fullname": "福建-福州-福清市",
+    "name": "福清",
+    "namef_full_py": "fuqing"
+}, {
+    "fullname": "福建-福州-福州市",
+    "name": "福州",
+    "namef_full_py": "fuzhou"
+}, {
+    "fullname": "福建-福州-连江县",
+    "name": "连江",
+    "namef_full_py": "lianjiang"
+}, {
+    "fullname": "福建-福州-罗源县",
+    "name": "罗源",
+    "namef_full_py": "luoyuan"
+}, {
+    "fullname": "福建-福州-闽侯县",
+    "name": "闽侯",
+    "namef_full_py": "minhou"
+}, {
+    "fullname": "福建-福州-闽清县",
+    "name": "闽清",
+    "namef_full_py": "minqing"
+}, {
+    "fullname": "福建-福州-平潭县",
+    "name": "平潭",
+    "namef_full_py": "pingtan"
+}, {
+    "fullname": "福建-福州-永泰县",
+    "name": "永泰",
+    "namef_full_py": "yongtai"
+}, {
+    "fullname": "福建-龙岩-长汀县",
+    "name": "长汀",
+    "namef_full_py": "changting"
+}, {
+    "fullname": "福建-龙岩-连城县",
+    "name": "连城",
+    "namef_full_py": "liancheng"
+}, {
+    "fullname": "福建-龙岩-龙岩市",
+    "name": "龙岩",
+    "namef_full_py": "longyan"
+}, {
+    "fullname": "福建-龙岩-上杭县",
+    "name": "上杭",
+    "namef_full_py": "shanghang"
+}, {
+    "fullname": "福建-龙岩-武平县",
+    "name": "武平",
+    "namef_full_py": "wuping"
+}, {
+    "fullname": "福建-龙岩-永定县",
+    "name": "永定",
+    "namef_full_py": "yongding"
+}, {
+    "fullname": "福建-龙岩-漳平市",
+    "name": "漳平",
+    "namef_full_py": "zhangping"
+}, {
+    "fullname": "福建-南平-光泽县",
+    "name": "光泽",
+    "namef_full_py": "guangze"
+}, {
+    "fullname": "福建-南平-建阳市",
+    "name": "建阳",
+    "namef_full_py": "jianyang"
+}, {
+    "fullname": "福建-南平-建瓯市",
+    "name": "建瓯",
+    "namef_full_py": "jianou"
+}, {
+    "fullname": "福建-南平-南平市",
+    "name": "南平",
+    "namef_full_py": "nanping"
+}, {
+    "fullname": "福建-南平-浦城县",
+    "name": "浦城",
+    "namef_full_py": "pucheng"
+}, {
+    "fullname": "福建-南平-邵武市",
+    "name": "邵武",
+    "namef_full_py": "shaowu"
+}, {
+    "fullname": "福建-南平-顺昌县",
+    "name": "顺昌",
+    "namef_full_py": "shunchang"
+}, {
+    "fullname": "福建-南平-松溪县",
+    "name": "松溪",
+    "namef_full_py": "songxi"
+}, {
+    "fullname": "福建-南平-武夷山市",
+    "name": "武夷山市",
+    "namef_full_py": "wuyishanshi"
+}, {
+    "fullname": "福建-南平-政和县",
+    "name": "政和",
+    "namef_full_py": "zhenghe"
+}, {
+    "fullname": "福建-宁德-福安市",
+    "name": "福安",
+    "namef_full_py": "fuan"
+}, {
+    "fullname": "福建-宁德-福鼎市",
+    "name": "福鼎",
+    "namef_full_py": "fuding"
+}, {
+    "fullname": "福建-宁德-古田县",
+    "name": "古田",
+    "namef_full_py": "gutian"
+}, {
+    "fullname": "福建-宁德-宁德市",
+    "name": "宁德",
+    "namef_full_py": "ningde"
+}, {
+    "fullname": "福建-宁德-屏南县",
+    "name": "屏南",
+    "namef_full_py": "pingnan"
+}, {
+    "fullname": "福建-宁德-寿宁县",
+    "name": "寿宁",
+    "namef_full_py": "shouning"
+}, {
+    "fullname": "福建-宁德-霞浦县",
+    "name": "霞浦",
+    "namef_full_py": "xiapu"
+}, {
+    "fullname": "福建-宁德-周宁县",
+    "name": "周宁",
+    "namef_full_py": "zhouning"
+}, {
+    "fullname": "福建-宁德-柘荣县",
+    "name": "柘荣",
+    "namef_full_py": "zherong"
+}, {
+    "fullname": "福建-莆田-莆田市",
+    "name": "莆田",
+    "namef_full_py": "futian"
+}, {
+    "fullname": "福建-莆田-仙游县",
+    "name": "仙游",
+    "namef_full_py": "xianyou"
+}, {
+    "fullname": "福建-泉州-安溪县",
+    "name": "安溪",
+    "namef_full_py": "anxi"
+}, {
+    "fullname": "福建-泉州-德化县",
+    "name": "德化",
+    "namef_full_py": "dehua"
+}, {
+    "fullname": "福建-泉州-惠安县",
+    "name": "惠安",
+    "namef_full_py": "huian"
+}, {
+    "fullname": "福建-泉州-金门县",
+    "name": "金门",
+    "namef_full_py": "jinmen"
+}, {
+    "fullname": "福建-泉州-晋江市",
+    "name": "晋江",
+    "namef_full_py": "jinjiang"
+}, {
+    "fullname": "福建-泉州-南安市",
+    "name": "南安",
+    "namef_full_py": "nanan"
+}, {
+    "fullname": "福建-泉州-泉州市",
+    "name": "泉州",
+    "namef_full_py": "quanzhou"
+}, {
+    "fullname": "福建-泉州-石狮市",
+    "name": "石狮",
+    "namef_full_py": "shishi"
+}, {
+    "fullname": "福建-泉州-永春县",
+    "name": "永春",
+    "namef_full_py": "yongchun"
+}, {
+    "fullname": "福建-三明-大田县",
+    "name": "大田",
+    "namef_full_py": "datian"
+}, {
+    "fullname": "福建-三明-建宁县",
+    "name": "建宁",
+    "namef_full_py": "jianning"
+}, {
+    "fullname": "福建-三明-将乐县",
+    "name": "将乐",
+    "namef_full_py": "jiangle"
+}, {
+    "fullname": "福建-三明-明溪县",
+    "name": "明溪",
+    "namef_full_py": "mingxi"
+}, {
+    "fullname": "福建-三明-宁化县",
+    "name": "宁化",
+    "namef_full_py": "ninghua"
+}, {
+    "fullname": "福建-三明-清流县",
+    "name": "清流",
+    "namef_full_py": "qingliu"
+}, {
+    "fullname": "福建-三明-三明市",
+    "name": "三明",
+    "namef_full_py": "sanming"
+}, {
+    "fullname": "福建-三明-沙县",
+    "name": "沙县",
+    "namef_full_py": "shaxian"
+}, {
+    "fullname": "福建-三明-泰宁县",
+    "name": "泰宁",
+    "namef_full_py": "taining"
+}, {
+    "fullname": "福建-三明-永安市",
+    "name": "永安",
+    "namef_full_py": "yongan"
+}, {
+    "fullname": "福建-三明-尤溪县",
+    "name": "尤溪",
+    "namef_full_py": "youxi"
+}, {
+    "fullname": "福建-厦门-厦门市",
+    "name": "厦门",
+    "namef_full_py": "shamen"
+}, {
+    "fullname": "福建-漳州-长泰县",
+    "name": "长泰",
+    "namef_full_py": "changtai"
+}, {
+    "fullname": "福建-漳州-东山县",
+    "name": "东山",
+    "namef_full_py": "dongshan"
+}, {
+    "fullname": "福建-漳州-华安县",
+    "name": "华安",
+    "namef_full_py": "huaan"
+}, {
+    "fullname": "福建-漳州-龙海市",
+    "name": "龙海",
+    "namef_full_py": "longhai"
+}, {
+    "fullname": "福建-漳州-南靖县",
+    "name": "南靖",
+    "namef_full_py": "nanjing"
+}, {
+    "fullname": "福建-漳州-平和县",
+    "name": "平和",
+    "namef_full_py": "pinghe"
+}, {
+    "fullname": "福建-漳州-云霄县",
+    "name": "云霄",
+    "namef_full_py": "yunxiao"
+}, {
+    "fullname": "福建-漳州-漳浦县",
+    "name": "漳浦",
+    "namef_full_py": "zhangpu"
+}, {
+    "fullname": "福建-漳州-漳州市",
+    "name": "漳州",
+    "namef_full_py": "zhangzhou"
+}, {
+    "fullname": "福建-漳州-诏安县",
+    "name": "诏安",
+    "namef_full_py": "zhaoan"
+}, {
+    "fullname": "甘肃-白银-白银市",
+    "name": "白银",
+    "namef_full_py": "baiyin"
+}, {
+    "fullname": "甘肃-白银-会宁县",
+    "name": "会宁",
+    "namef_full_py": "huining"
+}, {
+    "fullname": "甘肃-白银-景泰县",
+    "name": "景泰",
+    "namef_full_py": "jingtai"
+}, {
+    "fullname": "甘肃-白银-靖远县",
+    "name": "靖远",
+    "namef_full_py": "jingyuan"
+}, {
+    "fullname": "甘肃-定西-定西县",
+    "name": "定西",
+    "namef_full_py": "dingxi"
+}, {
+    "fullname": "甘肃-定西-临洮县",
+    "name": "临洮",
+    "namef_full_py": "lintao"
+}, {
+    "fullname": "甘肃-定西-陇西县",
+    "name": "陇西",
+    "namef_full_py": "longxi"
+}, {
+    "fullname": "甘肃-定西-通渭县",
+    "name": "通渭",
+    "namef_full_py": "tongwei"
+}, {
+    "fullname": "甘肃-定西-渭源县",
+    "name": "渭源",
+    "namef_full_py": "weiyuan"
+}, {
+    "fullname": "甘肃-定西-漳县",
+    "name": "漳县",
+    "namef_full_py": "zhangxian"
+}, {
+    "fullname": "甘肃-定西-岷县",
+    "name": "岷县",
+    "namef_full_py": "minxian"
+}, {
+    "fullname": "甘肃-甘南藏族自治州-迭部县",
+    "name": "迭部",
+    "namef_full_py": "diebu"
+}, {
+    "fullname": "甘肃-甘南藏族自治州-合作市",
+    "name": "合作",
+    "namef_full_py": "hezuo"
+}, {
+    "fullname": "甘肃-甘南藏族自治州-临潭县",
+    "name": "临潭",
+    "namef_full_py": "lintan"
+}, {
+    "fullname": "甘肃-甘南藏族自治州-碌曲县",
+    "name": "碌曲",
+    "namef_full_py": "luqu"
+}, {
+    "fullname": "甘肃-甘南藏族自治州-玛曲县",
+    "name": "玛曲",
+    "namef_full_py": "maqu"
+}, {
+    "fullname": "甘肃-甘南藏族自治州-夏河县",
+    "name": "夏河",
+    "namef_full_py": "xiahe"
+}, {
+    "fullname": "甘肃-甘南藏族自治州-舟曲县",
+    "name": "舟曲",
+    "namef_full_py": "zhouqu"
+}, {
+    "fullname": "甘肃-甘南藏族自治州-卓尼县",
+    "name": "卓尼",
+    "namef_full_py": "zhuoni"
+}, {
+    "fullname": "甘肃-嘉峪关-嘉峪关市",
+    "name": "嘉峪关市",
+    "namef_full_py": "jiayuguanshi"
+}, {
+    "fullname": "甘肃-金昌-金昌市",
+    "name": "金昌",
+    "namef_full_py": "jinchang"
+}, {
+    "fullname": "甘肃-金昌-永昌县",
+    "name": "永昌",
+    "namef_full_py": "yongchang"
+}, {
+    "fullname": "甘肃-酒泉-阿克塞哈萨克族自治县",
+    "name": "阿克塞哈萨克族自治县",
+    "namef_full_py": "akesaihasakezuzizhixian"
+}, {
+    "fullname": "甘肃-酒泉-安西县",
+    "name": "安西",
+    "namef_full_py": "anxi"
+}, {
+    "fullname": "甘肃-酒泉-敦煌市",
+    "name": "敦煌",
+    "namef_full_py": "dunhuang"
+}, {
+    "fullname": "甘肃-酒泉-金塔县",
+    "name": "金塔",
+    "namef_full_py": "jinta"
+}, {
+    "fullname": "甘肃-酒泉-酒泉市",
+    "name": "酒泉",
+    "namef_full_py": "jiuquan"
+}, {
+    "fullname": "甘肃-酒泉-肃北蒙古族自治县",
+    "name": "肃北蒙古族自治县",
+    "namef_full_py": "subeimengguzuzizhixian"
+}, {
+    "fullname": "甘肃-酒泉-玉门市",
+    "name": "玉门",
+    "namef_full_py": "yumen"
+}, {
+    "fullname": "甘肃-兰州-皋兰县",
+    "name": "皋兰",
+    "namef_full_py": "gaolan"
+}, {
+    "fullname": "甘肃-兰州-兰州市",
+    "name": "兰州",
+    "namef_full_py": "lanzhou"
+}, {
+    "fullname": "甘肃-兰州-永登县",
+    "name": "永登",
+    "namef_full_py": "yongdeng"
+}, {
+    "fullname": "甘肃-兰州-榆中县",
+    "name": "榆中",
+    "namef_full_py": "yuzhong"
+}, {
+    "fullname": "甘肃-临夏回族自治州-东乡族自治县",
+    "name": "东乡族自治县",
+    "namef_full_py": "dongxiangzuzizhixian"
+}, {
+    "fullname": "甘肃-临夏回族自治州-广河县",
+    "name": "广河",
+    "namef_full_py": "guanghe"
+}, {
+    "fullname": "甘肃-临夏回族自治州-和政县",
+    "name": "和政",
+    "namef_full_py": "hezheng"
+}, {
+    "fullname": "甘肃-临夏回族自治州-积石山保安族东乡族撒拉族自治县",
+    "name": "积石山保安族东乡族撒拉族自治县",
+    "namef_full_py": "jishishanbaoanzudongxiangzusalazuzizhixian"
+}, {
+    "fullname": "甘肃-临夏回族自治州-康乐县",
+    "name": "康乐",
+    "namef_full_py": "kangle"
+}, {
+    "fullname": "甘肃-临夏回族自治州-临夏市",
+    "name": "临夏",
+    "namef_full_py": "linxia"
+}, {
+    "fullname": "甘肃-临夏回族自治州-临夏县",
+    "name": "临夏",
+    "namef_full_py": "linxia"
+}, {
+    "fullname": "甘肃-临夏回族自治州-永靖县",
+    "name": "永靖",
+    "namef_full_py": "yongjing"
+}, {
+    "fullname": "甘肃-陇南-成县",
+    "name": "成县",
+    "namef_full_py": "chengxian"
+}, {
+    "fullname": "甘肃-陇南-徽县",
+    "name": "徽县",
+    "namef_full_py": "huixian"
+}, {
+    "fullname": "甘肃-陇南-康县",
+    "name": "康县",
+    "namef_full_py": "kangxian"
+}, {
+    "fullname": "甘肃-陇南-礼县",
+    "name": "礼县",
+    "namef_full_py": "lixian"
+}, {
+    "fullname": "甘肃-陇南-两当县",
+    "name": "两当",
+    "namef_full_py": "liangdang"
+}, {
+    "fullname": "甘肃-陇南-文县",
+    "name": "文县",
+    "namef_full_py": "wenxian"
+}, {
+    "fullname": "甘肃-陇南-武都县",
+    "name": "武都",
+    "namef_full_py": "wudu"
+}, {
+    "fullname": "甘肃-陇南-西和县",
+    "name": "西和",
+    "namef_full_py": "xihe"
+}, {
+    "fullname": "甘肃-陇南-宕昌县",
+    "name": "宕昌",
+    "namef_full_py": "dangchang"
+}, {
+    "fullname": "甘肃-平凉-崇信县",
+    "name": "崇信",
+    "namef_full_py": "chongxin"
+}, {
+    "fullname": "甘肃-平凉-华亭县",
+    "name": "华亭",
+    "namef_full_py": "huating"
+}, {
+    "fullname": "甘肃-平凉-静宁县",
+    "name": "静宁",
+    "namef_full_py": "jingning"
+}, {
+    "fullname": "甘肃-平凉-灵台县",
+    "name": "灵台",
+    "namef_full_py": "lingtai"
+}, {
+    "fullname": "甘肃-平凉-平凉市",
+    "name": "平凉",
+    "namef_full_py": "pingliang"
+}, {
+    "fullname": "甘肃-平凉-庄浪县",
+    "name": "庄浪",
+    "namef_full_py": "zhuanglang"
+}, {
+    "fullname": "甘肃-平凉-泾川县",
+    "name": "泾川",
+    "namef_full_py": "jingchuan"
+}, {
+    "fullname": "甘肃-庆阳-合水县",
+    "name": "合水",
+    "namef_full_py": "heshui"
+}, {
+    "fullname": "甘肃-庆阳-华池县",
+    "name": "华池",
+    "namef_full_py": "huachi"
+}, {
+    "fullname": "甘肃-庆阳-环县",
+    "name": "环县",
+    "namef_full_py": "huanxian"
+}, {
+    "fullname": "甘肃-庆阳-宁县",
+    "name": "宁县",
+    "namef_full_py": "ningxian"
+}, {
+    "fullname": "甘肃-庆阳-庆城县",
+    "name": "庆城",
+    "namef_full_py": "qingcheng"
+}, {
+    "fullname": "甘肃-庆阳-庆阳市",
+    "name": "庆阳",
+    "namef_full_py": "qingyang"
+}, {
+    "fullname": "甘肃-庆阳-镇原县",
+    "name": "镇原",
+    "namef_full_py": "zhenyuan"
+}, {
+    "fullname": "甘肃-庆阳-正宁县",
+    "name": "正宁",
+    "namef_full_py": "zhengning"
+}, {
+    "fullname": "甘肃-天水-甘谷县",
+    "name": "甘谷",
+    "namef_full_py": "gangu"
+}, {
+    "fullname": "甘肃-天水-秦安县",
+    "name": "秦安",
+    "namef_full_py": "qinan"
+}, {
+    "fullname": "甘肃-天水-清水县",
+    "name": "清水",
+    "namef_full_py": "qingshui"
+}, {
+    "fullname": "甘肃-天水-天水市",
+    "name": "天水",
+    "namef_full_py": "tianshui"
+}, {
+    "fullname": "甘肃-天水-武山县",
+    "name": "武山",
+    "namef_full_py": "wushan"
+}, {
+    "fullname": "甘肃-天水-张家川回族自治县",
+    "name": "张家川回族自治县",
+    "namef_full_py": "zhangjiachuanhuizuzizhixian"
+}, {
+    "fullname": "甘肃-武威-古浪县",
+    "name": "古浪",
+    "namef_full_py": "gulang"
+}, {
+    "fullname": "甘肃-武威-民勤县",
+    "name": "民勤",
+    "namef_full_py": "minqin"
+}, {
+    "fullname": "甘肃-武威-天祝藏族自治县",
+    "name": "天祝藏族自治县",
+    "namef_full_py": "tianzhucangzuzizhixian"
+}, {
+    "fullname": "甘肃-武威-武威市",
+    "name": "武威",
+    "namef_full_py": "wuwei"
+}, {
+    "fullname": "甘肃-张掖-高台县",
+    "name": "高台",
+    "namef_full_py": "gaotai"
+}, {
+    "fullname": "甘肃-张掖-临泽县",
+    "name": "临泽",
+    "namef_full_py": "linze"
+}, {
+    "fullname": "甘肃-张掖-民乐县",
+    "name": "民乐",
+    "namef_full_py": "minle"
+}, {
+    "fullname": "甘肃-张掖-山丹县",
+    "name": "山丹",
+    "namef_full_py": "shandan"
+}, {
+    "fullname": "甘肃-张掖-肃南裕固族自治县",
+    "name": "肃南裕固族自治县",
+    "namef_full_py": "sunanyuguzuzizhixian"
+}, {
+    "fullname": "甘肃-张掖-张掖市",
+    "name": "张掖",
+    "namef_full_py": "zhangye"
+}, {
+    "fullname": "广东-潮州-潮安县",
+    "name": "潮安",
+    "namef_full_py": "chaoan"
+}, {
+    "fullname": "广东-潮州-潮州市",
+    "name": "潮州",
+    "namef_full_py": "chaozhou"
+}, {
+    "fullname": "广东-潮州-饶平县",
+    "name": "饶平",
+    "namef_full_py": "raoping"
+}, {
+    "fullname": "广东-东莞-东莞市",
+    "name": "东莞",
+    "namef_full_py": "dongguan"
+}, {
+    "fullname": "广东-佛山-佛山市",
+    "name": "佛山",
+    "namef_full_py": "foshan"
+}, {
+    "fullname": "广东-广州-从化市",
+    "name": "从化",
+    "namef_full_py": "conghua"
+}, {
+    "fullname": "广东-广州-广州市",
+    "name": "广州",
+    "namef_full_py": "guangzhou"
+}, {
+    "fullname": "广东-广州-增城市",
+    "name": "增城",
+    "namef_full_py": "zengcheng"
+}, {
+    "fullname": "广东-河源-东源县",
+    "name": "东源",
+    "namef_full_py": "dongyuan"
+}, {
+    "fullname": "广东-河源-和平县",
+    "name": "和平",
+    "namef_full_py": "heping"
+}, {
+    "fullname": "广东-河源-河源市",
+    "name": "河源",
+    "namef_full_py": "heyuan"
+}, {
+    "fullname": "广东-河源-连平县",
+    "name": "连平",
+    "namef_full_py": "lianping"
+}, {
+    "fullname": "广东-河源-龙川县",
+    "name": "龙川",
+    "namef_full_py": "longchuan"
+}, {
+    "fullname": "广东-河源-紫金县",
+    "name": "紫金",
+    "namef_full_py": "zijin"
+}, {
+    "fullname": "广东-惠州-博罗县",
+    "name": "博罗",
+    "namef_full_py": "boluo"
+}, {
+    "fullname": "广东-惠州-惠东县",
+    "name": "惠东",
+    "namef_full_py": "huidong"
+}, {
+    "fullname": "广东-惠州-惠阳市",
+    "name": "惠阳",
+    "namef_full_py": "huiyang"
+}, {
+    "fullname": "广东-惠州-惠州市",
+    "name": "惠州",
+    "namef_full_py": "huizhou"
+}, {
+    "fullname": "广东-惠州-龙门县",
+    "name": "龙门",
+    "namef_full_py": "longmen"
+}, {
+    "fullname": "广东-江门-恩平市",
+    "name": "恩平",
+    "namef_full_py": "enping"
+}, {
+    "fullname": "广东-江门-鹤山市",
+    "name": "鹤山",
+    "namef_full_py": "heshan"
+}, {
+    "fullname": "广东-江门-江门市",
+    "name": "江门",
+    "namef_full_py": "jiangmen"
+}, {
+    "fullname": "广东-江门-开平市",
+    "name": "开平",
+    "namef_full_py": "kaiping"
+}, {
+    "fullname": "广东-江门-台山市",
+    "name": "台山",
+    "namef_full_py": "taishan"
+}, {
+    "fullname": "广东-揭阳-惠来县",
+    "name": "惠来",
+    "namef_full_py": "huilai"
+}, {
+    "fullname": "广东-揭阳-揭东县",
+    "name": "揭东",
+    "namef_full_py": "jiedong"
+}, {
+    "fullname": "广东-揭阳-揭西县",
+    "name": "揭西",
+    "namef_full_py": "jiexi"
+}, {
+    "fullname": "广东-揭阳-揭阳市",
+    "name": "揭阳",
+    "namef_full_py": "jieyang"
+}, {
+    "fullname": "广东-揭阳-普宁市",
+    "name": "普宁",
+    "namef_full_py": "puning"
+}, {
+    "fullname": "广东-茂名-电白县",
+    "name": "电白",
+    "namef_full_py": "dianbai"
+}, {
+    "fullname": "广东-茂名-高州市",
+    "name": "高州",
+    "namef_full_py": "gaozhou"
+}, {
+    "fullname": "广东-茂名-化州市",
+    "name": "化州",
+    "namef_full_py": "huazhou"
+}, {
+    "fullname": "广东-茂名-茂名市",
+    "name": "茂名",
+    "namef_full_py": "maoming"
+}, {
+    "fullname": "广东-茂名-信宜市",
+    "name": "信宜",
+    "namef_full_py": "xinyi"
+}, {
+    "fullname": "广东-梅州-大埔县",
+    "name": "大埔",
+    "namef_full_py": "dapu"
+}, {
+    "fullname": "广东-梅州-丰顺县",
+    "name": "丰顺",
+    "namef_full_py": "fengshun"
+}, {
+    "fullname": "广东-梅州-蕉岭县",
+    "name": "蕉岭",
+    "namef_full_py": "jiaoling"
+}, {
+    "fullname": "广东-梅州-梅县",
+    "name": "梅县",
+    "namef_full_py": "meixian"
+}, {
+    "fullname": "广东-梅州-梅州市",
+    "name": "梅州",
+    "namef_full_py": "meizhou"
+}, {
+    "fullname": "广东-梅州-平远县",
+    "name": "平远",
+    "namef_full_py": "pingyuan"
+}, {
+    "fullname": "广东-梅州-五华县",
+    "name": "五华",
+    "namef_full_py": "wuhua"
+}, {
+    "fullname": "广东-梅州-兴宁市",
+    "name": "兴宁",
+    "namef_full_py": "xingning"
+}, {
+    "fullname": "广东-清远-佛冈县",
+    "name": "佛冈",
+    "namef_full_py": "fogang"
+}, {
+    "fullname": "广东-清远-连南瑶族自治县",
+    "name": "连南瑶族自治县",
+    "namef_full_py": "liannanyaozuzizhixian"
+}, {
+    "fullname": "广东-清远-连山壮族瑶族自治县",
+    "name": "连山壮族瑶族自治县",
+    "namef_full_py": "lianshanzhuangzuyaozuzizhixian"
+}, {
+    "fullname": "广东-清远-连州市",
+    "name": "连州",
+    "namef_full_py": "lianzhou"
+}, {
+    "fullname": "广东-清远-清新县",
+    "name": "清新",
+    "namef_full_py": "qingxin"
+}, {
+    "fullname": "广东-清远-清远市",
+    "name": "清远",
+    "namef_full_py": "qingyuan"
+}, {
+    "fullname": "广东-清远-阳山县",
+    "name": "阳山",
+    "namef_full_py": "yangshan"
+}, {
+    "fullname": "广东-清远-英德市",
+    "name": "英德",
+    "namef_full_py": "yingde"
+}, {
+    "fullname": "广东-汕头-潮阳市",
+    "name": "潮阳",
+    "namef_full_py": "chaoyang"
+}, {
+    "fullname": "广东-汕头-澄海市",
+    "name": "澄海",
+    "namef_full_py": "chenghai"
+}, {
+    "fullname": "广东-汕头-南澳县",
+    "name": "南澳",
+    "namef_full_py": "nanao"
+}, {
+    "fullname": "广东-汕头-汕头市",
+    "name": "汕头",
+    "namef_full_py": "shantou"
+}, {
+    "fullname": "广东-汕尾-海丰县",
+    "name": "海丰",
+    "namef_full_py": "haifeng"
+}, {
+    "fullname": "广东-汕尾-陆丰市",
+    "name": "陆丰",
+    "namef_full_py": "lufeng"
+}, {
+    "fullname": "广东-汕尾-陆河县",
+    "name": "陆河",
+    "namef_full_py": "luhe"
+}, {
+    "fullname": "广东-汕尾-汕尾市",
+    "name": "汕尾",
+    "namef_full_py": "shanwei"
+}, {
+    "fullname": "广东-韶关-乐昌市",
+    "name": "乐昌",
+    "namef_full_py": "lechang"
+}, {
+    "fullname": "广东-韶关-南雄市",
+    "name": "南雄",
+    "namef_full_py": "nanxiong"
+}, {
+    "fullname": "广东-韶关-曲江县",
+    "name": "曲江",
+    "namef_full_py": "qujiang"
+}, {
+    "fullname": "广东-韶关-仁化县",
+    "name": "仁化",
+    "namef_full_py": "renhua"
+}, {
+    "fullname": "广东-韶关-乳源瑶族自治县",
+    "name": "乳源瑶族自治县",
+    "namef_full_py": "ruyuanyaozuzizhixian"
+}, {
+    "fullname": "广东-韶关-韶关市",
+    "name": "韶关",
+    "namef_full_py": "shaoguan"
+}, {
+    "fullname": "广东-韶关-始兴县",
+    "name": "始兴",
+    "namef_full_py": "shixing"
+}, {
+    "fullname": "广东-韶关-翁源县",
+    "name": "翁源",
+    "namef_full_py": "wengyuan"
+}, {
+    "fullname": "广东-韶关-新丰县",
+    "name": "新丰",
+    "namef_full_py": "xinfeng"
+}, {
+    "fullname": "广东-深圳-深圳市",
+    "name": "深圳",
+    "namef_full_py": "shenzhen"
+}, {
+    "fullname": "广东-阳江-阳春市",
+    "name": "阳春",
+    "namef_full_py": "yangchun"
+}, {
+    "fullname": "广东-阳江-阳东县",
+    "name": "阳东",
+    "namef_full_py": "yangdong"
+}, {
+    "fullname": "广东-阳江-阳江市",
+    "name": "阳江",
+    "namef_full_py": "yangjiang"
+}, {
+    "fullname": "广东-阳江-阳西县",
+    "name": "阳西",
+    "namef_full_py": "yangxi"
+}, {
+    "fullname": "广东-云浮-罗定市",
+    "name": "罗定",
+    "namef_full_py": "luoding"
+}, {
+    "fullname": "广东-云浮-新兴县",
+    "name": "新兴",
+    "namef_full_py": "xinxing"
+}, {
+    "fullname": "广东-云浮-郁南县",
+    "name": "郁南",
+    "namef_full_py": "yunan"
+}, {
+    "fullname": "广东-云浮-云安县",
+    "name": "云安",
+    "namef_full_py": "yunan"
+}, {
+    "fullname": "广东-云浮-云浮市",
+    "name": "云浮",
+    "namef_full_py": "yunfu"
+}, {
+    "fullname": "广东-湛江-雷州市",
+    "name": "雷州",
+    "namef_full_py": "leizhou"
+}, {
+    "fullname": "广东-湛江-廉江市",
+    "name": "廉江",
+    "namef_full_py": "lianjiang"
+}, {
+    "fullname": "广东-湛江-遂溪县",
+    "name": "遂溪",
+    "namef_full_py": "suixi"
+}, {
+    "fullname": "广东-湛江-吴川市",
+    "name": "吴川",
+    "namef_full_py": "wuchuan"
+}, {
+    "fullname": "广东-湛江-徐闻县",
+    "name": "徐闻",
+    "namef_full_py": "xuwen"
+}, {
+    "fullname": "广东-湛江-湛江市",
+    "name": "湛江",
+    "namef_full_py": "zhanjiang"
+}, {
+    "fullname": "广东-肇庆-德庆县",
+    "name": "德庆",
+    "namef_full_py": "deqing"
+}, {
+    "fullname": "广东-肇庆-封开县",
+    "name": "封开",
+    "namef_full_py": "fengkai"
+}, {
+    "fullname": "广东-肇庆-高要市",
+    "name": "高要",
+    "namef_full_py": "gaoyao"
+}, {
+    "fullname": "广东-肇庆-广宁县",
+    "name": "广宁",
+    "namef_full_py": "guangning"
+}, {
+    "fullname": "广东-肇庆-怀集县",
+    "name": "怀集",
+    "namef_full_py": "huaiji"
+}, {
+    "fullname": "广东-肇庆-四会市",
+    "name": "四会",
+    "namef_full_py": "sihui"
+}, {
+    "fullname": "广东-肇庆-肇庆市",
+    "name": "肇庆",
+    "namef_full_py": "zhaoqing"
+}, {
+    "fullname": "广东-中山-中山市",
+    "name": "中山",
+    "namef_full_py": "zhongshan"
+}, {
+    "fullname": "广东-珠海-珠海市",
+    "name": "珠海",
+    "namef_full_py": "zhuhai"
+}, {
+    "fullname": "广西-百色-百色市",
+    "name": "百色",
+    "namef_full_py": "baise"
+}, {
+    "fullname": "广西-百色-德保县",
+    "name": "德保",
+    "namef_full_py": "debao"
+}, {
+    "fullname": "广西-百色-靖西县",
+    "name": "靖西",
+    "namef_full_py": "jingxi"
+}, {
+    "fullname": "广西-百色-乐业县",
+    "name": "乐业",
+    "namef_full_py": "leye"
+}, {
+    "fullname": "广西-百色-凌云县",
+    "name": "凌云",
+    "namef_full_py": "lingyun"
+}, {
+    "fullname": "广西-百色-隆林各族自治县",
+    "name": "隆林各族自治县",
+    "namef_full_py": "longlingezuzizhixian"
+}, {
+    "fullname": "广西-百色-那坡县",
+    "name": "那坡",
+    "namef_full_py": "napo"
+}, {
+    "fullname": "广西-百色-平果县",
+    "name": "平果",
+    "namef_full_py": "pingguo"
+}, {
+    "fullname": "广西-百色-田东县",
+    "name": "田东",
+    "namef_full_py": "tiandong"
+}, {
+    "fullname": "广西-百色-田林县",
+    "name": "田林",
+    "namef_full_py": "tianlin"
+}, {
+    "fullname": "广西-百色-田阳县",
+    "name": "田阳",
+    "namef_full_py": "tianyang"
+}, {
+    "fullname": "广西-百色-西林县",
+    "name": "西林",
+    "namef_full_py": "xilin"
+}, {
+    "fullname": "广西-北海-北海市",
+    "name": "北海",
+    "namef_full_py": "beihai"
+}, {
+    "fullname": "广西-北海-合浦县",
+    "name": "合浦",
+    "namef_full_py": "hepu"
+}, {
+    "fullname": "广西-崇左-崇左市",
+    "name": "崇左",
+    "namef_full_py": "chongzuo"
+}, {
+    "fullname": "广西-崇左-大新县",
+    "name": "大新",
+    "namef_full_py": "daxin"
+}, {
+    "fullname": "广西-崇左-扶绥县",
+    "name": "扶绥",
+    "namef_full_py": "fusui"
+}, {
+    "fullname": "广西-崇左-龙州县",
+    "name": "龙州",
+    "namef_full_py": "longzhou"
+}, {
+    "fullname": "广西-崇左-宁明县",
+    "name": "宁明",
+    "namef_full_py": "ningming"
+}, {
+    "fullname": "广西-崇左-凭祥市",
+    "name": "凭祥",
+    "namef_full_py": "pingxiang"
+}, {
+    "fullname": "广西-崇左-天等县",
+    "name": "天等",
+    "namef_full_py": "tiandeng"
+}, {
+    "fullname": "广西-防城港-东兴市",
+    "name": "东兴",
+    "namef_full_py": "dongxing"
+}, {
+    "fullname": "广西-防城港-防城港市",
+    "name": "防城港市",
+    "namef_full_py": "fangchenggangshi"
+}, {
+    "fullname": "广西-防城港-上思县",
+    "name": "上思",
+    "namef_full_py": "shangsi"
+}, {
+    "fullname": "广西-桂林-恭城瑶族自治县",
+    "name": "恭城瑶族自治县",
+    "namef_full_py": "gongchengyaozuzizhixian"
+}, {
+    "fullname": "广西-桂林-灌阳县",
+    "name": "灌阳",
+    "namef_full_py": "guanyang"
+}, {
+    "fullname": "广西-桂林-桂林市",
+    "name": "桂林",
+    "namef_full_py": "guilin"
+}, {
+    "fullname": "广西-桂林-荔浦县",
+    "name": "荔浦",
+    "namef_full_py": "lipu"
+}, {
+    "fullname": "广西-桂林-临桂县",
+    "name": "临桂",
+    "namef_full_py": "lingui"
+}, {
+    "fullname": "广西-桂林-灵川县",
+    "name": "灵川",
+    "namef_full_py": "lingchuan"
+}, {
+    "fullname": "广西-桂林-龙胜各族自治县",
+    "name": "龙胜各族自治县",
+    "namef_full_py": "longshenggezuzizhixian"
+}, {
+    "fullname": "广西-桂林-平乐县",
+    "name": "平乐",
+    "namef_full_py": "pingle"
+}, {
+    "fullname": "广西-桂林-全州县",
+    "name": "全州",
+    "namef_full_py": "quanzhou"
+}, {
+    "fullname": "广西-桂林-兴安县",
+    "name": "兴安",
+    "namef_full_py": "xingan"
+}, {
+    "fullname": "广西-桂林-阳朔县",
+    "name": "阳朔",
+    "namef_full_py": "yangshuo"
+}, {
+    "fullname": "广西-桂林-永福县",
+    "name": "永福",
+    "namef_full_py": "yongfu"
+}, {
+    "fullname": "广西-桂林-资源县",
+    "name": "资源",
+    "namef_full_py": "ziyuan"
+}, {
+    "fullname": "广西-贵港-桂平市",
+    "name": "桂平",
+    "namef_full_py": "guiping"
+}, {
+    "fullname": "广西-贵港-贵港市",
+    "name": "贵港",
+    "namef_full_py": "guigang"
+}, {
+    "fullname": "广西-贵港-平南县",
+    "name": "平南",
+    "namef_full_py": "pingnan"
+}, {
+    "fullname": "广西-河池-巴马瑶族自治县",
+    "name": "巴马瑶族自治县",
+    "namef_full_py": "bamayaozuzizhixian"
+}, {
+    "fullname": "广西-河池-大化瑶族自治县",
+    "name": "大化瑶族自治县",
+    "namef_full_py": "dahuayaozuzizhixian"
+}, {
+    "fullname": "广西-河池-东兰县",
+    "name": "东兰",
+    "namef_full_py": "donglan"
+}, {
+    "fullname": "广西-河池-都安瑶族自治县",
+    "name": "都安瑶族自治县",
+    "namef_full_py": "duanyaozuzizhixian"
+}, {
+    "fullname": "广西-河池-凤山县",
+    "name": "凤山",
+    "namef_full_py": "fengshan"
+}, {
+    "fullname": "广西-河池-河池市",
+    "name": "河池",
+    "namef_full_py": "hechi"
+}, {
+    "fullname": "广西-河池-环江毛南族自治县",
+    "name": "环江毛南族自治县",
+    "namef_full_py": "huanjiangmaonanzuzizhixian"
+}, {
+    "fullname": "广西-河池-罗城仡佬族自治县",
+    "name": "罗城仡佬族自治县",
+    "namef_full_py": "luochengyilaozuzizhixian"
+}, {
+    "fullname": "广西-河池-南丹县",
+    "name": "南丹",
+    "namef_full_py": "nandan"
+}, {
+    "fullname": "广西-河池-天峨县",
+    "name": "天峨",
+    "namef_full_py": "tiane"
+}, {
+    "fullname": "广西-河池-宜州市",
+    "name": "宜州",
+    "namef_full_py": "yizhou"
+}, {
+    "fullname": "广西-贺州-富川瑶族自治县",
+    "name": "富川瑶族自治县",
+    "namef_full_py": "fuchuanyaozuzizhixian"
+}, {
+    "fullname": "广西-贺州-贺州市",
+    "name": "贺州",
+    "namef_full_py": "hezhou"
+}, {
+    "fullname": "广西-贺州-昭平县",
+    "name": "昭平",
+    "namef_full_py": "zhaoping"
+}, {
+    "fullname": "广西-贺州-钟山县",
+    "name": "钟山",
+    "namef_full_py": "zhongshan"
+}, {
+    "fullname": "广西-来宾-合山市",
+    "name": "合山",
+    "namef_full_py": "heshan"
+}, {
+    "fullname": "广西-来宾-金秀瑶族自治县",
+    "name": "金秀瑶族自治县",
+    "namef_full_py": "jinxiuyaozuzizhixian"
+}, {
+    "fullname": "广西-来宾-来宾市",
+    "name": "来宾",
+    "namef_full_py": "laibin"
+}, {
+    "fullname": "广西-来宾-武宣县",
+    "name": "武宣",
+    "namef_full_py": "wuxuan"
+}, {
+    "fullname": "广西-来宾-象州县",
+    "name": "象州",
+    "namef_full_py": "xiangzhou"
+}, {
+    "fullname": "广西-来宾-忻城县",
+    "name": "忻城",
+    "namef_full_py": "xincheng"
+}, {
+    "fullname": "广西-柳州-柳城县",
+    "name": "柳城",
+    "namef_full_py": "liucheng"
+}, {
+    "fullname": "广西-柳州-柳江县",
+    "name": "柳江",
+    "namef_full_py": "liujiang"
+}, {
+    "fullname": "广西-柳州-柳州市",
+    "name": "柳州",
+    "namef_full_py": "liuzhou"
+}, {
+    "fullname": "广西-柳州-鹿寨县",
+    "name": "鹿寨",
+    "namef_full_py": "luzhai"
+}, {
+    "fullname": "广西-柳州-融安县",
+    "name": "融安",
+    "namef_full_py": "rongan"
+}, {
+    "fullname": "广西-柳州-融水苗族自治县",
+    "name": "融水苗族自治县",
+    "namef_full_py": "rongshuimiaozuzizhixian"
+}, {
+    "fullname": "广西-柳州-三江侗族自治县",
+    "name": "三江侗族自治县",
+    "namef_full_py": "sanjiangtongzuzizhixian"
+}, {
+    "fullname": "广西-南宁-宾阳县",
+    "name": "宾阳",
+    "namef_full_py": "binyang"
+}, {
+    "fullname": "广西-南宁-横县",
+    "name": "横县",
+    "namef_full_py": "hengxian"
+}, {
+    "fullname": "广西-南宁-隆安县",
+    "name": "隆安",
+    "namef_full_py": "longan"
+}, {
+    "fullname": "广西-南宁-马山县",
+    "name": "马山",
+    "namef_full_py": "mashan"
+}, {
+    "fullname": "广西-南宁-南宁市",
+    "name": "南宁",
+    "namef_full_py": "nanning"
+}, {
+    "fullname": "广西-南宁-上林县",
+    "name": "上林",
+    "namef_full_py": "shanglin"
+}, {
+    "fullname": "广西-南宁-武鸣县",
+    "name": "武鸣",
+    "namef_full_py": "wuming"
+}, {
+    "fullname": "广西-南宁-邕宁县",
+    "name": "邕宁",
+    "namef_full_py": "yongning"
+}, {
+    "fullname": "广西-钦州-灵山县",
+    "name": "灵山",
+    "namef_full_py": "lingshan"
+}, {
+    "fullname": "广西-钦州-浦北县",
+    "name": "浦北",
+    "namef_full_py": "pubei"
+}, {
+    "fullname": "广西-钦州-钦州市",
+    "name": "钦州",
+    "namef_full_py": "qinzhou"
+}, {
+    "fullname": "广西-梧州-苍梧县",
+    "name": "苍梧",
+    "namef_full_py": "cangwu"
+}, {
+    "fullname": "广西-梧州-蒙山县",
+    "name": "蒙山",
+    "namef_full_py": "mengshan"
+}, {
+    "fullname": "广西-梧州-藤县",
+    "name": "藤县",
+    "namef_full_py": "tengxian"
+}, {
+    "fullname": "广西-梧州-梧州市",
+    "name": "梧州",
+    "namef_full_py": "wuzhou"
+}, {
+    "fullname": "广西-梧州-岑溪市",
+    "name": "岑溪",
+    "namef_full_py": "cenxi"
+}, {
+    "fullname": "广西-玉林-北流市",
+    "name": "北流",
+    "namef_full_py": "beiliu"
+}, {
+    "fullname": "广西-玉林-博白县",
+    "name": "博白",
+    "namef_full_py": "bobai"
+}, {
+    "fullname": "广西-玉林-陆川县",
+    "name": "陆川",
+    "namef_full_py": "luchuan"
+}, {
+    "fullname": "广西-玉林-容县",
+    "name": "容县",
+    "namef_full_py": "rongxian"
+}, {
+    "fullname": "广西-玉林-兴业县",
+    "name": "兴业",
+    "namef_full_py": "xingye"
+}, {
+    "fullname": "广西-玉林-玉林市",
+    "name": "玉林",
+    "namef_full_py": "yulin"
+}, {
+    "fullname": "贵州-安顺-安顺市",
+    "name": "安顺",
+    "namef_full_py": "anshun"
+}, {
+    "fullname": "贵州-安顺-关岭布依族苗族自治县",
+    "name": "关岭布依族苗族自治县",
+    "namef_full_py": "guanlingbuyizumiaozuzizhixian"
+}, {
+    "fullname": "贵州-安顺-平坝县",
+    "name": "平坝",
+    "namef_full_py": "pingba"
+}, {
+    "fullname": "贵州-安顺-普定县",
+    "name": "普定",
+    "namef_full_py": "puding"
+}, {
+    "fullname": "贵州-安顺-镇宁布依族苗族自治县",
+    "name": "镇宁布依族苗族自治县",
+    "namef_full_py": "zhenningbuyizumiaozuzizhixian"
+}, {
+    "fullname": "贵州-安顺-紫云苗族布依族自治县",
+    "name": "紫云苗族布依族自治县",
+    "namef_full_py": "ziyunmiaozubuyizuzizhixian"
+}, {
+    "fullname": "贵州-毕节-毕节市",
+    "name": "毕节",
+    "namef_full_py": "bijie"
+}, {
+    "fullname": "贵州-毕节-大方县",
+    "name": "大方",
+    "namef_full_py": "dafang"
+}, {
+    "fullname": "贵州-毕节-赫章县",
+    "name": "赫章",
+    "namef_full_py": "hezhang"
+}, {
+    "fullname": "贵州-毕节-金沙县",
+    "name": "金沙",
+    "namef_full_py": "jinsha"
+}, {
+    "fullname": "贵州-毕节-纳雍县",
+    "name": "纳雍",
+    "namef_full_py": "nayong"
+}, {
+    "fullname": "贵州-毕节-黔西县",
+    "name": "黔西",
+    "namef_full_py": "qianxi"
+}, {
+    "fullname": "贵州-毕节-威宁彝族回族苗族自治县",
+    "name": "威宁彝族回族苗族自治县",
+    "namef_full_py": "weiningyizuhuizumiaozuzizhixian"
+}, {
+    "fullname": "贵州-毕节-织金县",
+    "name": "织金",
+    "namef_full_py": "zhijin"
+}, {
+    "fullname": "贵州-贵阳-贵阳市",
+    "name": "贵阳",
+    "namef_full_py": "guiyang"
+}, {
+    "fullname": "贵州-贵阳-开阳县",
+    "name": "开阳",
+    "namef_full_py": "kaiyang"
+}, {
+    "fullname": "贵州-贵阳-清镇市",
+    "name": "清镇",
+    "namef_full_py": "qingzhen"
+}, {
+    "fullname": "贵州-贵阳-息烽县",
+    "name": "息烽",
+    "namef_full_py": "xifeng"
+}, {
+    "fullname": "贵州-贵阳-修文县",
+    "name": "修文",
+    "namef_full_py": "xiuwen"
+}, {
+    "fullname": "贵州-六盘水-六盘水市",
+    "name": "六盘水市",
+    "namef_full_py": "liupanshuishi"
+}, {
+    "fullname": "贵州-六盘水-六枝特区",
+    "name": "六枝特区",
+    "namef_full_py": "liuzhitequ"
+}, {
+    "fullname": "贵州-六盘水-盘县",
+    "name": "盘县",
+    "namef_full_py": "panxian"
+}, {
+    "fullname": "贵州-六盘水-水城县",
+    "name": "水城",
+    "namef_full_py": "shuicheng"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-从江县",
+    "name": "从江",
+    "namef_full_py": "congjiang"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-丹寨县",
+    "name": "丹寨",
+    "namef_full_py": "danzhai"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-黄平县",
+    "name": "黄平",
+    "namef_full_py": "huangping"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-剑河县",
+    "name": "剑河",
+    "namef_full_py": "jianhe"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-锦屏县",
+    "name": "锦屏",
+    "namef_full_py": "jinping"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-凯里市",
+    "name": "凯里",
+    "namef_full_py": "kaili"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-雷山县",
+    "name": "雷山",
+    "namef_full_py": "leishan"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-黎平县",
+    "name": "黎平",
+    "namef_full_py": "liping"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-麻江县",
+    "name": "麻江",
+    "namef_full_py": "majiang"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-三穗县",
+    "name": "三穗",
+    "namef_full_py": "sansui"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-施秉县",
+    "name": "施秉",
+    "namef_full_py": "shibing"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-台江县",
+    "name": "台江",
+    "namef_full_py": "taijiang"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-天柱县",
+    "name": "天柱",
+    "namef_full_py": "tianzhu"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-镇远县",
+    "name": "镇远",
+    "namef_full_py": "zhenyuan"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-岑巩县",
+    "name": "岑巩",
+    "namef_full_py": "cengong"
+}, {
+    "fullname": "贵州-黔东南苗族侗族自治州-榕江县",
+    "name": "榕江",
+    "namef_full_py": "rongjiang"
+}, {
+    "fullname": "贵州-黔南布依族苗族自治州-长顺县",
+    "name": "长顺",
+    "namef_full_py": "changshun"
+}, {
+    "fullname": "贵州-黔南布依族苗族自治州-都匀市",
+    "name": "都匀",
+    "namef_full_py": "duyun"
+}, {
+    "fullname": "贵州-黔南布依族苗族自治州-独山县",
+    "name": "独山",
+    "namef_full_py": "dushan"
+}, {
+    "fullname": "贵州-黔南布依族苗族自治州-福泉市",
+    "name": "福泉",
+    "namef_full_py": "fuquan"
+}, {
+    "fullname": "贵州-黔南布依族苗族自治州-贵定县",
+    "name": "贵定",
+    "namef_full_py": "guiding"
+}, {
+    "fullname": "贵州-黔南布依族苗族自治州-惠水县",
+    "name": "惠水",
+    "namef_full_py": "huishui"
+}, {
+    "fullname": "贵州-黔南布依族苗族自治州-荔波县",
+    "name": "荔波",
+    "namef_full_py": "libo"
+}, {
+    "fullname": "贵州-黔南布依族苗族自治州-龙里县",
+    "name": "龙里",
+    "namef_full_py": "longli"
+}, {
+    "fullname": "贵州-黔南布依族苗族自治州-罗甸县",
+    "name": "罗甸",
+    "namef_full_py": "luodian"
+}, {
+    "fullname": "贵州-黔南布依族苗族自治州-平塘县",
+    "name": "平塘",
+    "namef_full_py": "pingtang"
+}, {
+    "fullname": "贵州-黔南布依族苗族自治州-三都水族自治县",
+    "name": "三都水族自治县",
+    "namef_full_py": "sandushuizuzizhixian"
+}, {
+    "fullname": "贵州-黔南布依族苗族自治州-瓮安县",
+    "name": "瓮安",
+    "namef_full_py": "wengan"
+}, {
+    "fullname": "贵州-黔西南布依族苗族自治州-安龙县",
+    "name": "安龙",
+    "namef_full_py": "anlong"
+}, {
+    "fullname": "贵州-黔西南布依族苗族自治州-册亨县",
+    "name": "册亨",
+    "namef_full_py": "ceheng"
+}, {
+    "fullname": "贵州-黔西南布依族苗族自治州-普安县",
+    "name": "普安",
+    "namef_full_py": "puan"
+}, {
+    "fullname": "贵州-黔西南布依族苗族自治州-晴隆县",
+    "name": "晴隆",
+    "namef_full_py": "qinglong"
+}, {
+    "fullname": "贵州-黔西南布依族苗族自治州-望谟县",
+    "name": "望谟",
+    "namef_full_py": "wangmo"
+}, {
+    "fullname": "贵州-黔西南布依族苗族自治州-兴仁县",
+    "name": "兴仁",
+    "namef_full_py": "xingren"
+}, {
+    "fullname": "贵州-黔西南布依族苗族自治州-兴义市",
+    "name": "兴义",
+    "namef_full_py": "xingyi"
+}, {
+    "fullname": "贵州-黔西南布依族苗族自治州-贞丰县",
+    "name": "贞丰",
+    "namef_full_py": "zhenfeng"
+}, {
+    "fullname": "贵州-铜仁-德江县",
+    "name": "德江",
+    "namef_full_py": "dejiang"
+}, {
+    "fullname": "贵州-铜仁-江口县",
+    "name": "江口",
+    "namef_full_py": "jiangkou"
+}, {
+    "fullname": "贵州-铜仁-石阡县",
+    "name": "石阡",
+    "namef_full_py": "shiqian"
+}, {
+    "fullname": "贵州-铜仁-思南县",
+    "name": "思南",
+    "namef_full_py": "sinan"
+}, {
+    "fullname": "贵州-铜仁-松桃苗族自治县",
+    "name": "松桃苗族自治县",
+    "namef_full_py": "songtaomiaozuzizhixian"
+}, {
+    "fullname": "贵州-铜仁-铜仁市",
+    "name": "铜仁",
+    "namef_full_py": "tongren"
+}, {
+    "fullname": "贵州-铜仁-万山特区",
+    "name": "万山特区",
+    "namef_full_py": "wanshantequ"
+}, {
+    "fullname": "贵州-铜仁-沿河土家族自治县",
+    "name": "沿河土家族自治县",
+    "namef_full_py": "yanhetujiazuzizhixian"
+}, {
+    "fullname": "贵州-铜仁-印江土家族苗族自治县",
+    "name": "印江土家族苗族自治县",
+    "namef_full_py": "yinjiangtujiazumiaozuzizhixian"
+}, {
+    "fullname": "贵州-铜仁-玉屏侗族自治县",
+    "name": "玉屏侗族自治县",
+    "namef_full_py": "yupingtongzuzizhixian"
+}, {
+    "fullname": "贵州-遵义-赤水市",
+    "name": "赤水",
+    "namef_full_py": "chishui"
+}, {
+    "fullname": "贵州-遵义-道真仡佬族苗族自治县",
+    "name": "道真仡佬族苗族自治县",
+    "namef_full_py": "daozhenyilaozumiaozuzizhixian"
+}, {
+    "fullname": "贵州-遵义-凤冈县",
+    "name": "凤冈",
+    "namef_full_py": "fenggang"
+}, {
+    "fullname": "贵州-遵义-仁怀市",
+    "name": "仁怀",
+    "namef_full_py": "renhuai"
+}, {
+    "fullname": "贵州-遵义-绥阳县",
+    "name": "绥阳",
+    "namef_full_py": "suiyang"
+}, {
+    "fullname": "贵州-遵义-桐梓县",
+    "name": "桐梓",
+    "namef_full_py": "tongzi"
+}, {
+    "fullname": "贵州-遵义-务川仡佬族苗族自治县",
+    "name": "务川仡佬族苗族自治县",
+    "namef_full_py": "wuchuanyilaozumiaozuzizhixian"
+}, {
+    "fullname": "贵州-遵义-习水县",
+    "name": "习水",
+    "namef_full_py": "xishui"
+}, {
+    "fullname": "贵州-遵义-余庆县",
+    "name": "余庆",
+    "namef_full_py": "yuqing"
+}, {
+    "fullname": "贵州-遵义-正安县",
+    "name": "正安",
+    "namef_full_py": "zhengan"
+}, {
+    "fullname": "贵州-遵义-遵义市",
+    "name": "遵义",
+    "namef_full_py": "zunyi"
+}, {
+    "fullname": "贵州-遵义-遵义县",
+    "name": "遵义",
+    "namef_full_py": "zunyi"
+}, {
+    "fullname": "贵州-遵义-湄潭县",
+    "name": "湄潭",
+    "namef_full_py": "meitan"
+}, {
+    "fullname": "海南-白沙黎族自治县-白沙黎族自治县",
+    "name": "白沙黎族自治县",
+    "namef_full_py": "baishalizuzizhixian"
+}, {
+    "fullname": "海南-保亭黎族苗族自治县-保亭黎族苗族自治县",
+    "name": "保亭黎族苗族自治县",
+    "namef_full_py": "baotinglizumiaozuzizhixian"
+}, {
+    "fullname": "海南-昌江黎族自治县-昌江黎族自治县",
+    "name": "昌江黎族自治县",
+    "namef_full_py": "changjianglizuzizhixian"
+}, {
+    "fullname": "海南-澄迈县-澄迈县",
+    "name": "澄迈",
+    "namef_full_py": "chengmai"
+}, {
+    "fullname": "海南-定安县-定安县",
+    "name": "定安",
+    "namef_full_py": "dingan"
+}, {
+    "fullname": "海南-东方-东方市",
+    "name": "东方",
+    "namef_full_py": "dongfang"
+}, {
+    "fullname": "海南-海口-海口市",
+    "name": "海口",
+    "namef_full_py": "haikou"
+}, {
+    "fullname": "海南-乐东黎族自治县-乐东黎族自治县",
+    "name": "乐东黎族自治县",
+    "namef_full_py": "ledonglizuzizhixian"
+}, {
+    "fullname": "海南-临高县-临高县",
+    "name": "临高",
+    "namef_full_py": "lingao"
+}, {
+    "fullname": "海南-陵水黎族自治县-陵水黎族自治县",
+    "name": "陵水黎族自治县",
+    "namef_full_py": "lingshuilizuzizhixian"
+}, {
+    "fullname": "海南-琼海-琼海市",
+    "name": "琼海",
+    "namef_full_py": "qionghai"
+}, {
+    "fullname": "海南-琼中黎族苗族自治县-琼中黎族苗族自治县",
+    "name": "琼中黎族苗族自治县",
+    "namef_full_py": "qiongzhonglizumiaozuzizhixian"
+}, {
+    "fullname": "海南-三亚-三亚市",
+    "name": "三亚",
+    "namef_full_py": "sanya"
+}, {
+    "fullname": "海南-屯昌县-屯昌县",
+    "name": "屯昌",
+    "namef_full_py": "tunchang"
+}, {
+    "fullname": "海南-万宁-万宁市",
+    "name": "万宁",
+    "namef_full_py": "wanning"
+}, {
+    "fullname": "海南-文昌-文昌市",
+    "name": "文昌",
+    "namef_full_py": "wenchang"
+}, {
+    "fullname": "海南-五指山-五指山市",
+    "name": "五指山市",
+    "namef_full_py": "wuzhishanshi"
+}, {
+    "fullname": "海南-儋州-儋州市",
+    "name": "儋州",
+    "namef_full_py": "danzhou"
+}, {
+    "fullname": "河北-保定-安国市",
+    "name": "安国",
+    "namef_full_py": "anguo"
+}, {
+    "fullname": "河北-保定-安新县",
+    "name": "安新",
+    "namef_full_py": "anxin"
+}, {
+    "fullname": "河北-保定-保定市",
+    "name": "保定",
+    "namef_full_py": "baoding"
+}, {
+    "fullname": "河北-保定-博野县",
+    "name": "博野",
+    "namef_full_py": "boye"
+}, {
+    "fullname": "河北-保定-定兴县",
+    "name": "定兴",
+    "namef_full_py": "dingxing"
+}, {
+    "fullname": "河北-保定-定州市",
+    "name": "定州",
+    "namef_full_py": "dingzhou"
+}, {
+    "fullname": "河北-保定-阜平县",
+    "name": "阜平",
+    "namef_full_py": "fuping"
+}, {
+    "fullname": "河北-保定-高碑店市",
+    "name": "高碑店市",
+    "namef_full_py": "gaobeidianshi"
+}, {
+    "fullname": "河北-保定-高阳县",
+    "name": "高阳",
+    "namef_full_py": "gaoyang"
+}, {
+    "fullname": "河北-保定-满城县",
+    "name": "满城",
+    "namef_full_py": "mancheng"
+}, {
+    "fullname": "河北-保定-清苑县",
+    "name": "清苑",
+    "namef_full_py": "qingyuan"
+}, {
+    "fullname": "河北-保定-曲阳县",
+    "name": "曲阳",
+    "namef_full_py": "quyang"
+}, {
+    "fullname": "河北-保定-容城县",
+    "name": "容城",
+    "namef_full_py": "rongcheng"
+}, {
+    "fullname": "河北-保定-顺平县",
+    "name": "顺平",
+    "namef_full_py": "shunping"
+}, {
+    "fullname": "河北-保定-唐县",
+    "name": "唐县",
+    "namef_full_py": "tangxian"
+}, {
+    "fullname": "河北-保定-望都县",
+    "name": "望都",
+    "namef_full_py": "wangdu"
+}, {
+    "fullname": "河北-保定-雄县",
+    "name": "雄县",
+    "namef_full_py": "xiongxian"
+}, {
+    "fullname": "河北-保定-徐水县",
+    "name": "徐水",
+    "namef_full_py": "xushui"
+}, {
+    "fullname": "河北-保定-易县",
+    "name": "易县",
+    "namef_full_py": "yixian"
+}, {
+    "fullname": "河北-保定-涞水县",
+    "name": "涞水",
+    "namef_full_py": "laishui"
+}, {
+    "fullname": "河北-保定-涞源县",
+    "name": "涞源",
+    "namef_full_py": "laiyuan"
+}, {
+    "fullname": "河北-保定-涿州市",
+    "name": "涿州",
+    "namef_full_py": "zhuozhou"
+}, {
+    "fullname": "河北-保定-蠡县",
+    "name": "蠡县",
+    "namef_full_py": "lixian"
+}, {
+    "fullname": "河北-沧州-泊头市",
+    "name": "泊头",
+    "namef_full_py": "botou"
+}, {
+    "fullname": "河北-沧州-沧县",
+    "name": "沧县",
+    "namef_full_py": "cangxian"
+}, {
+    "fullname": "河北-沧州-沧州市",
+    "name": "沧州",
+    "namef_full_py": "cangzhou"
+}, {
+    "fullname": "河北-沧州-东光县",
+    "name": "东光",
+    "namef_full_py": "dongguang"
+}, {
+    "fullname": "河北-沧州-海兴县",
+    "name": "海兴",
+    "namef_full_py": "haixing"
+}, {
+    "fullname": "河北-沧州-河间市",
+    "name": "河间",
+    "namef_full_py": "hejian"
+}, {
+    "fullname": "河北-沧州-黄骅市",
+    "name": "黄骅",
+    "namef_full_py": "huanghua"
+}, {
+    "fullname": "河北-沧州-孟村回族自治县",
+    "name": "孟村回族自治县",
+    "namef_full_py": "mengcunhuizuzizhixian"
+}, {
+    "fullname": "河北-沧州-南皮县",
+    "name": "南皮",
+    "namef_full_py": "nanpi"
+}, {
+    "fullname": "河北-沧州-青县",
+    "name": "青县",
+    "namef_full_py": "qingxian"
+}, {
+    "fullname": "河北-沧州-任丘市",
+    "name": "任丘",
+    "namef_full_py": "renqiu"
+}, {
+    "fullname": "河北-沧州-肃宁县",
+    "name": "肃宁",
+    "namef_full_py": "suning"
+}, {
+    "fullname": "河北-沧州-吴桥县",
+    "name": "吴桥",
+    "namef_full_py": "wuqiao"
+}, {
+    "fullname": "河北-沧州-献县",
+    "name": "献县",
+    "namef_full_py": "xianxian"
+}, {
+    "fullname": "河北-沧州-盐山县",
+    "name": "盐山",
+    "namef_full_py": "yanshan"
+}, {
+    "fullname": "河北-承德-承德市",
+    "name": "承德",
+    "namef_full_py": "chengde"
+}, {
+    "fullname": "河北-承德-承德县",
+    "name": "承德",
+    "namef_full_py": "chengde"
+}, {
+    "fullname": "河北-承德-丰宁满族自治县",
+    "name": "丰宁满族自治县",
+    "namef_full_py": "fengningmanzuzizhixian"
+}, {
+    "fullname": "河北-承德-宽城满族自治县",
+    "name": "宽城满族自治县",
+    "namef_full_py": "kuanchengmanzuzizhixian"
+}, {
+    "fullname": "河北-承德-隆化县",
+    "name": "隆化",
+    "namef_full_py": "longhua"
+}, {
+    "fullname": "河北-承德-滦平县",
+    "name": "滦平",
+    "namef_full_py": "luanping"
+}, {
+    "fullname": "河北-承德-平泉县",
+    "name": "平泉",
+    "namef_full_py": "pingquan"
+}, {
+    "fullname": "河北-承德-围场满族蒙古族自治县",
+    "name": "围场满族蒙古族自治县",
+    "namef_full_py": "weichangmanzumengguzuzizhixian"
+}, {
+    "fullname": "河北-承德-兴隆县",
+    "name": "兴隆",
+    "namef_full_py": "xinglong"
+}, {
+    "fullname": "河北-邯郸-成安县",
+    "name": "成安",
+    "namef_full_py": "chengan"
+}, {
+    "fullname": "河北-邯郸-磁县",
+    "name": "磁县",
+    "namef_full_py": "cixian"
+}, {
+    "fullname": "河北-邯郸-大名县",
+    "name": "大名",
+    "namef_full_py": "daming"
+}, {
+    "fullname": "河北-邯郸-肥乡县",
+    "name": "肥乡",
+    "namef_full_py": "feixiang"
+}, {
+    "fullname": "河北-邯郸-馆陶县",
+    "name": "馆陶",
+    "namef_full_py": "guantao"
+}, {
+    "fullname": "河北-邯郸-广平县",
+    "name": "广平",
+    "namef_full_py": "guangping"
+}, {
+    "fullname": "河北-邯郸-邯郸市",
+    "name": "邯郸",
+    "namef_full_py": "handan"
+}, {
+    "fullname": "河北-邯郸-邯郸县",
+    "name": "邯郸",
+    "namef_full_py": "handan"
+}, {
+    "fullname": "河北-邯郸-鸡泽县",
+    "name": "鸡泽",
+    "namef_full_py": "jize"
+}, {
+    "fullname": "河北-邯郸-临漳县",
+    "name": "临漳",
+    "namef_full_py": "linzhang"
+}, {
+    "fullname": "河北-邯郸-邱县",
+    "name": "邱县",
+    "namef_full_py": "qiuxian"
+}, {
+    "fullname": "河北-邯郸-曲周县",
+    "name": "曲周",
+    "namef_full_py": "quzhou"
+}, {
+    "fullname": "河北-邯郸-涉县",
+    "name": "涉县",
+    "namef_full_py": "shexian"
+}, {
+    "fullname": "河北-邯郸-魏县",
+    "name": "魏县",
+    "namef_full_py": "weixian"
+}, {
+    "fullname": "河北-邯郸-武安市",
+    "name": "武安",
+    "namef_full_py": "wuan"
+}, {
+    "fullname": "河北-邯郸-永年县",
+    "name": "永年",
+    "namef_full_py": "yongnian"
+}, {
+    "fullname": "河北-衡水-安平县",
+    "name": "安平",
+    "namef_full_py": "anping"
+}, {
+    "fullname": "河北-衡水-阜城县",
+    "name": "阜城",
+    "namef_full_py": "fucheng"
+}, {
+    "fullname": "河北-衡水-故城县",
+    "name": "故城",
+    "namef_full_py": "gucheng"
+}, {
+    "fullname": "河北-衡水-衡水市",
+    "name": "衡水",
+    "namef_full_py": "hengshui"
+}, {
+    "fullname": "河北-衡水-冀州市",
+    "name": "冀州",
+    "namef_full_py": "jizhou"
+}, {
+    "fullname": "河北-衡水-景县",
+    "name": "景县",
+    "namef_full_py": "jingxian"
+}, {
+    "fullname": "河北-衡水-饶阳县",
+    "name": "饶阳",
+    "namef_full_py": "raoyang"
+}, {
+    "fullname": "河北-衡水-深州市",
+    "name": "深州",
+    "namef_full_py": "shenzhou"
+}, {
+    "fullname": "河北-衡水-武强县",
+    "name": "武强",
+    "namef_full_py": "wuqiang"
+}, {
+    "fullname": "河北-衡水-武邑县",
+    "name": "武邑",
+    "namef_full_py": "wuyi"
+}, {
+    "fullname": "河北-衡水-枣强县",
+    "name": "枣强",
+    "namef_full_py": "zaoqiang"
+}, {
+    "fullname": "河北-廊坊-霸州市",
+    "name": "霸州",
+    "namef_full_py": "bazhou"
+}, {
+    "fullname": "河北-廊坊-大厂回族自治县",
+    "name": "大厂回族自治县",
+    "namef_full_py": "dachanghuizuzizhixian"
+}, {
+    "fullname": "河北-廊坊-大城县",
+    "name": "大城",
+    "namef_full_py": "dacheng"
+}, {
+    "fullname": "河北-廊坊-固安县",
+    "name": "固安",
+    "namef_full_py": "guan"
+}, {
+    "fullname": "河北-廊坊-廊坊市",
+    "name": "廊坊",
+    "namef_full_py": "langfang"
+}, {
+    "fullname": "河北-廊坊-三河市",
+    "name": "三河",
+    "namef_full_py": "sanhe"
+}, {
+    "fullname": "河北-廊坊-文安县",
+    "name": "文安",
+    "namef_full_py": "wenan"
+}, {
+    "fullname": "河北-廊坊-香河县",
+    "name": "香河",
+    "namef_full_py": "xianghe"
+}, {
+    "fullname": "河北-廊坊-永清县",
+    "name": "永清",
+    "namef_full_py": "yongqing"
+}, {
+    "fullname": "河北-秦皇岛-昌黎县",
+    "name": "昌黎",
+    "namef_full_py": "changli"
+}, {
+    "fullname": "河北-秦皇岛-抚宁县",
+    "name": "抚宁",
+    "namef_full_py": "funing"
+}, {
+    "fullname": "河北-秦皇岛-卢龙县",
+    "name": "卢龙",
+    "namef_full_py": "lulong"
+}, {
+    "fullname": "河北-秦皇岛-秦皇岛市",
+    "name": "秦皇岛市",
+    "namef_full_py": "qinhuangdaoshi"
+}, {
+    "fullname": "河北-秦皇岛-青龙满族自治县",
+    "name": "青龙满族自治县",
+    "namef_full_py": "qinglongmanzuzizhixian"
+}, {
+    "fullname": "河北-石家庄-高邑县",
+    "name": "高邑",
+    "namef_full_py": "gaoyi"
+}, {
+    "fullname": "河北-石家庄-晋州市",
+    "name": "晋州",
+    "namef_full_py": "jinzhou"
+}, {
+    "fullname": "河北-石家庄-井陉县",
+    "name": "井陉",
+    "namef_full_py": "jingxing"
+}, {
+    "fullname": "河北-石家庄-灵寿县",
+    "name": "灵寿",
+    "namef_full_py": "lingshou"
+}, {
+    "fullname": "河北-石家庄-鹿泉市",
+    "name": "鹿泉",
+    "namef_full_py": "luquan"
+}, {
+    "fullname": "河北-石家庄-平山县",
+    "name": "平山",
+    "namef_full_py": "pingshan"
+}, {
+    "fullname": "河北-石家庄-深泽县",
+    "name": "深泽",
+    "namef_full_py": "shenze"
+}, {
+    "fullname": "河北-石家庄-石家庄市",
+    "name": "石家庄市",
+    "namef_full_py": "shijiazhuangshi"
+}, {
+    "fullname": "河北-石家庄-无极县",
+    "name": "无极",
+    "namef_full_py": "wuji"
+}, {
+    "fullname": "河北-石家庄-辛集市",
+    "name": "辛集",
+    "namef_full_py": "xinji"
+}, {
+    "fullname": "河北-石家庄-新乐市",
+    "name": "新乐",
+    "namef_full_py": "xinle"
+}, {
+    "fullname": "河北-石家庄-行唐县",
+    "name": "行唐",
+    "namef_full_py": "xingtang"
+}, {
+    "fullname": "河北-石家庄-元氏县",
+    "name": "元氏",
+    "namef_full_py": "yuanshi"
+}, {
+    "fullname": "河北-石家庄-赞皇县",
+    "name": "赞皇",
+    "namef_full_py": "zanhuang"
+}, {
+    "fullname": "河北-石家庄-赵县",
+    "name": "赵县",
+    "namef_full_py": "zhaoxian"
+}, {
+    "fullname": "河北-石家庄-正定县",
+    "name": "正定",
+    "namef_full_py": "zhengding"
+}, {
+    "fullname": "河北-石家庄-藁城市",
+    "name": "藁城",
+    "namef_full_py": "gaocheng"
+}, {
+    "fullname": "河北-石家庄-栾城县",
+    "name": "栾城",
+    "namef_full_py": "luancheng"
+}, {
+    "fullname": "河北-唐山-乐亭县",
+    "name": "乐亭",
+    "namef_full_py": "leting"
+}, {
+    "fullname": "河北-唐山-滦南县",
+    "name": "滦南",
+    "namef_full_py": "luannan"
+}, {
+    "fullname": "河北-唐山-滦县",
+    "name": "滦县",
+    "namef_full_py": "luanxian"
+}, {
+    "fullname": "河北-唐山-迁安市",
+    "name": "迁安",
+    "namef_full_py": "qianan"
+}, {
+    "fullname": "河北-唐山-迁西县",
+    "name": "迁西",
+    "namef_full_py": "qianxi"
+}, {
+    "fullname": "河北-唐山-唐海县",
+    "name": "唐海",
+    "namef_full_py": "tanghai"
+}, {
+    "fullname": "河北-唐山-唐山市",
+    "name": "唐山",
+    "namef_full_py": "tangshan"
+}, {
+    "fullname": "河北-唐山-玉田县",
+    "name": "玉田",
+    "namef_full_py": "yutian"
+}, {
+    "fullname": "河北-唐山-遵化市",
+    "name": "遵化",
+    "namef_full_py": "zunhua"
+}, {
+    "fullname": "河北-邢台-柏乡县",
+    "name": "柏乡",
+    "namef_full_py": "baixiang"
+}, {
+    "fullname": "河北-邢台-广宗县",
+    "name": "广宗",
+    "namef_full_py": "guangzong"
+}, {
+    "fullname": "河北-邢台-巨鹿县",
+    "name": "巨鹿",
+    "namef_full_py": "julu"
+}, {
+    "fullname": "河北-邢台-临城县",
+    "name": "临城",
+    "namef_full_py": "lincheng"
+}, {
+    "fullname": "河北-邢台-临西县",
+    "name": "临西",
+    "namef_full_py": "linxi"
+}, {
+    "fullname": "河北-邢台-隆尧县",
+    "name": "隆尧",
+    "namef_full_py": "longyao"
+}, {
+    "fullname": "河北-邢台-南宫市",
+    "name": "南宫",
+    "namef_full_py": "nangong"
+}, {
+    "fullname": "河北-邢台-南和县",
+    "name": "南和",
+    "namef_full_py": "nanhe"
+}, {
+    "fullname": "河北-邢台-内丘县",
+    "name": "内丘",
+    "namef_full_py": "neiqiu"
+}, {
+    "fullname": "河北-邢台-宁晋县",
+    "name": "宁晋",
+    "namef_full_py": "ningjin"
+}, {
+    "fullname": "河北-邢台-平乡县",
+    "name": "平乡",
+    "namef_full_py": "pingxiang"
+}, {
+    "fullname": "河北-邢台-清河县",
+    "name": "清河",
+    "namef_full_py": "qinghe"
+}, {
+    "fullname": "河北-邢台-任县",
+    "name": "任县",
+    "namef_full_py": "renxian"
+}, {
+    "fullname": "河北-邢台-沙河市",
+    "name": "沙河",
+    "namef_full_py": "shahe"
+}, {
+    "fullname": "河北-邢台-威县",
+    "name": "威县",
+    "namef_full_py": "weixian"
+}, {
+    "fullname": "河北-邢台-新河县",
+    "name": "新河",
+    "namef_full_py": "xinhe"
+}, {
+    "fullname": "河北-邢台-邢台市",
+    "name": "邢台",
+    "namef_full_py": "xingtai"
+}, {
+    "fullname": "河北-邢台-邢台县",
+    "name": "邢台",
+    "namef_full_py": "xingtai"
+}, {
+    "fullname": "河北-张家口-赤城县",
+    "name": "赤城",
+    "namef_full_py": "chicheng"
+}, {
+    "fullname": "河北-张家口-崇礼县",
+    "name": "崇礼",
+    "namef_full_py": "chongli"
+}, {
+    "fullname": "河北-张家口-沽源县",
+    "name": "沽源",
+    "namef_full_py": "guyuan"
+}, {
+    "fullname": "河北-张家口-怀安县",
+    "name": "怀安",
+    "namef_full_py": "huaian"
+}, {
+    "fullname": "河北-张家口-怀来县",
+    "name": "怀来",
+    "namef_full_py": "huailai"
+}, {
+    "fullname": "河北-张家口-康保县",
+    "name": "康保",
+    "namef_full_py": "kangbao"
+}, {
+    "fullname": "河北-张家口-尚义县",
+    "name": "尚义",
+    "namef_full_py": "shangyi"
+}, {
+    "fullname": "河北-张家口-万全县",
+    "name": "万全",
+    "namef_full_py": "wanquan"
+}, {
+    "fullname": "河北-张家口-蔚县",
+    "name": "蔚县",
+    "namef_full_py": "weixian"
+}, {
+    "fullname": "河北-张家口-宣化县",
+    "name": "宣化",
+    "namef_full_py": "xuanhua"
+}, {
+    "fullname": "河北-张家口-阳原县",
+    "name": "阳原",
+    "namef_full_py": "yangyuan"
+}, {
+    "fullname": "河北-张家口-张北县",
+    "name": "张北",
+    "namef_full_py": "zhangbei"
+}, {
+    "fullname": "河北-张家口-张家口市",
+    "name": "张家口市",
+    "namef_full_py": "zhangjiakoushi"
+}, {
+    "fullname": "河北-张家口-涿鹿县",
+    "name": "涿鹿",
+    "namef_full_py": "zhuolu"
+}, {
+    "fullname": "河南-安阳-安阳市",
+    "name": "安阳",
+    "namef_full_py": "anyang"
+}, {
+    "fullname": "河南-安阳-安阳县",
+    "name": "安阳",
+    "namef_full_py": "anyang"
+}, {
+    "fullname": "河南-安阳-滑县",
+    "name": "滑县",
+    "namef_full_py": "huaxian"
+}, {
+    "fullname": "河南-安阳-林州市",
+    "name": "林州",
+    "namef_full_py": "linzhou"
+}, {
+    "fullname": "河南-安阳-内黄县",
+    "name": "内黄",
+    "namef_full_py": "neihuang"
+}, {
+    "fullname": "河南-安阳-汤阴县",
+    "name": "汤阴",
+    "namef_full_py": "tangyin"
+}, {
+    "fullname": "河南-鹤壁-",
+    "name": "",
+    "namef_full_py": ""
+}, {
+    "fullname": "河南-鹤壁-鹤壁市",
+    "name": "鹤壁",
+    "namef_full_py": "hebi"
+}, {
+    "fullname": "河南-鹤壁-浚县",
+    "name": "浚县",
+    "namef_full_py": "junxian"
+}, {
+    "fullname": "河南-鹤壁-淇县",
+    "name": "淇县",
+    "namef_full_py": "qixian"
+}, {
+    "fullname": "河南-济源-济源市",
+    "name": "济源",
+    "namef_full_py": "jiyuan"
+}, {
+    "fullname": "河南-焦作-博爱县",
+    "name": "博爱",
+    "namef_full_py": "boai"
+}, {
+    "fullname": "河南-焦作-焦作市",
+    "name": "焦作",
+    "namef_full_py": "jiaozuo"
+}, {
+    "fullname": "河南-焦作-孟州市",
+    "name": "孟州",
+    "namef_full_py": "mengzhou"
+}, {
+    "fullname": "河南-焦作-沁阳市",
+    "name": "沁阳",
+    "namef_full_py": "qinyang"
+}, {
+    "fullname": "河南-焦作-温县",
+    "name": "温县",
+    "namef_full_py": "wenxian"
+}, {
+    "fullname": "河南-焦作-武陟县",
+    "name": "武陟",
+    "namef_full_py": "wuzhi"
+}, {
+    "fullname": "河南-焦作-修武县",
+    "name": "修武",
+    "namef_full_py": "xiuwu"
+}, {
+    "fullname": "河南-开封-开封市",
+    "name": "开封",
+    "namef_full_py": "kaifeng"
+}, {
+    "fullname": "河南-开封-开封县",
+    "name": "开封",
+    "namef_full_py": "kaifeng"
+}, {
+    "fullname": "河南-开封-兰考县",
+    "name": "兰考",
+    "namef_full_py": "lankao"
+}, {
+    "fullname": "河南-开封-通许县",
+    "name": "通许",
+    "namef_full_py": "tongxu"
+}, {
+    "fullname": "河南-开封-尉氏县",
+    "name": "尉氏",
+    "namef_full_py": "weishi"
+}, {
+    "fullname": "河南-开封-杞县",
+    "name": "杞县",
+    "namef_full_py": "qixian"
+}, {
+    "fullname": "河南-洛阳-洛宁县",
+    "name": "洛宁",
+    "namef_full_py": "luoning"
+}, {
+    "fullname": "河南-洛阳-洛阳市",
+    "name": "洛阳",
+    "namef_full_py": "luoyang"
+}, {
+    "fullname": "河南-洛阳-孟津县",
+    "name": "孟津",
+    "namef_full_py": "mengjin"
+}, {
+    "fullname": "河南-洛阳-汝阳县",
+    "name": "汝阳",
+    "namef_full_py": "ruyang"
+}, {
+    "fullname": "河南-洛阳-新安县",
+    "name": "新安",
+    "namef_full_py": "xinan"
+}, {
+    "fullname": "河南-洛阳-伊川县",
+    "name": "伊川",
+    "namef_full_py": "yichuan"
+}, {
+    "fullname": "河南-洛阳-宜阳县",
+    "name": "宜阳",
+    "namef_full_py": "yiyang"
+}, {
+    "fullname": "河南-洛阳-偃师市",
+    "name": "偃师",
+    "namef_full_py": "yanshi"
+}, {
+    "fullname": "河南-洛阳-嵩县",
+    "name": "嵩县",
+    "namef_full_py": "songxian"
+}, {
+    "fullname": "河南-洛阳-栾川县",
+    "name": "栾川",
+    "namef_full_py": "luanchuan"
+}, {
+    "fullname": "河南-南阳-邓州市",
+    "name": "邓州",
+    "namef_full_py": "dengzhou"
+}, {
+    "fullname": "河南-南阳-方城县",
+    "name": "方城",
+    "namef_full_py": "fangcheng"
+}, {
+    "fullname": "河南-南阳-南阳市",
+    "name": "南阳",
+    "namef_full_py": "nanyang"
+}, {
+    "fullname": "河南-南阳-南召县",
+    "name": "南召",
+    "namef_full_py": "nanzhao"
+}, {
+    "fullname": "河南-南阳-内乡县",
+    "name": "内乡",
+    "namef_full_py": "neixiang"
+}, {
+    "fullname": "河南-南阳-社旗县",
+    "name": "社旗",
+    "namef_full_py": "sheqi"
+}, {
+    "fullname": "河南-南阳-唐河县",
+    "name": "唐河",
+    "namef_full_py": "tanghe"
+}, {
+    "fullname": "河南-南阳-桐柏县",
+    "name": "桐柏",
+    "namef_full_py": "tongbai"
+}, {
+    "fullname": "河南-南阳-西峡县",
+    "name": "西峡",
+    "namef_full_py": "xixia"
+}, {
+    "fullname": "河南-南阳-新野县",
+    "name": "新野",
+    "namef_full_py": "xinye"
+}, {
+    "fullname": "河南-南阳-镇平县",
+    "name": "镇平",
+    "namef_full_py": "zhenping"
+}, {
+    "fullname": "河南-南阳-淅川县",
+    "name": "淅川",
+    "namef_full_py": "xichuan"
+}, {
+    "fullname": "河南-平顶山-宝丰县",
+    "name": "宝丰",
+    "namef_full_py": "baofeng"
+}, {
+    "fullname": "河南-平顶山-鲁山县",
+    "name": "鲁山",
+    "namef_full_py": "lushan"
+}, {
+    "fullname": "河南-平顶山-平顶山市",
+    "name": "平顶山市",
+    "namef_full_py": "pingdingshanshi"
+}, {
+    "fullname": "河南-平顶山-汝州市",
+    "name": "汝州",
+    "namef_full_py": "ruzhou"
+}, {
+    "fullname": "河南-平顶山-舞钢市",
+    "name": "舞钢",
+    "namef_full_py": "wugang"
+}, {
+    "fullname": "河南-平顶山-叶县",
+    "name": "叶县",
+    "namef_full_py": "yexian"
+}, {
+    "fullname": "河南-平顶山-郏县",
+    "name": "郏县",
+    "namef_full_py": "jiaxian"
+}, {
+    "fullname": "河南-三门峡-灵宝市",
+    "name": "灵宝",
+    "namef_full_py": "lingbao"
+}, {
+    "fullname": "河南-三门峡-卢氏县",
+    "name": "卢氏",
+    "namef_full_py": "lushi"
+}, {
+    "fullname": "河南-三门峡-三门峡市",
+    "name": "三门峡市",
+    "namef_full_py": "sanmenxiashi"
+}, {
+    "fullname": "河南-三门峡-陕县",
+    "name": "陕县",
+    "namef_full_py": "shanxian"
+}, {
+    "fullname": "河南-三门峡-义马市",
+    "name": "义马",
+    "namef_full_py": "yima"
+}, {
+    "fullname": "河南-三门峡-渑池县",
+    "name": "渑池",
+    "namef_full_py": "minchi"
+}, {
+    "fullname": "河南-商丘-民权县",
+    "name": "民权",
+    "namef_full_py": "minquan"
+}, {
+    "fullname": "河南-商丘-宁陵县",
+    "name": "宁陵",
+    "namef_full_py": "ningling"
+}, {
+    "fullname": "河南-商丘-商丘市",
+    "name": "商丘",
+    "namef_full_py": "shangqiu"
+}, {
+    "fullname": "河南-商丘-夏邑县",
+    "name": "夏邑",
+    "namef_full_py": "xiayi"
+}, {
+    "fullname": "河南-商丘-永城市",
+    "name": "永城",
+    "namef_full_py": "yongcheng"
+}, {
+    "fullname": "河南-商丘-虞城县",
+    "name": "虞城",
+    "namef_full_py": "yucheng"
+}, {
+    "fullname": "河南-商丘-柘城县",
+    "name": "柘城",
+    "namef_full_py": "zhecheng"
+}, {
+    "fullname": "河南-商丘-睢县",
+    "name": "睢县",
+    "namef_full_py": "suixian"
+}, {
+    "fullname": "河南-新乡-长垣县",
+    "name": "长垣",
+    "namef_full_py": "changyuan"
+}, {
+    "fullname": "河南-新乡-封丘县",
+    "name": "封丘",
+    "namef_full_py": "fengqiu"
+}, {
+    "fullname": "河南-新乡-辉县市",
+    "name": "辉",
+    "namef_full_py": "hui"
+}, {
+    "fullname": "河南-新乡-获嘉县",
+    "name": "获嘉",
+    "namef_full_py": "huojia"
+}, {
+    "fullname": "河南-新乡-卫辉市",
+    "name": "卫辉",
+    "namef_full_py": "weihui"
+}, {
+    "fullname": "河南-新乡-新乡市",
+    "name": "新乡",
+    "namef_full_py": "xinxiang"
+}, {
+    "fullname": "河南-新乡-新乡县",
+    "name": "新乡",
+    "namef_full_py": "xinxiang"
+}, {
+    "fullname": "河南-新乡-延津县",
+    "name": "延津",
+    "namef_full_py": "yanjin"
+}, {
+    "fullname": "河南-新乡-原阳县",
+    "name": "原阳",
+    "namef_full_py": "yuanyang"
+}, {
+    "fullname": "河南-信阳-固始县",
+    "name": "固始",
+    "namef_full_py": "gushi"
+}, {
+    "fullname": "河南-信阳-光山县",
+    "name": "光山",
+    "namef_full_py": "guangshan"
+}, {
+    "fullname": "河南-信阳-淮滨县",
+    "name": "淮滨",
+    "namef_full_py": "huaibin"
+}, {
+    "fullname": "河南-信阳-罗山县",
+    "name": "罗山",
+    "namef_full_py": "luoshan"
+}, {
+    "fullname": "河南-信阳-商城县",
+    "name": "商城",
+    "namef_full_py": "shangcheng"
+}, {
+    "fullname": "河南-信阳-息县",
+    "name": "息县",
+    "namef_full_py": "xixian"
+}, {
+    "fullname": "河南-信阳-新县",
+    "name": "新县",
+    "namef_full_py": "xinxian"
+}, {
+    "fullname": "河南-信阳-信阳市",
+    "name": "信阳",
+    "namef_full_py": "xinyang"
+}, {
+    "fullname": "河南-信阳-潢川县",
+    "name": "潢川",
+    "namef_full_py": "huangchuan"
+}, {
+    "fullname": "河南-许昌-长葛市",
+    "name": "长葛",
+    "namef_full_py": "changge"
+}, {
+    "fullname": "河南-许昌-襄城县",
+    "name": "襄城",
+    "namef_full_py": "xiangcheng"
+}, {
+    "fullname": "河南-许昌-许昌市",
+    "name": "许昌",
+    "namef_full_py": "xuchang"
+}, {
+    "fullname": "河南-许昌-许昌县",
+    "name": "许昌",
+    "namef_full_py": "xuchang"
+}, {
+    "fullname": "河南-许昌-禹州市",
+    "name": "禹州",
+    "namef_full_py": "yuzhou"
+}, {
+    "fullname": "河南-许昌-鄢陵县",
+    "name": "鄢陵",
+    "namef_full_py": "yanling"
+}, {
+    "fullname": "河南-郑州-登封市",
+    "name": "登封",
+    "namef_full_py": "dengfeng"
+}, {
+    "fullname": "河南-郑州-巩义市",
+    "name": "巩义",
+    "namef_full_py": "gongyi"
+}, {
+    "fullname": "河南-郑州-新密市",
+    "name": "新密",
+    "namef_full_py": "xinmi"
+}, {
+    "fullname": "河南-郑州-新郑市",
+    "name": "新郑",
+    "namef_full_py": "xinzheng"
+}, {
+    "fullname": "河南-郑州-郑州市",
+    "name": "郑州",
+    "namef_full_py": "zhengzhou"
+}, {
+    "fullname": "河南-郑州-中牟县",
+    "name": "中牟",
+    "namef_full_py": "zhongmou"
+}, {
+    "fullname": "河南-郑州-荥阳市",
+    "name": "荥阳",
+    "namef_full_py": "yingyang"
+}, {
+    "fullname": "河南-周口-郸城县",
+    "name": "郸城",
+    "namef_full_py": "dancheng"
+}, {
+    "fullname": "河南-周口-扶沟县",
+    "name": "扶沟",
+    "namef_full_py": "fugou"
+}, {
+    "fullname": "河南-周口-淮阳县",
+    "name": "淮阳",
+    "namef_full_py": "huaiyang"
+}, {
+    "fullname": "河南-周口-鹿邑县",
+    "name": "鹿邑",
+    "namef_full_py": "luyi"
+}, {
+    "fullname": "河南-周口-商水县",
+    "name": "商水",
+    "namef_full_py": "shangshui"
+}, {
+    "fullname": "河南-周口-沈丘县",
+    "name": "沈丘",
+    "namef_full_py": "shenqiu"
+}, {
+    "fullname": "河南-周口-太康县",
+    "name": "太康",
+    "namef_full_py": "taikang"
+}, {
+    "fullname": "河南-周口-西华县",
+    "name": "西华",
+    "namef_full_py": "xihua"
+}, {
+    "fullname": "河南-周口-项城市",
+    "name": "项城",
+    "namef_full_py": "xiangcheng"
+}, {
+    "fullname": "河南-周口-周口市",
+    "name": "周口",
+    "namef_full_py": "zhoukou"
+}, {
+    "fullname": "河南-驻马店-泌阳县",
+    "name": "泌阳",
+    "namef_full_py": "miyang"
+}, {
+    "fullname": "河南-驻马店-平舆县",
+    "name": "平舆",
+    "namef_full_py": "pingyu"
+}, {
+    "fullname": "河南-驻马店-确山县",
+    "name": "确山",
+    "namef_full_py": "queshan"
+}, {
+    "fullname": "河南-驻马店-汝南县",
+    "name": "汝南",
+    "namef_full_py": "runan"
+}, {
+    "fullname": "河南-驻马店-上蔡县",
+    "name": "上蔡",
+    "namef_full_py": "shangcai"
+}, {
+    "fullname": "河南-驻马店-遂平县",
+    "name": "遂平",
+    "namef_full_py": "suiping"
+}, {
+    "fullname": "河南-驻马店-西平县",
+    "name": "西平",
+    "namef_full_py": "xiping"
+}, {
+    "fullname": "河南-驻马店-新蔡县",
+    "name": "新蔡",
+    "namef_full_py": "xincai"
+}, {
+    "fullname": "河南-驻马店-正阳县",
+    "name": "正阳",
+    "namef_full_py": "zhengyang"
+}, {
+    "fullname": "河南-驻马店-驻马店市",
+    "name": "驻马店市",
+    "namef_full_py": "zhumadianshi"
+}, {
+    "fullname": "河南-漯河-临颍县",
+    "name": "临颍",
+    "namef_full_py": "linying"
+}, {
+    "fullname": "河南-漯河-舞阳县",
+    "name": "舞阳",
+    "namef_full_py": "wuyang"
+}, {
+    "fullname": "河南-漯河-郾城县",
+    "name": "郾城",
+    "namef_full_py": "yancheng"
+}, {
+    "fullname": "河南-漯河-漯河市",
+    "name": "漯河",
+    "namef_full_py": "tahe"
+}, {
+    "fullname": "河南-濮阳-范县",
+    "name": "范县",
+    "namef_full_py": "fanxian"
+}, {
+    "fullname": "河南-濮阳-南乐县",
+    "name": "南乐",
+    "namef_full_py": "nanle"
+}, {
+    "fullname": "河南-濮阳-清丰县",
+    "name": "清丰",
+    "namef_full_py": "qingfeng"
+}, {
+    "fullname": "河南-濮阳-台前县",
+    "name": "台前",
+    "namef_full_py": "taiqian"
+}, {
+    "fullname": "河南-濮阳-濮阳市",
+    "name": "濮阳",
+    "namef_full_py": "puyang"
+}, {
+    "fullname": "河南-濮阳-濮阳县",
+    "name": "濮阳",
+    "namef_full_py": "puyang"
+}, {
+    "fullname": "黑龙江-大庆-大庆市",
+    "name": "大庆",
+    "namef_full_py": "daqing"
+}, {
+    "fullname": "黑龙江-大庆-杜尔伯特蒙古族自治县",
+    "name": "杜尔伯特蒙古族自治县",
+    "namef_full_py": "duerbotemengguzuzizhixian"
+}, {
+    "fullname": "黑龙江-大庆-林甸县",
+    "name": "林甸",
+    "namef_full_py": "lindian"
+}, {
+    "fullname": "黑龙江-大庆-肇源县",
+    "name": "肇源",
+    "namef_full_py": "zhaoyuan"
+}, {
+    "fullname": "黑龙江-大庆-肇州县",
+    "name": "肇州",
+    "namef_full_py": "zhaozhou"
+}, {
+    "fullname": "黑龙江-大兴安岭-呼玛县",
+    "name": "呼玛",
+    "namef_full_py": "huma"
+}, {
+    "fullname": "黑龙江-大兴安岭-漠河县",
+    "name": "漠河",
+    "namef_full_py": "mohe"
+}, {
+    "fullname": "黑龙江-大兴安岭-塔河县",
+    "name": "塔河",
+    "namef_full_py": "tahe"
+}, {
+    "fullname": "黑龙江-哈尔滨-阿城市",
+    "name": "阿城",
+    "namef_full_py": "acheng"
+}, {
+    "fullname": "黑龙江-哈尔滨-巴彦县",
+    "name": "巴彦",
+    "namef_full_py": "bayan"
+}, {
+    "fullname": "黑龙江-哈尔滨-宾县",
+    "name": "宾县",
+    "namef_full_py": "binxian"
+}, {
+    "fullname": "黑龙江-哈尔滨-方正县",
+    "name": "方正",
+    "namef_full_py": "fangzheng"
+}, {
+    "fullname": "黑龙江-哈尔滨-哈尔滨市",
+    "name": "哈尔滨市",
+    "namef_full_py": "haerbinshi"
+}, {
+    "fullname": "黑龙江-哈尔滨-呼兰县",
+    "name": "呼兰",
+    "namef_full_py": "hulan"
+}, {
+    "fullname": "黑龙江-哈尔滨-木兰县",
+    "name": "木兰",
+    "namef_full_py": "mulan"
+}, {
+    "fullname": "黑龙江-哈尔滨-尚志市",
+    "name": "尚志",
+    "namef_full_py": "shangzhi"
+}, {
+    "fullname": "黑龙江-哈尔滨-双城市",
+    "name": "双城",
+    "namef_full_py": "shuangcheng"
+}, {
+    "fullname": "黑龙江-哈尔滨-通河县",
+    "name": "通河",
+    "namef_full_py": "tonghe"
+}, {
+    "fullname": "黑龙江-哈尔滨-五常市",
+    "name": "五常",
+    "namef_full_py": "wuchang"
+}, {
+    "fullname": "黑龙江-哈尔滨-延寿县",
+    "name": "延寿",
+    "namef_full_py": "yanshou"
+}, {
+    "fullname": "黑龙江-哈尔滨-依兰县",
+    "name": "依兰",
+    "namef_full_py": "yilan"
+}, {
+    "fullname": "黑龙江-鹤岗-鹤岗市",
+    "name": "鹤岗",
+    "namef_full_py": "hegang"
+}, {
+    "fullname": "黑龙江-鹤岗-萝北县",
+    "name": "萝北",
+    "namef_full_py": "luobei"
+}, {
+    "fullname": "黑龙江-鹤岗-绥滨县",
+    "name": "绥滨",
+    "namef_full_py": "suibin"
+}, {
+    "fullname": "黑龙江-黑河-北安市",
+    "name": "北安",
+    "namef_full_py": "beian"
+}, {
+    "fullname": "黑龙江-黑河-黑河市",
+    "name": "黑河",
+    "namef_full_py": "heihe"
+}, {
+    "fullname": "黑龙江-黑河-嫩江县",
+    "name": "嫩江",
+    "namef_full_py": "nenjiang"
+}, {
+    "fullname": "黑龙江-黑河-孙吴县",
+    "name": "孙吴",
+    "namef_full_py": "sunwu"
+}, {
+    "fullname": "黑龙江-黑河-五大连池市",
+    "name": "五大连池市",
+    "namef_full_py": "wudalianchishi"
+}, {
+    "fullname": "黑龙江-黑河-逊克县",
+    "name": "逊克",
+    "namef_full_py": "xunke"
+}, {
+    "fullname": "黑龙江-鸡西-虎林市",
+    "name": "虎林",
+    "namef_full_py": "hulin"
+}, {
+    "fullname": "黑龙江-鸡西-鸡东县",
+    "name": "鸡东",
+    "namef_full_py": "jidong"
+}, {
+    "fullname": "黑龙江-鸡西-鸡西市",
+    "name": "鸡西",
+    "namef_full_py": "jixi"
+}, {
+    "fullname": "黑龙江-鸡西-密山市",
+    "name": "密山",
+    "namef_full_py": "mishan"
+}, {
+    "fullname": "黑龙江-佳木斯-抚远县",
+    "name": "抚远",
+    "namef_full_py": "fuyuan"
+}, {
+    "fullname": "黑龙江-佳木斯-富锦市",
+    "name": "富锦",
+    "namef_full_py": "fujin"
+}, {
+    "fullname": "黑龙江-佳木斯-佳木斯市",
+    "name": "佳木斯市",
+    "namef_full_py": "jiamusishi"
+}, {
+    "fullname": "黑龙江-佳木斯-汤原县",
+    "name": "汤原",
+    "namef_full_py": "tangyuan"
+}, {
+    "fullname": "黑龙江-佳木斯-同江市",
+    "name": "同江",
+    "namef_full_py": "tongjiang"
+}, {
+    "fullname": "黑龙江-佳木斯-桦川县",
+    "name": "桦川",
+    "namef_full_py": "huachuan"
+}, {
+    "fullname": "黑龙江-佳木斯-桦南县",
+    "name": "桦南",
+    "namef_full_py": "huanan"
+}, {
+    "fullname": "黑龙江-牡丹江-东宁县",
+    "name": "东宁",
+    "namef_full_py": "dongning"
+}, {
+    "fullname": "黑龙江-牡丹江-海林市",
+    "name": "海林",
+    "namef_full_py": "hailin"
+}, {
+    "fullname": "黑龙江-牡丹江-林口县",
+    "name": "林口",
+    "namef_full_py": "linkou"
+}, {
+    "fullname": "黑龙江-牡丹江-牡丹江市",
+    "name": "牡丹江市",
+    "namef_full_py": "mudanjiangshi"
+}, {
+    "fullname": "黑龙江-牡丹江-穆棱市",
+    "name": "穆棱",
+    "namef_full_py": "muleng"
+}, {
+    "fullname": "黑龙江-牡丹江-宁安市",
+    "name": "宁安",
+    "namef_full_py": "ningan"
+}, {
+    "fullname": "黑龙江-牡丹江-绥芬河市",
+    "name": "绥芬河市",
+    "namef_full_py": "suifenheshi"
+}, {
+    "fullname": "黑龙江-七台河-勃利县",
+    "name": "勃利",
+    "namef_full_py": "boli"
+}, {
+    "fullname": "黑龙江-七台河-七台河市",
+    "name": "七台河市",
+    "namef_full_py": "qitaiheshi"
+}, {
+    "fullname": "黑龙江-齐齐哈尔-拜泉县",
+    "name": "拜泉",
+    "namef_full_py": "baiquan"
+}, {
+    "fullname": "黑龙江-齐齐哈尔-富裕县",
+    "name": "富裕",
+    "namef_full_py": "fuyu"
+}, {
+    "fullname": "黑龙江-齐齐哈尔-甘南县",
+    "name": "甘南",
+    "namef_full_py": "gannan"
+}, {
+    "fullname": "黑龙江-齐齐哈尔-克东县",
+    "name": "克东",
+    "namef_full_py": "kedong"
+}, {
+    "fullname": "黑龙江-齐齐哈尔-克山县",
+    "name": "克山",
+    "namef_full_py": "keshan"
+}, {
+    "fullname": "黑龙江-齐齐哈尔-龙江县",
+    "name": "龙江",
+    "namef_full_py": "longjiang"
+}, {
+    "fullname": "黑龙江-齐齐哈尔-齐齐哈尔市",
+    "name": "齐齐哈尔市",
+    "namef_full_py": "qiqihaershi"
+}, {
+    "fullname": "黑龙江-齐齐哈尔-泰来县",
+    "name": "泰来",
+    "namef_full_py": "tailai"
+}, {
+    "fullname": "黑龙江-齐齐哈尔-依安县",
+    "name": "依安",
+    "namef_full_py": "yian"
+}, {
+    "fullname": "黑龙江-齐齐哈尔-讷河市",
+    "name": "讷河",
+    "namef_full_py": "nehe"
+}, {
+    "fullname": "黑龙江-双鸭山-宝清县",
+    "name": "宝清",
+    "namef_full_py": "baoqing"
+}, {
+    "fullname": "黑龙江-双鸭山-集贤县",
+    "name": "集贤",
+    "namef_full_py": "jixian"
+}, {
+    "fullname": "黑龙江-双鸭山-饶河县",
+    "name": "饶河",
+    "namef_full_py": "raohe"
+}, {
+    "fullname": "黑龙江-双鸭山-双鸭山市",
+    "name": "双鸭山市",
+    "namef_full_py": "shuangyashanshi"
+}, {
+    "fullname": "黑龙江-双鸭山-友谊县",
+    "name": "友谊",
+    "namef_full_py": "youyi"
+}, {
+    "fullname": "黑龙江-绥化-安达市",
+    "name": "安达",
+    "namef_full_py": "anda"
+}, {
+    "fullname": "黑龙江-绥化-海伦市",
+    "name": "海伦",
+    "namef_full_py": "hailun"
+}, {
+    "fullname": "黑龙江-绥化-兰西县",
+    "name": "兰西",
+    "namef_full_py": "lanxi"
+}, {
+    "fullname": "黑龙江-绥化-明水县",
+    "name": "明水",
+    "namef_full_py": "mingshui"
+}, {
+    "fullname": "黑龙江-绥化-青冈县",
+    "name": "青冈",
+    "namef_full_py": "qinggang"
+}, {
+    "fullname": "黑龙江-绥化-庆安县",
+    "name": "庆安",
+    "namef_full_py": "qingan"
+}, {
+    "fullname": "黑龙江-绥化-绥化市",
+    "name": "绥化",
+    "namef_full_py": "suihua"
+}, {
+    "fullname": "黑龙江-绥化-绥棱县",
+    "name": "绥棱",
+    "namef_full_py": "suileng"
+}, {
+    "fullname": "黑龙江-绥化-望奎县",
+    "name": "望奎",
+    "namef_full_py": "wangkui"
+}, {
+    "fullname": "黑龙江-绥化-肇东市",
+    "name": "肇东",
+    "namef_full_py": "zhaodong"
+}, {
+    "fullname": "黑龙江-伊春-嘉荫县",
+    "name": "嘉荫",
+    "namef_full_py": "jiayin"
+}, {
+    "fullname": "黑龙江-伊春-铁力市",
+    "name": "铁力",
+    "namef_full_py": "tieli"
+}, {
+    "fullname": "黑龙江-伊春-伊春市",
+    "name": "伊春",
+    "namef_full_py": "yichun"
+}, {
+    "fullname": "湖北-鄂州-鄂州市",
+    "name": "鄂州",
+    "namef_full_py": "ezhou"
+}, {
+    "fullname": "湖北-恩施土家族苗族自治州-巴东县",
+    "name": "巴东",
+    "namef_full_py": "badong"
+}, {
+    "fullname": "湖北-恩施土家族苗族自治州-恩施市",
+    "name": "恩施",
+    "namef_full_py": "enshi"
+}, {
+    "fullname": "湖北-恩施土家族苗族自治州-鹤峰县",
+    "name": "鹤峰",
+    "namef_full_py": "hefeng"
+}, {
+    "fullname": "湖北-恩施土家族苗族自治州-建始县",
+    "name": "建始",
+    "namef_full_py": "jianshi"
+}, {
+    "fullname": "湖北-恩施土家族苗族自治州-来凤县",
+    "name": "来凤",
+    "namef_full_py": "laifeng"
+}, {
+    "fullname": "湖北-恩施土家族苗族自治州-利川市",
+    "name": "利川",
+    "namef_full_py": "lichuan"
+}, {
+    "fullname": "湖北-恩施土家族苗族自治州-咸丰县",
+    "name": "咸丰",
+    "namef_full_py": "xianfeng"
+}, {
+    "fullname": "湖北-恩施土家族苗族自治州-宣恩县",
+    "name": "宣恩",
+    "namef_full_py": "xuanen"
+}, {
+    "fullname": "湖北-黄冈-红安县",
+    "name": "红安",
+    "namef_full_py": "hongan"
+}, {
+    "fullname": "湖北-黄冈-黄冈市",
+    "name": "黄冈",
+    "namef_full_py": "huanggang"
+}, {
+    "fullname": "湖北-黄冈-黄梅县",
+    "name": "黄梅",
+    "namef_full_py": "huangmei"
+}, {
+    "fullname": "湖北-黄冈-罗田县",
+    "name": "罗田",
+    "namef_full_py": "luotian"
+}, {
+    "fullname": "湖北-黄冈-麻城市",
+    "name": "麻城",
+    "namef_full_py": "macheng"
+}, {
+    "fullname": "湖北-黄冈-团风县",
+    "name": "团风",
+    "namef_full_py": "tuanfeng"
+}, {
+    "fullname": "湖北-黄冈-武穴市",
+    "name": "武穴",
+    "namef_full_py": "wuxue"
+}, {
+    "fullname": "湖北-黄冈-英山县",
+    "name": "英山",
+    "namef_full_py": "yingshan"
+}, {
+    "fullname": "湖北-黄冈-蕲春县",
+    "name": "蕲春",
+    "namef_full_py": "qichun"
+}, {
+    "fullname": "湖北-黄冈-浠水县",
+    "name": "浠水",
+    "namef_full_py": "xishui"
+}, {
+    "fullname": "湖北-黄石-大冶市",
+    "name": "大冶",
+    "namef_full_py": "daye"
+}, {
+    "fullname": "湖北-黄石-黄石市",
+    "name": "黄石",
+    "namef_full_py": "huangshi"
+}, {
+    "fullname": "湖北-黄石-阳新县",
+    "name": "阳新",
+    "namef_full_py": "yangxin"
+}, {
+    "fullname": "湖北-荆门-荆门市",
+    "name": "荆门",
+    "namef_full_py": "jingmen"
+}, {
+    "fullname": "湖北-荆门-京山县",
+    "name": "京山",
+    "namef_full_py": "jingshan"
+}, {
+    "fullname": "湖北-荆门-沙洋县",
+    "name": "沙洋",
+    "namef_full_py": "shayang"
+}, {
+    "fullname": "湖北-荆门-钟祥市",
+    "name": "钟祥",
+    "namef_full_py": "zhongxiang"
+}, {
+    "fullname": "湖北-荆州-公安县",
+    "name": "公安",
+    "namef_full_py": "gongan"
+}, {
+    "fullname": "湖北-荆州-洪湖市",
+    "name": "洪湖",
+    "namef_full_py": "honghu"
+}, {
+    "fullname": "湖北-荆州-监利县",
+    "name": "监利",
+    "namef_full_py": "jianli"
+}, {
+    "fullname": "湖北-荆州-江陵县",
+    "name": "江陵",
+    "namef_full_py": "jiangling"
+}, {
+    "fullname": "湖北-荆州-荆州市",
+    "name": "荆州",
+    "namef_full_py": "jingzhou"
+}, {
+    "fullname": "湖北-荆州-石首市",
+    "name": "石首",
+    "namef_full_py": "shishou"
+}, {
+    "fullname": "湖北-荆州-松滋市",
+    "name": "松滋",
+    "namef_full_py": "songzi"
+}, {
+    "fullname": "湖北-潜江-潜江市",
+    "name": "潜江",
+    "namef_full_py": "qianjiang"
+}, {
+    "fullname": "湖北-神农架林区-神农架林区",
+    "name": "神农架林区",
+    "namef_full_py": "shennongjialinqu"
+}, {
+    "fullname": "湖北-十堰-丹江口市",
+    "name": "丹江口市",
+    "namef_full_py": "danjiangkoushi"
+}, {
+    "fullname": "湖北-十堰-房县",
+    "name": "房县",
+    "namef_full_py": "fangxian"
+}, {
+    "fullname": "湖北-十堰-十堰市",
+    "name": "十堰",
+    "namef_full_py": "shiyan"
+}, {
+    "fullname": "湖北-十堰-郧西县",
+    "name": "郧西",
+    "namef_full_py": "yunxi"
+}, {
+    "fullname": "湖北-十堰-郧县",
+    "name": "郧县",
+    "namef_full_py": "yunxian"
+}, {
+    "fullname": "湖北-十堰-竹山县",
+    "name": "竹山",
+    "namef_full_py": "zhushan"
+}, {
+    "fullname": "湖北-十堰-竹溪县",
+    "name": "竹溪",
+    "namef_full_py": "zhuxi"
+}, {
+    "fullname": "湖北-随州-广水市",
+    "name": "广水",
+    "namef_full_py": "guangshui"
+}, {
+    "fullname": "湖北-随州-随州市",
+    "name": "随州",
+    "namef_full_py": "suizhou"
+}, {
+    "fullname": "湖北-天门-天门市",
+    "name": "天门",
+    "namef_full_py": "tianmen"
+}, {
+    "fullname": "湖北-武汉-武汉市",
+    "name": "武汉",
+    "namef_full_py": "wuhan"
+}, {
+    "fullname": "湖北-仙桃-仙桃市",
+    "name": "仙桃",
+    "namef_full_py": "xiantao"
+}, {
+    "fullname": "湖北-咸宁-赤壁市",
+    "name": "赤壁",
+    "namef_full_py": "chibi"
+}, {
+    "fullname": "湖北-咸宁-崇阳县",
+    "name": "崇阳",
+    "namef_full_py": "chongyang"
+}, {
+    "fullname": "湖北-咸宁-嘉鱼县",
+    "name": "嘉鱼",
+    "namef_full_py": "jiayu"
+}, {
+    "fullname": "湖北-咸宁-通城县",
+    "name": "通城",
+    "namef_full_py": "tongcheng"
+}, {
+    "fullname": "湖北-咸宁-通山县",
+    "name": "通山",
+    "namef_full_py": "tongshan"
+}, {
+    "fullname": "湖北-咸宁-咸宁市",
+    "name": "咸宁",
+    "namef_full_py": "xianning"
+}, {
+    "fullname": "湖北-襄樊-保康县",
+    "name": "保康",
+    "namef_full_py": "baokang"
+}, {
+    "fullname": "湖北-襄樊-谷城县",
+    "name": "谷城",
+    "namef_full_py": "gucheng"
+}, {
+    "fullname": "湖北-襄樊-老河口市",
+    "name": "老河口市",
+    "namef_full_py": "laohekoushi"
+}, {
+    "fullname": "湖北-襄樊-南漳县",
+    "name": "南漳",
+    "namef_full_py": "nanzhang"
+}, {
+    "fullname": "湖北-襄樊-襄樊市",
+    "name": "襄樊",
+    "namef_full_py": "xiangfan"
+}, {
+    "fullname": "湖北-襄樊-宜城市",
+    "name": "宜城",
+    "namef_full_py": "yicheng"
+}, {
+    "fullname": "湖北-襄樊-枣阳市",
+    "name": "枣阳",
+    "namef_full_py": "zaoyang"
+}, {
+    "fullname": "湖北-孝感-安陆市",
+    "name": "安陆",
+    "namef_full_py": "anlu"
+}, {
+    "fullname": "湖北-孝感-大悟县",
+    "name": "大悟",
+    "namef_full_py": "dawu"
+}, {
+    "fullname": "湖北-孝感-汉川市",
+    "name": "汉川",
+    "namef_full_py": "hanchuan"
+}, {
+    "fullname": "湖北-孝感-孝昌县",
+    "name": "孝昌",
+    "namef_full_py": "xiaochang"
+}, {
+    "fullname": "湖北-孝感-孝感市",
+    "name": "孝感",
+    "namef_full_py": "xiaogan"
+}, {
+    "fullname": "湖北-孝感-应城市",
+    "name": "应城",
+    "namef_full_py": "yingcheng"
+}, {
+    "fullname": "湖北-孝感-云梦县",
+    "name": "云梦",
+    "namef_full_py": "yunmeng"
+}, {
+    "fullname": "湖北-宜昌-长阳土家族自治县",
+    "name": "长阳土家族自治县",
+    "namef_full_py": "changyangtujiazuzizhixian"
+}, {
+    "fullname": "湖北-宜昌-当阳市",
+    "name": "当阳",
+    "namef_full_py": "dangyang"
+}, {
+    "fullname": "湖北-宜昌-五峰土家族自治县",
+    "name": "五峰土家族自治县",
+    "namef_full_py": "wufengtujiazuzizhixian"
+}, {
+    "fullname": "湖北-宜昌-兴山县",
+    "name": "兴山",
+    "namef_full_py": "xingshan"
+}, {
+    "fullname": "湖北-宜昌-宜昌市",
+    "name": "宜昌",
+    "namef_full_py": "yichang"
+}, {
+    "fullname": "湖北-宜昌-宜都市",
+    "name": "宜都",
+    "namef_full_py": "yidu"
+}, {
+    "fullname": "湖北-宜昌-远安县",
+    "name": "远安",
+    "namef_full_py": "yuanan"
+}, {
+    "fullname": "湖北-宜昌-枝江市",
+    "name": "枝江",
+    "namef_full_py": "zhijiang"
+}, {
+    "fullname": "湖北-宜昌-秭归县",
+    "name": "秭归",
+    "namef_full_py": "zigui"
+}, {
+    "fullname": "湖南-常德-安乡县",
+    "name": "安乡",
+    "namef_full_py": "anxiang"
+}, {
+    "fullname": "湖南-常德-常德市",
+    "name": "常德",
+    "namef_full_py": "changde"
+}, {
+    "fullname": "湖南-常德-汉寿县",
+    "name": "汉寿",
+    "namef_full_py": "hanshou"
+}, {
+    "fullname": "湖南-常德-津市市",
+    "name": "津",
+    "namef_full_py": "jin"
+}, {
+    "fullname": "湖南-常德-临澧县",
+    "name": "临澧",
+    "namef_full_py": "linli"
+}, {
+    "fullname": "湖南-常德-石门县",
+    "name": "石门",
+    "namef_full_py": "shimen"
+}, {
+    "fullname": "湖南-常德-桃源县",
+    "name": "桃源",
+    "namef_full_py": "taoyuan"
+}, {
+    "fullname": "湖南-常德-澧县",
+    "name": "澧县",
+    "namef_full_py": "lixian"
+}, {
+    "fullname": "湖南-长沙-长沙市",
+    "name": "长沙",
+    "namef_full_py": "changsha"
+}, {
+    "fullname": "湖南-长沙-长沙县",
+    "name": "长沙",
+    "namef_full_py": "changsha"
+}, {
+    "fullname": "湖南-长沙-宁乡县",
+    "name": "宁乡",
+    "namef_full_py": "ningxiang"
+}, {
+    "fullname": "湖南-长沙-望城县",
+    "name": "望城",
+    "namef_full_py": "wangcheng"
+}, {
+    "fullname": "湖南-长沙-浏阳市",
+    "name": "浏阳",
+    "namef_full_py": "liuyang"
+}, {
+    "fullname": "湖南-郴州-安仁县",
+    "name": "安仁",
+    "namef_full_py": "anren"
+}, {
+    "fullname": "湖南-郴州-郴州市",
+    "name": "郴州",
+    "namef_full_py": "chenzhou"
+}, {
+    "fullname": "湖南-郴州-桂东县",
+    "name": "桂东",
+    "namef_full_py": "guidong"
+}, {
+    "fullname": "湖南-郴州-桂阳县",
+    "name": "桂阳",
+    "namef_full_py": "guiyang"
+}, {
+    "fullname": "湖南-郴州-嘉禾县",
+    "name": "嘉禾",
+    "namef_full_py": "jiahe"
+}, {
+    "fullname": "湖南-郴州-临武县",
+    "name": "临武",
+    "namef_full_py": "linwu"
+}, {
+    "fullname": "湖南-郴州-汝城县",
+    "name": "汝城",
+    "namef_full_py": "rucheng"
+}, {
+    "fullname": "湖南-郴州-宜章县",
+    "name": "宜章",
+    "namef_full_py": "yizhang"
+}, {
+    "fullname": "湖南-郴州-永兴县",
+    "name": "永兴",
+    "namef_full_py": "yongxing"
+}, {
+    "fullname": "湖南-郴州-资兴市",
+    "name": "资兴",
+    "namef_full_py": "zixing"
+}, {
+    "fullname": "湖南-衡阳-常宁市",
+    "name": "常宁",
+    "namef_full_py": "changning"
+}, {
+    "fullname": "湖南-衡阳-衡东县",
+    "name": "衡东",
+    "namef_full_py": "hengdong"
+}, {
+    "fullname": "湖南-衡阳-衡南县",
+    "name": "衡南",
+    "namef_full_py": "hengnan"
+}, {
+    "fullname": "湖南-衡阳-衡山县",
+    "name": "衡山",
+    "namef_full_py": "hengshan"
+}, {
+    "fullname": "湖南-衡阳-衡阳市",
+    "name": "衡阳",
+    "namef_full_py": "hengyang"
+}, {
+    "fullname": "湖南-衡阳-衡阳县",
+    "name": "衡阳",
+    "namef_full_py": "hengyang"
+}, {
+    "fullname": "湖南-衡阳-祁东县",
+    "name": "祁东",
+    "namef_full_py": "qidong"
+}, {
+    "fullname": "湖南-衡阳-耒阳市",
+    "name": "耒阳",
+    "namef_full_py": "leiyang"
+}, {
+    "fullname": "湖南-怀化-辰溪县",
+    "name": "辰溪",
+    "namef_full_py": "chenxi"
+}, {
+    "fullname": "湖南-怀化-洪江市",
+    "name": "洪江",
+    "namef_full_py": "hongjiang"
+}, {
+    "fullname": "湖南-怀化-怀化市",
+    "name": "怀化",
+    "namef_full_py": "huaihua"
+}, {
+    "fullname": "湖南-怀化-会同县",
+    "name": "会同",
+    "namef_full_py": "huitong"
+}, {
+    "fullname": "湖南-怀化-靖州苗族侗族自治县",
+    "name": "靖州苗族侗族自治县",
+    "namef_full_py": "jingzhoumiaozutongzuzizhixian"
+}, {
+    "fullname": "湖南-怀化-麻阳苗族自治县",
+    "name": "麻阳苗族自治县",
+    "namef_full_py": "mayangmiaozuzizhixian"
+}, {
+    "fullname": "湖南-怀化-通道侗族自治县",
+    "name": "通道侗族自治县",
+    "namef_full_py": "tongdaotongzuzizhixian"
+}, {
+    "fullname": "湖南-怀化-新晃侗族自治县",
+    "name": "新晃侗族自治县",
+    "namef_full_py": "xinhuangtongzuzizhixian"
+}, {
+    "fullname": "湖南-怀化-中方县",
+    "name": "中方",
+    "namef_full_py": "zhongfang"
+}, {
+    "fullname": "湖南-怀化-芷江侗族自治县",
+    "name": "芷江侗族自治县",
+    "namef_full_py": "zhijiangtongzuzizhixian"
+}, {
+    "fullname": "湖南-怀化-沅陵县",
+    "name": "沅陵",
+    "namef_full_py": "yuanling"
+}, {
+    "fullname": "湖南-怀化-溆浦县",
+    "name": "溆浦",
+    "namef_full_py": "xupu"
+}, {
+    "fullname": "湖南-娄底-冷水江市",
+    "name": "冷水江市",
+    "namef_full_py": "lengshuijiangshi"
+}, {
+    "fullname": "湖南-娄底-涟源市",
+    "name": "涟源",
+    "namef_full_py": "lianyuan"
+}, {
+    "fullname": "湖南-娄底-娄底市",
+    "name": "娄底",
+    "namef_full_py": "loudi"
+}, {
+    "fullname": "湖南-娄底-双峰县",
+    "name": "双峰",
+    "namef_full_py": "shuangfeng"
+}, {
+    "fullname": "湖南-娄底-新化县",
+    "name": "新化",
+    "namef_full_py": "xinhua"
+}, {
+    "fullname": "湖南-邵阳-城步苗族自治县",
+    "name": "城步苗族自治县",
+    "namef_full_py": "chengbumiaozuzizhixian"
+}, {
+    "fullname": "湖南-邵阳-洞口县",
+    "name": "洞口",
+    "namef_full_py": "dongkou"
+}, {
+    "fullname": "湖南-邵阳-隆回县",
+    "name": "隆回",
+    "namef_full_py": "longhui"
+}, {
+    "fullname": "湖南-邵阳-邵东县",
+    "name": "邵东",
+    "namef_full_py": "shaodong"
+}, {
+    "fullname": "湖南-邵阳-邵阳市",
+    "name": "邵阳",
+    "namef_full_py": "shaoyang"
+}, {
+    "fullname": "湖南-邵阳-邵阳县",
+    "name": "邵阳",
+    "namef_full_py": "shaoyang"
+}, {
+    "fullname": "湖南-邵阳-绥宁县",
+    "name": "绥宁",
+    "namef_full_py": "suining"
+}, {
+    "fullname": "湖南-邵阳-武冈市",
+    "name": "武冈",
+    "namef_full_py": "wugang"
+}, {
+    "fullname": "湖南-邵阳-新宁县",
+    "name": "新宁",
+    "namef_full_py": "xinning"
+}, {
+    "fullname": "湖南-邵阳-新邵县",
+    "name": "新邵",
+    "namef_full_py": "xinshao"
+}, {
+    "fullname": "湖南-湘潭-韶山市",
+    "name": "韶山",
+    "namef_full_py": "shaoshan"
+}, {
+    "fullname": "湖南-湘潭-湘潭市",
+    "name": "湘潭",
+    "namef_full_py": "xiangtan"
+}, {
+    "fullname": "湖南-湘潭-湘潭县",
+    "name": "湘潭",
+    "namef_full_py": "xiangtan"
+}, {
+    "fullname": "湖南-湘潭-湘乡市",
+    "name": "湘乡",
+    "namef_full_py": "xiangxiang"
+}, {
+    "fullname": "湖南-湘西土家族苗族自治州-保靖县",
+    "name": "保靖",
+    "namef_full_py": "baojing"
+}, {
+    "fullname": "湖南-湘西土家族苗族自治州-凤凰县",
+    "name": "凤凰",
+    "namef_full_py": "fenghuang"
+}, {
+    "fullname": "湖南-湘西土家族苗族自治州-古丈县",
+    "name": "古丈",
+    "namef_full_py": "guzhang"
+}, {
+    "fullname": "湖南-湘西土家族苗族自治州-花垣县",
+    "name": "花垣",
+    "namef_full_py": "huayuan"
+}, {
+    "fullname": "湖南-湘西土家族苗族自治州-吉首市",
+    "name": "吉首",
+    "namef_full_py": "jishou"
+}, {
+    "fullname": "湖南-湘西土家族苗族自治州-龙山县",
+    "name": "龙山",
+    "namef_full_py": "longshan"
+}, {
+    "fullname": "湖南-湘西土家族苗族自治州-永顺县",
+    "name": "永顺",
+    "namef_full_py": "yongshun"
+}, {
+    "fullname": "湖南-湘西土家族苗族自治州-泸溪县",
+    "name": "泸溪",
+    "namef_full_py": "luxi"
+}, {
+    "fullname": "湖南-益阳-安化县",
+    "name": "安化",
+    "namef_full_py": "anhua"
+}, {
+    "fullname": "湖南-益阳-南县",
+    "name": "南县",
+    "namef_full_py": "nanxian"
+}, {
+    "fullname": "湖南-益阳-桃江县",
+    "name": "桃江",
+    "namef_full_py": "taojiang"
+}, {
+    "fullname": "湖南-益阳-益阳市",
+    "name": "益阳",
+    "namef_full_py": "yiyang"
+}, {
+    "fullname": "湖南-益阳-沅江市",
+    "name": "沅江",
+    "namef_full_py": "yuanjiang"
+}, {
+    "fullname": "湖南-永州-道县",
+    "name": "道县",
+    "namef_full_py": "daoxian"
+}, {
+    "fullname": "湖南-永州-东安县",
+    "name": "东安",
+    "namef_full_py": "dongan"
+}, {
+    "fullname": "湖南-永州-江华瑶族自治县",
+    "name": "江华瑶族自治县",
+    "namef_full_py": "jianghuayaozuzizhixian"
+}, {
+    "fullname": "湖南-永州-江永县",
+    "name": "江永",
+    "namef_full_py": "jiangyong"
+}, {
+    "fullname": "湖南-永州-蓝山县",
+    "name": "蓝山",
+    "namef_full_py": "lanshan"
+}, {
+    "fullname": "湖南-永州-宁远县",
+    "name": "宁远",
+    "namef_full_py": "ningyuan"
+}, {
+    "fullname": "湖南-永州-祁阳县",
+    "name": "祁阳",
+    "namef_full_py": "qiyang"
+}, {
+    "fullname": "湖南-永州-双牌县",
+    "name": "双牌",
+    "namef_full_py": "shuangpai"
+}, {
+    "fullname": "湖南-永州-新田县",
+    "name": "新田",
+    "namef_full_py": "xintian"
+}, {
+    "fullname": "湖南-永州-永州市",
+    "name": "永州",
+    "namef_full_py": "yongzhou"
+}, {
+    "fullname": "湖南-岳阳-华容县",
+    "name": "华容",
+    "namef_full_py": "huarong"
+}, {
+    "fullname": "湖南-岳阳-临湘市",
+    "name": "临湘",
+    "namef_full_py": "linxiang"
+}, {
+    "fullname": "湖南-岳阳-平江县",
+    "name": "平江",
+    "namef_full_py": "pingjiang"
+}, {
+    "fullname": "湖南-岳阳-湘阴县",
+    "name": "湘阴",
+    "namef_full_py": "xiangyin"
+}, {
+    "fullname": "湖南-岳阳-岳阳市",
+    "name": "岳阳",
+    "namef_full_py": "yueyang"
+}, {
+    "fullname": "湖南-岳阳-岳阳县",
+    "name": "岳阳",
+    "namef_full_py": "yueyang"
+}, {
+    "fullname": "湖南-岳阳-汨罗市",
+    "name": "汨罗",
+    "namef_full_py": "miluo"
+}, {
+    "fullname": "湖南-张家界-慈利县",
+    "name": "慈利",
+    "namef_full_py": "cili"
+}, {
+    "fullname": "湖南-张家界-桑植县",
+    "name": "桑植",
+    "namef_full_py": "sangzhi"
+}, {
+    "fullname": "湖南-张家界-张家界市",
+    "name": "张家界市",
+    "namef_full_py": "zhangjiajieshi"
+}, {
+    "fullname": "湖南-株洲-茶陵县",
+    "name": "茶陵",
+    "namef_full_py": "chaling"
+}, {
+    "fullname": "湖南-株洲-炎陵县",
+    "name": "炎陵",
+    "namef_full_py": "yanling"
+}, {
+    "fullname": "湖南-株洲-株洲市",
+    "name": "株洲",
+    "namef_full_py": "zhuzhou"
+}, {
+    "fullname": "湖南-株洲-株洲县",
+    "name": "株洲",
+    "namef_full_py": "zhuzhou"
+}, {
+    "fullname": "湖南-株洲-攸县",
+    "name": "攸县",
+    "namef_full_py": "youxian"
+}, {
+    "fullname": "湖南-株洲-醴陵市",
+    "name": "醴陵",
+    "namef_full_py": "liling"
+}, {
+    "fullname": "吉林-白城-白城市",
+    "name": "白城",
+    "namef_full_py": "baicheng"
+}, {
+    "fullname": "吉林-白城-大安市",
+    "name": "大安",
+    "namef_full_py": "daan"
+}, {
+    "fullname": "吉林-白城-通榆县",
+    "name": "通榆",
+    "namef_full_py": "tongyu"
+}, {
+    "fullname": "吉林-白城-镇赉县",
+    "name": "镇赉",
+    "namef_full_py": "zhenlai"
+}, {
+    "fullname": "吉林-白城-洮南市",
+    "name": "洮南",
+    "namef_full_py": "taonan"
+}, {
+    "fullname": "吉林-白山-白山市",
+    "name": "白山",
+    "namef_full_py": "baishan"
+}, {
+    "fullname": "吉林-白山-长白朝鲜族自治县",
+    "name": "长白朝鲜族自治县",
+    "namef_full_py": "changbaizhaoxianzuzizhixian"
+}, {
+    "fullname": "吉林-白山-抚松县",
+    "name": "抚松",
+    "namef_full_py": "fusong"
+}, {
+    "fullname": "吉林-白山-江源县",
+    "name": "江源",
+    "namef_full_py": "jiangyuan"
+}, {
+    "fullname": "吉林-白山-靖宇县",
+    "name": "靖宇",
+    "namef_full_py": "jingyu"
+}, {
+    "fullname": "吉林-白山-临江市",
+    "name": "临江",
+    "namef_full_py": "linjiang"
+}, {
+    "fullname": "吉林-长春-长春市",
+    "name": "长春",
+    "namef_full_py": "changchun"
+}, {
+    "fullname": "吉林-长春-德惠市",
+    "name": "德惠",
+    "namef_full_py": "dehui"
+}, {
+    "fullname": "吉林-长春-九台市",
+    "name": "九台",
+    "namef_full_py": "jiutai"
+}, {
+    "fullname": "吉林-长春-农安县",
+    "name": "农安",
+    "namef_full_py": "nongan"
+}, {
+    "fullname": "吉林-长春-榆树市",
+    "name": "榆树",
+    "namef_full_py": "yushu"
+}, {
+    "fullname": "吉林-吉林市",
+    "name": "吉林",
+    "namef_full_py": "jilin"
+}, {
+    "fullname": "吉林-磐石市",
+    "name": "磐石",
+    "namef_full_py": "panshi"
+}, {
+    "fullname": "吉林-舒兰市",
+    "name": "舒兰",
+    "namef_full_py": "shulan"
+}, {
+    "fullname": "吉林-永吉县",
+    "name": "永吉",
+    "namef_full_py": "yongji"
+}, {
+    "fullname": "吉林-桦甸市",
+    "name": "桦甸",
+    "namef_full_py": "huadian"
+}, {
+    "fullname": "吉林-蛟河市",
+    "name": "蛟河",
+    "namef_full_py": "jiaohe"
+}, {
+    "fullname": "吉林-辽源-东丰县",
+    "name": "东丰",
+    "namef_full_py": "dongfeng"
+}, {
+    "fullname": "吉林-辽源-东辽县",
+    "name": "东辽",
+    "namef_full_py": "dongliao"
+}, {
+    "fullname": "吉林-辽源-辽源市",
+    "name": "辽源",
+    "namef_full_py": "liaoyuan"
+}, {
+    "fullname": "吉林-四平-公主岭市",
+    "name": "公主岭市",
+    "namef_full_py": "gongzhulingshi"
+}, {
+    "fullname": "吉林-四平-梨树县",
+    "name": "梨树",
+    "namef_full_py": "lishu"
+}, {
+    "fullname": "吉林-四平-双辽市",
+    "name": "双辽",
+    "namef_full_py": "shuangliao"
+}, {
+    "fullname": "吉林-四平-四平市",
+    "name": "四平",
+    "namef_full_py": "siping"
+}, {
+    "fullname": "吉林-四平-伊通满族自治县",
+    "name": "伊通满族自治县",
+    "namef_full_py": "yitongmanzuzizhixian"
+}, {
+    "fullname": "吉林-松原-长岭县",
+    "name": "长岭",
+    "namef_full_py": "changling"
+}, {
+    "fullname": "吉林-松原-扶余县",
+    "name": "扶余",
+    "namef_full_py": "fuyu"
+}, {
+    "fullname": "吉林-松原-乾安县",
+    "name": "乾安",
+    "namef_full_py": "ganan"
+}, {
+    "fullname": "吉林-松原-前郭尔罗斯蒙古族自治县",
+    "name": "前郭尔罗斯蒙古族自治县",
+    "namef_full_py": "qianguoerluosimengguzuzizhixian"
+}, {
+    "fullname": "吉林-松原-松原市",
+    "name": "松原",
+    "namef_full_py": "songyuan"
+}, {
+    "fullname": "吉林-通化-辉南县",
+    "name": "辉南",
+    "namef_full_py": "huinan"
+}, {
+    "fullname": "吉林-通化-集安市",
+    "name": "集安",
+    "namef_full_py": "jian"
+}, {
+    "fullname": "吉林-通化-柳河县",
+    "name": "柳河",
+    "namef_full_py": "liuhe"
+}, {
+    "fullname": "吉林-通化-梅河口市",
+    "name": "梅河口市",
+    "namef_full_py": "meihekoushi"
+}, {
+    "fullname": "吉林-通化-通化市",
+    "name": "通化",
+    "namef_full_py": "tonghua"
+}, {
+    "fullname": "吉林-通化-通化县",
+    "name": "通化",
+    "namef_full_py": "tonghua"
+}, {
+    "fullname": "吉林-延边朝鲜族自治州-安图县",
+    "name": "安图",
+    "namef_full_py": "antu"
+}, {
+    "fullname": "吉林-延边朝鲜族自治州-敦化市",
+    "name": "敦化",
+    "namef_full_py": "dunhua"
+}, {
+    "fullname": "吉林-延边朝鲜族自治州-和龙市",
+    "name": "和龙",
+    "namef_full_py": "helong"
+}, {
+    "fullname": "吉林-延边朝鲜族自治州-龙井市",
+    "name": "龙井",
+    "namef_full_py": "longjing"
+}, {
+    "fullname": "吉林-延边朝鲜族自治州-图们市",
+    "name": "图们",
+    "namef_full_py": "tumen"
+}, {
+    "fullname": "吉林-延边朝鲜族自治州-汪清县",
+    "name": "汪清",
+    "namef_full_py": "wangqing"
+}, {
+    "fullname": "吉林-延边朝鲜族自治州-延吉市",
+    "name": "延吉",
+    "namef_full_py": "yanji"
+}, {
+    "fullname": "吉林-延边朝鲜族自治州-珲春市",
+    "name": "珲春",
+    "namef_full_py": "hunchun"
+}, {
+    "fullname": "江苏-常州-常州市",
+    "name": "常州",
+    "namef_full_py": "changzhou"
+}, {
+    "fullname": "江苏-常州-金坛市",
+    "name": "金坛",
+    "namef_full_py": "jintan"
+}, {
+    "fullname": "江苏-常州-溧阳市",
+    "name": "溧阳",
+    "namef_full_py": "liyang"
+}, {
+    "fullname": "江苏-淮安-洪泽县",
+    "name": "洪泽",
+    "namef_full_py": "hongze"
+}, {
+    "fullname": "江苏-淮安-淮安市",
+    "name": "淮安",
+    "namef_full_py": "huaian"
+}, {
+    "fullname": "江苏-淮安-金湖县",
+    "name": "金湖",
+    "namef_full_py": "jinhu"
+}, {
+    "fullname": "江苏-淮安-涟水县",
+    "name": "涟水",
+    "namef_full_py": "lianshui"
+}, {
+    "fullname": "江苏-淮安-盱眙县",
+    "name": "盱眙",
+    "namef_full_py": "xuchi"
+}, {
+    "fullname": "江苏-连云港-东海县",
+    "name": "东海",
+    "namef_full_py": "donghai"
+}, {
+    "fullname": "江苏-连云港-赣榆县",
+    "name": "赣榆",
+    "namef_full_py": "ganyu"
+}, {
+    "fullname": "江苏-连云港-灌南县",
+    "name": "灌南",
+    "namef_full_py": "guannan"
+}, {
+    "fullname": "江苏-连云港-灌云县",
+    "name": "灌云",
+    "namef_full_py": "guanyun"
+}, {
+    "fullname": "江苏-连云港-连云港市",
+    "name": "连云港市",
+    "namef_full_py": "lianyungangshi"
+}, {
+    "fullname": "江苏-南京-高淳县",
+    "name": "高淳",
+    "namef_full_py": "gaochun"
+}, {
+    "fullname": "江苏-南京-南京市",
+    "name": "南京",
+    "namef_full_py": "nanjing"
+}, {
+    "fullname": "江苏-南京-溧水县",
+    "name": "溧水",
+    "namef_full_py": "lishui"
+}, {
+    "fullname": "江苏-南通-海安县",
+    "name": "海安",
+    "namef_full_py": "haian"
+}, {
+    "fullname": "江苏-南通-海门市",
+    "name": "海门",
+    "namef_full_py": "haimen"
+}, {
+    "fullname": "江苏-南通-南通市",
+    "name": "南通",
+    "namef_full_py": "nantong"
+}, {
+    "fullname": "江苏-南通-启东市",
+    "name": "启东",
+    "namef_full_py": "qidong"
+}, {
+    "fullname": "江苏-南通-如东县",
+    "name": "如东",
+    "namef_full_py": "rudong"
+}, {
+    "fullname": "江苏-南通-如皋市",
+    "name": "如皋",
+    "namef_full_py": "rugao"
+}, {
+    "fullname": "江苏-南通-通州市",
+    "name": "通州",
+    "namef_full_py": "tongzhou"
+}, {
+    "fullname": "江苏-苏州-常熟市",
+    "name": "常熟",
+    "namef_full_py": "changshu"
+}, {
+    "fullname": "江苏-苏州-昆山市",
+    "name": "昆山",
+    "namef_full_py": "kunshan"
+}, {
+    "fullname": "江苏-苏州-苏州市",
+    "name": "苏州",
+    "namef_full_py": "suzhou"
+}, {
+    "fullname": "江苏-苏州-太仓市",
+    "name": "太仓",
+    "namef_full_py": "taicang"
+}, {
+    "fullname": "江苏-苏州-吴江市",
+    "name": "吴江",
+    "namef_full_py": "wujiang"
+}, {
+    "fullname": "江苏-苏州-张家港市",
+    "name": "张家港市",
+    "namef_full_py": "zhangjiagangshi"
+}, {
+    "fullname": "江苏-宿迁-宿迁市",
+    "name": "宿迁",
+    "namef_full_py": "suqian"
+}, {
+    "fullname": "江苏-宿迁-宿豫县",
+    "name": "宿豫",
+    "namef_full_py": "suyu"
+}, {
+    "fullname": "江苏-宿迁-沭阳县",
+    "name": "沭阳",
+    "namef_full_py": "shuyang"
+}, {
+    "fullname": "江苏-宿迁-泗洪县",
+    "name": "泗洪",
+    "namef_full_py": "sihong"
+}, {
+    "fullname": "江苏-宿迁-泗阳县",
+    "name": "泗阳",
+    "namef_full_py": "siyang"
+}, {
+    "fullname": "江苏-泰州-姜堰市",
+    "name": "姜堰",
+    "namef_full_py": "jiangyan"
+}, {
+    "fullname": "江苏-泰州-靖江市",
+    "name": "靖江",
+    "namef_full_py": "jingjiang"
+}, {
+    "fullname": "江苏-泰州-泰兴市",
+    "name": "泰兴",
+    "namef_full_py": "taixing"
+}, {
+    "fullname": "江苏-泰州-泰州市",
+    "name": "泰州",
+    "namef_full_py": "taizhou"
+}, {
+    "fullname": "江苏-泰州-兴化市",
+    "name": "兴化",
+    "namef_full_py": "xinghua"
+}, {
+    "fullname": "江苏-无锡-江阴市",
+    "name": "江阴",
+    "namef_full_py": "jiangyin"
+}, {
+    "fullname": "江苏-无锡-无锡市",
+    "name": "无锡",
+    "namef_full_py": "wuxi"
+}, {
+    "fullname": "江苏-无锡-宜兴市",
+    "name": "宜兴",
+    "namef_full_py": "yixing"
+}, {
+    "fullname": "江苏-徐州-丰县",
+    "name": "丰县",
+    "namef_full_py": "fengxian"
+}, {
+    "fullname": "江苏-徐州-沛县",
+    "name": "沛县",
+    "namef_full_py": "peixian"
+}, {
+    "fullname": "江苏-徐州-铜山县",
+    "name": "铜山",
+    "namef_full_py": "tongshan"
+}, {
+    "fullname": "江苏-徐州-新沂市",
+    "name": "新沂",
+    "namef_full_py": "xinyi"
+}, {
+    "fullname": "江苏-徐州-徐州市",
+    "name": "徐州",
+    "namef_full_py": "xuzhou"
+}, {
+    "fullname": "江苏-徐州-邳州市",
+    "name": "邳州",
+    "namef_full_py": "peizhou"
+}, {
+    "fullname": "江苏-徐州-睢宁县",
+    "name": "睢宁",
+    "namef_full_py": "suining"
+}, {
+    "fullname": "江苏-盐城-滨海县",
+    "name": "滨海",
+    "namef_full_py": "binhai"
+}, {
+    "fullname": "江苏-盐城-大丰市",
+    "name": "大丰",
+    "namef_full_py": "dafeng"
+}, {
+    "fullname": "江苏-盐城-东台市",
+    "name": "东台",
+    "namef_full_py": "dongtai"
+}, {
+    "fullname": "江苏-盐城-阜宁县",
+    "name": "阜宁",
+    "namef_full_py": "funing"
+}, {
+    "fullname": "江苏-盐城-建湖县",
+    "name": "建湖",
+    "namef_full_py": "jianhu"
+}, {
+    "fullname": "江苏-盐城-射阳县",
+    "name": "射阳",
+    "namef_full_py": "sheyang"
+}, {
+    "fullname": "江苏-盐城-响水县",
+    "name": "响水",
+    "namef_full_py": "xiangshui"
+}, {
+    "fullname": "江苏-盐城-盐城市",
+    "name": "盐城",
+    "namef_full_py": "yancheng"
+}, {
+    "fullname": "江苏-盐城-盐都县",
+    "name": "盐都",
+    "namef_full_py": "yandu"
+}, {
+    "fullname": "江苏-扬州-宝应县",
+    "name": "宝应",
+    "namef_full_py": "baoying"
+}, {
+    "fullname": "江苏-扬州-高邮市",
+    "name": "高邮",
+    "namef_full_py": "gaoyou"
+}, {
+    "fullname": "江苏-扬州-江都市",
+    "name": "江都",
+    "namef_full_py": "jiangdu"
+}, {
+    "fullname": "江苏-扬州-扬州市",
+    "name": "扬州",
+    "namef_full_py": "yangzhou"
+}, {
+    "fullname": "江苏-扬州-仪征市",
+    "name": "仪征",
+    "namef_full_py": "yizheng"
+}, {
+    "fullname": "江苏-镇江-丹阳市",
+    "name": "丹阳",
+    "namef_full_py": "danyang"
+}, {
+    "fullname": "江苏-镇江-句容市",
+    "name": "句容",
+    "namef_full_py": "jurong"
+}, {
+    "fullname": "江苏-镇江-扬中市",
+    "name": "扬中",
+    "namef_full_py": "yangzhong"
+}, {
+    "fullname": "江苏-镇江-镇江市",
+    "name": "镇江",
+    "namef_full_py": "zhenjiang"
+}, {
+    "fullname": "江西-抚州-崇仁县",
+    "name": "崇仁",
+    "namef_full_py": "chongren"
+}, {
+    "fullname": "江西-抚州-东乡县",
+    "name": "东乡",
+    "namef_full_py": "dongxiang"
+}, {
+    "fullname": "江西-抚州-抚州市",
+    "name": "抚州",
+    "namef_full_py": "fuzhou"
+}, {
+    "fullname": "江西-抚州-广昌县",
+    "name": "广昌",
+    "namef_full_py": "guangchang"
+}, {
+    "fullname": "江西-抚州-金溪县",
+    "name": "金溪",
+    "namef_full_py": "jinxi"
+}, {
+    "fullname": "江西-抚州-乐安县",
+    "name": "乐安",
+    "namef_full_py": "lean"
+}, {
+    "fullname": "江西-抚州-黎川县",
+    "name": "黎川",
+    "namef_full_py": "lichuan"
+}, {
+    "fullname": "江西-抚州-南城县",
+    "name": "南城",
+    "namef_full_py": "nancheng"
+}, {
+    "fullname": "江西-抚州-南丰县",
+    "name": "南丰",
+    "namef_full_py": "nanfeng"
+}, {
+    "fullname": "江西-抚州-宜黄县",
+    "name": "宜黄",
+    "namef_full_py": "yihuang"
+}, {
+    "fullname": "江西-抚州-资溪县",
+    "name": "资溪",
+    "namef_full_py": "zixi"
+}, {
+    "fullname": "江西-赣州-安远县",
+    "name": "安远",
+    "namef_full_py": "anyuan"
+}, {
+    "fullname": "江西-赣州-崇义县",
+    "name": "崇义",
+    "namef_full_py": "chongyi"
+}, {
+    "fullname": "江西-赣州-大余县",
+    "name": "大余",
+    "namef_full_py": "dayu"
+}, {
+    "fullname": "江西-赣州-定南县",
+    "name": "定南",
+    "namef_full_py": "dingnan"
+}, {
+    "fullname": "江西-赣州-赣县",
+    "name": "赣县",
+    "namef_full_py": "ganxian"
+}, {
+    "fullname": "江西-赣州-赣州市",
+    "name": "赣州",
+    "namef_full_py": "ganzhou"
+}, {
+    "fullname": "江西-赣州-会昌县",
+    "name": "会昌",
+    "namef_full_py": "huichang"
+}, {
+    "fullname": "江西-赣州-龙南县",
+    "name": "龙南",
+    "namef_full_py": "longnan"
+}, {
+    "fullname": "江西-赣州-南康市",
+    "name": "南康",
+    "namef_full_py": "nankang"
+}, {
+    "fullname": "江西-赣州-宁都县",
+    "name": "宁都",
+    "namef_full_py": "ningdu"
+}, {
+    "fullname": "江西-赣州-全南县",
+    "name": "全南",
+    "namef_full_py": "quannan"
+}, {
+    "fullname": "江西-赣州-瑞金市",
+    "name": "瑞金",
+    "namef_full_py": "ruijin"
+}, {
+    "fullname": "江西-赣州-上犹县",
+    "name": "上犹",
+    "namef_full_py": "shangyou"
+}, {
+    "fullname": "江西-赣州-石城县",
+    "name": "石城",
+    "namef_full_py": "shicheng"
+}, {
+    "fullname": "江西-赣州-信丰县",
+    "name": "信丰",
+    "namef_full_py": "xinfeng"
+}, {
+    "fullname": "江西-赣州-兴国县",
+    "name": "兴国",
+    "namef_full_py": "xingguo"
+}, {
+    "fullname": "江西-赣州-寻乌县",
+    "name": "寻乌",
+    "namef_full_py": "xunwu"
+}, {
+    "fullname": "江西-赣州-于都县",
+    "name": "于都",
+    "namef_full_py": "yudu"
+}, {
+    "fullname": "江西-吉安-安福县",
+    "name": "安福",
+    "namef_full_py": "anfu"
+}, {
+    "fullname": "江西-吉安-吉安市",
+    "name": "吉安",
+    "namef_full_py": "jian"
+}, {
+    "fullname": "江西-吉安-吉安县",
+    "name": "吉安",
+    "namef_full_py": "jian"
+}, {
+    "fullname": "江西-吉安-吉水县",
+    "name": "吉水",
+    "namef_full_py": "jishui"
+}, {
+    "fullname": "江西-吉安-井冈山市",
+    "name": "井冈山市",
+    "namef_full_py": "jinggangshanshi"
+}, {
+    "fullname": "江西-吉安-遂川县",
+    "name": "遂川",
+    "namef_full_py": "suichuan"
+}, {
+    "fullname": "江西-吉安-泰和县",
+    "name": "泰和",
+    "namef_full_py": "taihe"
+}, {
+    "fullname": "江西-吉安-万安县",
+    "name": "万安",
+    "namef_full_py": "wanan"
+}, {
+    "fullname": "江西-吉安-峡江县",
+    "name": "峡江",
+    "namef_full_py": "xiajiang"
+}, {
+    "fullname": "江西-吉安-新干县",
+    "name": "新干",
+    "namef_full_py": "xingan"
+}, {
+    "fullname": "江西-吉安-永丰县",
+    "name": "永丰",
+    "namef_full_py": "yongfeng"
+}, {
+    "fullname": "江西-吉安-永新县",
+    "name": "永新",
+    "namef_full_py": "yongxin"
+}, {
+    "fullname": "江西-景德镇-浮梁县",
+    "name": "浮梁",
+    "namef_full_py": "fuliang"
+}, {
+    "fullname": "江西-景德镇-景德镇市",
+    "name": "景德镇市",
+    "namef_full_py": "jingdezhenshi"
+}, {
+    "fullname": "江西-景德镇-乐平市",
+    "name": "乐平",
+    "namef_full_py": "leping"
+}, {
+    "fullname": "江西-九江-德安县",
+    "name": "德安",
+    "namef_full_py": "dean"
+}, {
+    "fullname": "江西-九江-都昌县",
+    "name": "都昌",
+    "namef_full_py": "duchang"
+}, {
+    "fullname": "江西-九江-湖口县",
+    "name": "湖口",
+    "namef_full_py": "hukou"
+}, {
+    "fullname": "江西-九江-九江市",
+    "name": "九江",
+    "namef_full_py": "jiujiang"
+}, {
+    "fullname": "江西-九江-九江县",
+    "name": "九江",
+    "namef_full_py": "jiujiang"
+}, {
+    "fullname": "江西-九江-彭泽县",
+    "name": "彭泽",
+    "namef_full_py": "pengze"
+}, {
+    "fullname": "江西-九江-瑞昌市",
+    "name": "瑞昌",
+    "namef_full_py": "ruichang"
+}, {
+    "fullname": "江西-九江-武宁县",
+    "name": "武宁",
+    "namef_full_py": "wuning"
+}, {
+    "fullname": "江西-九江-星子县",
+    "name": "星子",
+    "namef_full_py": "xingzi"
+}, {
+    "fullname": "江西-九江-修水县",
+    "name": "修水",
+    "namef_full_py": "xiushui"
+}, {
+    "fullname": "江西-九江-永修县",
+    "name": "永修",
+    "namef_full_py": "yongxiu"
+}, {
+    "fullname": "江西-南昌-安义县",
+    "name": "安义",
+    "namef_full_py": "anyi"
+}, {
+    "fullname": "江西-南昌-进贤县",
+    "name": "进贤",
+    "namef_full_py": "jinxian"
+}, {
+    "fullname": "江西-南昌-南昌市",
+    "name": "南昌",
+    "namef_full_py": "nanchang"
+}, {
+    "fullname": "江西-南昌-南昌县",
+    "name": "南昌",
+    "namef_full_py": "nanchang"
+}, {
+    "fullname": "江西-南昌-新建县",
+    "name": "新建",
+    "namef_full_py": "xinjian"
+}, {
+    "fullname": "江西-萍乡-莲花县",
+    "name": "莲花",
+    "namef_full_py": "lianhua"
+}, {
+    "fullname": "江西-萍乡-芦溪县",
+    "name": "芦溪",
+    "namef_full_py": "luxi"
+}, {
+    "fullname": "江西-萍乡-萍乡市",
+    "name": "萍乡",
+    "namef_full_py": "pingxiang"
+}, {
+    "fullname": "江西-萍乡-上栗县",
+    "name": "上栗",
+    "namef_full_py": "shangli"
+}, {
+    "fullname": "江西-上饶-波阳县",
+    "name": "波阳",
+    "namef_full_py": "boyang"
+}, {
+    "fullname": "江西-上饶-德兴市",
+    "name": "德兴",
+    "namef_full_py": "dexing"
+}, {
+    "fullname": "江西-上饶-广丰县",
+    "name": "广丰",
+    "namef_full_py": "guangfeng"
+}, {
+    "fullname": "江西-上饶-横峰县",
+    "name": "横峰",
+    "namef_full_py": "hengfeng"
+}, {
+    "fullname": "江西-上饶-铅山县",
+    "name": "铅山",
+    "namef_full_py": "qianshan"
+}, {
+    "fullname": "江西-上饶-上饶市",
+    "name": "上饶",
+    "namef_full_py": "shangrao"
+}, {
+    "fullname": "江西-上饶-上饶县",
+    "name": "上饶",
+    "namef_full_py": "shangrao"
+}, {
+    "fullname": "江西-上饶-万年县",
+    "name": "万年",
+    "namef_full_py": "wannian"
+}, {
+    "fullname": "江西-上饶-余干县",
+    "name": "余干",
+    "namef_full_py": "yugan"
+}, {
+    "fullname": "江西-上饶-玉山县",
+    "name": "玉山",
+    "namef_full_py": "yushan"
+}, {
+    "fullname": "江西-上饶-弋阳县",
+    "name": "弋阳",
+    "namef_full_py": "yiyang"
+}, {
+    "fullname": "江西-上饶-婺源县",
+    "name": "婺源",
+    "namef_full_py": "wuyuan"
+}, {
+    "fullname": "江西-新余-分宜县",
+    "name": "分宜",
+    "namef_full_py": "fenyi"
+}, {
+    "fullname": "江西-新余-新余市",
+    "name": "新余",
+    "namef_full_py": "xinyu"
+}, {
+    "fullname": "江西-宜春-丰城市",
+    "name": "丰城",
+    "namef_full_py": "fengcheng"
+}, {
+    "fullname": "江西-宜春-奉新县",
+    "name": "奉新",
+    "namef_full_py": "fengxin"
+}, {
+    "fullname": "江西-宜春-高安市",
+    "name": "高安",
+    "namef_full_py": "gaoan"
+}, {
+    "fullname": "江西-宜春-靖安县",
+    "name": "靖安",
+    "namef_full_py": "jingan"
+}, {
+    "fullname": "江西-宜春-上高县",
+    "name": "上高",
+    "namef_full_py": "shanggao"
+}, {
+    "fullname": "江西-宜春-铜鼓县",
+    "name": "铜鼓",
+    "namef_full_py": "tonggu"
+}, {
+    "fullname": "江西-宜春-万载县",
+    "name": "万载",
+    "namef_full_py": "wanzai"
+}, {
+    "fullname": "江西-宜春-宜春市",
+    "name": "宜春",
+    "namef_full_py": "yichun"
+}, {
+    "fullname": "江西-宜春-宜丰县",
+    "name": "宜丰",
+    "namef_full_py": "yifeng"
+}, {
+    "fullname": "江西-宜春-樟树市",
+    "name": "樟树",
+    "namef_full_py": "zhangshu"
+}, {
+    "fullname": "江西-鹰潭-贵溪市",
+    "name": "贵溪",
+    "namef_full_py": "guixi"
+}, {
+    "fullname": "江西-鹰潭-鹰潭市",
+    "name": "鹰潭",
+    "namef_full_py": "yingtan"
+}, {
+    "fullname": "江西-鹰潭-余江县",
+    "name": "余江",
+    "namef_full_py": "yujiang"
+}, {
+    "fullname": "辽宁-鞍山-鞍山市",
+    "name": "鞍山",
+    "namef_full_py": "anshan"
+}, {
+    "fullname": "辽宁-鞍山-海城市",
+    "name": "海城",
+    "namef_full_py": "haicheng"
+}, {
+    "fullname": "辽宁-鞍山-台安县",
+    "name": "台安",
+    "namef_full_py": "taian"
+}, {
+    "fullname": "辽宁-鞍山-岫岩满族自治县",
+    "name": "岫岩满族自治县",
+    "namef_full_py": "xiuyanmanzuzizhixian"
+}, {
+    "fullname": "辽宁-本溪-本溪满族自治县",
+    "name": "本溪满族自治县",
+    "namef_full_py": "benximanzuzizhixian"
+}, {
+    "fullname": "辽宁-本溪-本溪市",
+    "name": "本溪",
+    "namef_full_py": "benxi"
+}, {
+    "fullname": "辽宁-本溪-桓仁满族自治县",
+    "name": "桓仁满族自治县",
+    "namef_full_py": "huanrenmanzuzizhixian"
+}, {
+    "fullname": "辽宁-朝阳-北票市",
+    "name": "北票",
+    "namef_full_py": "beipiao"
+}, {
+    "fullname": "辽宁-朝阳-朝阳市",
+    "name": "朝阳",
+    "namef_full_py": "zhaoyang"
+}, {
+    "fullname": "辽宁-朝阳-朝阳县",
+    "name": "朝阳",
+    "namef_full_py": "zhaoyang"
+}, {
+    "fullname": "辽宁-朝阳-建平县",
+    "name": "建平",
+    "namef_full_py": "jianping"
+}, {
+    "fullname": "辽宁-朝阳-喀喇沁左翼蒙古族自治县",
+    "name": "喀喇沁左翼蒙古族自治县",
+    "namef_full_py": "kalaqinzuoyimengguzuzizhixian"
+}, {
+    "fullname": "辽宁-朝阳-凌源市",
+    "name": "凌源",
+    "namef_full_py": "lingyuan"
+}, {
+    "fullname": "辽宁-大连-长海县",
+    "name": "长海",
+    "namef_full_py": "changhai"
+}, {
+    "fullname": "辽宁-大连-大连市",
+    "name": "大连",
+    "namef_full_py": "dalian"
+}, {
+    "fullname": "辽宁-大连-普兰店市",
+    "name": "普兰店市",
+    "namef_full_py": "pulandianshi"
+}, {
+    "fullname": "辽宁-大连-瓦房店市",
+    "name": "瓦房店市",
+    "namef_full_py": "wafangdianshi"
+}, {
+    "fullname": "辽宁-大连-庄河市",
+    "name": "庄河",
+    "namef_full_py": "zhuanghe"
+}, {
+    "fullname": "辽宁-丹东-丹东市",
+    "name": "丹东",
+    "namef_full_py": "dandong"
+}, {
+    "fullname": "辽宁-丹东-东港市",
+    "name": "东港",
+    "namef_full_py": "donggang"
+}, {
+    "fullname": "辽宁-丹东-凤城市",
+    "name": "凤城",
+    "namef_full_py": "fengcheng"
+}, {
+    "fullname": "辽宁-丹东-宽甸满族自治县",
+    "name": "宽甸满族自治县",
+    "namef_full_py": "kuandianmanzuzizhixian"
+}, {
+    "fullname": "辽宁-抚顺-抚顺市",
+    "name": "抚顺",
+    "namef_full_py": "fushun"
+}, {
+    "fullname": "辽宁-抚顺-抚顺县",
+    "name": "抚顺",
+    "namef_full_py": "fushun"
+}, {
+    "fullname": "辽宁-抚顺-清原满族自治县",
+    "name": "清原满族自治县",
+    "namef_full_py": "qingyuanmanzuzizhixian"
+}, {
+    "fullname": "辽宁-抚顺-新宾满族自治县",
+    "name": "新宾满族自治县",
+    "namef_full_py": "xinbinmanzuzizhixian"
+}, {
+    "fullname": "辽宁-阜新-阜新蒙古族自治县",
+    "name": "阜新蒙古族自治县",
+    "namef_full_py": "fuxinmengguzuzizhixian"
+}, {
+    "fullname": "辽宁-阜新-阜新市",
+    "name": "阜新",
+    "namef_full_py": "fuxin"
+}, {
+    "fullname": "辽宁-阜新-彰武县",
+    "name": "彰武",
+    "namef_full_py": "zhangwu"
+}, {
+    "fullname": "辽宁-葫芦岛-葫芦岛市",
+    "name": "葫芦岛市",
+    "namef_full_py": "huludaoshi"
+}, {
+    "fullname": "辽宁-葫芦岛-建昌县",
+    "name": "建昌",
+    "namef_full_py": "jianchang"
+}, {
+    "fullname": "辽宁-葫芦岛-绥中县",
+    "name": "绥中",
+    "namef_full_py": "suizhong"
+}, {
+    "fullname": "辽宁-葫芦岛-兴城市",
+    "name": "兴城",
+    "namef_full_py": "xingcheng"
+}, {
+    "fullname": "辽宁-锦州-北宁市",
+    "name": "北宁",
+    "namef_full_py": "beining"
+}, {
+    "fullname": "辽宁-锦州-黑山县",
+    "name": "黑山",
+    "namef_full_py": "heishan"
+}, {
+    "fullname": "辽宁-锦州-锦州市",
+    "name": "锦州",
+    "namef_full_py": "jinzhou"
+}, {
+    "fullname": "辽宁-锦州-凌海市",
+    "name": "凌海",
+    "namef_full_py": "linghai"
+}, {
+    "fullname": "辽宁-锦州-义县",
+    "name": "义县",
+    "namef_full_py": "yixian"
+}, {
+    "fullname": "辽宁-辽阳-灯塔市",
+    "name": "灯塔",
+    "namef_full_py": "dengta"
+}, {
+    "fullname": "辽宁-辽阳-辽阳市",
+    "name": "辽阳",
+    "namef_full_py": "liaoyang"
+}, {
+    "fullname": "辽宁-辽阳-辽阳县",
+    "name": "辽阳",
+    "namef_full_py": "liaoyang"
+}, {
+    "fullname": "辽宁-盘锦-大洼县",
+    "name": "大洼",
+    "namef_full_py": "dawa"
+}, {
+    "fullname": "辽宁-盘锦-盘锦市",
+    "name": "盘锦",
+    "namef_full_py": "panjin"
+}, {
+    "fullname": "辽宁-盘锦-盘山县",
+    "name": "盘山",
+    "namef_full_py": "panshan"
+}, {
+    "fullname": "辽宁-沈阳-法库县",
+    "name": "法库",
+    "namef_full_py": "faku"
+}, {
+    "fullname": "辽宁-沈阳-康平县",
+    "name": "康平",
+    "namef_full_py": "kangping"
+}, {
+    "fullname": "辽宁-沈阳-辽中县",
+    "name": "辽中",
+    "namef_full_py": "liaozhong"
+}, {
+    "fullname": "辽宁-沈阳-沈阳市",
+    "name": "沈阳",
+    "namef_full_py": "shenyang"
+}, {
+    "fullname": "辽宁-沈阳-新民市",
+    "name": "新民",
+    "namef_full_py": "xinmin"
+}, {
+    "fullname": "辽宁-铁岭-昌图县",
+    "name": "昌图",
+    "namef_full_py": "changtu"
+}, {
+    "fullname": "辽宁-铁岭-调兵山市",
+    "name": "调兵山市",
+    "namef_full_py": "diaobingshanshi"
+}, {
+    "fullname": "辽宁-铁岭-开原市",
+    "name": "开原",
+    "namef_full_py": "kaiyuan"
+}, {
+    "fullname": "辽宁-铁岭-铁岭市",
+    "name": "铁岭",
+    "namef_full_py": "tieling"
+}, {
+    "fullname": "辽宁-铁岭-铁岭县",
+    "name": "铁岭",
+    "namef_full_py": "tieling"
+}, {
+    "fullname": "辽宁-铁岭-西丰县",
+    "name": "西丰",
+    "namef_full_py": "xifeng"
+}, {
+    "fullname": "辽宁-营口-大石桥市",
+    "name": "大石桥市",
+    "namef_full_py": "dashiqiaoshi"
+}, {
+    "fullname": "辽宁-营口-盖州市",
+    "name": "盖州",
+    "namef_full_py": "gaizhou"
+}, {
+    "fullname": "辽宁-营口-营口市",
+    "name": "营口",
+    "namef_full_py": "yingkou"
+}, {
+    "fullname": "内蒙古-阿拉善盟-阿拉善右旗",
+    "name": "阿拉善右旗",
+    "namef_full_py": "alashanyouqi"
+}, {
+    "fullname": "内蒙古-阿拉善盟-阿拉善左旗",
+    "name": "阿拉善左旗",
+    "namef_full_py": "alashanzuoqi"
+}, {
+    "fullname": "内蒙古-阿拉善盟-额济纳旗",
+    "name": "额济纳旗",
+    "namef_full_py": "ejinaqi"
+}, {
+    "fullname": "内蒙古-巴彦淖尔盟-杭锦后旗",
+    "name": "杭锦后旗",
+    "namef_full_py": "hangjinhouqi"
+}, {
+    "fullname": "内蒙古-巴彦淖尔盟-临河市",
+    "name": "临河",
+    "namef_full_py": "linhe"
+}, {
+    "fullname": "内蒙古-巴彦淖尔盟-乌拉特后旗",
+    "name": "乌拉特后旗",
+    "namef_full_py": "wulatehouqi"
+}, {
+    "fullname": "内蒙古-巴彦淖尔盟-乌拉特前旗",
+    "name": "乌拉特前旗",
+    "namef_full_py": "wulateqianqi"
+}, {
+    "fullname": "内蒙古-巴彦淖尔盟-乌拉特中旗",
+    "name": "乌拉特中旗",
+    "namef_full_py": "wulatezhongqi"
+}, {
+    "fullname": "内蒙古-巴彦淖尔盟-五原县",
+    "name": "五原",
+    "namef_full_py": "wuyuan"
+}, {
+    "fullname": "内蒙古-巴彦淖尔盟-磴口县",
+    "name": "磴口",
+    "namef_full_py": "dengkou"
+}, {
+    "fullname": "内蒙古-包头-包头市",
+    "name": "包头",
+    "namef_full_py": "baotou"
+}, {
+    "fullname": "内蒙古-包头-达尔罕茂明安联合旗",
+    "name": "达尔罕茂明安联合旗",
+    "namef_full_py": "daerhanmaominganlianheqi"
+}, {
+    "fullname": "内蒙古-包头-固阳县",
+    "name": "固阳",
+    "namef_full_py": "guyang"
+}, {
+    "fullname": "内蒙古-包头-土默特右旗",
+    "name": "土默特右旗",
+    "namef_full_py": "tumoteyouqi"
+}, {
+    "fullname": "内蒙古-赤峰-阿鲁科尔沁旗",
+    "name": "阿鲁科尔沁旗",
+    "namef_full_py": "alukeerqinqi"
+}, {
+    "fullname": "内蒙古-赤峰-敖汉旗",
+    "name": "敖汉旗",
+    "namef_full_py": "aohanqi"
+}, {
+    "fullname": "内蒙古-赤峰-巴林右旗",
+    "name": "巴林右旗",
+    "namef_full_py": "balinyouqi"
+}, {
+    "fullname": "内蒙古-赤峰-巴林左旗",
+    "name": "巴林左旗",
+    "namef_full_py": "balinzuoqi"
+}, {
+    "fullname": "内蒙古-赤峰-赤峰市",
+    "name": "赤峰",
+    "namef_full_py": "chifeng"
+}, {
+    "fullname": "内蒙古-赤峰-喀喇沁旗",
+    "name": "喀喇沁旗",
+    "namef_full_py": "kalaqinqi"
+}, {
+    "fullname": "内蒙古-赤峰-克什克腾旗",
+    "name": "克什克腾旗",
+    "namef_full_py": "keshiketengqi"
+}, {
+    "fullname": "内蒙古-赤峰-林西县",
+    "name": "林西",
+    "namef_full_py": "linxi"
+}, {
+    "fullname": "内蒙古-赤峰-宁城县",
+    "name": "宁城",
+    "namef_full_py": "ningcheng"
+}, {
+    "fullname": "内蒙古-赤峰-翁牛特旗",
+    "name": "翁牛特旗",
+    "namef_full_py": "wengniuteqi"
+}, {
+    "fullname": "内蒙古-鄂尔多斯-达拉特旗",
+    "name": "达拉特旗",
+    "namef_full_py": "dalateqi"
+}, {
+    "fullname": "内蒙古-鄂尔多斯-鄂尔多斯市",
+    "name": "鄂尔多斯市",
+    "namef_full_py": "eerduosishi"
+}, {
+    "fullname": "内蒙古-鄂尔多斯-鄂托克旗",
+    "name": "鄂托克旗",
+    "namef_full_py": "etuokeqi"
+}, {
+    "fullname": "内蒙古-鄂尔多斯-鄂托克前旗",
+    "name": "鄂托克前旗",
+    "namef_full_py": "etuokeqianqi"
+}, {
+    "fullname": "内蒙古-鄂尔多斯-杭锦旗",
+    "name": "杭锦旗",
+    "namef_full_py": "hangjinqi"
+}, {
+    "fullname": "内蒙古-鄂尔多斯-乌审旗",
+    "name": "乌审旗",
+    "namef_full_py": "wushenqi"
+}, {
+    "fullname": "内蒙古-鄂尔多斯-伊金霍洛旗",
+    "name": "伊金霍洛旗",
+    "namef_full_py": "yijinhuoluoqi"
+}, {
+    "fullname": "内蒙古-鄂尔多斯-准格尔旗",
+    "name": "准格尔旗",
+    "namef_full_py": "zhungeerqi"
+}, {
+    "fullname": "内蒙古-呼和浩特-和林格尔县",
+    "name": "和林格尔县",
+    "namef_full_py": "helingeerxian"
+}, {
+    "fullname": "内蒙古-呼和浩特-呼和浩特市",
+    "name": "呼和浩特市",
+    "namef_full_py": "huhehaoteshi"
+}, {
+    "fullname": "内蒙古-呼和浩特-清水河县",
+    "name": "清水河县",
+    "namef_full_py": "qingshuihexian"
+}, {
+    "fullname": "内蒙古-呼和浩特-土默特左旗",
+    "name": "土默特左旗",
+    "namef_full_py": "tumotezuoqi"
+}, {
+    "fullname": "内蒙古-呼和浩特-托克托县",
+    "name": "托克托县",
+    "namef_full_py": "tuoketuoxian"
+}, {
+    "fullname": "内蒙古-呼和浩特-武川县",
+    "name": "武川",
+    "namef_full_py": "wuchuan"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-阿荣旗",
+    "name": "阿荣旗",
+    "namef_full_py": "arongqi"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-陈巴尔虎旗",
+    "name": "陈巴尔虎旗",
+    "namef_full_py": "chenbaerhuqi"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-额尔古纳市",
+    "name": "额尔古纳市",
+    "namef_full_py": "eergunashi"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-鄂伦春自治旗",
+    "name": "鄂伦春自治旗",
+    "namef_full_py": "elunchunzizhiqi"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-鄂温克族自治旗",
+    "name": "鄂温克族自治旗",
+    "namef_full_py": "ewenkezuzizhiqi"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-根河市",
+    "name": "根河",
+    "namef_full_py": "genhe"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-呼伦贝尔市",
+    "name": "呼伦贝尔市",
+    "namef_full_py": "hulunbeiershi"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-满洲里市",
+    "name": "满洲里市",
+    "namef_full_py": "manzhoulishi"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-莫力达瓦达斡尔族自治旗",
+    "name": "莫力达瓦达斡尔族自治旗",
+    "namef_full_py": "molidawadawoerzuzizhiqi"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-新巴尔虎右旗",
+    "name": "新巴尔虎右旗",
+    "namef_full_py": "xinbaerhuyouqi"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-新巴尔虎左旗",
+    "name": "新巴尔虎左旗",
+    "namef_full_py": "xinbaerhuzuoqi"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-牙克石市",
+    "name": "牙克石市",
+    "namef_full_py": "yakeshishi"
+}, {
+    "fullname": "内蒙古-呼伦贝尔-扎兰屯市",
+    "name": "扎兰屯市",
+    "namef_full_py": "zhalantunshi"
+}, {
+    "fullname": "内蒙古-通辽-霍林郭勒市",
+    "name": "霍林郭勒市",
+    "namef_full_py": "huolinguoleshi"
+}, {
+    "fullname": "内蒙古-通辽-开鲁县",
+    "name": "开鲁",
+    "namef_full_py": "kailu"
+}, {
+    "fullname": "内蒙古-通辽-科尔沁左翼后旗",
+    "name": "科尔沁左翼后旗",
+    "namef_full_py": "keerqinzuoyihouqi"
+}, {
+    "fullname": "内蒙古-通辽-科尔沁左翼中旗",
+    "name": "科尔沁左翼中旗",
+    "namef_full_py": "keerqinzuoyizhongqi"
+}, {
+    "fullname": "内蒙古-通辽-库伦旗",
+    "name": "库伦旗",
+    "namef_full_py": "kulunqi"
+}, {
+    "fullname": "内蒙古-通辽-奈曼旗",
+    "name": "奈曼旗",
+    "namef_full_py": "naimanqi"
+}, {
+    "fullname": "内蒙古-通辽-通辽市",
+    "name": "通辽",
+    "namef_full_py": "tongliao"
+}, {
+    "fullname": "内蒙古-通辽-扎鲁特旗",
+    "name": "扎鲁特旗",
+    "namef_full_py": "zhaluteqi"
+}, {
+    "fullname": "内蒙古-乌海-乌海市",
+    "name": "乌海",
+    "namef_full_py": "wuhai"
+}, {
+    "fullname": "内蒙古-乌兰察布盟-察哈尔右翼后旗",
+    "name": "察哈尔右翼后旗",
+    "namef_full_py": "chahaeryouyihouqi"
+}, {
+    "fullname": "内蒙古-乌兰察布盟-察哈尔右翼前旗",
+    "name": "察哈尔右翼前旗",
+    "namef_full_py": "chahaeryouyiqianqi"
+}, {
+    "fullname": "内蒙古-乌兰察布盟-察哈尔右翼中旗",
+    "name": "察哈尔右翼中旗",
+    "namef_full_py": "chahaeryouyizhongqi"
+}, {
+    "fullname": "内蒙古-乌兰察布盟-丰镇市",
+    "name": "丰镇",
+    "namef_full_py": "fengzhen"
+}, {
+    "fullname": "内蒙古-乌兰察布盟-化德县",
+    "name": "化德",
+    "namef_full_py": "huade"
+}, {
+    "fullname": "内蒙古-乌兰察布盟-集宁市",
+    "name": "集宁",
+    "namef_full_py": "jining"
+}, {
+    "fullname": "内蒙古-乌兰察布盟-凉城县",
+    "name": "凉城",
+    "namef_full_py": "liangcheng"
+}, {
+    "fullname": "内蒙古-乌兰察布盟-商都县",
+    "name": "商都",
+    "namef_full_py": "shangdu"
+}, {
+    "fullname": "内蒙古-乌兰察布盟-四子王旗",
+    "name": "四子王旗",
+    "namef_full_py": "siziwangqi"
+}, {
+    "fullname": "内蒙古-乌兰察布盟-兴和县",
+    "name": "兴和",
+    "namef_full_py": "xinghe"
+}, {
+    "fullname": "内蒙古-乌兰察布盟-卓资县",
+    "name": "卓资",
+    "namef_full_py": "zhuozi"
+}, {
+    "fullname": "内蒙古-锡林郭勒盟-阿巴嘎旗",
+    "name": "阿巴嘎旗",
+    "namef_full_py": "abagaqi"
+}, {
+    "fullname": "内蒙古-锡林郭勒盟-东乌珠穆沁旗",
+    "name": "东乌珠穆沁旗",
+    "namef_full_py": "dongwuzhumuqinqi"
+}, {
+    "fullname": "内蒙古-锡林郭勒盟-多伦县",
+    "name": "多伦",
+    "namef_full_py": "duolun"
+}, {
+    "fullname": "内蒙古-锡林郭勒盟-二连浩特市",
+    "name": "二连浩特市",
+    "namef_full_py": "erlianhaoteshi"
+}, {
+    "fullname": "内蒙古-锡林郭勒盟-苏尼特右旗",
+    "name": "苏尼特右旗",
+    "namef_full_py": "suniteyouqi"
+}, {
+    "fullname": "内蒙古-锡林郭勒盟-苏尼特左旗",
+    "name": "苏尼特左旗",
+    "namef_full_py": "sunitezuoqi"
+}, {
+    "fullname": "内蒙古-锡林郭勒盟-太仆寺旗",
+    "name": "太仆寺旗",
+    "namef_full_py": "taipusiqi"
+}, {
+    "fullname": "内蒙古-锡林郭勒盟-西乌珠穆沁旗",
+    "name": "西乌珠穆沁旗",
+    "namef_full_py": "xiwuzhumuqinqi"
+}, {
+    "fullname": "内蒙古-锡林郭勒盟-锡林浩特市",
+    "name": "锡林浩特市",
+    "namef_full_py": "xilinhaoteshi"
+}, {
+    "fullname": "内蒙古-锡林郭勒盟-镶黄旗",
+    "name": "镶黄旗",
+    "namef_full_py": "xianghuangqi"
+}, {
+    "fullname": "内蒙古-锡林郭勒盟-正蓝旗",
+    "name": "正蓝旗",
+    "namef_full_py": "zhenglanqi"
+}, {
+    "fullname": "内蒙古-锡林郭勒盟-正镶白旗",
+    "name": "正镶白旗",
+    "namef_full_py": "zhengxiangbaiqi"
+}, {
+    "fullname": "内蒙古-兴安盟-阿尔山市",
+    "name": "阿尔山市",
+    "namef_full_py": "aershanshi"
+}, {
+    "fullname": "内蒙古-兴安盟-科尔沁右翼前旗",
+    "name": "科尔沁右翼前旗",
+    "namef_full_py": "keerqinyouyiqianqi"
+}, {
+    "fullname": "内蒙古-兴安盟-科尔沁右翼中旗",
+    "name": "科尔沁右翼中旗",
+    "namef_full_py": "keerqinyouyizhongqi"
+}, {
+    "fullname": "内蒙古-兴安盟-突泉县",
+    "name": "突泉",
+    "namef_full_py": "tuquan"
+}, {
+    "fullname": "内蒙古-兴安盟-乌兰浩特市",
+    "name": "乌兰浩特市",
+    "namef_full_py": "wulanhaoteshi"
+}, {
+    "fullname": "内蒙古-兴安盟-扎赉特旗",
+    "name": "扎赉特旗",
+    "namef_full_py": "zhalaiteqi"
+}, {
+    "fullname": "宁夏-固原-固原市",
+    "name": "固原",
+    "namef_full_py": "guyuan"
+}, {
+    "fullname": "宁夏-固原-海原县",
+    "name": "海原",
+    "namef_full_py": "haiyuan"
+}, {
+    "fullname": "宁夏-固原-隆德县",
+    "name": "隆德",
+    "namef_full_py": "longde"
+}, {
+    "fullname": "宁夏-固原-彭阳县",
+    "name": "彭阳",
+    "namef_full_py": "pengyang"
+}, {
+    "fullname": "宁夏-固原-西吉县",
+    "name": "西吉",
+    "namef_full_py": "xiji"
+}, {
+    "fullname": "宁夏-固原-泾源县",
+    "name": "泾源",
+    "namef_full_py": "jingyuan"
+}, {
+    "fullname": "宁夏-石嘴山-惠农县",
+    "name": "惠农",
+    "namef_full_py": "huinong"
+}, {
+    "fullname": "宁夏-石嘴山-平罗县",
+    "name": "平罗",
+    "namef_full_py": "pingluo"
+}, {
+    "fullname": "宁夏-石嘴山-石嘴山市",
+    "name": "石嘴山市",
+    "namef_full_py": "shizuishanshi"
+}, {
+    "fullname": "宁夏-石嘴山-陶乐县",
+    "name": "陶乐",
+    "namef_full_py": "taole"
+}, {
+    "fullname": "宁夏-吴忠-青铜峡市",
+    "name": "青铜峡市",
+    "namef_full_py": "qingtongxiashi"
+}, {
+    "fullname": "宁夏-吴忠-同心县",
+    "name": "同心",
+    "namef_full_py": "tongxin"
+}, {
+    "fullname": "宁夏-吴忠-吴忠市",
+    "name": "吴忠",
+    "namef_full_py": "wuzhong"
+}, {
+    "fullname": "宁夏-吴忠-盐池县",
+    "name": "盐池",
+    "namef_full_py": "yanchi"
+}, {
+    "fullname": "宁夏-吴忠-中宁县",
+    "name": "中宁",
+    "namef_full_py": "zhongning"
+}, {
+    "fullname": "宁夏-吴忠-中卫县",
+    "name": "中卫",
+    "namef_full_py": "zhongwei"
+}, {
+    "fullname": "宁夏-银川-贺兰县",
+    "name": "贺兰",
+    "namef_full_py": "helan"
+}, {
+    "fullname": "宁夏-银川-灵武市",
+    "name": "灵武",
+    "namef_full_py": "lingwu"
+}, {
+    "fullname": "宁夏-银川-银川市",
+    "name": "银川",
+    "namef_full_py": "yinchuan"
+}, {
+    "fullname": "宁夏-银川-永宁县",
+    "name": "永宁",
+    "namef_full_py": "yongning"
+}, {
+    "fullname": "青海-果洛藏族自治州-班玛县",
+    "name": "班玛",
+    "namef_full_py": "banma"
+}, {
+    "fullname": "青海-果洛藏族自治州-达日县",
+    "name": "达日",
+    "namef_full_py": "dari"
+}, {
+    "fullname": "青海-果洛藏族自治州-甘德县",
+    "name": "甘德",
+    "namef_full_py": "gande"
+}, {
+    "fullname": "青海-果洛藏族自治州-久治县",
+    "name": "久治",
+    "namef_full_py": "jiuzhi"
+}, {
+    "fullname": "青海-果洛藏族自治州-玛多县",
+    "name": "玛多",
+    "namef_full_py": "maduo"
+}, {
+    "fullname": "青海-果洛藏族自治州-玛沁县",
+    "name": "玛沁",
+    "namef_full_py": "maqin"
+}, {
+    "fullname": "青海-海北藏族自治州-刚察县",
+    "name": "刚察",
+    "namef_full_py": "gangcha"
+}, {
+    "fullname": "青海-海北藏族自治州-海晏县",
+    "name": "海晏",
+    "namef_full_py": "haiyan"
+}, {
+    "fullname": "青海-海北藏族自治州-门源回族自治县",
+    "name": "门源回族自治县",
+    "namef_full_py": "menyuanhuizuzizhixian"
+}, {
+    "fullname": "青海-海北藏族自治州-祁连县",
+    "name": "祁连",
+    "namef_full_py": "qilian"
+}, {
+    "fullname": "青海-海东-互助土族自治县",
+    "name": "互助土族自治县",
+    "namef_full_py": "huzhutuzuzizhixian"
+}, {
+    "fullname": "青海-海东-化隆回族自治县",
+    "name": "化隆回族自治县",
+    "namef_full_py": "hualonghuizuzizhixian"
+}, {
+    "fullname": "青海-海东-乐都县",
+    "name": "乐都",
+    "namef_full_py": "ledu"
+}, {
+    "fullname": "青海-海东-民和回族土族自治县",
+    "name": "民和回族土族自治县",
+    "namef_full_py": "minhehuizutuzuzizhixian"
+}, {
+    "fullname": "青海-海东-平安县",
+    "name": "平安",
+    "namef_full_py": "pingan"
+}, {
+    "fullname": "青海-海东-循化撒拉族自治县",
+    "name": "循化撒拉族自治县",
+    "namef_full_py": "xunhuasalazuzizhixian"
+}, {
+    "fullname": "青海-海南藏族自治州-共和县",
+    "name": "共和",
+    "namef_full_py": "gonghe"
+}, {
+    "fullname": "青海-海南藏族自治州-贵德县",
+    "name": "贵德",
+    "namef_full_py": "guide"
+}, {
+    "fullname": "青海-海南藏族自治州-贵南县",
+    "name": "贵南",
+    "namef_full_py": "guinan"
+}, {
+    "fullname": "青海-海南藏族自治州-同德县",
+    "name": "同德",
+    "namef_full_py": "tongde"
+}, {
+    "fullname": "青海-海南藏族自治州-兴海县",
+    "name": "兴海",
+    "namef_full_py": "xinghai"
+}, {
+    "fullname": "青海-海西蒙古族藏族自治州-德令哈市",
+    "name": "德令哈市",
+    "namef_full_py": "delinghashi"
+}, {
+    "fullname": "青海-海西蒙古族藏族自治州-都兰县",
+    "name": "都兰",
+    "namef_full_py": "dulan"
+}, {
+    "fullname": "青海-海西蒙古族藏族自治州-格尔木市",
+    "name": "格尔木市",
+    "namef_full_py": "geermushi"
+}, {
+    "fullname": "青海-海西蒙古族藏族自治州-天峻县",
+    "name": "天峻",
+    "namef_full_py": "tianjun"
+}, {
+    "fullname": "青海-海西蒙古族藏族自治州-乌兰县",
+    "name": "乌兰",
+    "namef_full_py": "wulan"
+}, {
+    "fullname": "青海-黄南藏族自治州-河南蒙古族自治县",
+    "name": "河南蒙古族自治县",
+    "namef_full_py": "henanmengguzuzizhixian"
+}, {
+    "fullname": "青海-黄南藏族自治州-尖扎县",
+    "name": "尖扎",
+    "namef_full_py": "jianzha"
+}, {
+    "fullname": "青海-黄南藏族自治州-同仁县",
+    "name": "同仁",
+    "namef_full_py": "tongren"
+}, {
+    "fullname": "青海-黄南藏族自治州-泽库县",
+    "name": "泽库",
+    "namef_full_py": "zeku"
+}, {
+    "fullname": "青海-西宁-大通回族土族自治县",
+    "name": "大通回族土族自治县",
+    "namef_full_py": "datonghuizutuzuzizhixian"
+}, {
+    "fullname": "青海-西宁-西宁市",
+    "name": "西宁",
+    "namef_full_py": "xining"
+}, {
+    "fullname": "青海-西宁-湟源县",
+    "name": "湟源",
+    "namef_full_py": "huangyuan"
+}, {
+    "fullname": "青海-西宁-湟中县",
+    "name": "湟中",
+    "namef_full_py": "huangzhong"
+}, {
+    "fullname": "青海-玉树藏族自治州-称多县",
+    "name": "称多",
+    "namef_full_py": "chengduo"
+}, {
+    "fullname": "青海-玉树藏族自治州-囊谦县",
+    "name": "囊谦",
+    "namef_full_py": "nangqian"
+}, {
+    "fullname": "青海-玉树藏族自治州-曲麻莱县",
+    "name": "曲麻莱县",
+    "namef_full_py": "qumalaixian"
+}, {
+    "fullname": "青海-玉树藏族自治州-玉树县",
+    "name": "玉树",
+    "namef_full_py": "yushu"
+}, {
+    "fullname": "青海-玉树藏族自治州-杂多县",
+    "name": "杂多",
+    "namef_full_py": "zaduo"
+}, {
+    "fullname": "青海-玉树藏族自治州-治多县",
+    "name": "治多",
+    "namef_full_py": "zhiduo"
+}, {
+    "fullname": "山东-滨州-滨州市",
+    "name": "滨州",
+    "namef_full_py": "binzhou"
+}, {
+    "fullname": "山东-滨州-博兴县",
+    "name": "博兴",
+    "namef_full_py": "boxing"
+}, {
+    "fullname": "山东-滨州-惠民县",
+    "name": "惠民",
+    "namef_full_py": "huimin"
+}, {
+    "fullname": "山东-滨州-无棣县",
+    "name": "无棣",
+    "namef_full_py": "wudi"
+}, {
+    "fullname": "山东-滨州-阳信县",
+    "name": "阳信",
+    "namef_full_py": "yangxin"
+}, {
+    "fullname": "山东-滨州-沾化县",
+    "name": "沾化",
+    "namef_full_py": "zhanhua"
+}, {
+    "fullname": "山东-滨州-邹平县",
+    "name": "邹平",
+    "namef_full_py": "zouping"
+}, {
+    "fullname": "山东-德州-德州市",
+    "name": "德州",
+    "namef_full_py": "dezhou"
+}, {
+    "fullname": "山东-德州-乐陵市",
+    "name": "乐陵",
+    "namef_full_py": "leling"
+}, {
+    "fullname": "山东-德州-临邑县",
+    "name": "临邑",
+    "namef_full_py": "linyi"
+}, {
+    "fullname": "山东-德州-陵县",
+    "name": "陵县",
+    "namef_full_py": "lingxian"
+}, {
+    "fullname": "山东-德州-宁津县",
+    "name": "宁津",
+    "namef_full_py": "ningjin"
+}, {
+    "fullname": "山东-德州-平原县",
+    "name": "平原",
+    "namef_full_py": "pingyuan"
+}, {
+    "fullname": "山东-德州-齐河县",
+    "name": "齐河",
+    "namef_full_py": "qihe"
+}, {
+    "fullname": "山东-德州-庆云县",
+    "name": "庆云",
+    "namef_full_py": "qingyun"
+}, {
+    "fullname": "山东-德州-武城县",
+    "name": "武城",
+    "namef_full_py": "wucheng"
+}, {
+    "fullname": "山东-德州-夏津县",
+    "name": "夏津",
+    "namef_full_py": "xiajin"
+}, {
+    "fullname": "山东-德州-禹城市",
+    "name": "禹城",
+    "namef_full_py": "yucheng"
+}, {
+    "fullname": "山东-东营-东营市",
+    "name": "东营",
+    "namef_full_py": "dongying"
+}, {
+    "fullname": "山东-东营-广饶县",
+    "name": "广饶",
+    "namef_full_py": "guangrao"
+}, {
+    "fullname": "山东-东营-垦利县",
+    "name": "垦利",
+    "namef_full_py": "kenli"
+}, {
+    "fullname": "山东-东营-利津县",
+    "name": "利津",
+    "namef_full_py": "lijin"
+}, {
+    "fullname": "山东-菏泽-曹县",
+    "name": "曹县",
+    "namef_full_py": "caoxian"
+}, {
+    "fullname": "山东-菏泽-成武县",
+    "name": "成武",
+    "namef_full_py": "chengwu"
+}, {
+    "fullname": "山东-菏泽-单县",
+    "name": "单县",
+    "namef_full_py": "danxian"
+}, {
+    "fullname": "山东-菏泽-定陶县",
+    "name": "定陶",
+    "namef_full_py": "dingtao"
+}, {
+    "fullname": "山东-菏泽-东明县",
+    "name": "东明",
+    "namef_full_py": "dongming"
+}, {
+    "fullname": "山东-菏泽-菏泽市",
+    "name": "菏泽",
+    "namef_full_py": "heze"
+}, {
+    "fullname": "山东-菏泽-巨野县",
+    "name": "巨野",
+    "namef_full_py": "juye"
+}, {
+    "fullname": "山东-菏泽-郓城县",
+    "name": "郓城",
+    "namef_full_py": "yuncheng"
+}, {
+    "fullname": "山东-菏泽-鄄城县",
+    "name": "鄄城",
+    "namef_full_py": "juancheng"
+}, {
+    "fullname": "山东-济南-济南市",
+    "name": "济南",
+    "namef_full_py": "jinan"
+}, {
+    "fullname": "山东-济南-济阳县",
+    "name": "济阳",
+    "namef_full_py": "jiyang"
+}, {
+    "fullname": "山东-济南-平阴县",
+    "name": "平阴",
+    "namef_full_py": "pingyin"
+}, {
+    "fullname": "山东-济南-商河县",
+    "name": "商河",
+    "namef_full_py": "shanghe"
+}, {
+    "fullname": "山东-济南-章丘市",
+    "name": "章丘",
+    "namef_full_py": "zhangqiu"
+}, {
+    "fullname": "山东-济宁-济宁市",
+    "name": "济宁",
+    "namef_full_py": "jining"
+}, {
+    "fullname": "山东-济宁-嘉祥县",
+    "name": "嘉祥",
+    "namef_full_py": "jiaxiang"
+}, {
+    "fullname": "山东-济宁-金乡县",
+    "name": "金乡",
+    "namef_full_py": "jinxiang"
+}, {
+    "fullname": "山东-济宁-梁山县",
+    "name": "梁山",
+    "namef_full_py": "liangshan"
+}, {
+    "fullname": "山东-济宁-曲阜市",
+    "name": "曲阜",
+    "namef_full_py": "qufu"
+}, {
+    "fullname": "山东-济宁-微山县",
+    "name": "微山",
+    "namef_full_py": "weishan"
+}, {
+    "fullname": "山东-济宁-鱼台县",
+    "name": "鱼台",
+    "namef_full_py": "yutai"
+}, {
+    "fullname": "山东-济宁-邹城市",
+    "name": "邹城",
+    "namef_full_py": "zoucheng"
+}, {
+    "fullname": "山东-济宁-兖州市",
+    "name": "兖州",
+    "namef_full_py": "yanzhou"
+}, {
+    "fullname": "山东-济宁-汶上县",
+    "name": "汶上",
+    "namef_full_py": "wenshang"
+}, {
+    "fullname": "山东-济宁-泗水县",
+    "name": "泗水",
+    "namef_full_py": "sishui"
+}, {
+    "fullname": "山东-莱芜-莱芜市",
+    "name": "莱芜",
+    "namef_full_py": "laiwu"
+}, {
+    "fullname": "山东-聊城-东阿县",
+    "name": "东阿",
+    "namef_full_py": "donga"
+}, {
+    "fullname": "山东-聊城-高唐县",
+    "name": "高唐",
+    "namef_full_py": "gaotang"
+}, {
+    "fullname": "山东-聊城-冠县",
+    "name": "冠县",
+    "namef_full_py": "guanxian"
+}, {
+    "fullname": "山东-聊城-聊城市",
+    "name": "聊城",
+    "namef_full_py": "liaocheng"
+}, {
+    "fullname": "山东-聊城-临清市",
+    "name": "临清",
+    "namef_full_py": "linqing"
+}, {
+    "fullname": "山东-聊城-阳谷县",
+    "name": "阳谷",
+    "namef_full_py": "yanggu"
+}, {
+    "fullname": "山东-聊城-茌平县",
+    "name": "茌平",
+    "namef_full_py": "chiping"
+}, {
+    "fullname": "山东-聊城-莘县",
+    "name": "莘县",
+    "namef_full_py": "shenxian"
+}, {
+    "fullname": "山东-临沂-苍山县",
+    "name": "苍山",
+    "namef_full_py": "cangshan"
+}, {
+    "fullname": "山东-临沂-费县",
+    "name": "费县",
+    "namef_full_py": "feixian"
+}, {
+    "fullname": "山东-临沂-临沂市",
+    "name": "临沂",
+    "namef_full_py": "linyi"
+}, {
+    "fullname": "山东-临沂-临沭县",
+    "name": "临沭",
+    "namef_full_py": "linshu"
+}, {
+    "fullname": "山东-临沂-蒙阴县",
+    "name": "蒙阴",
+    "namef_full_py": "mengyin"
+}, {
+    "fullname": "山东-临沂-平邑县",
+    "name": "平邑",
+    "namef_full_py": "pingyi"
+}, {
+    "fullname": "山东-临沂-沂南县",
+    "name": "沂南",
+    "namef_full_py": "yinan"
+}, {
+    "fullname": "山东-临沂-沂水县",
+    "name": "沂水",
+    "namef_full_py": "yishui"
+}, {
+    "fullname": "山东-临沂-郯城县",
+    "name": "郯城",
+    "namef_full_py": "tancheng"
+}, {
+    "fullname": "山东-临沂-莒南县",
+    "name": "莒南",
+    "namef_full_py": "junan"
+}, {
+    "fullname": "山东-青岛-即墨市",
+    "name": "即墨",
+    "namef_full_py": "jimo"
+}, {
+    "fullname": "山东-青岛-胶南市",
+    "name": "胶南",
+    "namef_full_py": "xiaonan"
+}, {
+    "fullname": "山东-青岛-胶州市",
+    "name": "胶州",
+    "namef_full_py": "xiaozhou"
+}, {
+    "fullname": "山东-青岛-莱西市",
+    "name": "莱西",
+    "namef_full_py": "laixi"
+}, {
+    "fullname": "山东-青岛-平度市",
+    "name": "平度",
+    "namef_full_py": "pingdu"
+}, {
+    "fullname": "山东-青岛-青岛市",
+    "name": "青岛",
+    "namef_full_py": "qingdao"
+}, {
+    "fullname": "山东-日照-日照市",
+    "name": "日照",
+    "namef_full_py": "rizhao"
+}, {
+    "fullname": "山东-日照-五莲县",
+    "name": "五莲",
+    "namef_full_py": "wulian"
+}, {
+    "fullname": "山东-日照-莒县",
+    "name": "莒县",
+    "namef_full_py": "juxian"
+}, {
+    "fullname": "山东-泰安-东平县",
+    "name": "东平",
+    "namef_full_py": "dongping"
+}, {
+    "fullname": "山东-泰安-肥城市",
+    "name": "肥城",
+    "namef_full_py": "feicheng"
+}, {
+    "fullname": "山东-泰安-宁阳县",
+    "name": "宁阳",
+    "namef_full_py": "ningyang"
+}, {
+    "fullname": "山东-泰安-泰安市",
+    "name": "泰安",
+    "namef_full_py": "taian"
+}, {
+    "fullname": "山东-泰安-新泰市",
+    "name": "新泰",
+    "namef_full_py": "xintai"
+}, {
+    "fullname": "山东-威海-荣成市",
+    "name": "荣成",
+    "namef_full_py": "rongcheng"
+}, {
+    "fullname": "山东-威海-乳山市",
+    "name": "乳山",
+    "namef_full_py": "rushan"
+}, {
+    "fullname": "山东-威海-威海市",
+    "name": "威海",
+    "namef_full_py": "weihai"
+}, {
+    "fullname": "山东-威海-文登市",
+    "name": "文登",
+    "namef_full_py": "wendeng"
+}, {
+    "fullname": "山东-潍坊-安丘市",
+    "name": "安丘",
+    "namef_full_py": "anqiu"
+}, {
+    "fullname": "山东-潍坊-昌乐县",
+    "name": "昌乐",
+    "namef_full_py": "changle"
+}, {
+    "fullname": "山东-潍坊-昌邑市",
+    "name": "昌邑",
+    "namef_full_py": "changyi"
+}, {
+    "fullname": "山东-潍坊-高密市",
+    "name": "高密",
+    "namef_full_py": "gaomi"
+}, {
+    "fullname": "山东-潍坊-临朐县",
+    "name": "临朐",
+    "namef_full_py": "linqu"
+}, {
+    "fullname": "山东-潍坊-青州市",
+    "name": "青州",
+    "namef_full_py": "qingzhou"
+}, {
+    "fullname": "山东-潍坊-寿光市",
+    "name": "寿光",
+    "namef_full_py": "shouguang"
+}, {
+    "fullname": "山东-潍坊-潍坊市",
+    "name": "潍坊",
+    "namef_full_py": "weifang"
+}, {
+    "fullname": "山东-潍坊-诸城市",
+    "name": "诸城",
+    "namef_full_py": "zhucheng"
+}, {
+    "fullname": "山东-烟台-长岛县",
+    "name": "长岛",
+    "namef_full_py": "changdao"
+}, {
+    "fullname": "山东-烟台-海阳市",
+    "name": "海阳",
+    "namef_full_py": "haiyang"
+}, {
+    "fullname": "山东-烟台-莱阳市",
+    "name": "莱阳",
+    "namef_full_py": "laiyang"
+}, {
+    "fullname": "山东-烟台-莱州市",
+    "name": "莱州",
+    "namef_full_py": "laizhou"
+}, {
+    "fullname": "山东-烟台-龙口市",
+    "name": "龙口",
+    "namef_full_py": "longkou"
+}, {
+    "fullname": "山东-烟台-蓬莱市",
+    "name": "蓬莱",
+    "namef_full_py": "penglai"
+}, {
+    "fullname": "山东-烟台-栖霞市",
+    "name": "栖霞",
+    "namef_full_py": "qixia"
+}, {
+    "fullname": "山东-烟台-烟台市",
+    "name": "烟台",
+    "namef_full_py": "yantai"
+}, {
+    "fullname": "山东-烟台-招远市",
+    "name": "招远",
+    "namef_full_py": "zhaoyuan"
+}, {
+    "fullname": "山东-枣庄-枣庄市",
+    "name": "枣庄",
+    "namef_full_py": "zaozhuang"
+}, {
+    "fullname": "山东-枣庄-滕州市",
+    "name": "滕州",
+    "namef_full_py": "tengzhou"
+}, {
+    "fullname": "山东-淄博-高青县",
+    "name": "高青",
+    "namef_full_py": "gaoqing"
+}, {
+    "fullname": "山东-淄博-桓台县",
+    "name": "桓台",
+    "namef_full_py": "huantai"
+}, {
+    "fullname": "山东-淄博-沂源县",
+    "name": "沂源",
+    "namef_full_py": "yiyuan"
+}, {
+    "fullname": "山东-淄博-淄博市",
+    "name": "淄博",
+    "namef_full_py": "zibo"
+}, {
+    "fullname": "山西-长治-长治市",
+    "name": "长治",
+    "namef_full_py": "changzhi"
+}, {
+    "fullname": "山西-长治-长治县",
+    "name": "长治",
+    "namef_full_py": "changzhi"
+}, {
+    "fullname": "山西-长治-长子县",
+    "name": "长子",
+    "namef_full_py": "changzi"
+}, {
+    "fullname": "山西-长治-壶关县",
+    "name": "壶关",
+    "namef_full_py": "huguan"
+}, {
+    "fullname": "山西-长治-黎城县",
+    "name": "黎城",
+    "namef_full_py": "licheng"
+}, {
+    "fullname": "山西-长治-潞城市",
+    "name": "潞城",
+    "namef_full_py": "lucheng"
+}, {
+    "fullname": "山西-长治-平顺县",
+    "name": "平顺",
+    "namef_full_py": "pingshun"
+}, {
+    "fullname": "山西-长治-沁县",
+    "name": "沁县",
+    "namef_full_py": "qinxian"
+}, {
+    "fullname": "山西-长治-沁源县",
+    "name": "沁源",
+    "namef_full_py": "qinyuan"
+}, {
+    "fullname": "山西-长治-屯留县",
+    "name": "屯留",
+    "namef_full_py": "tunliu"
+}, {
+    "fullname": "山西-长治-武乡县",
+    "name": "武乡",
+    "namef_full_py": "wuxiang"
+}, {
+    "fullname": "山西-长治-襄垣县",
+    "name": "襄垣",
+    "namef_full_py": "xiangyuan"
+}, {
+    "fullname": "山西-大同-大同市",
+    "name": "大同",
+    "namef_full_py": "datong"
+}, {
+    "fullname": "山西-大同-大同县",
+    "name": "大同",
+    "namef_full_py": "datong"
+}, {
+    "fullname": "山西-大同-广灵县",
+    "name": "广灵",
+    "namef_full_py": "guangling"
+}, {
+    "fullname": "山西-大同-浑源县",
+    "name": "浑源",
+    "namef_full_py": "hunyuan"
+}, {
+    "fullname": "山西-大同-灵丘县",
+    "name": "灵丘",
+    "namef_full_py": "lingqiu"
+}, {
+    "fullname": "山西-大同-天镇县",
+    "name": "天镇",
+    "namef_full_py": "tianzhen"
+}, {
+    "fullname": "山西-大同-阳高县",
+    "name": "阳高",
+    "namef_full_py": "yanggao"
+}, {
+    "fullname": "山西-大同-左云县",
+    "name": "左云",
+    "namef_full_py": "zuoyun"
+}, {
+    "fullname": "山西-晋城-高平市",
+    "name": "高平",
+    "namef_full_py": "gaoping"
+}, {
+    "fullname": "山西-晋城-晋城市",
+    "name": "晋城",
+    "namef_full_py": "jincheng"
+}, {
+    "fullname": "山西-晋城-陵川县",
+    "name": "陵川",
+    "namef_full_py": "lingchuan"
+}, {
+    "fullname": "山西-晋城-沁水县",
+    "name": "沁水",
+    "namef_full_py": "qinshui"
+}, {
+    "fullname": "山西-晋城-阳城县",
+    "name": "阳城",
+    "namef_full_py": "yangcheng"
+}, {
+    "fullname": "山西-晋城-泽州县",
+    "name": "泽州",
+    "namef_full_py": "zezhou"
+}, {
+    "fullname": "山西-晋中-和顺县",
+    "name": "和顺",
+    "namef_full_py": "heshun"
+}, {
+    "fullname": "山西-晋中-介休市",
+    "name": "介休",
+    "namef_full_py": "jiexiu"
+}, {
+    "fullname": "山西-晋中-晋中市",
+    "name": "晋中",
+    "namef_full_py": "jinzhong"
+}, {
+    "fullname": "山西-晋中-灵石县",
+    "name": "灵石",
+    "namef_full_py": "lingshi"
+}, {
+    "fullname": "山西-晋中-平遥县",
+    "name": "平遥",
+    "namef_full_py": "pingyao"
+}, {
+    "fullname": "山西-晋中-祁县",
+    "name": "祁县",
+    "namef_full_py": "qixian"
+}, {
+    "fullname": "山西-晋中-寿阳县",
+    "name": "寿阳",
+    "namef_full_py": "shouyang"
+}, {
+    "fullname": "山西-晋中-太谷县",
+    "name": "太谷",
+    "namef_full_py": "taigu"
+}, {
+    "fullname": "山西-晋中-昔阳县",
+    "name": "昔阳",
+    "namef_full_py": "xiyang"
+}, {
+    "fullname": "山西-晋中-榆社县",
+    "name": "榆社",
+    "namef_full_py": "yushe"
+}, {
+    "fullname": "山西-晋中-左权县",
+    "name": "左权",
+    "namef_full_py": "zuoquan"
+}, {
+    "fullname": "山西-临汾-安泽县",
+    "name": "安泽",
+    "namef_full_py": "anze"
+}, {
+    "fullname": "山西-临汾-大宁县",
+    "name": "大宁",
+    "namef_full_py": "daning"
+}, {
+    "fullname": "山西-临汾-汾西县",
+    "name": "汾西",
+    "namef_full_py": "fenxi"
+}, {
+    "fullname": "山西-临汾-浮山县",
+    "name": "浮山",
+    "namef_full_py": "fushan"
+}, {
+    "fullname": "山西-临汾-古县",
+    "name": "古县",
+    "namef_full_py": "guxian"
+}, {
+    "fullname": "山西-临汾-洪洞县",
+    "name": "洪洞",
+    "namef_full_py": "hongdong"
+}, {
+    "fullname": "山西-临汾-侯马市",
+    "name": "侯马",
+    "namef_full_py": "houma"
+}, {
+    "fullname": "山西-临汾-霍州市",
+    "name": "霍州",
+    "namef_full_py": "huozhou"
+}, {
+    "fullname": "山西-临汾-吉县",
+    "name": "吉县",
+    "namef_full_py": "jixian"
+}, {
+    "fullname": "山西-临汾-临汾市",
+    "name": "临汾",
+    "namef_full_py": "linfen"
+}, {
+    "fullname": "山西-临汾-蒲县",
+    "name": "蒲县",
+    "namef_full_py": "puxian"
+}, {
+    "fullname": "山西-临汾-曲沃县",
+    "name": "曲沃",
+    "namef_full_py": "quwo"
+}, {
+    "fullname": "山西-临汾-襄汾县",
+    "name": "襄汾",
+    "namef_full_py": "xiangfen"
+}, {
+    "fullname": "山西-临汾-乡宁县",
+    "name": "乡宁",
+    "namef_full_py": "xiangning"
+}, {
+    "fullname": "山西-临汾-翼城县",
+    "name": "翼城",
+    "namef_full_py": "yicheng"
+}, {
+    "fullname": "山西-临汾-永和县",
+    "name": "永和",
+    "namef_full_py": "yonghe"
+}, {
+    "fullname": "山西-临汾-隰县",
+    "name": "隰县",
+    "namef_full_py": "xixian"
+}, {
+    "fullname": "山西-吕梁-方山县",
+    "name": "方山",
+    "namef_full_py": "fangshan"
+}, {
+    "fullname": "山西-吕梁-汾阳市",
+    "name": "汾阳",
+    "namef_full_py": "fenyang"
+}, {
+    "fullname": "山西-吕梁-交城县",
+    "name": "交城",
+    "namef_full_py": "jiaocheng"
+}, {
+    "fullname": "山西-吕梁-交口县",
+    "name": "交口",
+    "namef_full_py": "jiaokou"
+}, {
+    "fullname": "山西-吕梁-离石市",
+    "name": "离石",
+    "namef_full_py": "lishi"
+}, {
+    "fullname": "山西-吕梁-临县",
+    "name": "临县",
+    "namef_full_py": "linxian"
+}, {
+    "fullname": "山西-吕梁-柳林县",
+    "name": "柳林",
+    "namef_full_py": "liulin"
+}, {
+    "fullname": "山西-吕梁-石楼县",
+    "name": "石楼",
+    "namef_full_py": "shilou"
+}, {
+    "fullname": "山西-吕梁-文水县",
+    "name": "文水",
+    "namef_full_py": "wenshui"
+}, {
+    "fullname": "山西-吕梁-孝义市",
+    "name": "孝义",
+    "namef_full_py": "xiaoyi"
+}, {
+    "fullname": "山西-吕梁-兴县",
+    "name": "兴县",
+    "namef_full_py": "xingxian"
+}, {
+    "fullname": "山西-吕梁-中阳县",
+    "name": "中阳",
+    "namef_full_py": "zhongyang"
+}, {
+    "fullname": "山西-吕梁-岚县",
+    "name": "岚县",
+    "namef_full_py": "lanxian"
+}, {
+    "fullname": "山西-朔州-怀仁县",
+    "name": "怀仁",
+    "namef_full_py": "huairen"
+}, {
+    "fullname": "山西-朔州-山阴县",
+    "name": "山阴",
+    "namef_full_py": "shanyin"
+}, {
+    "fullname": "山西-朔州-朔州市",
+    "name": "朔州",
+    "namef_full_py": "shuozhou"
+}, {
+    "fullname": "山西-朔州-应县",
+    "name": "应县",
+    "namef_full_py": "yingxian"
+}, {
+    "fullname": "山西-朔州-右玉县",
+    "name": "右玉",
+    "namef_full_py": "youyu"
+}, {
+    "fullname": "山西-太原-古交市",
+    "name": "古交",
+    "namef_full_py": "gujiao"
+}, {
+    "fullname": "山西-太原-娄烦县",
+    "name": "娄烦",
+    "namef_full_py": "loufan"
+}, {
+    "fullname": "山西-太原-清徐县",
+    "name": "清徐",
+    "namef_full_py": "qingxu"
+}, {
+    "fullname": "山西-太原-太原市",
+    "name": "太原",
+    "namef_full_py": "taiyuan"
+}, {
+    "fullname": "山西-太原-阳曲县",
+    "name": "阳曲",
+    "namef_full_py": "yangqu"
+}, {
+    "fullname": "山西-忻州-保德县",
+    "name": "保德",
+    "namef_full_py": "baode"
+}, {
+    "fullname": "山西-忻州-代县",
+    "name": "代县",
+    "namef_full_py": "daixian"
+}, {
+    "fullname": "山西-忻州-定襄县",
+    "name": "定襄",
+    "namef_full_py": "dingxiang"
+}, {
+    "fullname": "山西-忻州-繁峙县",
+    "name": "繁峙",
+    "namef_full_py": "fanzhi"
+}, {
+    "fullname": "山西-忻州-河曲县",
+    "name": "河曲",
+    "namef_full_py": "hequ"
+}, {
+    "fullname": "山西-忻州-静乐县",
+    "name": "静乐",
+    "namef_full_py": "jingle"
+}, {
+    "fullname": "山西-忻州-宁武县",
+    "name": "宁武",
+    "namef_full_py": "ningwu"
+}, {
+    "fullname": "山西-忻州-偏关县",
+    "name": "偏关",
+    "namef_full_py": "pianguan"
+}, {
+    "fullname": "山西-忻州-神池县",
+    "name": "神池",
+    "namef_full_py": "shenchi"
+}, {
+    "fullname": "山西-忻州-五台县",
+    "name": "五台",
+    "namef_full_py": "wutai"
+}, {
+    "fullname": "山西-忻州-五寨县",
+    "name": "五寨",
+    "namef_full_py": "wuzhai"
+}, {
+    "fullname": "山西-忻州-忻州市",
+    "name": "忻州",
+    "namef_full_py": "xinzhou"
+}, {
+    "fullname": "山西-忻州-原平市",
+    "name": "原平",
+    "namef_full_py": "yuanping"
+}, {
+    "fullname": "山西-忻州-岢岚县",
+    "name": "岢岚",
+    "namef_full_py": "kelan"
+}, {
+    "fullname": "山西-阳泉-平定县",
+    "name": "平定",
+    "namef_full_py": "pingding"
+}, {
+    "fullname": "山西-阳泉-阳泉市",
+    "name": "阳泉",
+    "namef_full_py": "yangquan"
+}, {
+    "fullname": "山西-阳泉-盂县",
+    "name": "盂县",
+    "namef_full_py": "yuxian"
+}, {
+    "fullname": "山西-运城-河津市",
+    "name": "河津",
+    "namef_full_py": "hejin"
+}, {
+    "fullname": "山西-运城-临猗县",
+    "name": "临猗",
+    "namef_full_py": "linyi"
+}, {
+    "fullname": "山西-运城-平陆县",
+    "name": "平陆",
+    "namef_full_py": "pinglu"
+}, {
+    "fullname": "山西-运城-万荣县",
+    "name": "万荣",
+    "namef_full_py": "wanrong"
+}, {
+    "fullname": "山西-运城-闻喜县",
+    "name": "闻喜",
+    "namef_full_py": "wenxi"
+}, {
+    "fullname": "山西-运城-夏县",
+    "name": "夏县",
+    "namef_full_py": "xiaxian"
+}, {
+    "fullname": "山西-运城-新绛县",
+    "name": "新绛",
+    "namef_full_py": "xinjiang"
+}, {
+    "fullname": "山西-运城-永济市",
+    "name": "永济",
+    "namef_full_py": "yongji"
+}, {
+    "fullname": "山西-运城-垣曲县",
+    "name": "垣曲",
+    "namef_full_py": "yuanqu"
+}, {
+    "fullname": "山西-运城-运城市",
+    "name": "运城",
+    "namef_full_py": "yuncheng"
+}, {
+    "fullname": "山西-运城-芮城县",
+    "name": "芮城",
+    "namef_full_py": "ruicheng"
+}, {
+    "fullname": "山西-运城-绛县",
+    "name": "绛县",
+    "namef_full_py": "jiangxian"
+}, {
+    "fullname": "山西-运城-稷山县",
+    "name": "稷山",
+    "namef_full_py": "jishan"
+}, {
+    "fullname": "陕西-安康-安康市",
+    "name": "安康",
+    "namef_full_py": "ankang"
+}, {
+    "fullname": "陕西-安康-白河县",
+    "name": "白河",
+    "namef_full_py": "baihe"
+}, {
+    "fullname": "陕西-安康-汉阴县",
+    "name": "汉阴",
+    "namef_full_py": "hanyin"
+}, {
+    "fullname": "陕西-安康-宁陕县",
+    "name": "宁陕",
+    "namef_full_py": "ningshan"
+}, {
+    "fullname": "陕西-安康-平利县",
+    "name": "平利",
+    "namef_full_py": "pingli"
+}, {
+    "fullname": "陕西-安康-石泉县",
+    "name": "石泉",
+    "namef_full_py": "shiquan"
+}, {
+    "fullname": "陕西-安康-旬阳县",
+    "name": "旬阳",
+    "namef_full_py": "xunyang"
+}, {
+    "fullname": "陕西-安康-镇坪县",
+    "name": "镇坪",
+    "namef_full_py": "zhenping"
+}, {
+    "fullname": "陕西-安康-紫阳县",
+    "name": "紫阳",
+    "namef_full_py": "ziyang"
+}, {
+    "fullname": "陕西-安康-岚皋县",
+    "name": "岚皋",
+    "namef_full_py": "langao"
+}, {
+    "fullname": "陕西-宝鸡-宝鸡市",
+    "name": "宝鸡",
+    "namef_full_py": "baoji"
+}, {
+    "fullname": "陕西-宝鸡-宝鸡县",
+    "name": "宝鸡",
+    "namef_full_py": "baoji"
+}, {
+    "fullname": "陕西-宝鸡-凤县",
+    "name": "凤县",
+    "namef_full_py": "fengxian"
+}, {
+    "fullname": "陕西-宝鸡-凤翔县",
+    "name": "凤翔",
+    "namef_full_py": "fengxiang"
+}, {
+    "fullname": "陕西-宝鸡-扶风县",
+    "name": "扶风",
+    "namef_full_py": "fufeng"
+}, {
+    "fullname": "陕西-宝鸡-陇县",
+    "name": "陇县",
+    "namef_full_py": "longxian"
+}, {
+    "fullname": "陕西-宝鸡-眉县",
+    "name": "眉县",
+    "namef_full_py": "meixian"
+}, {
+    "fullname": "陕西-宝鸡-千阳县",
+    "name": "千阳",
+    "namef_full_py": "qianyang"
+}, {
+    "fullname": "陕西-宝鸡-太白县",
+    "name": "太白",
+    "namef_full_py": "taibai"
+}, {
+    "fullname": "陕西-宝鸡-岐山县",
+    "name": "岐山",
+    "namef_full_py": "qishan"
+}, {
+    "fullname": "陕西-宝鸡-麟游县",
+    "name": "麟游",
+    "namef_full_py": "linyou"
+}, {
+    "fullname": "陕西-汉中-城固县",
+    "name": "城固",
+    "namef_full_py": "chenggu"
+}, {
+    "fullname": "陕西-汉中-佛坪县",
+    "name": "佛坪",
+    "namef_full_py": "foping"
+}, {
+    "fullname": "陕西-汉中-汉中市",
+    "name": "汉中",
+    "namef_full_py": "hanzhong"
+}, {
+    "fullname": "陕西-汉中-留坝县",
+    "name": "留坝",
+    "namef_full_py": "liuba"
+}, {
+    "fullname": "陕西-汉中-略阳县",
+    "name": "略阳",
+    "namef_full_py": "lveyang"
+}, {
+    "fullname": "陕西-汉中-勉县",
+    "name": "勉县",
+    "namef_full_py": "mianxian"
+}, {
+    "fullname": "陕西-汉中-南郑县",
+    "name": "南郑",
+    "namef_full_py": "nanzheng"
+}, {
+    "fullname": "陕西-汉中-宁强县",
+    "name": "宁强",
+    "namef_full_py": "ningqiang"
+}, {
+    "fullname": "陕西-汉中-西乡县",
+    "name": "西乡",
+    "namef_full_py": "xixiang"
+}, {
+    "fullname": "陕西-汉中-洋县",
+    "name": "洋县",
+    "namef_full_py": "yangxian"
+}, {
+    "fullname": "陕西-汉中-镇巴县",
+    "name": "镇巴",
+    "namef_full_py": "zhenba"
+}, {
+    "fullname": "陕西-商洛-丹凤县",
+    "name": "丹凤",
+    "namef_full_py": "danfeng"
+}, {
+    "fullname": "陕西-商洛-洛南县",
+    "name": "洛南",
+    "namef_full_py": "luonan"
+}, {
+    "fullname": "陕西-商洛-山阳县",
+    "name": "山阳",
+    "namef_full_py": "shanyang"
+}, {
+    "fullname": "陕西-商洛-商洛市",
+    "name": "商洛",
+    "namef_full_py": "shangluo"
+}, {
+    "fullname": "陕西-商洛-商南县",
+    "name": "商南",
+    "namef_full_py": "shangnan"
+}, {
+    "fullname": "陕西-商洛-镇安县",
+    "name": "镇安",
+    "namef_full_py": "zhenan"
+}, {
+    "fullname": "陕西-商洛-柞水县",
+    "name": "柞水",
+    "namef_full_py": "zuoshui"
+}, {
+    "fullname": "陕西-铜川-铜川市",
+    "name": "铜川",
+    "namef_full_py": "tongchuan"
+}, {
+    "fullname": "陕西-铜川-宜君县",
+    "name": "宜君",
+    "namef_full_py": "yijun"
+}, {
+    "fullname": "陕西-渭南-白水县",
+    "name": "白水",
+    "namef_full_py": "baishui"
+}, {
+    "fullname": "陕西-渭南-澄城县",
+    "name": "澄城",
+    "namef_full_py": "chengcheng"
+}, {
+    "fullname": "陕西-渭南-大荔县",
+    "name": "大荔",
+    "namef_full_py": "dali"
+}, {
+    "fullname": "陕西-渭南-富平县",
+    "name": "富平",
+    "namef_full_py": "fuping"
+}, {
+    "fullname": "陕西-渭南-韩城市",
+    "name": "韩城",
+    "namef_full_py": "hancheng"
+}, {
+    "fullname": "陕西-渭南-合阳县",
+    "name": "合阳",
+    "namef_full_py": "heyang"
+}, {
+    "fullname": "陕西-渭南-华县",
+    "name": "华县",
+    "namef_full_py": "huaxian"
+}, {
+    "fullname": "陕西-渭南-华阴市",
+    "name": "华阴",
+    "namef_full_py": "huayin"
+}, {
+    "fullname": "陕西-渭南-蒲城县",
+    "name": "蒲城",
+    "namef_full_py": "pucheng"
+}, {
+    "fullname": "陕西-渭南-渭南市",
+    "name": "渭南",
+    "namef_full_py": "weinan"
+}, {
+    "fullname": "陕西-渭南-潼关县",
+    "name": "潼关",
+    "namef_full_py": "tongguan"
+}, {
+    "fullname": "陕西-西安-高陵县",
+    "name": "高陵",
+    "namef_full_py": "gaoling"
+}, {
+    "fullname": "陕西-西安-户县",
+    "name": "户县",
+    "namef_full_py": "huxian"
+}, {
+    "fullname": "陕西-西安-蓝田县",
+    "name": "蓝田",
+    "namef_full_py": "lantian"
+}, {
+    "fullname": "陕西-西安-西安市",
+    "name": "西安",
+    "namef_full_py": "xian"
+}, {
+    "fullname": "陕西-西安-周至县",
+    "name": "周至",
+    "namef_full_py": "zhouzhi"
+}, {
+    "fullname": "陕西-咸阳-彬县",
+    "name": "彬县",
+    "namef_full_py": "binxian"
+}, {
+    "fullname": "陕西-咸阳-长武县",
+    "name": "长武",
+    "namef_full_py": "changwu"
+}, {
+    "fullname": "陕西-咸阳-淳化县",
+    "name": "淳化",
+    "namef_full_py": "chunhua"
+}, {
+    "fullname": "陕西-咸阳-礼泉县",
+    "name": "礼泉",
+    "namef_full_py": "liquan"
+}, {
+    "fullname": "陕西-咸阳-乾县",
+    "name": "乾县",
+    "namef_full_py": "ganxian"
+}, {
+    "fullname": "陕西-咸阳-三原县",
+    "name": "三原",
+    "namef_full_py": "sanyuan"
+}, {
+    "fullname": "陕西-咸阳-武功县",
+    "name": "武功",
+    "namef_full_py": "wugong"
+}, {
+    "fullname": "陕西-咸阳-咸阳市",
+    "name": "咸阳",
+    "namef_full_py": "xianyang"
+}, {
+    "fullname": "陕西-咸阳-兴平市",
+    "name": "兴平",
+    "namef_full_py": "xingping"
+}, {
+    "fullname": "陕西-咸阳-旬邑县",
+    "name": "旬邑",
+    "namef_full_py": "xunyi"
+}, {
+    "fullname": "陕西-咸阳-永寿县",
+    "name": "永寿",
+    "namef_full_py": "yongshou"
+}, {
+    "fullname": "陕西-咸阳-泾阳县",
+    "name": "泾阳",
+    "namef_full_py": "jingyang"
+}, {
+    "fullname": "陕西-延安-安塞县",
+    "name": "安塞",
+    "namef_full_py": "ansai"
+}, {
+    "fullname": "陕西-延安-富县",
+    "name": "富县",
+    "namef_full_py": "fuxian"
+}, {
+    "fullname": "陕西-延安-甘泉县",
+    "name": "甘泉",
+    "namef_full_py": "ganquan"
+}, {
+    "fullname": "陕西-延安-黄陵县",
+    "name": "黄陵",
+    "namef_full_py": "huangling"
+}, {
+    "fullname": "陕西-延安-黄龙县",
+    "name": "黄龙",
+    "namef_full_py": "huanglong"
+}, {
+    "fullname": "陕西-延安-洛川县",
+    "name": "洛川",
+    "namef_full_py": "luochuan"
+}, {
+    "fullname": "陕西-延安-吴旗县",
+    "name": "吴旗",
+    "namef_full_py": "wuqi"
+}, {
+    "fullname": "陕西-延安-延安市",
+    "name": "延安",
+    "namef_full_py": "yanan"
+}, {
+    "fullname": "陕西-延安-延长县",
+    "name": "延长",
+    "namef_full_py": "yanchang"
+}, {
+    "fullname": "陕西-延安-延川县",
+    "name": "延川",
+    "namef_full_py": "yanchuan"
+}, {
+    "fullname": "陕西-延安-宜川县",
+    "name": "宜川",
+    "namef_full_py": "yichuan"
+}, {
+    "fullname": "陕西-延安-志丹县",
+    "name": "志丹",
+    "namef_full_py": "zhidan"
+}, {
+    "fullname": "陕西-延安-子长县",
+    "name": "子长",
+    "namef_full_py": "zichang"
+}, {
+    "fullname": "陕西-榆林-定边县",
+    "name": "定边",
+    "namef_full_py": "dingbian"
+}, {
+    "fullname": "陕西-榆林-府谷县",
+    "name": "府谷",
+    "namef_full_py": "fugu"
+}, {
+    "fullname": "陕西-榆林-横山县",
+    "name": "横山",
+    "namef_full_py": "hengshan"
+}, {
+    "fullname": "陕西-榆林-佳县",
+    "name": "佳县",
+    "namef_full_py": "jiaxian"
+}, {
+    "fullname": "陕西-榆林-靖边县",
+    "name": "靖边",
+    "namef_full_py": "jingbian"
+}, {
+    "fullname": "陕西-榆林-米脂县",
+    "name": "米脂",
+    "namef_full_py": "mizhi"
+}, {
+    "fullname": "陕西-榆林-清涧县",
+    "name": "清涧",
+    "namef_full_py": "qingjian"
+}, {
+    "fullname": "陕西-榆林-神木县",
+    "name": "神木",
+    "namef_full_py": "shenmu"
+}, {
+    "fullname": "陕西-榆林-绥德县",
+    "name": "绥德",
+    "namef_full_py": "suide"
+}, {
+    "fullname": "陕西-榆林-吴堡县",
+    "name": "吴堡",
+    "namef_full_py": "wubao"
+}, {
+    "fullname": "陕西-榆林-榆林市",
+    "name": "榆林",
+    "namef_full_py": "yulin"
+}, {
+    "fullname": "陕西-榆林-子洲县",
+    "name": "子洲",
+    "namef_full_py": "zizhou"
+}, {
+    "fullname": "上海-",
+    "name": "",
+    "namef_full_py": ""
+}, {
+    "fullname": "上海-崇明县",
+    "name": "崇明",
+    "namef_full_py": "chongming"
+}, {
+    "fullname": "上海-上海市",
+    "name": "上海",
+    "namef_full_py": "shanghai"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-阿坝县",
+    "name": "阿坝",
+    "namef_full_py": "aba"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-黑水县",
+    "name": "黑水",
+    "namef_full_py": "heishui"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-红原县",
+    "name": "红原",
+    "namef_full_py": "hongyuan"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-金川县",
+    "name": "金川",
+    "namef_full_py": "jinchuan"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-九寨沟县",
+    "name": "九寨沟县",
+    "namef_full_py": "jiuzhaigouxian"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-理县",
+    "name": "理县",
+    "namef_full_py": "lixian"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-马尔康县",
+    "name": "马尔康县",
+    "namef_full_py": "maerkangxian"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-茂县",
+    "name": "茂县",
+    "namef_full_py": "maoxian"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-壤塘县",
+    "name": "壤塘",
+    "namef_full_py": "rangtang"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-若尔盖县",
+    "name": "若尔盖县",
+    "namef_full_py": "ruoergaixian"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-松潘县",
+    "name": "松潘",
+    "namef_full_py": "songpan"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-小金县",
+    "name": "小金",
+    "namef_full_py": "xiaojin"
+}, {
+    "fullname": "四川-阿坝藏族羌族自治州-汶川县",
+    "name": "汶川",
+    "namef_full_py": "wenchuan"
+}, {
+    "fullname": "四川-巴中-巴中市",
+    "name": "巴中",
+    "namef_full_py": "bazhong"
+}, {
+    "fullname": "四川-巴中-南江县",
+    "name": "南江",
+    "namef_full_py": "nanjiang"
+}, {
+    "fullname": "四川-巴中-平昌县",
+    "name": "平昌",
+    "namef_full_py": "pingchang"
+}, {
+    "fullname": "四川-巴中-通江县",
+    "name": "通江",
+    "namef_full_py": "tongjiang"
+}, {
+    "fullname": "四川-成都-成都市",
+    "name": "成都",
+    "namef_full_py": "chengdu"
+}, {
+    "fullname": "四川-成都-崇州市",
+    "name": "崇州",
+    "namef_full_py": "chongzhou"
+}, {
+    "fullname": "四川-成都-大邑县",
+    "name": "大邑",
+    "namef_full_py": "dayi"
+}, {
+    "fullname": "四川-成都-都江堰市",
+    "name": "都江堰市",
+    "namef_full_py": "dujiangyanshi"
+}, {
+    "fullname": "四川-成都-金堂县",
+    "name": "金堂",
+    "namef_full_py": "jintang"
+}, {
+    "fullname": "四川-成都-彭州市",
+    "name": "彭州",
+    "namef_full_py": "pengzhou"
+}, {
+    "fullname": "四川-成都-蒲江县",
+    "name": "蒲江",
+    "namef_full_py": "pujiang"
+}, {
+    "fullname": "四川-成都-双流县",
+    "name": "双流",
+    "namef_full_py": "shuangliu"
+}, {
+    "fullname": "四川-成都-新津县",
+    "name": "新津",
+    "namef_full_py": "xinjin"
+}, {
+    "fullname": "四川-成都-邛崃市",
+    "name": "邛崃",
+    "namef_full_py": "qionglai"
+}, {
+    "fullname": "四川-成都-郫县",
+    "name": "郫县",
+    "namef_full_py": "pixian"
+}, {
+    "fullname": "四川-达州-达县",
+    "name": "达县",
+    "namef_full_py": "daxian"
+}, {
+    "fullname": "四川-达州-达州市",
+    "name": "达州",
+    "namef_full_py": "dazhou"
+}, {
+    "fullname": "四川-达州-大竹县",
+    "name": "大竹",
+    "namef_full_py": "dazhu"
+}, {
+    "fullname": "四川-达州-开江县",
+    "name": "开江",
+    "namef_full_py": "kaijiang"
+}, {
+    "fullname": "四川-达州-渠县",
+    "name": "渠县",
+    "namef_full_py": "quxian"
+}, {
+    "fullname": "四川-达州-万源市",
+    "name": "万源",
+    "namef_full_py": "wanyuan"
+}, {
+    "fullname": "四川-达州-宣汉县",
+    "name": "宣汉",
+    "namef_full_py": "xuanhan"
+}, {
+    "fullname": "四川-德阳-德阳市",
+    "name": "德阳",
+    "namef_full_py": "deyang"
+}, {
+    "fullname": "四川-德阳-广汉市",
+    "name": "广汉",
+    "namef_full_py": "guanghan"
+}, {
+    "fullname": "四川-德阳-罗江县",
+    "name": "罗江",
+    "namef_full_py": "luojiang"
+}, {
+    "fullname": "四川-德阳-绵竹市",
+    "name": "绵竹",
+    "namef_full_py": "mianzhu"
+}, {
+    "fullname": "四川-德阳-什邡市",
+    "name": "什邡",
+    "namef_full_py": "shifang"
+}, {
+    "fullname": "四川-德阳-中江县",
+    "name": "中江",
+    "namef_full_py": "zhongjiang"
+}, {
+    "fullname": "四川-甘孜藏族自治州-巴塘县",
+    "name": "巴塘",
+    "namef_full_py": "batang"
+}, {
+    "fullname": "四川-甘孜藏族自治州-白玉县",
+    "name": "白玉",
+    "namef_full_py": "baiyu"
+}, {
+    "fullname": "四川-甘孜藏族自治州-丹巴县",
+    "name": "丹巴",
+    "namef_full_py": "danba"
+}, {
+    "fullname": "四川-甘孜藏族自治州-稻城县",
+    "name": "稻城",
+    "namef_full_py": "daocheng"
+}, {
+    "fullname": "四川-甘孜藏族自治州-道孚县",
+    "name": "道孚",
+    "namef_full_py": "daofu"
+}, {
+    "fullname": "四川-甘孜藏族自治州-德格县",
+    "name": "德格",
+    "namef_full_py": "dege"
+}, {
+    "fullname": "四川-甘孜藏族自治州-得荣县",
+    "name": "得荣",
+    "namef_full_py": "derong"
+}, {
+    "fullname": "四川-甘孜藏族自治州-甘孜县",
+    "name": "甘孜",
+    "namef_full_py": "ganzi"
+}, {
+    "fullname": "四川-甘孜藏族自治州-九龙县",
+    "name": "九龙",
+    "namef_full_py": "jiulong"
+}, {
+    "fullname": "四川-甘孜藏族自治州-康定县",
+    "name": "康定",
+    "namef_full_py": "kangding"
+}, {
+    "fullname": "四川-甘孜藏族自治州-理塘县",
+    "name": "理塘",
+    "namef_full_py": "litang"
+}, {
+    "fullname": "四川-甘孜藏族自治州-炉霍县",
+    "name": "炉霍",
+    "namef_full_py": "luhuo"
+}, {
+    "fullname": "四川-甘孜藏族自治州-色达县",
+    "name": "色达",
+    "namef_full_py": "seda"
+}, {
+    "fullname": "四川-甘孜藏族自治州-石渠县",
+    "name": "石渠",
+    "namef_full_py": "shiqu"
+}, {
+    "fullname": "四川-甘孜藏族自治州-乡城县",
+    "name": "乡城",
+    "namef_full_py": "xiangcheng"
+}, {
+    "fullname": "四川-甘孜藏族自治州-新龙县",
+    "name": "新龙",
+    "namef_full_py": "xinlong"
+}, {
+    "fullname": "四川-甘孜藏族自治州-雅江县",
+    "name": "雅江",
+    "namef_full_py": "yajiang"
+}, {
+    "fullname": "四川-甘孜藏族自治州-泸定县",
+    "name": "泸定",
+    "namef_full_py": "luding"
+}, {
+    "fullname": "四川-广安-广安市",
+    "name": "广安",
+    "namef_full_py": "guangan"
+}, {
+    "fullname": "四川-广安-华蓥市",
+    "name": "华蓥",
+    "namef_full_py": "huaying"
+}, {
+    "fullname": "四川-广安-邻水县",
+    "name": "邻水",
+    "namef_full_py": "linshui"
+}, {
+    "fullname": "四川-广安-武胜县",
+    "name": "武胜",
+    "namef_full_py": "wusheng"
+}, {
+    "fullname": "四川-广安-岳池县",
+    "name": "岳池",
+    "namef_full_py": "yuechi"
+}, {
+    "fullname": "四川-广元-苍溪县",
+    "name": "苍溪",
+    "namef_full_py": "cangxi"
+}, {
+    "fullname": "四川-广元-广元市",
+    "name": "广元",
+    "namef_full_py": "guangyuan"
+}, {
+    "fullname": "四川-广元-剑阁县",
+    "name": "剑阁",
+    "namef_full_py": "jiange"
+}, {
+    "fullname": "四川-广元-青川县",
+    "name": "青川",
+    "namef_full_py": "qingchuan"
+}, {
+    "fullname": "四川-广元-旺苍县",
+    "name": "旺苍",
+    "namef_full_py": "wangcang"
+}, {
+    "fullname": "四川-乐山-峨边彝族自治县",
+    "name": "峨边彝族自治县",
+    "namef_full_py": "ebianyizuzizhixian"
+}, {
+    "fullname": "四川-乐山-峨眉山市",
+    "name": "峨眉山市",
+    "namef_full_py": "emeishanshi"
+}, {
+    "fullname": "四川-乐山-夹江县",
+    "name": "夹江",
+    "namef_full_py": "jiajiang"
+}, {
+    "fullname": "四川-乐山-井研县",
+    "name": "井研",
+    "namef_full_py": "jingyan"
+}, {
+    "fullname": "四川-乐山-乐山市",
+    "name": "乐山",
+    "namef_full_py": "leshan"
+}, {
+    "fullname": "四川-乐山-马边彝族自治县",
+    "name": "马边彝族自治县",
+    "namef_full_py": "mabianyizuzizhixian"
+}, {
+    "fullname": "四川-乐山-沐川县",
+    "name": "沐川",
+    "namef_full_py": "muchuan"
+}, {
+    "fullname": "四川-乐山-犍为县",
+    "name": "犍为",
+    "namef_full_py": "jianwei"
+}, {
+    "fullname": "四川-凉山彝族自治州-布拖县",
+    "name": "布拖",
+    "namef_full_py": "butuo"
+}, {
+    "fullname": "四川-凉山彝族自治州-德昌县",
+    "name": "德昌",
+    "namef_full_py": "dechang"
+}, {
+    "fullname": "四川-凉山彝族自治州-甘洛县",
+    "name": "甘洛",
+    "namef_full_py": "ganluo"
+}, {
+    "fullname": "四川-凉山彝族自治州-会东县",
+    "name": "会东",
+    "namef_full_py": "huidong"
+}, {
+    "fullname": "四川-凉山彝族自治州-会理县",
+    "name": "会理",
+    "namef_full_py": "huili"
+}, {
+    "fullname": "四川-凉山彝族自治州-金阳县",
+    "name": "金阳",
+    "namef_full_py": "jinyang"
+}, {
+    "fullname": "四川-凉山彝族自治州-雷波县",
+    "name": "雷波",
+    "namef_full_py": "leibo"
+}, {
+    "fullname": "四川-凉山彝族自治州-美姑县",
+    "name": "美姑",
+    "namef_full_py": "meigu"
+}, {
+    "fullname": "四川-凉山彝族自治州-冕宁县",
+    "name": "冕宁",
+    "namef_full_py": "mianning"
+}, {
+    "fullname": "四川-凉山彝族自治州-木里藏族自治县",
+    "name": "木里藏族自治县",
+    "namef_full_py": "mulicangzuzizhixian"
+}, {
+    "fullname": "四川-凉山彝族自治州-宁南县",
+    "name": "宁南",
+    "namef_full_py": "ningnan"
+}, {
+    "fullname": "四川-凉山彝族自治州-普格县",
+    "name": "普格",
+    "namef_full_py": "puge"
+}, {
+    "fullname": "四川-凉山彝族自治州-西昌市",
+    "name": "西昌",
+    "namef_full_py": "xichang"
+}, {
+    "fullname": "四川-凉山彝族自治州-喜德县",
+    "name": "喜德",
+    "namef_full_py": "xide"
+}, {
+    "fullname": "四川-凉山彝族自治州-盐源县",
+    "name": "盐源",
+    "namef_full_py": "yanyuan"
+}, {
+    "fullname": "四川-凉山彝族自治州-越西县",
+    "name": "越西",
+    "namef_full_py": "yuexi"
+}, {
+    "fullname": "四川-凉山彝族自治州-昭觉县",
+    "name": "昭觉",
+    "namef_full_py": "zhaojue"
+}, {
+    "fullname": "四川-眉山-丹棱县",
+    "name": "丹棱",
+    "namef_full_py": "danleng"
+}, {
+    "fullname": "四川-眉山-洪雅县",
+    "name": "洪雅",
+    "namef_full_py": "hongya"
+}, {
+    "fullname": "四川-眉山-眉山市",
+    "name": "眉山",
+    "namef_full_py": "meishan"
+}, {
+    "fullname": "四川-眉山-彭山县",
+    "name": "彭山",
+    "namef_full_py": "pengshan"
+}, {
+    "fullname": "四川-眉山-青神县",
+    "name": "青神",
+    "namef_full_py": "qingshen"
+}, {
+    "fullname": "四川-眉山-仁寿县",
+    "name": "仁寿",
+    "namef_full_py": "renshou"
+}, {
+    "fullname": "四川-绵阳-安县",
+    "name": "安县",
+    "namef_full_py": "anxian"
+}, {
+    "fullname": "四川-绵阳-北川县",
+    "name": "北川",
+    "namef_full_py": "beichuan"
+}, {
+    "fullname": "四川-绵阳-江油市",
+    "name": "江油",
+    "namef_full_py": "jiangyou"
+}, {
+    "fullname": "四川-绵阳-绵阳市",
+    "name": "绵阳",
+    "namef_full_py": "mianyang"
+}, {
+    "fullname": "四川-绵阳-平武县",
+    "name": "平武",
+    "namef_full_py": "pingwu"
+}, {
+    "fullname": "四川-绵阳-三台县",
+    "name": "三台",
+    "namef_full_py": "santai"
+}, {
+    "fullname": "四川-绵阳-盐亭县",
+    "name": "盐亭",
+    "namef_full_py": "yanting"
+}, {
+    "fullname": "四川-绵阳-梓潼县",
+    "name": "梓潼",
+    "namef_full_py": "zitong"
+}, {
+    "fullname": "四川-南充-南部县",
+    "name": "南部",
+    "namef_full_py": "nanbu"
+}, {
+    "fullname": "四川-南充-南充市",
+    "name": "南充",
+    "namef_full_py": "nanchong"
+}, {
+    "fullname": "四川-南充-蓬安县",
+    "name": "蓬安",
+    "namef_full_py": "pengan"
+}, {
+    "fullname": "四川-南充-西充县",
+    "name": "西充",
+    "namef_full_py": "xichong"
+}, {
+    "fullname": "四川-南充-仪陇县",
+    "name": "仪陇",
+    "namef_full_py": "yilong"
+}, {
+    "fullname": "四川-南充-营山县",
+    "name": "营山",
+    "namef_full_py": "yingshan"
+}, {
+    "fullname": "四川-南充-阆中市",
+    "name": "阆中",
+    "namef_full_py": "langzhong"
+}, {
+    "fullname": "四川-内江-隆昌县",
+    "name": "隆昌",
+    "namef_full_py": "longchang"
+}, {
+    "fullname": "四川-内江-内江市",
+    "name": "内江",
+    "namef_full_py": "neijiang"
+}, {
+    "fullname": "四川-内江-威远县",
+    "name": "威远",
+    "namef_full_py": "weiyuan"
+}, {
+    "fullname": "四川-内江-资中县",
+    "name": "资中",
+    "namef_full_py": "zizhong"
+}, {
+    "fullname": "四川-攀枝花-米易县",
+    "name": "米易",
+    "namef_full_py": "miyi"
+}, {
+    "fullname": "四川-攀枝花-攀枝花市",
+    "name": "攀枝花市",
+    "namef_full_py": "panzhihuashi"
+}, {
+    "fullname": "四川-攀枝花-盐边县",
+    "name": "盐边",
+    "namef_full_py": "yanbian"
+}, {
+    "fullname": "四川-遂宁-大英县",
+    "name": "大英",
+    "namef_full_py": "daying"
+}, {
+    "fullname": "四川-遂宁-蓬溪县",
+    "name": "蓬溪",
+    "namef_full_py": "pengxi"
+}, {
+    "fullname": "四川-遂宁-射洪县",
+    "name": "射洪",
+    "namef_full_py": "shehong"
+}, {
+    "fullname": "四川-遂宁-遂宁市",
+    "name": "遂宁",
+    "namef_full_py": "suining"
+}, {
+    "fullname": "四川-雅安-宝兴县",
+    "name": "宝兴",
+    "namef_full_py": "baoxing"
+}, {
+    "fullname": "四川-雅安-汉源县",
+    "name": "汉源",
+    "namef_full_py": "hanyuan"
+}, {
+    "fullname": "四川-雅安-芦山县",
+    "name": "芦山",
+    "namef_full_py": "lushan"
+}, {
+    "fullname": "四川-雅安-名山县",
+    "name": "名山",
+    "namef_full_py": "mingshan"
+}, {
+    "fullname": "四川-雅安-石棉县",
+    "name": "石棉",
+    "namef_full_py": "shimian"
+}, {
+    "fullname": "四川-雅安-天全县",
+    "name": "天全",
+    "namef_full_py": "tianquan"
+}, {
+    "fullname": "四川-雅安-雅安市",
+    "name": "雅安",
+    "namef_full_py": "yaan"
+}, {
+    "fullname": "四川-雅安-荥经县",
+    "name": "荥经",
+    "namef_full_py": "yingjing"
+}, {
+    "fullname": "四川-宜宾-长宁县",
+    "name": "长宁",
+    "namef_full_py": "changning"
+}, {
+    "fullname": "四川-宜宾-高县",
+    "name": "高县",
+    "namef_full_py": "gaoxian"
+}, {
+    "fullname": "四川-宜宾-江安县",
+    "name": "江安",
+    "namef_full_py": "jiangan"
+}, {
+    "fullname": "四川-宜宾-南溪县",
+    "name": "南溪",
+    "namef_full_py": "nanxi"
+}, {
+    "fullname": "四川-宜宾-屏山县",
+    "name": "屏山",
+    "namef_full_py": "pingshan"
+}, {
+    "fullname": "四川-宜宾-兴文县",
+    "name": "兴文",
+    "namef_full_py": "xingwen"
+}, {
+    "fullname": "四川-宜宾-宜宾市",
+    "name": "宜宾",
+    "namef_full_py": "yibin"
+}, {
+    "fullname": "四川-宜宾-宜宾县",
+    "name": "宜宾",
+    "namef_full_py": "yibin"
+}, {
+    "fullname": "四川-宜宾-珙县",
+    "name": "珙县",
+    "namef_full_py": "gongxian"
+}, {
+    "fullname": "四川-宜宾-筠连县",
+    "name": "筠连",
+    "namef_full_py": "yunlian"
+}, {
+    "fullname": "四川-资阳-安岳县",
+    "name": "安岳",
+    "namef_full_py": "anyue"
+}, {
+    "fullname": "四川-资阳-简阳市",
+    "name": "简阳",
+    "namef_full_py": "jianyang"
+}, {
+    "fullname": "四川-资阳-乐至县",
+    "name": "乐至",
+    "namef_full_py": "lezhi"
+}, {
+    "fullname": "四川-资阳-资阳市",
+    "name": "资阳",
+    "namef_full_py": "ziyang"
+}, {
+    "fullname": "四川-自贡-富顺县",
+    "name": "富顺",
+    "namef_full_py": "fushun"
+}, {
+    "fullname": "四川-自贡-荣县",
+    "name": "荣县",
+    "namef_full_py": "rongxian"
+}, {
+    "fullname": "四川-自贡-自贡市",
+    "name": "自贡",
+    "namef_full_py": "zigong"
+}, {
+    "fullname": "四川-泸州-古蔺县",
+    "name": "古蔺",
+    "namef_full_py": "gulin"
+}, {
+    "fullname": "四川-泸州-合江县",
+    "name": "合江",
+    "namef_full_py": "hejiang"
+}, {
+    "fullname": "四川-泸州-叙永县",
+    "name": "叙永",
+    "namef_full_py": "xuyong"
+}, {
+    "fullname": "四川-泸州-泸县",
+    "name": "泸县",
+    "namef_full_py": "luxian"
+}, {
+    "fullname": "四川-泸州-泸州市",
+    "name": "泸州",
+    "namef_full_py": "luzhou"
+}, {
+    "fullname": "天津-",
+    "name": "",
+    "namef_full_py": ""
+}, {
+    "fullname": "天津-蓟县",
+    "name": "蓟县",
+    "namef_full_py": "jixian"
+}, {
+    "fullname": "天津-静海县",
+    "name": "静海",
+    "namef_full_py": "jinghai"
+}, {
+    "fullname": "天津-宁河县",
+    "name": "宁河",
+    "namef_full_py": "ninghe"
+}, {
+    "fullname": "天津-天津市",
+    "name": "天津",
+    "namef_full_py": "tianjin"
+}, {
+    "fullname": "西藏-阿里-措勤县",
+    "name": "措勤",
+    "namef_full_py": "cuoqin"
+}, {
+    "fullname": "西藏-阿里-噶尔县",
+    "name": "噶尔",
+    "namef_full_py": "geer"
+}, {
+    "fullname": "西藏-阿里-改则县",
+    "name": "改则",
+    "namef_full_py": "gaize"
+}, {
+    "fullname": "西藏-阿里-革吉县",
+    "name": "革吉",
+    "namef_full_py": "geji"
+}, {
+    "fullname": "西藏-阿里-普兰县",
+    "name": "普兰",
+    "namef_full_py": "pulan"
+}, {
+    "fullname": "西藏-阿里-日土县",
+    "name": "日土",
+    "namef_full_py": "ritu"
+}, {
+    "fullname": "西藏-阿里-札达县",
+    "name": "札达",
+    "namef_full_py": "zhada"
+}, {
+    "fullname": "西藏-昌都-八宿县",
+    "name": "八宿",
+    "namef_full_py": "basu"
+}, {
+    "fullname": "西藏-昌都-边坝县",
+    "name": "边坝",
+    "namef_full_py": "bianba"
+}, {
+    "fullname": "西藏-昌都-察雅县",
+    "name": "察雅",
+    "namef_full_py": "chaya"
+}, {
+    "fullname": "西藏-昌都-昌都县",
+    "name": "昌都",
+    "namef_full_py": "changdu"
+}, {
+    "fullname": "西藏-昌都-丁青县",
+    "name": "丁青",
+    "namef_full_py": "dingqing"
+}, {
+    "fullname": "西藏-昌都-贡觉县",
+    "name": "贡觉",
+    "namef_full_py": "gongjue"
+}, {
+    "fullname": "西藏-昌都-江达县",
+    "name": "江达",
+    "namef_full_py": "jiangda"
+}, {
+    "fullname": "西藏-昌都-类乌齐县",
+    "name": "类乌齐县",
+    "namef_full_py": "leiwuqixian"
+}, {
+    "fullname": "西藏-昌都-洛隆县",
+    "name": "洛隆",
+    "namef_full_py": "luolong"
+}, {
+    "fullname": "西藏-昌都-芒康县",
+    "name": "芒康",
+    "namef_full_py": "mangkang"
+}, {
+    "fullname": "西藏-昌都-左贡县",
+    "name": "左贡",
+    "namef_full_py": "zuogong"
+}, {
+    "fullname": "西藏-拉萨-达孜县",
+    "name": "达孜",
+    "namef_full_py": "dazi"
+}, {
+    "fullname": "西藏-拉萨-当雄县",
+    "name": "当雄",
+    "namef_full_py": "dangxiong"
+}, {
+    "fullname": "西藏-拉萨-堆龙德庆县",
+    "name": "堆龙德庆县",
+    "namef_full_py": "duilongdeqingxian"
+}, {
+    "fullname": "西藏-拉萨-拉萨市",
+    "name": "拉萨",
+    "namef_full_py": "lasa"
+}, {
+    "fullname": "西藏-拉萨-林周县",
+    "name": "林周",
+    "namef_full_py": "linzhou"
+}, {
+    "fullname": "西藏-拉萨-墨竹工卡县",
+    "name": "墨竹工卡县",
+    "namef_full_py": "mozhugongqiaxian"
+}, {
+    "fullname": "西藏-拉萨-尼木县",
+    "name": "尼木",
+    "namef_full_py": "nimu"
+}, {
+    "fullname": "西藏-拉萨-曲水县",
+    "name": "曲水",
+    "namef_full_py": "qushui"
+}, {
+    "fullname": "西藏-林芝-波密县",
+    "name": "波密",
+    "namef_full_py": "bomi"
+}, {
+    "fullname": "西藏-林芝-察隅县",
+    "name": "察隅",
+    "namef_full_py": "chayu"
+}, {
+    "fullname": "西藏-林芝-工布江达县",
+    "name": "工布江达县",
+    "namef_full_py": "gongbujiangdaxian"
+}, {
+    "fullname": "西藏-林芝-朗县",
+    "name": "朗县",
+    "namef_full_py": "langxian"
+}, {
+    "fullname": "西藏-林芝-林芝县",
+    "name": "林芝",
+    "namef_full_py": "linzhi"
+}, {
+    "fullname": "西藏-林芝-米林县",
+    "name": "米林",
+    "namef_full_py": "milin"
+}, {
+    "fullname": "西藏-林芝-墨脱县",
+    "name": "墨脱",
+    "namef_full_py": "motuo"
+}, {
+    "fullname": "西藏-那曲-安多县",
+    "name": "安多",
+    "namef_full_py": "anduo"
+}, {
+    "fullname": "西藏-那曲-巴青县",
+    "name": "巴青",
+    "namef_full_py": "baqing"
+}, {
+    "fullname": "西藏-那曲-班戈县",
+    "name": "班戈",
+    "namef_full_py": "bange"
+}, {
+    "fullname": "西藏-那曲-比如县",
+    "name": "比如",
+    "namef_full_py": "biru"
+}, {
+    "fullname": "西藏-那曲-嘉黎县",
+    "name": "嘉黎",
+    "namef_full_py": "jiali"
+}, {
+    "fullname": "西藏-那曲-那曲县",
+    "name": "那曲",
+    "namef_full_py": "naqu"
+}, {
+    "fullname": "西藏-那曲-尼玛县",
+    "name": "尼玛",
+    "namef_full_py": "nima"
+}, {
+    "fullname": "西藏-那曲-聂荣县",
+    "name": "聂荣",
+    "namef_full_py": "nierong"
+}, {
+    "fullname": "西藏-那曲-申扎县",
+    "name": "申扎",
+    "namef_full_py": "shenzha"
+}, {
+    "fullname": "西藏-那曲-索县",
+    "name": "索县",
+    "namef_full_py": "suoxian"
+}, {
+    "fullname": "西藏-日喀则-昂仁县",
+    "name": "昂仁",
+    "namef_full_py": "angren"
+}, {
+    "fullname": "西藏-日喀则-白朗县",
+    "name": "白朗",
+    "namef_full_py": "bailang"
+}, {
+    "fullname": "西藏-日喀则-定结县",
+    "name": "定结",
+    "namef_full_py": "dingjie"
+}, {
+    "fullname": "西藏-日喀则-定日县",
+    "name": "定日",
+    "namef_full_py": "dingri"
+}, {
+    "fullname": "西藏-日喀则-岗巴县",
+    "name": "岗巴",
+    "namef_full_py": "gangba"
+}, {
+    "fullname": "西藏-日喀则-吉隆县",
+    "name": "吉隆",
+    "namef_full_py": "jilong"
+}, {
+    "fullname": "西藏-日喀则-江孜县",
+    "name": "江孜",
+    "namef_full_py": "jiangzi"
+}, {
+    "fullname": "西藏-日喀则-康马县",
+    "name": "康马",
+    "namef_full_py": "kangma"
+}, {
+    "fullname": "西藏-日喀则-拉孜县",
+    "name": "拉孜",
+    "namef_full_py": "lazi"
+}, {
+    "fullname": "西藏-日喀则-南木林县",
+    "name": "南木林县",
+    "namef_full_py": "nanmulinxian"
+}, {
+    "fullname": "西藏-日喀则-聂拉木县",
+    "name": "聂拉木县",
+    "namef_full_py": "nielamuxian"
+}, {
+    "fullname": "西藏-日喀则-仁布县",
+    "name": "仁布",
+    "namef_full_py": "renbu"
+}, {
+    "fullname": "西藏-日喀则-日喀则市",
+    "name": "日喀则市",
+    "namef_full_py": "rikazeshi"
+}, {
+    "fullname": "西藏-日喀则-萨嘎县",
+    "name": "萨嘎",
+    "namef_full_py": "saga"
+}, {
+    "fullname": "西藏-日喀则-萨迦县",
+    "name": "萨迦",
+    "namef_full_py": "sajia"
+}, {
+    "fullname": "西藏-日喀则-谢通门县",
+    "name": "谢通门县",
+    "namef_full_py": "xietongmenxian"
+}, {
+    "fullname": "西藏-日喀则-亚东县",
+    "name": "亚东",
+    "namef_full_py": "yadong"
+}, {
+    "fullname": "西藏-日喀则-仲巴县",
+    "name": "仲巴",
+    "namef_full_py": "zhongba"
+}, {
+    "fullname": "西藏-山南-措美县",
+    "name": "措美",
+    "namef_full_py": "cuomei"
+}, {
+    "fullname": "西藏-山南-错那县",
+    "name": "错那",
+    "namef_full_py": "cuona"
+}, {
+    "fullname": "西藏-山南-贡嘎县",
+    "name": "贡嘎",
+    "namef_full_py": "gongga"
+}, {
+    "fullname": "西藏-山南-加查县",
+    "name": "加查",
+    "namef_full_py": "jiacha"
+}, {
+    "fullname": "西藏-山南-浪卡子县",
+    "name": "浪卡子县",
+    "namef_full_py": "langqiazixian"
+}, {
+    "fullname": "西藏-山南-隆子县",
+    "name": "隆子",
+    "namef_full_py": "longzi"
+}, {
+    "fullname": "西藏-山南-洛扎县",
+    "name": "洛扎",
+    "namef_full_py": "luozha"
+}, {
+    "fullname": "西藏-山南-乃东县",
+    "name": "乃东",
+    "namef_full_py": "naidong"
+}, {
+    "fullname": "西藏-山南-琼结县",
+    "name": "琼结",
+    "namef_full_py": "qiongjie"
+}, {
+    "fullname": "西藏-山南-曲松县",
+    "name": "曲松",
+    "namef_full_py": "qusong"
+}, {
+    "fullname": "西藏-山南-桑日县",
+    "name": "桑日",
+    "namef_full_py": "sangri"
+}, {
+    "fullname": "西藏-山南-扎囊县",
+    "name": "扎囊",
+    "namef_full_py": "zhanang"
+}, {
+    "fullname": "新疆-阿克苏-阿克苏市",
+    "name": "阿克苏市",
+    "namef_full_py": "akesushi"
+}, {
+    "fullname": "新疆-阿克苏-阿瓦提县",
+    "name": "阿瓦提县",
+    "namef_full_py": "awatixian"
+}, {
+    "fullname": "新疆-阿克苏-拜城县",
+    "name": "拜城",
+    "namef_full_py": "baicheng"
+}, {
+    "fullname": "新疆-阿克苏-柯坪县",
+    "name": "柯坪",
+    "namef_full_py": "keping"
+}, {
+    "fullname": "新疆-阿克苏-库车县",
+    "name": "库车",
+    "namef_full_py": "kuche"
+}, {
+    "fullname": "新疆-阿克苏-沙雅县",
+    "name": "沙雅",
+    "namef_full_py": "shaya"
+}, {
+    "fullname": "新疆-阿克苏-温宿县",
+    "name": "温宿",
+    "namef_full_py": "wensu"
+}, {
+    "fullname": "新疆-阿克苏-乌什县",
+    "name": "乌什",
+    "namef_full_py": "wushi"
+}, {
+    "fullname": "新疆-阿克苏-新和县",
+    "name": "新和",
+    "namef_full_py": "xinhe"
+}, {
+    "fullname": "新疆-阿拉尔-阿拉尔市",
+    "name": "阿拉尔市",
+    "namef_full_py": "alaershi"
+}, {
+    "fullname": "新疆-巴音郭楞蒙古自治州-博湖县",
+    "name": "博湖",
+    "namef_full_py": "bohu"
+}, {
+    "fullname": "新疆-巴音郭楞蒙古自治州-和静县",
+    "name": "和静",
+    "namef_full_py": "hejing"
+}, {
+    "fullname": "新疆-巴音郭楞蒙古自治州-和硕县",
+    "name": "和硕",
+    "namef_full_py": "heshuo"
+}, {
+    "fullname": "新疆-巴音郭楞蒙古自治州-库尔勒市",
+    "name": "库尔勒市",
+    "namef_full_py": "kuerleshi"
+}, {
+    "fullname": "新疆-巴音郭楞蒙古自治州-轮台县",
+    "name": "轮台",
+    "namef_full_py": "luntai"
+}, {
+    "fullname": "新疆-巴音郭楞蒙古自治州-且末县",
+    "name": "且末",
+    "namef_full_py": "qiemo"
+}, {
+    "fullname": "新疆-巴音郭楞蒙古自治州-若羌县",
+    "name": "若羌",
+    "namef_full_py": "ruoqiang"
+}, {
+    "fullname": "新疆-巴音郭楞蒙古自治州-尉犁县",
+    "name": "尉犁",
+    "namef_full_py": "weili"
+}, {
+    "fullname": "新疆-巴音郭楞蒙古自治州-焉耆回族自治县",
+    "name": "焉耆回族自治县",
+    "namef_full_py": "yanqihuizuzizhixian"
+}, {
+    "fullname": "新疆-博尔塔拉蒙古自治州-博乐市",
+    "name": "博乐",
+    "namef_full_py": "bole"
+}, {
+    "fullname": "新疆-博尔塔拉蒙古自治州-精河县",
+    "name": "精河",
+    "namef_full_py": "jinghe"
+}, {
+    "fullname": "新疆-博尔塔拉蒙古自治州-温泉县",
+    "name": "温泉",
+    "namef_full_py": "wenquan"
+}, {
+    "fullname": "新疆-昌吉回族自治州-昌吉市",
+    "name": "昌吉",
+    "namef_full_py": "changji"
+}, {
+    "fullname": "新疆-昌吉回族自治州-阜康市",
+    "name": "阜康",
+    "namef_full_py": "fukang"
+}, {
+    "fullname": "新疆-昌吉回族自治州-呼图壁县",
+    "name": "呼图壁县",
+    "namef_full_py": "hutubixian"
+}, {
+    "fullname": "新疆-昌吉回族自治州-吉木萨尔县",
+    "name": "吉木萨尔县",
+    "namef_full_py": "jimusaerxian"
+}, {
+    "fullname": "新疆-昌吉回族自治州-玛纳斯县",
+    "name": "玛纳斯县",
+    "namef_full_py": "manasixian"
+}, {
+    "fullname": "新疆-昌吉回族自治州-米泉市",
+    "name": "米泉",
+    "namef_full_py": "miquan"
+}, {
+    "fullname": "新疆-昌吉回族自治州-木垒哈萨克自治县",
+    "name": "木垒哈萨克自治县",
+    "namef_full_py": "muleihasakezizhixian"
+}, {
+    "fullname": "新疆-昌吉回族自治州-奇台县",
+    "name": "奇台",
+    "namef_full_py": "qitai"
+}, {
+    "fullname": "新疆-哈密-巴里坤哈萨克自治县",
+    "name": "巴里坤哈萨克自治县",
+    "namef_full_py": "balikunhasakezizhixian"
+}, {
+    "fullname": "新疆-哈密-哈密市",
+    "name": "哈密",
+    "namef_full_py": "hami"
+}, {
+    "fullname": "新疆-哈密-伊吾县",
+    "name": "伊吾",
+    "namef_full_py": "yiwu"
+}, {
+    "fullname": "新疆-和田-策勒县",
+    "name": "策勒",
+    "namef_full_py": "cele"
+}, {
+    "fullname": "新疆-和田-和田市",
+    "name": "和田",
+    "namef_full_py": "hetian"
+}, {
+    "fullname": "新疆-和田-和田县",
+    "name": "和田",
+    "namef_full_py": "hetian"
+}, {
+    "fullname": "新疆-和田-洛浦县",
+    "name": "洛浦",
+    "namef_full_py": "luopu"
+}, {
+    "fullname": "新疆-和田-民丰县",
+    "name": "民丰",
+    "namef_full_py": "minfeng"
+}, {
+    "fullname": "新疆-和田-墨玉县",
+    "name": "墨玉",
+    "namef_full_py": "moyu"
+}, {
+    "fullname": "新疆-和田-皮山县",
+    "name": "皮山",
+    "namef_full_py": "pishan"
+}, {
+    "fullname": "新疆-和田-于田县",
+    "name": "于田",
+    "namef_full_py": "yutian"
+}, {
+    "fullname": "新疆-喀什-巴楚县",
+    "name": "巴楚",
+    "namef_full_py": "bachu"
+}, {
+    "fullname": "新疆-喀什-喀什市",
+    "name": "喀什",
+    "namef_full_py": "kashi"
+}, {
+    "fullname": "新疆-喀什-麦盖提县",
+    "name": "麦盖提县",
+    "namef_full_py": "maigaitixian"
+}, {
+    "fullname": "新疆-喀什-莎车县",
+    "name": "莎车",
+    "namef_full_py": "shache"
+}, {
+    "fullname": "新疆-喀什-疏附县",
+    "name": "疏附",
+    "namef_full_py": "shufu"
+}, {
+    "fullname": "新疆-喀什-疏勒县",
+    "name": "疏勒",
+    "namef_full_py": "shule"
+}, {
+    "fullname": "新疆-喀什-塔什库尔干塔吉克自治县",
+    "name": "塔什库尔干塔吉克自治县",
+    "namef_full_py": "tashikuergantajikezizhixian"
+}, {
+    "fullname": "新疆-喀什-叶城县",
+    "name": "叶城",
+    "namef_full_py": "yecheng"
+}, {
+    "fullname": "新疆-喀什-英吉沙县",
+    "name": "英吉沙县",
+    "namef_full_py": "yingjishaxian"
+}, {
+    "fullname": "新疆-喀什-岳普湖县",
+    "name": "岳普湖县",
+    "namef_full_py": "yuepuhuxian"
+}, {
+    "fullname": "新疆-喀什-泽普县",
+    "name": "泽普",
+    "namef_full_py": "zepu"
+}, {
+    "fullname": "新疆-喀什-伽师县",
+    "name": "伽师",
+    "namef_full_py": "qieshi"
+}, {
+    "fullname": "新疆-克拉玛依-克拉玛依市",
+    "name": "克拉玛依市",
+    "namef_full_py": "kelamayishi"
+}, {
+    "fullname": "新疆-克孜勒苏柯尔克孜自治州-阿合奇县",
+    "name": "阿合奇县",
+    "namef_full_py": "aheqixian"
+}, {
+    "fullname": "新疆-克孜勒苏柯尔克孜自治州-阿克陶县",
+    "name": "阿克陶县",
+    "namef_full_py": "aketaoxian"
+}, {
+    "fullname": "新疆-克孜勒苏柯尔克孜自治州-阿图什市",
+    "name": "阿图什市",
+    "namef_full_py": "atushishi"
+}, {
+    "fullname": "新疆-克孜勒苏柯尔克孜自治州-乌恰县",
+    "name": "乌恰",
+    "namef_full_py": "wuqia"
+}, {
+    "fullname": "新疆-石河子-石河子市",
+    "name": "石河子市",
+    "namef_full_py": "shihezishi"
+}, {
+    "fullname": "新疆-图木舒克-图木舒克市",
+    "name": "图木舒克市",
+    "namef_full_py": "tumushukeshi"
+}, {
+    "fullname": "新疆-吐鲁番-吐鲁番市",
+    "name": "吐鲁番市",
+    "namef_full_py": "tulufanshi"
+}, {
+    "fullname": "新疆-吐鲁番-托克逊县",
+    "name": "托克逊县",
+    "namef_full_py": "tuokexunxian"
+}, {
+    "fullname": "新疆-吐鲁番-鄯善县",
+    "name": "鄯善",
+    "namef_full_py": "shanshan"
+}, {
+    "fullname": "新疆-乌鲁木齐-乌鲁木齐市",
+    "name": "乌鲁木齐市",
+    "namef_full_py": "wulumuqishi"
+}, {
+    "fullname": "新疆-乌鲁木齐-乌鲁木齐县",
+    "name": "乌鲁木齐县",
+    "namef_full_py": "wulumuqixian"
+}, {
+    "fullname": "新疆-五家渠-五家渠市",
+    "name": "五家渠市",
+    "namef_full_py": "wujiaqushi"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-阿勒泰市",
+    "name": "阿勒泰市",
+    "namef_full_py": "aletaishi"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-布尔津县",
+    "name": "布尔津县",
+    "namef_full_py": "buerjinxian"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-察布查尔锡伯自治县",
+    "name": "察布查尔锡伯自治县",
+    "namef_full_py": "chabuchaerxibozizhixian"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-额敏县",
+    "name": "额敏",
+    "namef_full_py": "emin"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-福海县",
+    "name": "福海",
+    "namef_full_py": "fuhai"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-富蕴县",
+    "name": "富蕴",
+    "namef_full_py": "fuyun"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-巩留县",
+    "name": "巩留",
+    "namef_full_py": "gongliu"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-哈巴河县",
+    "name": "哈巴河县",
+    "namef_full_py": "habahexian"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-和布克赛尔蒙古自治县",
+    "name": "和布克赛尔蒙古自治县",
+    "namef_full_py": "hebukesaiermengguzizhixian"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-霍城县",
+    "name": "霍城",
+    "namef_full_py": "huocheng"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-吉木乃县",
+    "name": "吉木乃县",
+    "namef_full_py": "jimunaixian"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-奎屯市",
+    "name": "奎屯",
+    "namef_full_py": "kuitun"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-尼勒克县",
+    "name": "尼勒克县",
+    "namef_full_py": "nilekexian"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-青河县",
+    "name": "青河",
+    "namef_full_py": "qinghe"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-沙湾县",
+    "name": "沙湾",
+    "namef_full_py": "shawan"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-塔城市",
+    "name": "塔城",
+    "namef_full_py": "tacheng"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-特克斯县",
+    "name": "特克斯县",
+    "namef_full_py": "tekesixian"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-托里县",
+    "name": "托里",
+    "namef_full_py": "tuoli"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-乌苏市",
+    "name": "乌苏",
+    "namef_full_py": "wusu"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-新源县",
+    "name": "新源",
+    "namef_full_py": "xinyuan"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-伊宁市",
+    "name": "伊宁",
+    "namef_full_py": "yining"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-伊宁县",
+    "name": "伊宁",
+    "namef_full_py": "yining"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-裕民县",
+    "name": "裕民",
+    "namef_full_py": "yumin"
+}, {
+    "fullname": "新疆-伊犁哈萨克自治州-昭苏县",
+    "name": "昭苏",
+    "namef_full_py": "zhaosu"
+}, {
+    "fullname": "云南-保山-保山市",
+    "name": "保山",
+    "namef_full_py": "baoshan"
+}, {
+    "fullname": "云南-保山-昌宁县",
+    "name": "昌宁",
+    "namef_full_py": "changning"
+}, {
+    "fullname": "云南-保山-龙陵县",
+    "name": "龙陵",
+    "namef_full_py": "longling"
+}, {
+    "fullname": "云南-保山-施甸县",
+    "name": "施甸",
+    "namef_full_py": "shidian"
+}, {
+    "fullname": "云南-保山-腾冲县",
+    "name": "腾冲",
+    "namef_full_py": "tengchong"
+}, {
+    "fullname": "云南-楚雄彝族自治州-楚雄市",
+    "name": "楚雄",
+    "namef_full_py": "chuxiong"
+}, {
+    "fullname": "云南-楚雄彝族自治州-大姚县",
+    "name": "大姚",
+    "namef_full_py": "dayao"
+}, {
+    "fullname": "云南-楚雄彝族自治州-禄丰县",
+    "name": "禄丰",
+    "namef_full_py": "lufeng"
+}, {
+    "fullname": "云南-楚雄彝族自治州-牟定县",
+    "name": "牟定",
+    "namef_full_py": "mouding"
+}, {
+    "fullname": "云南-楚雄彝族自治州-南华县",
+    "name": "南华",
+    "namef_full_py": "nanhua"
+}, {
+    "fullname": "云南-楚雄彝族自治州-双柏县",
+    "name": "双柏",
+    "namef_full_py": "shuangbai"
+}, {
+    "fullname": "云南-楚雄彝族自治州-武定县",
+    "name": "武定",
+    "namef_full_py": "wuding"
+}, {
+    "fullname": "云南-楚雄彝族自治州-姚安县",
+    "name": "姚安",
+    "namef_full_py": "yaoan"
+}, {
+    "fullname": "云南-楚雄彝族自治州-永仁县",
+    "name": "永仁",
+    "namef_full_py": "yongren"
+}, {
+    "fullname": "云南-楚雄彝族自治州-元谋县",
+    "name": "元谋",
+    "namef_full_py": "yuanmou"
+}, {
+    "fullname": "云南-大理白族自治州-宾川县",
+    "name": "宾川",
+    "namef_full_py": "binchuan"
+}, {
+    "fullname": "云南-大理白族自治州-大理市",
+    "name": "大理",
+    "namef_full_py": "dali"
+}, {
+    "fullname": "云南-大理白族自治州-洱源县",
+    "name": "洱源",
+    "namef_full_py": "eryuan"
+}, {
+    "fullname": "云南-大理白族自治州-鹤庆县",
+    "name": "鹤庆",
+    "namef_full_py": "heqing"
+}, {
+    "fullname": "云南-大理白族自治州-剑川县",
+    "name": "剑川",
+    "namef_full_py": "jianchuan"
+}, {
+    "fullname": "云南-大理白族自治州-弥渡县",
+    "name": "弥渡",
+    "namef_full_py": "midu"
+}, {
+    "fullname": "云南-大理白族自治州-南涧彝族自治县",
+    "name": "南涧彝族自治县",
+    "namef_full_py": "nanjianyizuzizhixian"
+}, {
+    "fullname": "云南-大理白族自治州-巍山彝族回族自治县",
+    "name": "巍山彝族回族自治县",
+    "namef_full_py": "weishanyizuhuizuzizhixian"
+}, {
+    "fullname": "云南-大理白族自治州-祥云县",
+    "name": "祥云",
+    "namef_full_py": "xiangyun"
+}, {
+    "fullname": "云南-大理白族自治州-漾濞彝族自治县",
+    "name": "漾濞彝族自治县",
+    "namef_full_py": "yangpiyizuzizhixian"
+}, {
+    "fullname": "云南-大理白族自治州-永平县",
+    "name": "永平",
+    "namef_full_py": "yongping"
+}, {
+    "fullname": "云南-大理白族自治州-云龙县",
+    "name": "云龙",
+    "namef_full_py": "yunlong"
+}, {
+    "fullname": "云南-德宏傣族景颇族自治州-梁河县",
+    "name": "梁河",
+    "namef_full_py": "lianghe"
+}, {
+    "fullname": "云南-德宏傣族景颇族自治州-陇川县",
+    "name": "陇川",
+    "namef_full_py": "longchuan"
+}, {
+    "fullname": "云南-德宏傣族景颇族自治州-潞西市",
+    "name": "潞西",
+    "namef_full_py": "luxi"
+}, {
+    "fullname": "云南-德宏傣族景颇族自治州-瑞丽市",
+    "name": "瑞丽",
+    "namef_full_py": "ruili"
+}, {
+    "fullname": "云南-德宏傣族景颇族自治州-盈江县",
+    "name": "盈江",
+    "namef_full_py": "yingjiang"
+}, {
+    "fullname": "云南-迪庆藏族自治州-德钦县",
+    "name": "德钦",
+    "namef_full_py": "deqin"
+}, {
+    "fullname": "云南-迪庆藏族自治州-维西傈僳族自治县",
+    "name": "维西傈僳族自治县",
+    "namef_full_py": "weixilisuzuzizhixian"
+}, {
+    "fullname": "云南-迪庆藏族自治州-香格里拉县",
+    "name": "香格里拉县",
+    "namef_full_py": "xianggelilaxian"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-个旧市",
+    "name": "个旧",
+    "namef_full_py": "gejiu"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-河口瑶族自治县",
+    "name": "河口瑶族自治县",
+    "namef_full_py": "hekouyaozuzizhixian"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-红河县",
+    "name": "红河",
+    "namef_full_py": "honghe"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-建水县",
+    "name": "建水",
+    "namef_full_py": "jianshui"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-金平苗族瑶族傣族自治县",
+    "name": "金平苗族瑶族傣族自治县",
+    "namef_full_py": "jinpingmiaozuyaozudaizuzizhixian"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-开远市",
+    "name": "开远",
+    "namef_full_py": "kaiyuan"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-绿春县",
+    "name": "绿春",
+    "namef_full_py": "lvchun"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-蒙自县",
+    "name": "蒙自",
+    "namef_full_py": "mengzi"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-弥勒县",
+    "name": "弥勒",
+    "namef_full_py": "mile"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-屏边苗族自治县",
+    "name": "屏边苗族自治县",
+    "namef_full_py": "pingbianmiaozuzizhixian"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-石屏县",
+    "name": "石屏",
+    "namef_full_py": "shiping"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-元阳县",
+    "name": "元阳",
+    "namef_full_py": "yuanyang"
+}, {
+    "fullname": "云南-红河哈尼族彝族自治州-泸西县",
+    "name": "泸西",
+    "namef_full_py": "luxi"
+}, {
+    "fullname": "云南-昆明-安宁市",
+    "name": "安宁",
+    "namef_full_py": "anning"
+}, {
+    "fullname": "云南-昆明-呈贡县",
+    "name": "呈贡",
+    "namef_full_py": "chenggong"
+}, {
+    "fullname": "云南-昆明-富民县",
+    "name": "富民",
+    "namef_full_py": "fumin"
+}, {
+    "fullname": "云南-昆明-晋宁县",
+    "name": "晋宁",
+    "namef_full_py": "jinning"
+}, {
+    "fullname": "云南-昆明-昆明市",
+    "name": "昆明",
+    "namef_full_py": "kunming"
+}, {
+    "fullname": "云南-昆明-禄劝彝族苗族自治县",
+    "name": "禄劝彝族苗族自治县",
+    "namef_full_py": "luquanyizumiaozuzizhixian"
+}, {
+    "fullname": "云南-昆明-石林彝族自治县",
+    "name": "石林彝族自治县",
+    "namef_full_py": "shilinyizuzizhixian"
+}, {
+    "fullname": "云南-昆明-寻甸回族自治县",
+    "name": "寻甸回族自治县",
+    "namef_full_py": "xundianhuizuzizhixian"
+}, {
+    "fullname": "云南-昆明-宜良县",
+    "name": "宜良",
+    "namef_full_py": "yiliang"
+}, {
+    "fullname": "云南-昆明-嵩明县",
+    "name": "嵩明",
+    "namef_full_py": "songming"
+}, {
+    "fullname": "云南-丽江-华坪县",
+    "name": "华坪",
+    "namef_full_py": "huaping"
+}, {
+    "fullname": "云南-丽江-丽江市",
+    "name": "丽江",
+    "namef_full_py": "lijiang"
+}, {
+    "fullname": "云南-丽江-宁蒗彝族自治县",
+    "name": "宁蒗彝族自治县",
+    "namef_full_py": "ninglangyizuzizhixian"
+}, {
+    "fullname": "云南-丽江-永胜县",
+    "name": "永胜",
+    "namef_full_py": "yongsheng"
+}, {
+    "fullname": "云南-丽江-玉龙纳西族自治县",
+    "name": "玉龙纳西族自治县",
+    "namef_full_py": "yulongnaxizuzizhixian"
+}, {
+    "fullname": "云南-临沧-沧源佤族自治县",
+    "name": "沧源佤族自治县",
+    "namef_full_py": "cangyuanwazuzizhixian"
+}, {
+    "fullname": "云南-临沧-凤庆县",
+    "name": "凤庆",
+    "namef_full_py": "fengqing"
+}, {
+    "fullname": "云南-临沧-耿马傣族佤族治县",
+    "name": "耿马傣族佤族治县",
+    "namef_full_py": "gengmadaizuwazuzhixian"
+}, {
+    "fullname": "云南-临沧-临沧县",
+    "name": "临沧",
+    "namef_full_py": "lincang"
+}, {
+    "fullname": "云南-临沧-双江拉祜族佤族布朗族傣族自治县",
+    "name": "双江拉祜族佤族布朗族傣族自治县",
+    "namef_full_py": "shuangjianglahuzuwazubulangzudaizuzizhixian"
+}, {
+    "fullname": "云南-临沧-永德县",
+    "name": "永德",
+    "namef_full_py": "yongde"
+}, {
+    "fullname": "云南-临沧-云县",
+    "name": "云县",
+    "namef_full_py": "yunxian"
+}, {
+    "fullname": "云南-临沧-镇康县",
+    "name": "镇康",
+    "namef_full_py": "zhenkang"
+}, {
+    "fullname": "云南-怒江傈傈族自治州-福贡县",
+    "name": "福贡",
+    "namef_full_py": "fugong"
+}, {
+    "fullname": "云南-怒江傈傈族自治州-贡山独龙族怒族自治县",
+    "name": "贡山独龙族怒族自治县",
+    "namef_full_py": "gongshandulongzunuzuzizhixian"
+}, {
+    "fullname": "云南-怒江傈傈族自治州-兰坪白族普米族自治县",
+    "name": "兰坪白族普米族自治县",
+    "namef_full_py": "lanpingbaizupumizuzizhixian"
+}, {
+    "fullname": "云南-怒江傈傈族自治州-泸水县",
+    "name": "泸水",
+    "namef_full_py": "lushui"
+}, {
+    "fullname": "云南-曲靖-富源县",
+    "name": "富源",
+    "namef_full_py": "fuyuan"
+}, {
+    "fullname": "云南-曲靖-会泽县",
+    "name": "会泽",
+    "namef_full_py": "huize"
+}, {
+    "fullname": "云南-曲靖-陆良县",
+    "name": "陆良",
+    "namef_full_py": "luliang"
+}, {
+    "fullname": "云南-曲靖-罗平县",
+    "name": "罗平",
+    "namef_full_py": "luoping"
+}, {
+    "fullname": "云南-曲靖-马龙县",
+    "name": "马龙",
+    "namef_full_py": "malong"
+}, {
+    "fullname": "云南-曲靖-曲靖市",
+    "name": "曲靖",
+    "namef_full_py": "qujing"
+}, {
+    "fullname": "云南-曲靖-师宗县",
+    "name": "师宗",
+    "namef_full_py": "shizong"
+}, {
+    "fullname": "云南-曲靖-宣威市",
+    "name": "宣威",
+    "namef_full_py": "xuanwei"
+}, {
+    "fullname": "云南-曲靖-沾益县",
+    "name": "沾益",
+    "namef_full_py": "zhanyi"
+}, {
+    "fullname": "云南-思茅-江城哈尼族彝族自治县",
+    "name": "江城哈尼族彝族自治县",
+    "namef_full_py": "jiangchenghanizuyizuzizhixian"
+}, {
+    "fullname": "云南-思茅-景东彝族自治县",
+    "name": "景东彝族自治县",
+    "namef_full_py": "jingdongyizuzizhixian"
+}, {
+    "fullname": "云南-思茅-景谷彝族傣族自治县",
+    "name": "景谷彝族傣族自治县",
+    "namef_full_py": "jingguyizudaizuzizhixian"
+}, {
+    "fullname": "云南-思茅-澜沧拉祜族自治县",
+    "name": "澜沧拉祜族自治县",
+    "namef_full_py": "lancanglahuzuzizhixian"
+}, {
+    "fullname": "云南-思茅-孟连傣族拉祜族佤族自治县",
+    "name": "孟连傣族拉祜族佤族自治县",
+    "namef_full_py": "mengliandaizulahuzuwazuzizhixian"
+}, {
+    "fullname": "云南-思茅-墨江哈尼族自治县",
+    "name": "墨江哈尼族自治县",
+    "namef_full_py": "mojianghanizuzizhixian"
+}, {
+    "fullname": "云南-思茅-普洱哈尼族彝族自治县",
+    "name": "普洱哈尼族彝族自治县",
+    "namef_full_py": "puerhanizuyizuzizhixian"
+}, {
+    "fullname": "云南-思茅-思茅市",
+    "name": "思茅",
+    "namef_full_py": "simao"
+}, {
+    "fullname": "云南-思茅-西盟佤族自治县",
+    "name": "西盟佤族自治县",
+    "namef_full_py": "ximengwazuzizhixian"
+}, {
+    "fullname": "云南-思茅-镇沅彝族哈尼族拉祜族自治县",
+    "name": "镇沅彝族哈尼族拉祜族自治县",
+    "namef_full_py": "zhenyuanyizuhanizulahuzuzizhixian"
+}, {
+    "fullname": "云南-文山壮族苗族自治州-富宁县",
+    "name": "富宁",
+    "namef_full_py": "funing"
+}, {
+    "fullname": "云南-文山壮族苗族自治州-广南县",
+    "name": "广南",
+    "namef_full_py": "guangnan"
+}, {
+    "fullname": "云南-文山壮族苗族自治州-麻栗坡县",
+    "name": "麻栗坡县",
+    "namef_full_py": "malipoxian"
+}, {
+    "fullname": "云南-文山壮族苗族自治州-马关县",
+    "name": "马关",
+    "namef_full_py": "maguan"
+}, {
+    "fullname": "云南-文山壮族苗族自治州-丘北县",
+    "name": "丘北",
+    "namef_full_py": "qiubei"
+}, {
+    "fullname": "云南-文山壮族苗族自治州-文山县",
+    "name": "文山",
+    "namef_full_py": "wenshan"
+}, {
+    "fullname": "云南-文山壮族苗族自治州-西畴县",
+    "name": "西畴",
+    "namef_full_py": "xichou"
+}, {
+    "fullname": "云南-文山壮族苗族自治州-砚山县",
+    "name": "砚山",
+    "namef_full_py": "yanshan"
+}, {
+    "fullname": "云南-西双版纳傣族自治州-景洪市",
+    "name": "景洪",
+    "namef_full_py": "jinghong"
+}, {
+    "fullname": "云南-西双版纳傣族自治州-勐海县",
+    "name": "勐海",
+    "namef_full_py": "menghai"
+}, {
+    "fullname": "云南-西双版纳傣族自治州-勐腊县",
+    "name": "勐腊",
+    "namef_full_py": "mengla"
+}, {
+    "fullname": "云南-玉溪-澄江县",
+    "name": "澄江",
+    "namef_full_py": "chengjiang"
+}, {
+    "fullname": "云南-玉溪-峨山彝族自治县",
+    "name": "峨山彝族自治县",
+    "namef_full_py": "eshanyizuzizhixian"
+}, {
+    "fullname": "云南-玉溪-华宁县",
+    "name": "华宁",
+    "namef_full_py": "huaning"
+}, {
+    "fullname": "云南-玉溪-江川县",
+    "name": "江川",
+    "namef_full_py": "jiangchuan"
+}, {
+    "fullname": "云南-玉溪-通海县",
+    "name": "通海",
+    "namef_full_py": "tonghai"
+}, {
+    "fullname": "云南-玉溪-新平彝族傣族自治县",
+    "name": "新平彝族傣族自治县",
+    "namef_full_py": "xinpingyizudaizuzizhixian"
+}, {
+    "fullname": "云南-玉溪-易门县",
+    "name": "易门",
+    "namef_full_py": "yimen"
+}, {
+    "fullname": "云南-玉溪-玉溪市",
+    "name": "玉溪",
+    "namef_full_py": "yuxi"
+}, {
+    "fullname": "云南-玉溪-元江哈尼族彝族傣族自治县",
+    "name": "元江哈尼族彝族傣族自治县",
+    "namef_full_py": "yuanjianghanizuyizudaizuzizhixian"
+}, {
+    "fullname": "云南-昭通-大关县",
+    "name": "大关",
+    "namef_full_py": "daguan"
+}, {
+    "fullname": "云南-昭通-鲁甸县",
+    "name": "鲁甸",
+    "namef_full_py": "ludian"
+}, {
+    "fullname": "云南-昭通-巧家县",
+    "name": "巧家",
+    "namef_full_py": "qiaojia"
+}, {
+    "fullname": "云南-昭通-水富县",
+    "name": "水富",
+    "namef_full_py": "shuifu"
+}, {
+    "fullname": "云南-昭通-绥江县",
+    "name": "绥江",
+    "namef_full_py": "suijiang"
+}, {
+    "fullname": "云南-昭通-威信县",
+    "name": "威信",
+    "namef_full_py": "weixin"
+}, {
+    "fullname": "云南-昭通-盐津县",
+    "name": "盐津",
+    "namef_full_py": "yanjin"
+}, {
+    "fullname": "云南-昭通-彝良县",
+    "name": "彝良",
+    "namef_full_py": "yiliang"
+}, {
+    "fullname": "云南-昭通-永善县",
+    "name": "永善",
+    "namef_full_py": "yongshan"
+}, {
+    "fullname": "云南-昭通-昭通市",
+    "name": "昭通",
+    "namef_full_py": "zhaotong"
+}, {
+    "fullname": "云南-昭通-镇雄县",
+    "name": "镇雄",
+    "namef_full_py": "zhenxiong"
+}, {
+    "fullname": "浙江-杭州-淳安县",
+    "name": "淳安",
+    "namef_full_py": "chunan"
+}, {
+    "fullname": "浙江-杭州-富阳市",
+    "name": "富阳",
+    "namef_full_py": "fuyang"
+}, {
+    "fullname": "浙江-杭州-杭州市",
+    "name": "杭州",
+    "namef_full_py": "hangzhou"
+}, {
+    "fullname": "浙江-杭州-建德市",
+    "name": "建德",
+    "namef_full_py": "jiande"
+}, {
+    "fullname": "浙江-杭州-临安市",
+    "name": "临安",
+    "namef_full_py": "linan"
+}, {
+    "fullname": "浙江-杭州-桐庐县",
+    "name": "桐庐",
+    "namef_full_py": "tonglu"
+}, {
+    "fullname": "浙江-湖州-安吉县",
+    "name": "安吉",
+    "namef_full_py": "anji"
+}, {
+    "fullname": "浙江-湖州-长兴县",
+    "name": "长兴",
+    "namef_full_py": "changxing"
+}, {
+    "fullname": "浙江-湖州-德清县",
+    "name": "德清",
+    "namef_full_py": "deqing"
+}, {
+    "fullname": "浙江-湖州-湖州市",
+    "name": "湖州",
+    "namef_full_py": "huzhou"
+}, {
+    "fullname": "浙江-嘉兴-海宁市",
+    "name": "海宁",
+    "namef_full_py": "haining"
+}, {
+    "fullname": "浙江-嘉兴-海盐县",
+    "name": "海盐",
+    "namef_full_py": "haiyan"
+}, {
+    "fullname": "浙江-嘉兴-嘉善县",
+    "name": "嘉善",
+    "namef_full_py": "jiashan"
+}, {
+    "fullname": "浙江-嘉兴-嘉兴市",
+    "name": "嘉兴",
+    "namef_full_py": "jiaxing"
+}, {
+    "fullname": "浙江-嘉兴-平湖市",
+    "name": "平湖",
+    "namef_full_py": "pinghu"
+}, {
+    "fullname": "浙江-嘉兴-桐乡市",
+    "name": "桐乡",
+    "namef_full_py": "tongxiang"
+}, {
+    "fullname": "浙江-金华-东阳市",
+    "name": "东阳",
+    "namef_full_py": "dongyang"
+}, {
+    "fullname": "浙江-金华-金华市",
+    "name": "金华",
+    "namef_full_py": "jinhua"
+}, {
+    "fullname": "浙江-金华-兰溪市",
+    "name": "兰溪",
+    "namef_full_py": "lanxi"
+}, {
+    "fullname": "浙江-金华-磐安县",
+    "name": "磐安",
+    "namef_full_py": "panan"
+}, {
+    "fullname": "浙江-金华-浦江县",
+    "name": "浦江",
+    "namef_full_py": "pujiang"
+}, {
+    "fullname": "浙江-金华-武义县",
+    "name": "武义",
+    "namef_full_py": "wuyi"
+}, {
+    "fullname": "浙江-金华-义乌市",
+    "name": "义乌",
+    "namef_full_py": "yiwu"
+}, {
+    "fullname": "浙江-金华-永康市",
+    "name": "永康",
+    "namef_full_py": "yongkang"
+}, {
+    "fullname": "浙江-丽水-景宁畲族自治县",
+    "name": "景宁畲族自治县",
+    "namef_full_py": "jingningyuzuzizhixian"
+}, {
+    "fullname": "浙江-丽水-丽水市",
+    "name": "丽水",
+    "namef_full_py": "lishui"
+}, {
+    "fullname": "浙江-丽水-龙泉市",
+    "name": "龙泉",
+    "namef_full_py": "longquan"
+}, {
+    "fullname": "浙江-丽水-青田县",
+    "name": "青田",
+    "namef_full_py": "qingtian"
+}, {
+    "fullname": "浙江-丽水-庆元县",
+    "name": "庆元",
+    "namef_full_py": "qingyuan"
+}, {
+    "fullname": "浙江-丽水-松阳县",
+    "name": "松阳",
+    "namef_full_py": "songyang"
+}, {
+    "fullname": "浙江-丽水-遂昌县",
+    "name": "遂昌",
+    "namef_full_py": "suichang"
+}, {
+    "fullname": "浙江-丽水-云和县",
+    "name": "云和",
+    "namef_full_py": "yunhe"
+}, {
+    "fullname": "浙江-丽水-缙云县",
+    "name": "缙云",
+    "namef_full_py": "jinyun"
+}, {
+    "fullname": "浙江-宁波-慈溪市",
+    "name": "慈溪",
+    "namef_full_py": "cixi"
+}, {
+    "fullname": "浙江-宁波-奉化市",
+    "name": "奉化",
+    "namef_full_py": "fenghua"
+}, {
+    "fullname": "浙江-宁波-宁波市",
+    "name": "宁波",
+    "namef_full_py": "ningbo"
+}, {
+    "fullname": "浙江-宁波-宁海县",
+    "name": "宁海",
+    "namef_full_py": "ninghai"
+}, {
+    "fullname": "浙江-宁波-象山县",
+    "name": "象山",
+    "namef_full_py": "xiangshan"
+}, {
+    "fullname": "浙江-宁波-余姚市",
+    "name": "余姚",
+    "namef_full_py": "yuyao"
+}, {
+    "fullname": "浙江-绍兴-上虞市",
+    "name": "上虞",
+    "namef_full_py": "shangyu"
+}, {
+    "fullname": "浙江-绍兴-绍兴市",
+    "name": "绍兴",
+    "namef_full_py": "shaoxing"
+}, {
+    "fullname": "浙江-绍兴-绍兴县",
+    "name": "绍兴",
+    "namef_full_py": "shaoxing"
+}, {
+    "fullname": "浙江-绍兴-新昌县",
+    "name": "新昌",
+    "namef_full_py": "xinchang"
+}, {
+    "fullname": "浙江-绍兴-诸暨市",
+    "name": "诸暨",
+    "namef_full_py": "zhuji"
+}, {
+    "fullname": "浙江-绍兴-嵊州市",
+    "name": "嵊州",
+    "namef_full_py": "shengzhou"
+}, {
+    "fullname": "浙江-台州-临海市",
+    "name": "临海",
+    "namef_full_py": "linhai"
+}, {
+    "fullname": "浙江-台州-三门县",
+    "name": "三门",
+    "namef_full_py": "sanmen"
+}, {
+    "fullname": "浙江-台州-台州市",
+    "name": "台州",
+    "namef_full_py": "taizhou"
+}, {
+    "fullname": "浙江-台州-天台县",
+    "name": "天台",
+    "namef_full_py": "tiantai"
+}, {
+    "fullname": "浙江-台州-温岭市",
+    "name": "温岭",
+    "namef_full_py": "wenling"
+}, {
+    "fullname": "浙江-台州-仙居县",
+    "name": "仙居",
+    "namef_full_py": "xianju"
+}, {
+    "fullname": "浙江-台州-玉环县",
+    "name": "玉环",
+    "namef_full_py": "yuhuan"
+}, {
+    "fullname": "浙江-温州-苍南县",
+    "name": "苍南",
+    "namef_full_py": "cangnan"
+}, {
+    "fullname": "浙江-温州-洞头县",
+    "name": "洞头",
+    "namef_full_py": "dongtou"
+}, {
+    "fullname": "浙江-温州-乐清市",
+    "name": "乐清",
+    "namef_full_py": "leqing"
+}, {
+    "fullname": "浙江-温州-平阳县",
+    "name": "平阳",
+    "namef_full_py": "pingyang"
+}, {
+    "fullname": "浙江-温州-瑞安市",
+    "name": "瑞安",
+    "namef_full_py": "ruian"
+}, {
+    "fullname": "浙江-温州-泰顺县",
+    "name": "泰顺",
+    "namef_full_py": "taishun"
+}, {
+    "fullname": "浙江-温州-温州市",
+    "name": "温州",
+    "namef_full_py": "wenzhou"
+}, {
+    "fullname": "浙江-温州-文成县",
+    "name": "文成",
+    "namef_full_py": "wencheng"
+}, {
+    "fullname": "浙江-温州-永嘉县",
+    "name": "永嘉",
+    "namef_full_py": "yongjia"
+}, {
+    "fullname": "浙江-舟山-舟山市",
+    "name": "舟山",
+    "namef_full_py": "zhoushan"
+}, {
+    "fullname": "浙江-舟山-岱山县",
+    "name": "岱山",
+    "namef_full_py": "daishan"
+}, {
+    "fullname": "浙江-舟山-嵊泗县",
+    "name": "嵊泗",
+    "namef_full_py": "shengsi"
+}, {
+    "fullname": "浙江-衢州-常山县",
+    "name": "常山",
+    "namef_full_py": "changshan"
+}, {
+    "fullname": "浙江-衢州-江山市",
+    "name": "江山",
+    "namef_full_py": "jiangshan"
+}, {
+    "fullname": "浙江-衢州-开化县",
+    "name": "开化",
+    "namef_full_py": "kaihua"
+}, {
+    "fullname": "浙江-衢州-龙游县",
+    "name": "龙游",
+    "namef_full_py": "longyou"
+}, {
+    "fullname": "浙江-衢州-衢州市",
+    "name": "衢州",
+    "namef_full_py": "quzhou"
+}, {
+    "fullname": "重庆-城口县",
+    "name": "城口",
+    "namef_full_py": "chengkou"
+}, {
+    "fullname": "重庆-大足县",
+    "name": "大足",
+    "namef_full_py": "dazu"
+}, {
+    "fullname": "重庆-垫江县",
+    "name": "垫江",
+    "namef_full_py": "dianjiang"
+}, {
+    "fullname": "重庆-丰都县",
+    "name": "丰都",
+    "namef_full_py": "fengdu"
+}, {
+    "fullname": "重庆-奉节县",
+    "name": "奉节",
+    "namef_full_py": "fengjie"
+}, {
+    "fullname": "重庆-合川市",
+    "name": "合川",
+    "namef_full_py": "hechuan"
+}, {
+    "fullname": "重庆-江津市",
+    "name": "江津",
+    "namef_full_py": "jiangjin"
+}, {
+    "fullname": "重庆-开县",
+    "name": "开县",
+    "namef_full_py": "kaixian"
+}, {
+    "fullname": "重庆-梁平县",
+    "name": "梁平",
+    "namef_full_py": "liangping"
+}, {
+    "fullname": "重庆-南川市",
+    "name": "南川",
+    "namef_full_py": "nanchuan"
+}, {
+    "fullname": "重庆-彭水苗族土家族自治县",
+    "name": "彭水苗族土家族自治县",
+    "namef_full_py": "pengshuimiaozutujiazuzizhixian"
+}, {
+    "fullname": "重庆-荣昌县",
+    "name": "荣昌",
+    "namef_full_py": "rongchang"
+}, {
+    "fullname": "重庆-石柱土家族自治县",
+    "name": "石柱土家族自治县",
+    "namef_full_py": "shizhutujiazuzizhixian"
+}, {
+    "fullname": "重庆-铜梁县",
+    "name": "铜梁",
+    "namef_full_py": "tongliang"
+}, {
+    "fullname": "重庆-巫山县",
+    "name": "巫山",
+    "namef_full_py": "wushan"
+}, {
+    "fullname": "重庆-巫溪县",
+    "name": "巫溪",
+    "namef_full_py": "wuxi"
+}, {
+    "fullname": "重庆-武隆县",
+    "name": "武隆",
+    "namef_full_py": "wulong"
+}, {
+    "fullname": "重庆-秀山土家族苗族自治县",
+    "name": "秀山土家族苗族自治县",
+    "namef_full_py": "xiushantujiazumiaozuzizhixian"
+}, {
+    "fullname": "重庆-永川市",
+    "name": "永川",
+    "namef_full_py": "yongchuan"
+}, {
+    "fullname": "重庆-酉阳土家族苗族自治县",
+    "name": "酉阳土家族苗族自治县",
+    "namef_full_py": "youyangtujiazumiaozuzizhixian"
+}, {
+    "fullname": "重庆-云阳县",
+    "name": "云阳",
+    "namef_full_py": "yunyang"
+}, {
+    "fullname": "重庆-忠县",
+    "name": "忠县",
+    "namef_full_py": "zhongxian"
+}, {
+    "fullname": "重庆-重庆市",
+    "name": "重庆",
+    "namef_full_py": "zhongqing"
+}, {
+    "fullname": "重庆-潼南县",
+    "name": "潼南",
+    "namef_full_py": "tongnan"
+}, {
+    "fullname": "重庆-璧山县",
+    "name": "璧山",
+    "namef_full_py": "bishan"
+}, {
+    "fullname": "重庆-綦江县",
+    "name": "綦江",
+    "namef_full_py": "qijiang"
+}];
+'use strict';
+
+//只能输入数字指令
+
+Vue.directive('numberOnly', {
+    bind: function bind() {
+        this.handler = function() {
+            this.el.value = this.el.value.replace(/\D+/, '');
+        }.bind(this);
+        this.el.addEventListener('input', this.handler);
+    },
+    unbind: function unbind() {
+        this.el.removeEventListener('input', this.handler);
+    }
+});
+
+Vue.component('dialog-login', {
+    template: '<div class="new-covers animated" transition="fadeIn" v-if="isLogin" ></div>' + '<div class="new-login animated" transition="fadeIn" v-if="isLogin">' + '<div class="content">' + '<img src="/static/images/login_pic.png" alt="" class="logo">' + '<form>' + '<div class="group-from">' + '<input class="tel" type="tel" v-model="tel" maxlength="11" placeholder="请输入手机号" style="ime-mode:Disabled" v-number-only>' + '</div>' + '<div class="group-from n-flex">' + '<input class="code flex-1" type="tel" v-model="code" maxlength="4" placeholder="请输入验证码" style="ime-mode:Disabled" v-number-only>' + '<a href="javascript:;" class="cell sendcode" :class="diableClass" @click="getCode()">{{sendButtonText}}</a>' + '</div>' + '<a href="javascript:;" class="submit" @click="loginAjax">登录</a>' + '</form>' +
+        // '<a href="javascript:;" class="close" @click="closeLogin"></a>' +
+        '</div>' + '</div>',
+    props: {
+        isLogin: {
+            type: Boolean,
+            require: true,
+            default: false
+        },
+        tel: {
+            type: Number,
+            require: false
+        },
+        code: {
+            type: Number,
+            require: false
+        },
+        isSend: {
+            type: Boolean,
+            require: true,
+            default: false
+        },
+        sendButtonText: {
+            type: String,
+            require: true,
+            default: '获取验证码'
+        },
+        diableClass: {
+            type: String,
+            require: true,
+            default: ''
+        }
+    },
+    ready: function ready() {
+        var self = this;
+        // self.vaildateIsLogin();
+        self.$parent.$on("user-loaded", function(user) {
+            self.vaildateIsLogin();
+        });
+    },
+    methods: {
+        vaildateIsLogin: function vaildateIsLogin() {
+            //验证是否登录
+            if (!!sessionStorage.getItem('user')) {
+                this.isLogin = false;
+            } else {
+                this.isLogin = true;
+            }
+        },
+        closeLogin: function closeLogin() {
+            //关闭登录
+            this.isLogin = false;
+        },
+        getCode: function getCode() {
+            //获取验证码
+            var that = this;
+            if (that.isSend) {
+                return false;
+            }
+            var regPhone = /^0?1[3|4|5|7|8][0-9]\d{8}$/;
+            if (that.tel == '') {
+                $.ModuleTip({ 'txt': '手机号不能为空' });
+                return false;
+            } else if (!regPhone.test(that.tel)) {
+                $.ModuleTip({ 'txt': '请填写11位手机号' });
+                return false;
+            }
+            var url = "/api/user/mobile/captcha"; // 请求验证码url
+            $.get(url, { mobile: that.tel }, function(r) {
+                if (r.code == "1") {
+                    setTime(60);
+                } else if (r.code == "50020") {
+                    $.ModuleTip({ 'txt': '手机号码错误' });
+                }
+            });
+
+            function setTime(countdown) {
+                if (countdown == 0) {
+                    that.isSend = false;
+                    that.sendButtonText = "获取验证码";
+                    return;
+                } else {
+                    that.isSend = true;
+                    that.sendButtonText = "已发送(" + countdown + ")";
+                }
+                setTimeout(function() {
+                    setTime(--countdown);
+                }, 1000);
+            }
+        },
+        loginAjax: function loginAjax() {
+            //登录
+            var url = "http://test.haitat.com/api/user/captcha/check";
+            var self = this;
+
+            $.get(url, { code: self.code, mobile: self.tel }, function(resp, statusCode) {
+                if (resp.code == "1") {
+                    self.isLogin = false;
+                    location.reload();
+                } else if (resp.code == "7") {
+                    $.ModuleTip({ 'txt': '验证码不存在或者超时，请重试' });
+                } else {
+                    self.isLogin = false;
+                    $.ModuleTip({ 'txt': resp.message });
+                }
+            });
+        }
+    },
+    computed: {
+        diableClass: function diableClass() {
+            return this.isSend ? 'disable' : '';
+        }
+    }
+
+});
+"use strict";
+
+Vue.transition('fadeIn', {
+    enterClass: 'fadeIn',
+    leaveClass: 'fadeOut'
+});
+
+Vue.transition('fadeDown', {
+    enterClass: 'fadeInDown',
+    leaveClass: 'fadeOutUp'
+});
+
+Vue.filter('hundred', function(value) {
+    return value > 100 ? '99+' : value;
+});
+
+var app = new Vue({
+    el: '#newIndex',
+    data: function data() {
+        return {
+            isSearchInLine: false,
+            cityData: {
+                name: '',
+                pinyin: ''
+            },
+            recommendCitys: [],
+            query: '', // 搜索关键字 （出发城市或目的城市）
+            isAdd: false,
+            startCity: "",
+            endCity: "",
+            tempSelected: '',
+            filterList: [],
+            addressData: address,
+            startAddress: [],
+            endAddress: [],
+            showListStart: true,
+            showListEnd: true,
+            ajaxStart: '',
+            ajaxEnd: '',
+            commRouters: [],
+            searchData: [],
+            user: {},
+            ulHeight: 'auto',
+            panelHeight: 'auto',
+            searchComputed: ''
+        };
+    },
+    directives: {
+        'auto-focus': function autoFocus(value) {
+            if (value) {
+                var el = this.el;
+                Vue.nextTick(function() {
+                    el.focus();
+                });
+            }
+        }
+    },
+    ready: function ready() {
+        this.initData();
+        this.resizeHeight();
+    },
+    methods: {
+        initData: function initData() {
+            // 初始化数据
+            var that = this;
+            var url = 'http://test.haitat.com/api/user/route/main';
+            $.get(url, { "_": new Date().getTime() }, function(r) {
+                if (r.code == "1") {
+                    var locationData = sessionStorage.getItem('location');
+                    if (!!locationData) {
+                        // 刷新页面 防止出现定位城市
+                        if (JSON.parse(locationData).hasOwnProperty('name')) {
+                            that.cityData.name = JSON.parse(locationData).name;
+                            that.cityData.pinyin = JSON.parse(locationData).pinyin;
+                        } else {
+                            that.cityData.name = '未定位';
+                            that.cityData.pinyin = 'weidingwei';
+                        }
+                        that.recommendCitys = JSON.parse(locationData).recommend_city;
+                    } else {
+                        that.user = r.data.user;
+                        if (r.data.user) {
+                            sessionStorage.setItem("user", r.data.user);
+                        } else {
+                            sessionStorage.removeItem("user");
+                        }
+                        if (r.data.user.location.hasOwnProperty('city')) {
+                            that.cityData.name = r.data.user.location.city;
+                            that.cityData.pinyin = r.data.user.location.pinyin;
+                        } else {
+                            that.cityData.name = '未定位';
+                            that.cityData.pinyin = 'weidingwei';
+                        }
+                        that.recommendCitys = r.data.recommend_city;
+                    }
+                    that.commRouters = r.data.top_lines;
+                } else if (r.code == "50010") {
+                    $.ModuleTip({ 'txt': r.message });
+                }
+                that.$emit("user-loaded", that.user);
+            });
+        },
+        resizeHeight: function() {
+            var that = this;
+            $(window).resize(function(event) {
+                if (that.searchComputed) {
+                    var wHeight = $('body').height();
+                    var panelTop = $('#panel').offset().top * 2;
+                    var inputTop = $('a#seachWarp').offset().top;
+                    var inputSearch = $('a#seachWarp').outerHeight();
+                    var searchHeight = wHeight - inputSearch - inputTop - panelTop;
+                    var panelHeight = wHeight - panelTop;
+                    that.ulHeight = searchHeight + 'px';
+                    that.panelHeight = panelHeight + 'px';
+                } else {
+                    that.panelHeight = 'auto';
+                }
+            });
+        },
+        showSearchInLine: function() {
+            //展示搜索inline
+            this.isSearchInLine = true;
+            var that = this;
+        },
+        searchBlur: function() {
+            //输入框失去焦点&输入文字为空
+            if (this.query == '' || this.query == undefined) {
+                this.isSearchInLine = false;
+                this.searchData = [];
+            }
+        },
+        backIndex: function() {
+            this.isSearchInLine = false;
+            this.query = '';
+            // this.panelHeight = 'auto';
+        },
+        cleanKey: function() {
+            // 清除关键字
+            this.query = '';
+            this.searchData = [];
+            $('#searchInput').focus();
+            // this.panelHeight = 'auto';
+        },
+        showAdd: function() {
+            //展示添加
+            this.isAdd = true;
+        },
+        closeAdd: function() {
+            //关闭添加
+            this.isAdd = false;
+            this.startCity = '';
+            this.endCity = '';
+        },
+        selectedClick: function(val, selected) {
+            //点击提示
+            if (selected == 'start') {
+                this.startCity = val.name;
+                this.ajaxStart = val;
+                this.showListStart = false;
+            } else {
+                this.endCity = val.name;
+                this.ajaxEnd = val;
+                this.showListEnd = false;
+            }
+        },
+        input: function(val, type) {
+            // 城市输入            
+            var self = this;
+            if (type == 'start') {
+                this.showListStart = true;
+                this.ajaxStart = '';
+            } else if (type = "end") {
+                this.showListEnd = true;
+                this.ajaxEnd = '';
+            }
+        },
+        blurInput: function blurInput(type) {
+            // 添加线路输入框失去焦点
+            var that = this;
+            // setTimeout(function () {
+            //     if (type == 'start') {
+            //         that.startCity = that.ajaxStart == '' ? '' : that.startCity; //隐藏为空 startCity制空
+            //         that.showListStart = false;
+            //     } else {
+            //         that.endCity = that.ajaxEnd == '' ? '' : that.endCity; //隐藏为空 startCity制空
+            //         that.showListEnd = false;
+            //     }
+            // }, 250);
+        },
+        enter: function() {
+            // 输入框按回车不做操作，防止刷新
+            return false;
+        },
+        linkRouters: function(id) {
+            //常用往返链接跳转
+            if (!id) return;
+            location.href = 'http://test.haitat.com/user/routes/' + id;
+        },
+        recommendRoute: function(recommendCity) {
+            //点击推荐线路
+            this.linkRouters(recommendCity.id);
+            var that = this;
+            var dataJson = { //添加数据
+                'start': that.cityData.name,
+                'end': recommendCity.name,
+                'start_py': that.cityData.pinyin,
+                'end_py': recommendCity.pinyin
+            };
+
+            that.ajaxAdd(dataJson);
+        },
+        addCommon: function() {
+            // 添加路线
+            var that = this;
+
+            if (that.startCity == '') {
+                $.ModuleTip({ 'txt': '出发城市不能为空' });
+                return false;
+            }
+
+            if (that.endCity == '') {
+                $.ModuleTip({ 'txt': '到达城市不能为空' });
+                return false;
+            }
+
+            if (that.ajaxStart.code == that.ajaxEnd.name) {
+                $.ModuleTip({ 'txt': '出发城市不能为到达城市' });
+                return false;
+            }
+
+            var dataJson = { //添加数据
+                'start': that.ajaxStart.name,
+                'end': that.ajaxEnd.name,
+                'start_py': that.ajaxStart.namef_full_py,
+                'end_py': that.ajaxEnd.namef_full_py
+            };
+            that.ajaxAdd(dataJson);
+        },
+        searchQuery: function(key) {
+            //模糊搜索
+            var that = this;
+            // let url = '/api/user/city/suggest';
+            that.searchData = []; // 每次查询前 将数据至零
+            for (var k = 0; k < address.length; k++) {
+                var v = address[k];
+                if (!v || !v.name || !v.namef_full_py) {
+                    continue;
+                }
+                var name = v.name;
+                var py = v.namef_full_py.toLowerCase();
+                if (name.indexOf(key) > -1 || py.indexOf(key) > -1) {
+                    that.searchData.push({ name: name, pinyin: py, title: v.fullname, post_code: v.name_code });
+                }
+                if (that.searchData.length > 30) {
+                    break;
+                }
+            }
+        },
+        selectedCity: function(val) {
+            //切换出发城市或目的城市
+            if (!val) return;
+            var that = this;
+            if (val.hasOwnProperty('name')) {
+                that.cityData.name = val.name;
+                that.cityData.pinyin = val.pinyin;
+            } else {
+                that.cityData.name = '未定位';
+                that.cityData.pinyin = 'weidingwei';
+            }
+            var url = 'http://test.haitat.com/api/user/city/switch';
+            var dataJson = { city: val.name };
+            $.get(url, dataJson, function(r) {
+                if (r.code == "1") {
+                    that.recommendCitys = r.data.items; // 重新获取推荐线路
+                    val.recommend_city = r.data.items;
+                    sessionStorage.setItem('location', JSON.stringify(val)); // 添加本地缓存
+                } else if (r.code == "50010") {
+                    $.ModuleTip({ 'txt': r.message });
+                }
+            });
+
+            this.backIndex();
+        },
+        ajaxAdd: function(dataJson) {
+            // 添加常用路线ajax
+            var that = this;
+            var url = 'http://test.haitat.com/api/user/route/add';
+            var flag = false;
+            $.get(url, dataJson, function(r) {
+                if (r.code == "1") {
+                    var _id = r.data.id; //添加的路线的id
+                    that.commRouters.map(function(item, index) {
+                        if (item.id == _id) {
+                            flag = true;
+                            that.commRouters.splice(index, 1);
+                        }
+                    });
+                    if (!flag) {
+                        $.ModuleTip({ 'txt': '添加路线成功' });
+                    } else {
+                        $.ModuleTip({ 'txt': '路线已存在' });
+                    }
+                    that.commRouters.unshift({
+                        'start': dataJson.start,
+                        'end': dataJson.end,
+                        'id': _id
+                    });
+                } else if (r.code == "50010") {
+                    $.ModuleTip({ 'txt': r.message });
+                }
+            });
+            that.closeAdd(); //关闭添加弹窗
+        },
+        addressFilter: function(query) {
+            var result = [],
+                self = this;
+            if (!query) return [];
+            for (var k = 0; k < address.length; k++) {
+                var addr = address[k];
+                if (addr.name.indexOf(query) > -1 || addr.namef_full_py.indexOf(query) > -1) {
+                    result.push(addr);
+                }
+                if (result.length > 20) {
+                    return result;
+                }
+            }
+            return result;
+        }
+    },
+    computed: {
+        filterList: function() {
+            return this.addressFilter(this.query);
+        },
+        searchComputed: function() {
+            return this.query != '' && this.isSearchInLine;
+        },
+        startAddress: function() {
+            return !!this.startCity ? address : [];
+        },
+        endAddress: function() {
+            return !!this.endCity ? address : [];
+        }
+    },
+    watch: {
+        searchComputed: function(cur, old) {
+            if (cur) {
+                var wHeight = $('body').height();
+                var panelTop = $('#panel').offset().top * 2;
+                var inputTop = $('a#seachWarp').offset().top;
+                var inputSearch = $('a#seachWarp').outerHeight();
+                var searchHeight = wHeight - inputSearch - inputTop - panelTop;
+                var panelHeight = wHeight - panelTop;
+                this.ulHeight = searchHeight + 'px';
+                this.panelHeight = panelHeight + 'px';
+            } else {
+                this.panelHeight = 'auto';
+            }
+        }
+    }
+});

@@ -130,11 +130,6 @@ var app = new Vue({
             //展示搜索inline
             this.isSearchInLine = true;
             var that = this;
-
-            // setTimeout(function() {
-            //     // 延迟获取焦点jq vue 不同步（bug）
-            //     $('#searchInput').focus();
-            // }, 200);
         },
         searchBlur: function searchBlur() {
             //输入框失去焦点&输入文字为空
@@ -155,18 +150,18 @@ var app = new Vue({
             $('#searchInput').focus();
             // this.panelHeight = 'auto';
         },
-        showAdd: function showAdd() {
+        showAdd: function() {
             //展示添加
             this.isAdd = true;
         },
-        closeAdd: function closeAdd() {
+        closeAdd: function() {
             //关闭添加
             this.isAdd = false;
-            this.startCity = this.endCity = '';
+            this.startCity = '';
+            this.endCity = '';
         },
-        selectedClick: function selectedClick(val, selected) {
+        selectedClick: function(val, selected) {
             //点击提示
-
             if (selected == 'start') {
                 this.startCity = val.name;
                 this.ajaxStart = val;
@@ -177,30 +172,31 @@ var app = new Vue({
                 this.showListEnd = false;
             }
         },
-        input: function input(val, type) {
+        input: function(type) {
+            console.log(type);
             // 城市输入
             var self = this;
-            if (type == 'start') {
-                this.showListStart = !!val ? true : false;
+            if (type == "start") {
+                this.showListStart = true;
                 this.ajaxStart = '';
             } else if (type = "end") {
-                this.showListEnd = !!val ? true : false;
+                this.showListEnd = true;
                 this.ajaxEnd = '';
-                self.searchQuery(val);
             }
         },
-        blurInput: function blurInput(type) {
+        blurInput: function(type) {
             // 添加线路输入框失去焦点
             var that = this;
-            setTimeout(function() {
-                if (type == 'start') {
-                    that.startCity = that.ajaxStart == '' ? '' : that.startCity; //隐藏为空 startCity制空
-                    that.showListStart = false;
-                } else {
-                    that.endCity = that.ajaxEnd == '' ? '' : that.endCity; //隐藏为空 startCity制空
-                    that.showListEnd = false;
-                }
-            }, 250);
+
+            // setTimeout(function() {
+            //     // if (type == 'start') {
+            //     //     that.startCity = that.ajaxStart == '' ? '' : that.startCity; //隐藏为空 startCity制空
+            //     //     that.showListStart = false;
+            //     // } else {
+            //     //     that.endCity = that.ajaxEnd == '' ? '' : that.endCity; //隐藏为空 startCity制空
+            //     //     that.showListEnd = false;
+            //     // }
+            // }, 250);
         },
         enter: function enter() {
             // 输入框按回车不做操作，防止刷新
@@ -283,7 +279,7 @@ var app = new Vue({
                 that.cityData.name = '未定位';
                 that.cityData.pinyin = 'weidingwei';
             }
-            var url = '/api/user/city/switch';
+            var url = 'http://test.haitat.com/api/user/city/switch';
             var dataJson = { city: val.name };
             $.get(url, dataJson, function(r) {
                 if (r.code == "1") {

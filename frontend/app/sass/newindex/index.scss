@@ -89,7 +89,7 @@ body {
 .new-search {
     background: $colorf4f;
     display: flex;
-    @include boder-style-radius($colord9, .44rem);
+    border-radius: .44rem;
     line-height: .44rem;
     padding: .2rem 0 .2rem .3rem;
     font-size: 0;
@@ -156,6 +156,10 @@ body {
         color: #999;
         font-size: .28rem;
         margin-right: .2rem;
+    }
+    p.commom{
+        font-size: .28rem;
+        color:#666; 
     }
 }
 
